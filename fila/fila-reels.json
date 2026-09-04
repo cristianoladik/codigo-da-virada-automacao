@@ -1,5 +1,4998 @@
 {
   "canal": "instagram-facebook-reels",
   "timezone": "America/Sao_Paulo",
-  "conteudos": []
+  "conteudos": [
+    {
+      "id": "reel-20260904-2100-6b5a426c90",
+      "data": "2026-09-04",
+      "horario": "21:00",
+      "status": "pendente",
+      "origem": {
+        "arquivo": "7.mp4",
+        "sha256": "6b5a426c90f5bf427e07317cd4398e4ca83b9394379b344399c174e49477be8d"
+      },
+      "midia": {
+        "asset": "7.mp4",
+        "url_publica": "https://github.com/cristianoladik/codigo-da-virada-automacao/releases/download/fila-instagram-facebook/7.mp4",
+        "sha256": "6b5a426c90f5bf427e07317cd4398e4ca83b9394379b344399c174e49477be8d",
+        "tamanho_bytes": 9311837
+      },
+      "instagram": {
+        "legenda": "Siga @codigodavirada_br",
+        "status": "pendente"
+      },
+      "facebook": {
+        "legenda": "Siga @codigodavirada_br",
+        "status": "pendente"
+      }
+    },
+    {
+      "id": "reel-20260905-0900-cb49ca6513",
+      "data": "2026-09-05",
+      "horario": "09:00",
+      "status": "pendente",
+      "origem": {
+        "arquivo": "8.mp4",
+        "sha256": "cb49ca651317151212634dac65a69a56d6db05c367cf8bae147cb5e3f65b75eb"
+      },
+      "midia": {
+        "asset": "8.mp4",
+        "url_publica": "https://github.com/cristianoladik/codigo-da-virada-automacao/releases/download/fila-instagram-facebook/8.mp4",
+        "sha256": "cb49ca651317151212634dac65a69a56d6db05c367cf8bae147cb5e3f65b75eb",
+        "tamanho_bytes": 6278481
+      },
+      "instagram": {
+        "legenda": "Siga @codigodavirada_br",
+        "status": "pendente"
+      },
+      "facebook": {
+        "legenda": "Siga @codigodavirada_br",
+        "status": "pendente"
+      }
+    },
+    {
+      "id": "reel-20260905-2100-9b67217fe1",
+      "data": "2026-09-05",
+      "horario": "21:00",
+      "status": "pendente",
+      "origem": {
+        "arquivo": "10.mp4",
+        "sha256": "9b67217fe17a866061c0e462ce4dfea79d4ec06cf9327865fbc591e21dc25cd4"
+      },
+      "midia": {
+        "asset": "10.mp4",
+        "url_publica": "https://github.com/cristianoladik/codigo-da-virada-automacao/releases/download/fila-instagram-facebook/10.mp4",
+        "sha256": "9b67217fe17a866061c0e462ce4dfea79d4ec06cf9327865fbc591e21dc25cd4",
+        "tamanho_bytes": 21600104
+      },
+      "instagram": {
+        "legenda": "Siga @codigodavirada_br",
+        "status": "pendente"
+      },
+      "facebook": {
+        "legenda": "Siga @codigodavirada_br",
+        "status": "pendente"
+      }
+    },
+    {
+      "id": "reel-20260906-0900-f0b36bcb02",
+      "data": "2026-09-06",
+      "horario": "09:00",
+      "status": "pendente",
+      "origem": {
+        "arquivo": "11.mp4",
+        "sha256": "f0b36bcb027b00ebf46ced9483ec86f985d75c8126d7e0f8865147c4579ca33a"
+      },
+      "midia": {
+        "asset": "11.mp4",
+        "url_publica": "https://github.com/cristianoladik/codigo-da-virada-automacao/releases/download/fila-instagram-facebook/11.mp4",
+        "sha256": "f0b36bcb027b00ebf46ced9483ec86f985d75c8126d7e0f8865147c4579ca33a",
+        "tamanho_bytes": 8202557
+      },
+      "instagram": {
+        "legenda": "Siga @codigodavirada_br",
+        "status": "pendente"
+      },
+      "facebook": {
+        "legenda": "Siga @codigodavirada_br",
+        "status": "pendente"
+      }
+    },
+    {
+      "id": "reel-20260906-2100-c55413d361",
+      "data": "2026-09-06",
+      "horario": "21:00",
+      "status": "pendente",
+      "origem": {
+        "arquivo": "13.mp4",
+        "sha256": "c55413d3616de3c79a7231d821dc21fdf7d902b4c0beb321cf0c7d04643175fc"
+      },
+      "midia": {
+        "asset": "13.mp4",
+        "url_publica": "https://github.com/cristianoladik/codigo-da-virada-automacao/releases/download/fila-instagram-facebook/13.mp4",
+        "sha256": "c55413d3616de3c79a7231d821dc21fdf7d902b4c0beb321cf0c7d04643175fc",
+        "tamanho_bytes": 10985787
+      },
+      "instagram": {
+        "legenda": "Siga @codigodavirada_br",
+        "status": "pendente"
+      },
+      "facebook": {
+        "legenda": "Siga @codigodavirada_br",
+        "status": "pendente"
+      }
+    },
+    {
+      "id": "reel-20260907-0900-27518072ab",
+      "data": "2026-09-07",
+      "horario": "09:00",
+      "status": "pendente",
+      "origem": {
+        "arquivo": "14.mp4",
+        "sha256": "27518072ab482826c1208a017f708f5968fe15ee5b4d506e6a98aa587b78d8ee"
+      },
+      "midia": {
+        "asset": "14.mp4",
+        "url_publica": "https://github.com/cristianoladik/codigo-da-virada-automacao/releases/download/fila-instagram-facebook/14.mp4",
+        "sha256": "27518072ab482826c1208a017f708f5968fe15ee5b4d506e6a98aa587b78d8ee",
+        "tamanho_bytes": 20142932
+      },
+      "instagram": {
+        "legenda": "Siga @codigodavirada_br",
+        "status": "pendente"
+      },
+      "facebook": {
+        "legenda": "Siga @codigodavirada_br",
+        "status": "pendente"
+      }
+    },
+    {
+      "id": "reel-20260907-2100-f9e9521a1d",
+      "data": "2026-09-07",
+      "horario": "21:00",
+      "status": "pendente",
+      "origem": {
+        "arquivo": "15.mp4",
+        "sha256": "f9e9521a1d8ef3112431166bf494612e5e20c0ef5ccccee7a05155449ea0750e"
+      },
+      "midia": {
+        "asset": "15.mp4",
+        "url_publica": "https://github.com/cristianoladik/codigo-da-virada-automacao/releases/download/fila-instagram-facebook/15.mp4",
+        "sha256": "f9e9521a1d8ef3112431166bf494612e5e20c0ef5ccccee7a05155449ea0750e",
+        "tamanho_bytes": 15584682
+      },
+      "instagram": {
+        "legenda": "Siga @codigodavirada_br",
+        "status": "pendente"
+      },
+      "facebook": {
+        "legenda": "Siga @codigodavirada_br",
+        "status": "pendente"
+      }
+    },
+    {
+      "id": "reel-20260908-0900-19741d6cef",
+      "data": "2026-09-08",
+      "horario": "09:00",
+      "status": "pendente",
+      "origem": {
+        "arquivo": "16.mp4",
+        "sha256": "19741d6cefadd8cd1219f9400d7492721895065067a2c53ea94ac52fb89a4f35"
+      },
+      "midia": {
+        "asset": "16.mp4",
+        "url_publica": "https://github.com/cristianoladik/codigo-da-virada-automacao/releases/download/fila-instagram-facebook/16.mp4",
+        "sha256": "19741d6cefadd8cd1219f9400d7492721895065067a2c53ea94ac52fb89a4f35",
+        "tamanho_bytes": 13549975
+      },
+      "instagram": {
+        "legenda": "Siga @codigodavirada_br",
+        "status": "pendente"
+      },
+      "facebook": {
+        "legenda": "Siga @codigodavirada_br",
+        "status": "pendente"
+      }
+    },
+    {
+      "id": "reel-20260908-2100-7fcfaf7c28",
+      "data": "2026-09-08",
+      "horario": "21:00",
+      "status": "pendente",
+      "origem": {
+        "arquivo": "17.mp4",
+        "sha256": "7fcfaf7c287297eee8688dec132a5d4de297701417ed65acbc135df5913eec20"
+      },
+      "midia": {
+        "asset": "17.mp4",
+        "url_publica": "https://github.com/cristianoladik/codigo-da-virada-automacao/releases/download/fila-instagram-facebook/17.mp4",
+        "sha256": "7fcfaf7c287297eee8688dec132a5d4de297701417ed65acbc135df5913eec20",
+        "tamanho_bytes": 7862054
+      },
+      "instagram": {
+        "legenda": "Siga @codigodavirada_br",
+        "status": "pendente"
+      },
+      "facebook": {
+        "legenda": "Siga @codigodavirada_br",
+        "status": "pendente"
+      }
+    },
+    {
+      "id": "reel-20260909-0900-87236ec5a4",
+      "data": "2026-09-09",
+      "horario": "09:00",
+      "status": "pendente",
+      "origem": {
+        "arquivo": "18.mp4",
+        "sha256": "87236ec5a4db7bbc11f34d0a404d7f6f2713e7f1cbc039bd8b794bedcecc14ef"
+      },
+      "midia": {
+        "asset": "18.mp4",
+        "url_publica": "https://github.com/cristianoladik/codigo-da-virada-automacao/releases/download/fila-instagram-facebook/18.mp4",
+        "sha256": "87236ec5a4db7bbc11f34d0a404d7f6f2713e7f1cbc039bd8b794bedcecc14ef",
+        "tamanho_bytes": 9698790
+      },
+      "instagram": {
+        "legenda": "Siga @codigodavirada_br",
+        "status": "pendente"
+      },
+      "facebook": {
+        "legenda": "Siga @codigodavirada_br",
+        "status": "pendente"
+      }
+    },
+    {
+      "id": "reel-20260909-2100-d61cb1285c",
+      "data": "2026-09-09",
+      "horario": "21:00",
+      "status": "pendente",
+      "origem": {
+        "arquivo": "19.mp4",
+        "sha256": "d61cb1285ce5c3f7ea2ccf6239b063d56b9db8708f8b379216267f3cb17b9401"
+      },
+      "midia": {
+        "asset": "19.mp4",
+        "url_publica": "https://github.com/cristianoladik/codigo-da-virada-automacao/releases/download/fila-instagram-facebook/19.mp4",
+        "sha256": "d61cb1285ce5c3f7ea2ccf6239b063d56b9db8708f8b379216267f3cb17b9401",
+        "tamanho_bytes": 12115274
+      },
+      "instagram": {
+        "legenda": "Siga @codigodavirada_br",
+        "status": "pendente"
+      },
+      "facebook": {
+        "legenda": "Siga @codigodavirada_br",
+        "status": "pendente"
+      }
+    },
+    {
+      "id": "reel-20260910-0900-e153725210",
+      "data": "2026-09-10",
+      "horario": "09:00",
+      "status": "pendente",
+      "origem": {
+        "arquivo": "20.mp4",
+        "sha256": "e153725210d687df449f25451b37b16307ce003797cfd5f6663a0722b4c582f9"
+      },
+      "midia": {
+        "asset": "20.mp4",
+        "url_publica": "https://github.com/cristianoladik/codigo-da-virada-automacao/releases/download/fila-instagram-facebook/20.mp4",
+        "sha256": "e153725210d687df449f25451b37b16307ce003797cfd5f6663a0722b4c582f9",
+        "tamanho_bytes": 5049913
+      },
+      "instagram": {
+        "legenda": "Siga @codigodavirada_br",
+        "status": "pendente"
+      },
+      "facebook": {
+        "legenda": "Siga @codigodavirada_br",
+        "status": "pendente"
+      }
+    },
+    {
+      "id": "reel-20260910-2100-e067d0e2d0",
+      "data": "2026-09-10",
+      "horario": "21:00",
+      "status": "pendente",
+      "origem": {
+        "arquivo": "21.mp4",
+        "sha256": "e067d0e2d08dd3ba464e96d6e9d9e880eb0889d05776d37c0f041a0c520bda8c"
+      },
+      "midia": {
+        "asset": "21.mp4",
+        "url_publica": "https://github.com/cristianoladik/codigo-da-virada-automacao/releases/download/fila-instagram-facebook/21.mp4",
+        "sha256": "e067d0e2d08dd3ba464e96d6e9d9e880eb0889d05776d37c0f041a0c520bda8c",
+        "tamanho_bytes": 14288842
+      },
+      "instagram": {
+        "legenda": "Siga @codigodavirada_br",
+        "status": "pendente"
+      },
+      "facebook": {
+        "legenda": "Siga @codigodavirada_br",
+        "status": "pendente"
+      }
+    },
+    {
+      "id": "reel-20260911-0900-64c2bdb5e8",
+      "data": "2026-09-11",
+      "horario": "09:00",
+      "status": "pendente",
+      "origem": {
+        "arquivo": "22.mp4",
+        "sha256": "64c2bdb5e850c2ad94743bd697bb8337940c0b5cebd1b53d8540db3744cd9673"
+      },
+      "midia": {
+        "asset": "22.mp4",
+        "url_publica": "https://github.com/cristianoladik/codigo-da-virada-automacao/releases/download/fila-instagram-facebook/22.mp4",
+        "sha256": "64c2bdb5e850c2ad94743bd697bb8337940c0b5cebd1b53d8540db3744cd9673",
+        "tamanho_bytes": 8489951
+      },
+      "instagram": {
+        "legenda": "Siga @codigodavirada_br",
+        "status": "pendente"
+      },
+      "facebook": {
+        "legenda": "Siga @codigodavirada_br",
+        "status": "pendente"
+      }
+    },
+    {
+      "id": "reel-20260911-2100-8fff5df185",
+      "data": "2026-09-11",
+      "horario": "21:00",
+      "status": "pendente",
+      "origem": {
+        "arquivo": "23.mp4",
+        "sha256": "8fff5df185c3718eb0b987e9f8284c70a32d578f7f1d5a613bdbdfc449c8837f"
+      },
+      "midia": {
+        "asset": "23.mp4",
+        "url_publica": "https://github.com/cristianoladik/codigo-da-virada-automacao/releases/download/fila-instagram-facebook/23.mp4",
+        "sha256": "8fff5df185c3718eb0b987e9f8284c70a32d578f7f1d5a613bdbdfc449c8837f",
+        "tamanho_bytes": 10864898
+      },
+      "instagram": {
+        "legenda": "Siga @codigodavirada_br",
+        "status": "pendente"
+      },
+      "facebook": {
+        "legenda": "Siga @codigodavirada_br",
+        "status": "pendente"
+      }
+    },
+    {
+      "id": "reel-20260912-0900-4d7aca9182",
+      "data": "2026-09-12",
+      "horario": "09:00",
+      "status": "pendente",
+      "origem": {
+        "arquivo": "24.mp4",
+        "sha256": "4d7aca9182632b3d2ead1be4d2ec0b115ec04a2c6a8873fd1e94685159e27b47"
+      },
+      "midia": {
+        "asset": "24.mp4",
+        "url_publica": "https://github.com/cristianoladik/codigo-da-virada-automacao/releases/download/fila-instagram-facebook/24.mp4",
+        "sha256": "4d7aca9182632b3d2ead1be4d2ec0b115ec04a2c6a8873fd1e94685159e27b47",
+        "tamanho_bytes": 12400321
+      },
+      "instagram": {
+        "legenda": "Siga @codigodavirada_br",
+        "status": "pendente"
+      },
+      "facebook": {
+        "legenda": "Siga @codigodavirada_br",
+        "status": "pendente"
+      }
+    },
+    {
+      "id": "reel-20260912-2100-35a4812219",
+      "data": "2026-09-12",
+      "horario": "21:00",
+      "status": "pendente",
+      "origem": {
+        "arquivo": "25.mp4",
+        "sha256": "35a4812219935d30e16f60624fa7385346d0157b6a635f950f76b24b688a4f3e"
+      },
+      "midia": {
+        "asset": "25.mp4",
+        "url_publica": "https://github.com/cristianoladik/codigo-da-virada-automacao/releases/download/fila-instagram-facebook/25.mp4",
+        "sha256": "35a4812219935d30e16f60624fa7385346d0157b6a635f950f76b24b688a4f3e",
+        "tamanho_bytes": 7786950
+      },
+      "instagram": {
+        "legenda": "Siga @codigodavirada_br",
+        "status": "pendente"
+      },
+      "facebook": {
+        "legenda": "Siga @codigodavirada_br",
+        "status": "pendente"
+      }
+    },
+    {
+      "id": "reel-20260913-0900-8a41fe0afc",
+      "data": "2026-09-13",
+      "horario": "09:00",
+      "status": "pendente",
+      "origem": {
+        "arquivo": "26.mp4",
+        "sha256": "8a41fe0afcdbc5454dde1f0c1c4f3be3e8fe409700fd150af6f1647a6a2d0f11"
+      },
+      "midia": {
+        "asset": "26.mp4",
+        "url_publica": "https://github.com/cristianoladik/codigo-da-virada-automacao/releases/download/fila-instagram-facebook/26.mp4",
+        "sha256": "8a41fe0afcdbc5454dde1f0c1c4f3be3e8fe409700fd150af6f1647a6a2d0f11",
+        "tamanho_bytes": 7939004
+      },
+      "instagram": {
+        "legenda": "Siga @codigodavirada_br",
+        "status": "pendente"
+      },
+      "facebook": {
+        "legenda": "Siga @codigodavirada_br",
+        "status": "pendente"
+      }
+    },
+    {
+      "id": "reel-20260913-2100-d4f295f425",
+      "data": "2026-09-13",
+      "horario": "21:00",
+      "status": "pendente",
+      "origem": {
+        "arquivo": "27.mp4",
+        "sha256": "d4f295f4255886fea15db02a0c739ccc2a89e32854e76bb0ef62b60501026c68"
+      },
+      "midia": {
+        "asset": "27.mp4",
+        "url_publica": "https://github.com/cristianoladik/codigo-da-virada-automacao/releases/download/fila-instagram-facebook/27.mp4",
+        "sha256": "d4f295f4255886fea15db02a0c739ccc2a89e32854e76bb0ef62b60501026c68",
+        "tamanho_bytes": 11041023
+      },
+      "instagram": {
+        "legenda": "Siga @codigodavirada_br",
+        "status": "pendente"
+      },
+      "facebook": {
+        "legenda": "Siga @codigodavirada_br",
+        "status": "pendente"
+      }
+    },
+    {
+      "id": "reel-20260914-0900-b4b789bb1f",
+      "data": "2026-09-14",
+      "horario": "09:00",
+      "status": "pendente",
+      "origem": {
+        "arquivo": "28.mp4",
+        "sha256": "b4b789bb1fc2ca495487961948aadd78e967b305f3ddb434bfb2e139243068be"
+      },
+      "midia": {
+        "asset": "28.mp4",
+        "url_publica": "https://github.com/cristianoladik/codigo-da-virada-automacao/releases/download/fila-instagram-facebook/28.mp4",
+        "sha256": "b4b789bb1fc2ca495487961948aadd78e967b305f3ddb434bfb2e139243068be",
+        "tamanho_bytes": 16380793
+      },
+      "instagram": {
+        "legenda": "Siga @codigodavirada_br",
+        "status": "pendente"
+      },
+      "facebook": {
+        "legenda": "Siga @codigodavirada_br",
+        "status": "pendente"
+      }
+    },
+    {
+      "id": "reel-20260914-2100-611c52e1f1",
+      "data": "2026-09-14",
+      "horario": "21:00",
+      "status": "pendente",
+      "origem": {
+        "arquivo": "29.mp4",
+        "sha256": "611c52e1f1568c8097fb8d8ce4bd7c07245e5f9b9743ebb9383d889f47cefeac"
+      },
+      "midia": {
+        "asset": "29.mp4",
+        "url_publica": "https://github.com/cristianoladik/codigo-da-virada-automacao/releases/download/fila-instagram-facebook/29.mp4",
+        "sha256": "611c52e1f1568c8097fb8d8ce4bd7c07245e5f9b9743ebb9383d889f47cefeac",
+        "tamanho_bytes": 3576778
+      },
+      "instagram": {
+        "legenda": "Siga @codigodavirada_br",
+        "status": "pendente"
+      },
+      "facebook": {
+        "legenda": "Siga @codigodavirada_br",
+        "status": "pendente"
+      }
+    },
+    {
+      "id": "reel-20260915-0900-0c22263273",
+      "data": "2026-09-15",
+      "horario": "09:00",
+      "status": "pendente",
+      "origem": {
+        "arquivo": "30.mp4",
+        "sha256": "0c22263273663353550bfec3fff9b68976864e2ff1940fc2f01829662812c1a8"
+      },
+      "midia": {
+        "asset": "30.mp4",
+        "url_publica": "https://github.com/cristianoladik/codigo-da-virada-automacao/releases/download/fila-instagram-facebook/30.mp4",
+        "sha256": "0c22263273663353550bfec3fff9b68976864e2ff1940fc2f01829662812c1a8",
+        "tamanho_bytes": 2150861
+      },
+      "instagram": {
+        "legenda": "Siga @codigodavirada_br",
+        "status": "pendente"
+      },
+      "facebook": {
+        "legenda": "Siga @codigodavirada_br",
+        "status": "pendente"
+      }
+    },
+    {
+      "id": "reel-20260915-2100-8abe3aaae1",
+      "data": "2026-09-15",
+      "horario": "21:00",
+      "status": "pendente",
+      "origem": {
+        "arquivo": "31.mp4",
+        "sha256": "8abe3aaae1be33218304f7973cf5b210455deaeaabfd270a2767c1f7a3b77af9"
+      },
+      "midia": {
+        "asset": "31.mp4",
+        "url_publica": "https://github.com/cristianoladik/codigo-da-virada-automacao/releases/download/fila-instagram-facebook/31.mp4",
+        "sha256": "8abe3aaae1be33218304f7973cf5b210455deaeaabfd270a2767c1f7a3b77af9",
+        "tamanho_bytes": 13504284
+      },
+      "instagram": {
+        "legenda": "Siga @codigodavirada_br",
+        "status": "pendente"
+      },
+      "facebook": {
+        "legenda": "Siga @codigodavirada_br",
+        "status": "pendente"
+      }
+    },
+    {
+      "id": "reel-20260916-0900-ee3709d6be",
+      "data": "2026-09-16",
+      "horario": "09:00",
+      "status": "pendente",
+      "origem": {
+        "arquivo": "32.mp4",
+        "sha256": "ee3709d6be7937c00291142fc0938d37718ad025168a661628da579159875ebe"
+      },
+      "midia": {
+        "asset": "32.mp4",
+        "url_publica": "https://github.com/cristianoladik/codigo-da-virada-automacao/releases/download/fila-instagram-facebook/32.mp4",
+        "sha256": "ee3709d6be7937c00291142fc0938d37718ad025168a661628da579159875ebe",
+        "tamanho_bytes": 18650011
+      },
+      "instagram": {
+        "legenda": "Siga @codigodavirada_br",
+        "status": "pendente"
+      },
+      "facebook": {
+        "legenda": "Siga @codigodavirada_br",
+        "status": "pendente"
+      }
+    },
+    {
+      "id": "reel-20260916-2100-37a7171cb3",
+      "data": "2026-09-16",
+      "horario": "21:00",
+      "status": "pendente",
+      "origem": {
+        "arquivo": "33.mp4",
+        "sha256": "37a7171cb36b9c35aa8cd792297dcc78f4a14598af8c810e3828bb2996025df1"
+      },
+      "midia": {
+        "asset": "33.mp4",
+        "url_publica": "https://github.com/cristianoladik/codigo-da-virada-automacao/releases/download/fila-instagram-facebook/33.mp4",
+        "sha256": "37a7171cb36b9c35aa8cd792297dcc78f4a14598af8c810e3828bb2996025df1",
+        "tamanho_bytes": 10667001
+      },
+      "instagram": {
+        "legenda": "Siga @codigodavirada_br",
+        "status": "pendente"
+      },
+      "facebook": {
+        "legenda": "Siga @codigodavirada_br",
+        "status": "pendente"
+      }
+    },
+    {
+      "id": "reel-20260917-0900-4c0010f411",
+      "data": "2026-09-17",
+      "horario": "09:00",
+      "status": "pendente",
+      "origem": {
+        "arquivo": "34.mp4",
+        "sha256": "4c0010f411bbdf26e2e8f6ded77560e61f62ed0e10ccb7b11958c098d44ef158"
+      },
+      "midia": {
+        "asset": "34.mp4",
+        "url_publica": "https://github.com/cristianoladik/codigo-da-virada-automacao/releases/download/fila-instagram-facebook/34.mp4",
+        "sha256": "4c0010f411bbdf26e2e8f6ded77560e61f62ed0e10ccb7b11958c098d44ef158",
+        "tamanho_bytes": 11335667
+      },
+      "instagram": {
+        "legenda": "Siga @codigodavirada_br",
+        "status": "pendente"
+      },
+      "facebook": {
+        "legenda": "Siga @codigodavirada_br",
+        "status": "pendente"
+      }
+    },
+    {
+      "id": "reel-20260917-2100-02950a6f1d",
+      "data": "2026-09-17",
+      "horario": "21:00",
+      "status": "pendente",
+      "origem": {
+        "arquivo": "35.mp4",
+        "sha256": "02950a6f1df0e8d5821398d95de8a05ee6a6d362dd1e6fc2efcd2c8f1454ee5d"
+      },
+      "midia": {
+        "asset": "35.mp4",
+        "url_publica": "https://github.com/cristianoladik/codigo-da-virada-automacao/releases/download/fila-instagram-facebook/35.mp4",
+        "sha256": "02950a6f1df0e8d5821398d95de8a05ee6a6d362dd1e6fc2efcd2c8f1454ee5d",
+        "tamanho_bytes": 9540420
+      },
+      "instagram": {
+        "legenda": "Siga @codigodavirada_br",
+        "status": "pendente"
+      },
+      "facebook": {
+        "legenda": "Siga @codigodavirada_br",
+        "status": "pendente"
+      }
+    },
+    {
+      "id": "reel-20260918-0900-37b97888f6",
+      "data": "2026-09-18",
+      "horario": "09:00",
+      "status": "pendente",
+      "origem": {
+        "arquivo": "36.mp4",
+        "sha256": "37b97888f631a54578752c36cfd75e32f5338f0870b5788957a5aa13b100f09e"
+      },
+      "midia": {
+        "asset": "36.mp4",
+        "url_publica": "https://github.com/cristianoladik/codigo-da-virada-automacao/releases/download/fila-instagram-facebook/36.mp4",
+        "sha256": "37b97888f631a54578752c36cfd75e32f5338f0870b5788957a5aa13b100f09e",
+        "tamanho_bytes": 6829057
+      },
+      "instagram": {
+        "legenda": "Siga @codigodavirada_br",
+        "status": "pendente"
+      },
+      "facebook": {
+        "legenda": "Siga @codigodavirada_br",
+        "status": "pendente"
+      }
+    },
+    {
+      "id": "reel-20260918-2100-da954a79de",
+      "data": "2026-09-18",
+      "horario": "21:00",
+      "status": "pendente",
+      "origem": {
+        "arquivo": "37.mp4",
+        "sha256": "da954a79de2e71e5552179089042a99c4176f168b7d5515ca9c469b64f80cdbf"
+      },
+      "midia": {
+        "asset": "37.mp4",
+        "url_publica": "https://github.com/cristianoladik/codigo-da-virada-automacao/releases/download/fila-instagram-facebook/37.mp4",
+        "sha256": "da954a79de2e71e5552179089042a99c4176f168b7d5515ca9c469b64f80cdbf",
+        "tamanho_bytes": 12447841
+      },
+      "instagram": {
+        "legenda": "Siga @codigodavirada_br",
+        "status": "pendente"
+      },
+      "facebook": {
+        "legenda": "Siga @codigodavirada_br",
+        "status": "pendente"
+      }
+    },
+    {
+      "id": "reel-20260919-0900-3c0e0503ff",
+      "data": "2026-09-19",
+      "horario": "09:00",
+      "status": "pendente",
+      "origem": {
+        "arquivo": "38.mp4",
+        "sha256": "3c0e0503ffa3908ec55b606af72db603a8895411531e66d352042b7d20a06c3d"
+      },
+      "midia": {
+        "asset": "38.mp4",
+        "url_publica": "https://github.com/cristianoladik/codigo-da-virada-automacao/releases/download/fila-instagram-facebook/38.mp4",
+        "sha256": "3c0e0503ffa3908ec55b606af72db603a8895411531e66d352042b7d20a06c3d",
+        "tamanho_bytes": 7498012
+      },
+      "instagram": {
+        "legenda": "Siga @codigodavirada_br",
+        "status": "pendente"
+      },
+      "facebook": {
+        "legenda": "Siga @codigodavirada_br",
+        "status": "pendente"
+      }
+    },
+    {
+      "id": "reel-20260919-2100-d40d9e9de4",
+      "data": "2026-09-19",
+      "horario": "21:00",
+      "status": "pendente",
+      "origem": {
+        "arquivo": "39.mp4",
+        "sha256": "d40d9e9de457a5999272e8e60632a047bde40b09e3006a0bbecdd3abe03782c5"
+      },
+      "midia": {
+        "asset": "39.mp4",
+        "url_publica": "https://github.com/cristianoladik/codigo-da-virada-automacao/releases/download/fila-instagram-facebook/39.mp4",
+        "sha256": "d40d9e9de457a5999272e8e60632a047bde40b09e3006a0bbecdd3abe03782c5",
+        "tamanho_bytes": 11971331
+      },
+      "instagram": {
+        "legenda": "Siga @codigodavirada_br",
+        "status": "pendente"
+      },
+      "facebook": {
+        "legenda": "Siga @codigodavirada_br",
+        "status": "pendente"
+      }
+    },
+    {
+      "id": "reel-20260920-0900-b2dccd4a96",
+      "data": "2026-09-20",
+      "horario": "09:00",
+      "status": "pendente",
+      "origem": {
+        "arquivo": "40.mp4",
+        "sha256": "b2dccd4a961ab4f554dce0ecbd86793cad5ba4fcbe98c2e424b053bc3f9c09f7"
+      },
+      "midia": {
+        "asset": "40.mp4",
+        "url_publica": "https://github.com/cristianoladik/codigo-da-virada-automacao/releases/download/fila-instagram-facebook/40.mp4",
+        "sha256": "b2dccd4a961ab4f554dce0ecbd86793cad5ba4fcbe98c2e424b053bc3f9c09f7",
+        "tamanho_bytes": 9784627
+      },
+      "instagram": {
+        "legenda": "Siga @codigodavirada_br",
+        "status": "pendente"
+      },
+      "facebook": {
+        "legenda": "Siga @codigodavirada_br",
+        "status": "pendente"
+      }
+    },
+    {
+      "id": "reel-20260920-2100-999d1eecb4",
+      "data": "2026-09-20",
+      "horario": "21:00",
+      "status": "pendente",
+      "origem": {
+        "arquivo": "41.mp4",
+        "sha256": "999d1eecb4222ab30c04e2cfa627055e7747534d916f3dec4f15cef1f2096358"
+      },
+      "midia": {
+        "asset": "41.mp4",
+        "url_publica": "https://github.com/cristianoladik/codigo-da-virada-automacao/releases/download/fila-instagram-facebook/41.mp4",
+        "sha256": "999d1eecb4222ab30c04e2cfa627055e7747534d916f3dec4f15cef1f2096358",
+        "tamanho_bytes": 8849684
+      },
+      "instagram": {
+        "legenda": "Siga @codigodavirada_br",
+        "status": "pendente"
+      },
+      "facebook": {
+        "legenda": "Siga @codigodavirada_br",
+        "status": "pendente"
+      }
+    },
+    {
+      "id": "reel-20260921-0900-cf7f93f2e7",
+      "data": "2026-09-21",
+      "horario": "09:00",
+      "status": "pendente",
+      "origem": {
+        "arquivo": "42.mp4",
+        "sha256": "cf7f93f2e766e0ddf38341eaf88a8d0ec53251236f7470a85d6e9953e1444a27"
+      },
+      "midia": {
+        "asset": "42.mp4",
+        "url_publica": "https://github.com/cristianoladik/codigo-da-virada-automacao/releases/download/fila-instagram-facebook/42.mp4",
+        "sha256": "cf7f93f2e766e0ddf38341eaf88a8d0ec53251236f7470a85d6e9953e1444a27",
+        "tamanho_bytes": 6703166
+      },
+      "instagram": {
+        "legenda": "Siga @codigodavirada_br",
+        "status": "pendente"
+      },
+      "facebook": {
+        "legenda": "Siga @codigodavirada_br",
+        "status": "pendente"
+      }
+    },
+    {
+      "id": "reel-20260921-2100-5cbb224623",
+      "data": "2026-09-21",
+      "horario": "21:00",
+      "status": "pendente",
+      "origem": {
+        "arquivo": "43.mp4",
+        "sha256": "5cbb2246231fbc1c68c214d10b5eea012bbf2a916773ceaaf8d836ea3e39d8ef"
+      },
+      "midia": {
+        "asset": "43.mp4",
+        "url_publica": "https://github.com/cristianoladik/codigo-da-virada-automacao/releases/download/fila-instagram-facebook/43.mp4",
+        "sha256": "5cbb2246231fbc1c68c214d10b5eea012bbf2a916773ceaaf8d836ea3e39d8ef",
+        "tamanho_bytes": 14649498
+      },
+      "instagram": {
+        "legenda": "Siga @codigodavirada_br",
+        "status": "pendente"
+      },
+      "facebook": {
+        "legenda": "Siga @codigodavirada_br",
+        "status": "pendente"
+      }
+    },
+    {
+      "id": "reel-20260922-0900-fdc9a7bed7",
+      "data": "2026-09-22",
+      "horario": "09:00",
+      "status": "pendente",
+      "origem": {
+        "arquivo": "44.mp4",
+        "sha256": "fdc9a7bed7c2dfafcd75223f192e53dacaf4b8f1b2450632987b265fc33e8ed3"
+      },
+      "midia": {
+        "asset": "44.mp4",
+        "url_publica": "https://github.com/cristianoladik/codigo-da-virada-automacao/releases/download/fila-instagram-facebook/44.mp4",
+        "sha256": "fdc9a7bed7c2dfafcd75223f192e53dacaf4b8f1b2450632987b265fc33e8ed3",
+        "tamanho_bytes": 7638948
+      },
+      "instagram": {
+        "legenda": "Siga @codigodavirada_br",
+        "status": "pendente"
+      },
+      "facebook": {
+        "legenda": "Siga @codigodavirada_br",
+        "status": "pendente"
+      }
+    },
+    {
+      "id": "reel-20260922-2100-389f14ca33",
+      "data": "2026-09-22",
+      "horario": "21:00",
+      "status": "pendente",
+      "origem": {
+        "arquivo": "45.mp4",
+        "sha256": "389f14ca335daabfa3853155f31e27dfaa44d545c59f6213b60575eb65544b42"
+      },
+      "midia": {
+        "asset": "45.mp4",
+        "url_publica": "https://github.com/cristianoladik/codigo-da-virada-automacao/releases/download/fila-instagram-facebook/45.mp4",
+        "sha256": "389f14ca335daabfa3853155f31e27dfaa44d545c59f6213b60575eb65544b42",
+        "tamanho_bytes": 12967167
+      },
+      "instagram": {
+        "legenda": "Siga @codigodavirada_br",
+        "status": "pendente"
+      },
+      "facebook": {
+        "legenda": "Siga @codigodavirada_br",
+        "status": "pendente"
+      }
+    },
+    {
+      "id": "reel-20260923-0900-d494e21928",
+      "data": "2026-09-23",
+      "horario": "09:00",
+      "status": "pendente",
+      "origem": {
+        "arquivo": "46.mp4",
+        "sha256": "d494e219281189b0c4c301f93d2ec4509ca4f4ec805e907e21500837c70411e9"
+      },
+      "midia": {
+        "asset": "46.mp4",
+        "url_publica": "https://github.com/cristianoladik/codigo-da-virada-automacao/releases/download/fila-instagram-facebook/46.mp4",
+        "sha256": "d494e219281189b0c4c301f93d2ec4509ca4f4ec805e907e21500837c70411e9",
+        "tamanho_bytes": 10072026
+      },
+      "instagram": {
+        "legenda": "Siga @codigodavirada_br",
+        "status": "pendente"
+      },
+      "facebook": {
+        "legenda": "Siga @codigodavirada_br",
+        "status": "pendente"
+      }
+    },
+    {
+      "id": "reel-20260923-2100-5bff4bbdc2",
+      "data": "2026-09-23",
+      "horario": "21:00",
+      "status": "pendente",
+      "origem": {
+        "arquivo": "47.mp4",
+        "sha256": "5bff4bbdc2888be7d0802d3ecbd1027c274300bfcf33301eb23f3970b29223ea"
+      },
+      "midia": {
+        "asset": "47.mp4",
+        "url_publica": "https://github.com/cristianoladik/codigo-da-virada-automacao/releases/download/fila-instagram-facebook/47.mp4",
+        "sha256": "5bff4bbdc2888be7d0802d3ecbd1027c274300bfcf33301eb23f3970b29223ea",
+        "tamanho_bytes": 8970584
+      },
+      "instagram": {
+        "legenda": "Siga @codigodavirada_br",
+        "status": "pendente"
+      },
+      "facebook": {
+        "legenda": "Siga @codigodavirada_br",
+        "status": "pendente"
+      }
+    },
+    {
+      "id": "reel-20260924-0900-1a59cd1f97",
+      "data": "2026-09-24",
+      "horario": "09:00",
+      "status": "pendente",
+      "origem": {
+        "arquivo": "48.mp4",
+        "sha256": "1a59cd1f97b993fc4f7b681dc753a4ffcebfcdc37790ce8d227498c9fbde6733"
+      },
+      "midia": {
+        "asset": "48.mp4",
+        "url_publica": "https://github.com/cristianoladik/codigo-da-virada-automacao/releases/download/fila-instagram-facebook/48.mp4",
+        "sha256": "1a59cd1f97b993fc4f7b681dc753a4ffcebfcdc37790ce8d227498c9fbde6733",
+        "tamanho_bytes": 14109320
+      },
+      "instagram": {
+        "legenda": "Siga @codigodavirada_br",
+        "status": "pendente"
+      },
+      "facebook": {
+        "legenda": "Siga @codigodavirada_br",
+        "status": "pendente"
+      }
+    },
+    {
+      "id": "reel-20260924-2100-cae7941b3a",
+      "data": "2026-09-24",
+      "horario": "21:00",
+      "status": "pendente",
+      "origem": {
+        "arquivo": "49.mp4",
+        "sha256": "cae7941b3a2c83a6a59951f0ff49fafbc03f87b0f5c6e61bd00b7b1a67685ec6"
+      },
+      "midia": {
+        "asset": "49.mp4",
+        "url_publica": "https://github.com/cristianoladik/codigo-da-virada-automacao/releases/download/fila-instagram-facebook/49.mp4",
+        "sha256": "cae7941b3a2c83a6a59951f0ff49fafbc03f87b0f5c6e61bd00b7b1a67685ec6",
+        "tamanho_bytes": 1746284
+      },
+      "instagram": {
+        "legenda": "Siga @codigodavirada_br",
+        "status": "pendente"
+      },
+      "facebook": {
+        "legenda": "Siga @codigodavirada_br",
+        "status": "pendente"
+      }
+    },
+    {
+      "id": "reel-20260925-0900-58134be606",
+      "data": "2026-09-25",
+      "horario": "09:00",
+      "status": "pendente",
+      "origem": {
+        "arquivo": "50.mp4",
+        "sha256": "58134be6068f6ac308bc0eefb1eb9003121480d95122f004082fd4115d012550"
+      },
+      "midia": {
+        "asset": "50.mp4",
+        "url_publica": "https://github.com/cristianoladik/codigo-da-virada-automacao/releases/download/fila-instagram-facebook/50.mp4",
+        "sha256": "58134be6068f6ac308bc0eefb1eb9003121480d95122f004082fd4115d012550",
+        "tamanho_bytes": 8326907
+      },
+      "instagram": {
+        "legenda": "Siga @codigodavirada_br",
+        "status": "pendente"
+      },
+      "facebook": {
+        "legenda": "Siga @codigodavirada_br",
+        "status": "pendente"
+      }
+    },
+    {
+      "id": "reel-20260925-2100-ec23f3e17a",
+      "data": "2026-09-25",
+      "horario": "21:00",
+      "status": "pendente",
+      "origem": {
+        "arquivo": "51.mp4",
+        "sha256": "ec23f3e17a5522db4920f5b7a8d5002a11a9d9f31fa45739c46482238b4ef371"
+      },
+      "midia": {
+        "asset": "51.mp4",
+        "url_publica": "https://github.com/cristianoladik/codigo-da-virada-automacao/releases/download/fila-instagram-facebook/51.mp4",
+        "sha256": "ec23f3e17a5522db4920f5b7a8d5002a11a9d9f31fa45739c46482238b4ef371",
+        "tamanho_bytes": 6039297
+      },
+      "instagram": {
+        "legenda": "Siga @codigodavirada_br",
+        "status": "pendente"
+      },
+      "facebook": {
+        "legenda": "Siga @codigodavirada_br",
+        "status": "pendente"
+      }
+    },
+    {
+      "id": "reel-20260926-0900-d53df3503b",
+      "data": "2026-09-26",
+      "horario": "09:00",
+      "status": "pendente",
+      "origem": {
+        "arquivo": "52.mp4",
+        "sha256": "d53df3503b24fc8d93528c1fee5ce2f5364444225007dca23994b5e4fffa3dbc"
+      },
+      "midia": {
+        "asset": "52.mp4",
+        "url_publica": "https://github.com/cristianoladik/codigo-da-virada-automacao/releases/download/fila-instagram-facebook/52.mp4",
+        "sha256": "d53df3503b24fc8d93528c1fee5ce2f5364444225007dca23994b5e4fffa3dbc",
+        "tamanho_bytes": 16563116
+      },
+      "instagram": {
+        "legenda": "Siga @codigodavirada_br",
+        "status": "pendente"
+      },
+      "facebook": {
+        "legenda": "Siga @codigodavirada_br",
+        "status": "pendente"
+      }
+    },
+    {
+      "id": "reel-20260926-2100-70d6cfe881",
+      "data": "2026-09-26",
+      "horario": "21:00",
+      "status": "pendente",
+      "origem": {
+        "arquivo": "53.mp4",
+        "sha256": "70d6cfe881997771a40e58d06e983042c85c04381467a9d1268553c193324685"
+      },
+      "midia": {
+        "asset": "53.mp4",
+        "url_publica": "https://github.com/cristianoladik/codigo-da-virada-automacao/releases/download/fila-instagram-facebook/53.mp4",
+        "sha256": "70d6cfe881997771a40e58d06e983042c85c04381467a9d1268553c193324685",
+        "tamanho_bytes": 9433749
+      },
+      "instagram": {
+        "legenda": "Siga @codigodavirada_br",
+        "status": "pendente"
+      },
+      "facebook": {
+        "legenda": "Siga @codigodavirada_br",
+        "status": "pendente"
+      }
+    },
+    {
+      "id": "reel-20260927-0900-1ac38b5af1",
+      "data": "2026-09-27",
+      "horario": "09:00",
+      "status": "pendente",
+      "origem": {
+        "arquivo": "54.mp4",
+        "sha256": "1ac38b5af128b5c22fcf85b59770d3c190cef5e4568d4f836fb9d019d2a8ad9f"
+      },
+      "midia": {
+        "asset": "54.mp4",
+        "url_publica": "https://github.com/cristianoladik/codigo-da-virada-automacao/releases/download/fila-instagram-facebook/54.mp4",
+        "sha256": "1ac38b5af128b5c22fcf85b59770d3c190cef5e4568d4f836fb9d019d2a8ad9f",
+        "tamanho_bytes": 8508776
+      },
+      "instagram": {
+        "legenda": "Siga @codigodavirada_br",
+        "status": "pendente"
+      },
+      "facebook": {
+        "legenda": "Siga @codigodavirada_br",
+        "status": "pendente"
+      }
+    },
+    {
+      "id": "reel-20260927-2100-035f66b242",
+      "data": "2026-09-27",
+      "horario": "21:00",
+      "status": "pendente",
+      "origem": {
+        "arquivo": "55.mp4",
+        "sha256": "035f66b242fe5392315a89b7e946bf463dfd53a8bc39e21752223e63d1228fcf"
+      },
+      "midia": {
+        "asset": "55.mp4",
+        "url_publica": "https://github.com/cristianoladik/codigo-da-virada-automacao/releases/download/fila-instagram-facebook/55.mp4",
+        "sha256": "035f66b242fe5392315a89b7e946bf463dfd53a8bc39e21752223e63d1228fcf",
+        "tamanho_bytes": 24773614
+      },
+      "instagram": {
+        "legenda": "Siga @codigodavirada_br",
+        "status": "pendente"
+      },
+      "facebook": {
+        "legenda": "Siga @codigodavirada_br",
+        "status": "pendente"
+      }
+    },
+    {
+      "id": "reel-20260928-0900-e0e69c98b1",
+      "data": "2026-09-28",
+      "horario": "09:00",
+      "status": "pendente",
+      "origem": {
+        "arquivo": "56.mp4",
+        "sha256": "e0e69c98b1b1bbf683bd0f857353982f684c77314349222b5ab4bcd2e9e64f5c"
+      },
+      "midia": {
+        "asset": "56.mp4",
+        "url_publica": "https://github.com/cristianoladik/codigo-da-virada-automacao/releases/download/fila-instagram-facebook/56.mp4",
+        "sha256": "e0e69c98b1b1bbf683bd0f857353982f684c77314349222b5ab4bcd2e9e64f5c",
+        "tamanho_bytes": 12977271
+      },
+      "instagram": {
+        "legenda": "Siga @codigodavirada_br",
+        "status": "pendente"
+      },
+      "facebook": {
+        "legenda": "Siga @codigodavirada_br",
+        "status": "pendente"
+      }
+    },
+    {
+      "id": "reel-20260928-2100-fc3680286a",
+      "data": "2026-09-28",
+      "horario": "21:00",
+      "status": "pendente",
+      "origem": {
+        "arquivo": "57.mp4",
+        "sha256": "fc3680286a4971713561ca46e3879c5ea26b591441958e136c60a0fedadee736"
+      },
+      "midia": {
+        "asset": "57.mp4",
+        "url_publica": "https://github.com/cristianoladik/codigo-da-virada-automacao/releases/download/fila-instagram-facebook/57.mp4",
+        "sha256": "fc3680286a4971713561ca46e3879c5ea26b591441958e136c60a0fedadee736",
+        "tamanho_bytes": 6767763
+      },
+      "instagram": {
+        "legenda": "Siga @codigodavirada_br",
+        "status": "pendente"
+      },
+      "facebook": {
+        "legenda": "Siga @codigodavirada_br",
+        "status": "pendente"
+      }
+    },
+    {
+      "id": "reel-20260929-0900-eee6d6fb38",
+      "data": "2026-09-29",
+      "horario": "09:00",
+      "status": "pendente",
+      "origem": {
+        "arquivo": "58.mp4",
+        "sha256": "eee6d6fb38c7cd626cc51f61f0998d5c45ea4f409c159a28e50a3139346ca863"
+      },
+      "midia": {
+        "asset": "58.mp4",
+        "url_publica": "https://github.com/cristianoladik/codigo-da-virada-automacao/releases/download/fila-instagram-facebook/58.mp4",
+        "sha256": "eee6d6fb38c7cd626cc51f61f0998d5c45ea4f409c159a28e50a3139346ca863",
+        "tamanho_bytes": 7429482
+      },
+      "instagram": {
+        "legenda": "Siga @codigodavirada_br",
+        "status": "pendente"
+      },
+      "facebook": {
+        "legenda": "Siga @codigodavirada_br",
+        "status": "pendente"
+      }
+    },
+    {
+      "id": "reel-20260929-2100-cd3444facf",
+      "data": "2026-09-29",
+      "horario": "21:00",
+      "status": "pendente",
+      "origem": {
+        "arquivo": "59.mp4",
+        "sha256": "cd3444facfbed6afd232ee3a0c85d06ddc1764f0782df9efee5b84ab45e371b5"
+      },
+      "midia": {
+        "asset": "59.mp4",
+        "url_publica": "https://github.com/cristianoladik/codigo-da-virada-automacao/releases/download/fila-instagram-facebook/59.mp4",
+        "sha256": "cd3444facfbed6afd232ee3a0c85d06ddc1764f0782df9efee5b84ab45e371b5",
+        "tamanho_bytes": 8096622
+      },
+      "instagram": {
+        "legenda": "Siga @codigodavirada_br",
+        "status": "pendente"
+      },
+      "facebook": {
+        "legenda": "Siga @codigodavirada_br",
+        "status": "pendente"
+      }
+    },
+    {
+      "id": "reel-20260930-0900-b111b3c5f0",
+      "data": "2026-09-30",
+      "horario": "09:00",
+      "status": "pendente",
+      "origem": {
+        "arquivo": "60.mp4",
+        "sha256": "b111b3c5f0856d027e1e91f1a94fc7240884c389ead84c336072421e5326f5c8"
+      },
+      "midia": {
+        "asset": "60.mp4",
+        "url_publica": "https://github.com/cristianoladik/codigo-da-virada-automacao/releases/download/fila-instagram-facebook/60.mp4",
+        "sha256": "b111b3c5f0856d027e1e91f1a94fc7240884c389ead84c336072421e5326f5c8",
+        "tamanho_bytes": 17330678
+      },
+      "instagram": {
+        "legenda": "Siga @codigodavirada_br",
+        "status": "pendente"
+      },
+      "facebook": {
+        "legenda": "Siga @codigodavirada_br",
+        "status": "pendente"
+      }
+    },
+    {
+      "id": "reel-20260930-2100-4a546d3529",
+      "data": "2026-09-30",
+      "horario": "21:00",
+      "status": "pendente",
+      "origem": {
+        "arquivo": "61.mp4",
+        "sha256": "4a546d3529f68387d1681b83cbbf4333102aa51969ae11419755d3ad7383f945"
+      },
+      "midia": {
+        "asset": "61.mp4",
+        "url_publica": "https://github.com/cristianoladik/codigo-da-virada-automacao/releases/download/fila-instagram-facebook/61.mp4",
+        "sha256": "4a546d3529f68387d1681b83cbbf4333102aa51969ae11419755d3ad7383f945",
+        "tamanho_bytes": 6291742
+      },
+      "instagram": {
+        "legenda": "Siga @codigodavirada_br",
+        "status": "pendente"
+      },
+      "facebook": {
+        "legenda": "Siga @codigodavirada_br",
+        "status": "pendente"
+      }
+    },
+    {
+      "id": "reel-20261001-0900-d8112693d3",
+      "data": "2026-10-01",
+      "horario": "09:00",
+      "status": "pendente",
+      "origem": {
+        "arquivo": "62.mp4",
+        "sha256": "d8112693d3e332e769ed2c6ac8eedb8e34a7361410c8ba42e1527b390cec31dd"
+      },
+      "midia": {
+        "asset": "62.mp4",
+        "url_publica": "https://github.com/cristianoladik/codigo-da-virada-automacao/releases/download/fila-instagram-facebook/62.mp4",
+        "sha256": "d8112693d3e332e769ed2c6ac8eedb8e34a7361410c8ba42e1527b390cec31dd",
+        "tamanho_bytes": 16924265
+      },
+      "instagram": {
+        "legenda": "Siga @codigodavirada_br",
+        "status": "pendente"
+      },
+      "facebook": {
+        "legenda": "Siga @codigodavirada_br",
+        "status": "pendente"
+      }
+    },
+    {
+      "id": "reel-20261001-2100-2ff9f34f90",
+      "data": "2026-10-01",
+      "horario": "21:00",
+      "status": "pendente",
+      "origem": {
+        "arquivo": "63.mp4",
+        "sha256": "2ff9f34f905a7a251723b0e2c91a9b606916d629ca26472a3f50db57a6483cfa"
+      },
+      "midia": {
+        "asset": "63.mp4",
+        "url_publica": "https://github.com/cristianoladik/codigo-da-virada-automacao/releases/download/fila-instagram-facebook/63.mp4",
+        "sha256": "2ff9f34f905a7a251723b0e2c91a9b606916d629ca26472a3f50db57a6483cfa",
+        "tamanho_bytes": 12359992
+      },
+      "instagram": {
+        "legenda": "Siga @codigodavirada_br",
+        "status": "pendente"
+      },
+      "facebook": {
+        "legenda": "Siga @codigodavirada_br",
+        "status": "pendente"
+      }
+    },
+    {
+      "id": "reel-20261002-0900-e6e464656d",
+      "data": "2026-10-02",
+      "horario": "09:00",
+      "status": "pendente",
+      "origem": {
+        "arquivo": "64.mp4",
+        "sha256": "e6e464656d50978c1889f1723d4b2e1f8d20956045d4723c48e41a271f332842"
+      },
+      "midia": {
+        "asset": "64.mp4",
+        "url_publica": "https://github.com/cristianoladik/codigo-da-virada-automacao/releases/download/fila-instagram-facebook/64.mp4",
+        "sha256": "e6e464656d50978c1889f1723d4b2e1f8d20956045d4723c48e41a271f332842",
+        "tamanho_bytes": 10846960
+      },
+      "instagram": {
+        "legenda": "Siga @codigodavirada_br",
+        "status": "pendente"
+      },
+      "facebook": {
+        "legenda": "Siga @codigodavirada_br",
+        "status": "pendente"
+      }
+    },
+    {
+      "id": "reel-20261002-2100-41c5aa62c0",
+      "data": "2026-10-02",
+      "horario": "21:00",
+      "status": "pendente",
+      "origem": {
+        "arquivo": "66.mp4",
+        "sha256": "41c5aa62c0eaa4b331d05d60a6677783f1a3e02273a5f874935a415cdaaf880d"
+      },
+      "midia": {
+        "asset": "66.mp4",
+        "url_publica": "https://github.com/cristianoladik/codigo-da-virada-automacao/releases/download/fila-instagram-facebook/66.mp4",
+        "sha256": "41c5aa62c0eaa4b331d05d60a6677783f1a3e02273a5f874935a415cdaaf880d",
+        "tamanho_bytes": 14016254
+      },
+      "instagram": {
+        "legenda": "Siga @codigodavirada_br",
+        "status": "pendente"
+      },
+      "facebook": {
+        "legenda": "Siga @codigodavirada_br",
+        "status": "pendente"
+      }
+    },
+    {
+      "id": "reel-20261003-0900-4aca280db6",
+      "data": "2026-10-03",
+      "horario": "09:00",
+      "status": "pendente",
+      "origem": {
+        "arquivo": "67.mp4",
+        "sha256": "4aca280db6ebe963fb62bcfc0d79b9b8ad4d218ee180592f16de5cb2ba00e545"
+      },
+      "midia": {
+        "asset": "67.mp4",
+        "url_publica": "https://github.com/cristianoladik/codigo-da-virada-automacao/releases/download/fila-instagram-facebook/67.mp4",
+        "sha256": "4aca280db6ebe963fb62bcfc0d79b9b8ad4d218ee180592f16de5cb2ba00e545",
+        "tamanho_bytes": 8514608
+      },
+      "instagram": {
+        "legenda": "Siga @codigodavirada_br",
+        "status": "pendente"
+      },
+      "facebook": {
+        "legenda": "Siga @codigodavirada_br",
+        "status": "pendente"
+      }
+    },
+    {
+      "id": "reel-20261003-2100-bb5774476f",
+      "data": "2026-10-03",
+      "horario": "21:00",
+      "status": "pendente",
+      "origem": {
+        "arquivo": "68.mp4",
+        "sha256": "bb5774476f99d7f1c032494d0d3fe24de52890a64dc0cce650f1323438529cab"
+      },
+      "midia": {
+        "asset": "68.mp4",
+        "url_publica": "https://github.com/cristianoladik/codigo-da-virada-automacao/releases/download/fila-instagram-facebook/68.mp4",
+        "sha256": "bb5774476f99d7f1c032494d0d3fe24de52890a64dc0cce650f1323438529cab",
+        "tamanho_bytes": 10627360
+      },
+      "instagram": {
+        "legenda": "Siga @codigodavirada_br",
+        "status": "pendente"
+      },
+      "facebook": {
+        "legenda": "Siga @codigodavirada_br",
+        "status": "pendente"
+      }
+    },
+    {
+      "id": "reel-20261004-0900-5bb17aeda6",
+      "data": "2026-10-04",
+      "horario": "09:00",
+      "status": "pendente",
+      "origem": {
+        "arquivo": "69.mp4",
+        "sha256": "5bb17aeda686887f4736200ab1bfbb115547978950d9ac5dd61e553c64d56b40"
+      },
+      "midia": {
+        "asset": "69.mp4",
+        "url_publica": "https://github.com/cristianoladik/codigo-da-virada-automacao/releases/download/fila-instagram-facebook/69.mp4",
+        "sha256": "5bb17aeda686887f4736200ab1bfbb115547978950d9ac5dd61e553c64d56b40",
+        "tamanho_bytes": 6706442
+      },
+      "instagram": {
+        "legenda": "Siga @codigodavirada_br",
+        "status": "pendente"
+      },
+      "facebook": {
+        "legenda": "Siga @codigodavirada_br",
+        "status": "pendente"
+      }
+    },
+    {
+      "id": "reel-20261004-2100-c47fc5df72",
+      "data": "2026-10-04",
+      "horario": "21:00",
+      "status": "pendente",
+      "origem": {
+        "arquivo": "70.mp4",
+        "sha256": "c47fc5df72f1a2a0cd5edc38aefcbdba6023bc510215d8459a4326084500f0dc"
+      },
+      "midia": {
+        "asset": "70.mp4",
+        "url_publica": "https://github.com/cristianoladik/codigo-da-virada-automacao/releases/download/fila-instagram-facebook/70.mp4",
+        "sha256": "c47fc5df72f1a2a0cd5edc38aefcbdba6023bc510215d8459a4326084500f0dc",
+        "tamanho_bytes": 4807774
+      },
+      "instagram": {
+        "legenda": "Siga @codigodavirada_br",
+        "status": "pendente"
+      },
+      "facebook": {
+        "legenda": "Siga @codigodavirada_br",
+        "status": "pendente"
+      }
+    },
+    {
+      "id": "reel-20261005-0900-9d82019a1e",
+      "data": "2026-10-05",
+      "horario": "09:00",
+      "status": "pendente",
+      "origem": {
+        "arquivo": "71.mp4",
+        "sha256": "9d82019a1e5f9dec79fdeb9d547fecf5b34ee9dcd91663fd9cec0cff6b24a441"
+      },
+      "midia": {
+        "asset": "71.mp4",
+        "url_publica": "https://github.com/cristianoladik/codigo-da-virada-automacao/releases/download/fila-instagram-facebook/71.mp4",
+        "sha256": "9d82019a1e5f9dec79fdeb9d547fecf5b34ee9dcd91663fd9cec0cff6b24a441",
+        "tamanho_bytes": 14766180
+      },
+      "instagram": {
+        "legenda": "Siga @codigodavirada_br",
+        "status": "pendente"
+      },
+      "facebook": {
+        "legenda": "Siga @codigodavirada_br",
+        "status": "pendente"
+      }
+    },
+    {
+      "id": "reel-20261005-2100-a69a885da6",
+      "data": "2026-10-05",
+      "horario": "21:00",
+      "status": "pendente",
+      "origem": {
+        "arquivo": "72.mp4",
+        "sha256": "a69a885da6c3189d1f1b8dbe565ce42062b913f1a099a29695e38341a8761677"
+      },
+      "midia": {
+        "asset": "72.mp4",
+        "url_publica": "https://github.com/cristianoladik/codigo-da-virada-automacao/releases/download/fila-instagram-facebook/72.mp4",
+        "sha256": "a69a885da6c3189d1f1b8dbe565ce42062b913f1a099a29695e38341a8761677",
+        "tamanho_bytes": 4935923
+      },
+      "instagram": {
+        "legenda": "Siga @codigodavirada_br",
+        "status": "pendente"
+      },
+      "facebook": {
+        "legenda": "Siga @codigodavirada_br",
+        "status": "pendente"
+      }
+    },
+    {
+      "id": "reel-20261006-0900-49e21557f1",
+      "data": "2026-10-06",
+      "horario": "09:00",
+      "status": "pendente",
+      "origem": {
+        "arquivo": "73.mp4",
+        "sha256": "49e21557f109f823930f32c501af9afbe6a3e5ccfe731367567cbcbfd4127927"
+      },
+      "midia": {
+        "asset": "73.mp4",
+        "url_publica": "https://github.com/cristianoladik/codigo-da-virada-automacao/releases/download/fila-instagram-facebook/73.mp4",
+        "sha256": "49e21557f109f823930f32c501af9afbe6a3e5ccfe731367567cbcbfd4127927",
+        "tamanho_bytes": 5783436
+      },
+      "instagram": {
+        "legenda": "Siga @codigodavirada_br",
+        "status": "pendente"
+      },
+      "facebook": {
+        "legenda": "Siga @codigodavirada_br",
+        "status": "pendente"
+      }
+    },
+    {
+      "id": "reel-20261006-2100-87164c1900",
+      "data": "2026-10-06",
+      "horario": "21:00",
+      "status": "pendente",
+      "origem": {
+        "arquivo": "74.mp4",
+        "sha256": "87164c1900dd8ea7160b2cdec498cd3ef109fcb99d20e241d6f264b108c433be"
+      },
+      "midia": {
+        "asset": "74.mp4",
+        "url_publica": "https://github.com/cristianoladik/codigo-da-virada-automacao/releases/download/fila-instagram-facebook/74.mp4",
+        "sha256": "87164c1900dd8ea7160b2cdec498cd3ef109fcb99d20e241d6f264b108c433be",
+        "tamanho_bytes": 4563600
+      },
+      "instagram": {
+        "legenda": "Siga @codigodavirada_br",
+        "status": "pendente"
+      },
+      "facebook": {
+        "legenda": "Siga @codigodavirada_br",
+        "status": "pendente"
+      }
+    },
+    {
+      "id": "reel-20261007-0900-b1b486172a",
+      "data": "2026-10-07",
+      "horario": "09:00",
+      "status": "pendente",
+      "origem": {
+        "arquivo": "75.mp4",
+        "sha256": "b1b486172a55e699f92cd4bfeb0db5c1eb4502f7e09c7fae8f4026b6a098973d"
+      },
+      "midia": {
+        "asset": "75.mp4",
+        "url_publica": "https://github.com/cristianoladik/codigo-da-virada-automacao/releases/download/fila-instagram-facebook/75.mp4",
+        "sha256": "b1b486172a55e699f92cd4bfeb0db5c1eb4502f7e09c7fae8f4026b6a098973d",
+        "tamanho_bytes": 6404828
+      },
+      "instagram": {
+        "legenda": "Siga @codigodavirada_br",
+        "status": "pendente"
+      },
+      "facebook": {
+        "legenda": "Siga @codigodavirada_br",
+        "status": "pendente"
+      }
+    },
+    {
+      "id": "reel-20261007-2100-905ed06e93",
+      "data": "2026-10-07",
+      "horario": "21:00",
+      "status": "pendente",
+      "origem": {
+        "arquivo": "76.mp4",
+        "sha256": "905ed06e939f846f6e5de9f5bdad1e07562b9c63c4e8d4bf277187608816b4ae"
+      },
+      "midia": {
+        "asset": "76.mp4",
+        "url_publica": "https://github.com/cristianoladik/codigo-da-virada-automacao/releases/download/fila-instagram-facebook/76.mp4",
+        "sha256": "905ed06e939f846f6e5de9f5bdad1e07562b9c63c4e8d4bf277187608816b4ae",
+        "tamanho_bytes": 18495580
+      },
+      "instagram": {
+        "legenda": "Siga @codigodavirada_br",
+        "status": "pendente"
+      },
+      "facebook": {
+        "legenda": "Siga @codigodavirada_br",
+        "status": "pendente"
+      }
+    },
+    {
+      "id": "reel-20261008-0900-099e6591ff",
+      "data": "2026-10-08",
+      "horario": "09:00",
+      "status": "pendente",
+      "origem": {
+        "arquivo": "77.mp4",
+        "sha256": "099e6591ffd5d5aa9804d63b026a589fd67cafb51c287efd993d047930a805f3"
+      },
+      "midia": {
+        "asset": "77.mp4",
+        "url_publica": "https://github.com/cristianoladik/codigo-da-virada-automacao/releases/download/fila-instagram-facebook/77.mp4",
+        "sha256": "099e6591ffd5d5aa9804d63b026a589fd67cafb51c287efd993d047930a805f3",
+        "tamanho_bytes": 5957877
+      },
+      "instagram": {
+        "legenda": "Siga @codigodavirada_br",
+        "status": "pendente"
+      },
+      "facebook": {
+        "legenda": "Siga @codigodavirada_br",
+        "status": "pendente"
+      }
+    },
+    {
+      "id": "reel-20261008-2100-4c66b79c31",
+      "data": "2026-10-08",
+      "horario": "21:00",
+      "status": "pendente",
+      "origem": {
+        "arquivo": "78.mp4",
+        "sha256": "4c66b79c31235d9cf18fa6fe3d0598f3a410810c82154bd9482cedbf2dbe8ce4"
+      },
+      "midia": {
+        "asset": "78.mp4",
+        "url_publica": "https://github.com/cristianoladik/codigo-da-virada-automacao/releases/download/fila-instagram-facebook/78.mp4",
+        "sha256": "4c66b79c31235d9cf18fa6fe3d0598f3a410810c82154bd9482cedbf2dbe8ce4",
+        "tamanho_bytes": 5731903
+      },
+      "instagram": {
+        "legenda": "Siga @codigodavirada_br",
+        "status": "pendente"
+      },
+      "facebook": {
+        "legenda": "Siga @codigodavirada_br",
+        "status": "pendente"
+      }
+    },
+    {
+      "id": "reel-20261009-0900-ee972aa06b",
+      "data": "2026-10-09",
+      "horario": "09:00",
+      "status": "pendente",
+      "origem": {
+        "arquivo": "79.mp4",
+        "sha256": "ee972aa06b520d55b55e1477a9bbb50158bad8714403537f2a4690127c08aa5f"
+      },
+      "midia": {
+        "asset": "79.mp4",
+        "url_publica": "https://github.com/cristianoladik/codigo-da-virada-automacao/releases/download/fila-instagram-facebook/79.mp4",
+        "sha256": "ee972aa06b520d55b55e1477a9bbb50158bad8714403537f2a4690127c08aa5f",
+        "tamanho_bytes": 6449586
+      },
+      "instagram": {
+        "legenda": "Siga @codigodavirada_br",
+        "status": "pendente"
+      },
+      "facebook": {
+        "legenda": "Siga @codigodavirada_br",
+        "status": "pendente"
+      }
+    },
+    {
+      "id": "reel-20261009-2100-d97e5bdaf1",
+      "data": "2026-10-09",
+      "horario": "21:00",
+      "status": "pendente",
+      "origem": {
+        "arquivo": "80.mp4",
+        "sha256": "d97e5bdaf17c1d9a276b2d06011d94645f5ccb19ee683b8a7ddf8174b38ffcfb"
+      },
+      "midia": {
+        "asset": "80.mp4",
+        "url_publica": "https://github.com/cristianoladik/codigo-da-virada-automacao/releases/download/fila-instagram-facebook/80.mp4",
+        "sha256": "d97e5bdaf17c1d9a276b2d06011d94645f5ccb19ee683b8a7ddf8174b38ffcfb",
+        "tamanho_bytes": 15242460
+      },
+      "instagram": {
+        "legenda": "Siga @codigodavirada_br",
+        "status": "pendente"
+      },
+      "facebook": {
+        "legenda": "Siga @codigodavirada_br",
+        "status": "pendente"
+      }
+    },
+    {
+      "id": "reel-20261010-0900-8e5cbbe99a",
+      "data": "2026-10-10",
+      "horario": "09:00",
+      "status": "pendente",
+      "origem": {
+        "arquivo": "81.mp4",
+        "sha256": "8e5cbbe99a76209d45035c2360f7b79f6452aa6fefa4b59d99a0c5b45f6f5458"
+      },
+      "midia": {
+        "asset": "81.mp4",
+        "url_publica": "https://github.com/cristianoladik/codigo-da-virada-automacao/releases/download/fila-instagram-facebook/81.mp4",
+        "sha256": "8e5cbbe99a76209d45035c2360f7b79f6452aa6fefa4b59d99a0c5b45f6f5458",
+        "tamanho_bytes": 16704994
+      },
+      "instagram": {
+        "legenda": "Siga @codigodavirada_br",
+        "status": "pendente"
+      },
+      "facebook": {
+        "legenda": "Siga @codigodavirada_br",
+        "status": "pendente"
+      }
+    },
+    {
+      "id": "reel-20261010-2100-7716a21569",
+      "data": "2026-10-10",
+      "horario": "21:00",
+      "status": "pendente",
+      "origem": {
+        "arquivo": "82.mp4",
+        "sha256": "7716a21569695d9a5d81d82202d07958d31220fec9d5e0332bafd554e65a9cae"
+      },
+      "midia": {
+        "asset": "82.mp4",
+        "url_publica": "https://github.com/cristianoladik/codigo-da-virada-automacao/releases/download/fila-instagram-facebook/82.mp4",
+        "sha256": "7716a21569695d9a5d81d82202d07958d31220fec9d5e0332bafd554e65a9cae",
+        "tamanho_bytes": 14579881
+      },
+      "instagram": {
+        "legenda": "Siga @codigodavirada_br",
+        "status": "pendente"
+      },
+      "facebook": {
+        "legenda": "Siga @codigodavirada_br",
+        "status": "pendente"
+      }
+    },
+    {
+      "id": "reel-20261011-0900-4f88eab08b",
+      "data": "2026-10-11",
+      "horario": "09:00",
+      "status": "pendente",
+      "origem": {
+        "arquivo": "83.mp4",
+        "sha256": "4f88eab08ba99c2df751cbfeb46f7953a2ea2c47db393ff35210d6d525557620"
+      },
+      "midia": {
+        "asset": "83.mp4",
+        "url_publica": "https://github.com/cristianoladik/codigo-da-virada-automacao/releases/download/fila-instagram-facebook/83.mp4",
+        "sha256": "4f88eab08ba99c2df751cbfeb46f7953a2ea2c47db393ff35210d6d525557620",
+        "tamanho_bytes": 9965108
+      },
+      "instagram": {
+        "legenda": "Siga @codigodavirada_br",
+        "status": "pendente"
+      },
+      "facebook": {
+        "legenda": "Siga @codigodavirada_br",
+        "status": "pendente"
+      }
+    },
+    {
+      "id": "reel-20261011-2100-0565df8940",
+      "data": "2026-10-11",
+      "horario": "21:00",
+      "status": "pendente",
+      "origem": {
+        "arquivo": "84.mp4",
+        "sha256": "0565df8940d42051f1163e47b24fa3d78e02104fd570634e3577c5e6da90cb97"
+      },
+      "midia": {
+        "asset": "84.mp4",
+        "url_publica": "https://github.com/cristianoladik/codigo-da-virada-automacao/releases/download/fila-instagram-facebook/84.mp4",
+        "sha256": "0565df8940d42051f1163e47b24fa3d78e02104fd570634e3577c5e6da90cb97",
+        "tamanho_bytes": 7314218
+      },
+      "instagram": {
+        "legenda": "Siga @codigodavirada_br",
+        "status": "pendente"
+      },
+      "facebook": {
+        "legenda": "Siga @codigodavirada_br",
+        "status": "pendente"
+      }
+    },
+    {
+      "id": "reel-20261012-0900-32e48cc79d",
+      "data": "2026-10-12",
+      "horario": "09:00",
+      "status": "pendente",
+      "origem": {
+        "arquivo": "85.mp4",
+        "sha256": "32e48cc79def03d99e2f922d888b36bb901837cd614814ac66e2acfecb90aeb3"
+      },
+      "midia": {
+        "asset": "85.mp4",
+        "url_publica": "https://github.com/cristianoladik/codigo-da-virada-automacao/releases/download/fila-instagram-facebook/85.mp4",
+        "sha256": "32e48cc79def03d99e2f922d888b36bb901837cd614814ac66e2acfecb90aeb3",
+        "tamanho_bytes": 5376498
+      },
+      "instagram": {
+        "legenda": "Siga @codigodavirada_br",
+        "status": "pendente"
+      },
+      "facebook": {
+        "legenda": "Siga @codigodavirada_br",
+        "status": "pendente"
+      }
+    },
+    {
+      "id": "reel-20261012-2100-48080123a2",
+      "data": "2026-10-12",
+      "horario": "21:00",
+      "status": "pendente",
+      "origem": {
+        "arquivo": "86.mp4",
+        "sha256": "48080123a2f79fd37fa4235b0a1e1a3fe35bd4092aaefb33814421bc66748785"
+      },
+      "midia": {
+        "asset": "86.mp4",
+        "url_publica": "https://github.com/cristianoladik/codigo-da-virada-automacao/releases/download/fila-instagram-facebook/86.mp4",
+        "sha256": "48080123a2f79fd37fa4235b0a1e1a3fe35bd4092aaefb33814421bc66748785",
+        "tamanho_bytes": 12476150
+      },
+      "instagram": {
+        "legenda": "Siga @codigodavirada_br",
+        "status": "pendente"
+      },
+      "facebook": {
+        "legenda": "Siga @codigodavirada_br",
+        "status": "pendente"
+      }
+    },
+    {
+      "id": "reel-20261013-0900-7cc99f067c",
+      "data": "2026-10-13",
+      "horario": "09:00",
+      "status": "pendente",
+      "origem": {
+        "arquivo": "87.mp4",
+        "sha256": "7cc99f067cbd2cf68c2a51911eb38946f017fdfd8420f896fd3466f540620ce6"
+      },
+      "midia": {
+        "asset": "87.mp4",
+        "url_publica": "https://github.com/cristianoladik/codigo-da-virada-automacao/releases/download/fila-instagram-facebook/87.mp4",
+        "sha256": "7cc99f067cbd2cf68c2a51911eb38946f017fdfd8420f896fd3466f540620ce6",
+        "tamanho_bytes": 11883404
+      },
+      "instagram": {
+        "legenda": "Siga @codigodavirada_br",
+        "status": "pendente"
+      },
+      "facebook": {
+        "legenda": "Siga @codigodavirada_br",
+        "status": "pendente"
+      }
+    },
+    {
+      "id": "reel-20261013-2100-7387acc817",
+      "data": "2026-10-13",
+      "horario": "21:00",
+      "status": "pendente",
+      "origem": {
+        "arquivo": "88.mp4",
+        "sha256": "7387acc817015321b4b3eb433784248eb601a67b7cfcdeff52f3f5dcb132c86c"
+      },
+      "midia": {
+        "asset": "88.mp4",
+        "url_publica": "https://github.com/cristianoladik/codigo-da-virada-automacao/releases/download/fila-instagram-facebook/88.mp4",
+        "sha256": "7387acc817015321b4b3eb433784248eb601a67b7cfcdeff52f3f5dcb132c86c",
+        "tamanho_bytes": 5621075
+      },
+      "instagram": {
+        "legenda": "Siga @codigodavirada_br",
+        "status": "pendente"
+      },
+      "facebook": {
+        "legenda": "Siga @codigodavirada_br",
+        "status": "pendente"
+      }
+    },
+    {
+      "id": "reel-20261014-0900-9be0f12aec",
+      "data": "2026-10-14",
+      "horario": "09:00",
+      "status": "pendente",
+      "origem": {
+        "arquivo": "89.mp4",
+        "sha256": "9be0f12aec3d0d1830f73b950d54a52da6289b713445646cb5a4baff582807a0"
+      },
+      "midia": {
+        "asset": "89.mp4",
+        "url_publica": "https://github.com/cristianoladik/codigo-da-virada-automacao/releases/download/fila-instagram-facebook/89.mp4",
+        "sha256": "9be0f12aec3d0d1830f73b950d54a52da6289b713445646cb5a4baff582807a0",
+        "tamanho_bytes": 12008186
+      },
+      "instagram": {
+        "legenda": "Siga @codigodavirada_br",
+        "status": "pendente"
+      },
+      "facebook": {
+        "legenda": "Siga @codigodavirada_br",
+        "status": "pendente"
+      }
+    },
+    {
+      "id": "reel-20261014-2100-cebb4a4eff",
+      "data": "2026-10-14",
+      "horario": "21:00",
+      "status": "pendente",
+      "origem": {
+        "arquivo": "90.mp4",
+        "sha256": "cebb4a4eff56067a4e9ccb2ed7c954919b1f3205f75220fde1d01ea1a6e637b3"
+      },
+      "midia": {
+        "asset": "90.mp4",
+        "url_publica": "https://github.com/cristianoladik/codigo-da-virada-automacao/releases/download/fila-instagram-facebook/90.mp4",
+        "sha256": "cebb4a4eff56067a4e9ccb2ed7c954919b1f3205f75220fde1d01ea1a6e637b3",
+        "tamanho_bytes": 9011156
+      },
+      "instagram": {
+        "legenda": "Siga @codigodavirada_br",
+        "status": "pendente"
+      },
+      "facebook": {
+        "legenda": "Siga @codigodavirada_br",
+        "status": "pendente"
+      }
+    },
+    {
+      "id": "reel-20261015-0900-81f15da476",
+      "data": "2026-10-15",
+      "horario": "09:00",
+      "status": "pendente",
+      "origem": {
+        "arquivo": "91.mp4",
+        "sha256": "81f15da4768c1d522e6aad9146fad477eb79f5dd46c4ff50debb1ffcc1aeb5d7"
+      },
+      "midia": {
+        "asset": "91.mp4",
+        "url_publica": "https://github.com/cristianoladik/codigo-da-virada-automacao/releases/download/fila-instagram-facebook/91.mp4",
+        "sha256": "81f15da4768c1d522e6aad9146fad477eb79f5dd46c4ff50debb1ffcc1aeb5d7",
+        "tamanho_bytes": 7267756
+      },
+      "instagram": {
+        "legenda": "Siga @codigodavirada_br",
+        "status": "pendente"
+      },
+      "facebook": {
+        "legenda": "Siga @codigodavirada_br",
+        "status": "pendente"
+      }
+    },
+    {
+      "id": "reel-20261015-2100-3131f5f2fe",
+      "data": "2026-10-15",
+      "horario": "21:00",
+      "status": "pendente",
+      "origem": {
+        "arquivo": "92.mp4",
+        "sha256": "3131f5f2fe7fe12099fbb2edb99bed1835b4e394d729561fd6eded4a63561678"
+      },
+      "midia": {
+        "asset": "92.mp4",
+        "url_publica": "https://github.com/cristianoladik/codigo-da-virada-automacao/releases/download/fila-instagram-facebook/92.mp4",
+        "sha256": "3131f5f2fe7fe12099fbb2edb99bed1835b4e394d729561fd6eded4a63561678",
+        "tamanho_bytes": 12791115
+      },
+      "instagram": {
+        "legenda": "Siga @codigodavirada_br",
+        "status": "pendente"
+      },
+      "facebook": {
+        "legenda": "Siga @codigodavirada_br",
+        "status": "pendente"
+      }
+    },
+    {
+      "id": "reel-20261016-0900-a454127f1e",
+      "data": "2026-10-16",
+      "horario": "09:00",
+      "status": "pendente",
+      "origem": {
+        "arquivo": "93.mp4",
+        "sha256": "a454127f1e91b83118c41ab9e4be784ae51367f2ce459cfdf0941c992bb94864"
+      },
+      "midia": {
+        "asset": "93.mp4",
+        "url_publica": "https://github.com/cristianoladik/codigo-da-virada-automacao/releases/download/fila-instagram-facebook/93.mp4",
+        "sha256": "a454127f1e91b83118c41ab9e4be784ae51367f2ce459cfdf0941c992bb94864",
+        "tamanho_bytes": 13112710
+      },
+      "instagram": {
+        "legenda": "Siga @codigodavirada_br",
+        "status": "pendente"
+      },
+      "facebook": {
+        "legenda": "Siga @codigodavirada_br",
+        "status": "pendente"
+      }
+    },
+    {
+      "id": "reel-20261016-2100-8e00e902a7",
+      "data": "2026-10-16",
+      "horario": "21:00",
+      "status": "pendente",
+      "origem": {
+        "arquivo": "94.mp4",
+        "sha256": "8e00e902a74f881b0df3f3c69e74c8acfabc97b6284e2b35f2a4de38c4047867"
+      },
+      "midia": {
+        "asset": "94.mp4",
+        "url_publica": "https://github.com/cristianoladik/codigo-da-virada-automacao/releases/download/fila-instagram-facebook/94.mp4",
+        "sha256": "8e00e902a74f881b0df3f3c69e74c8acfabc97b6284e2b35f2a4de38c4047867",
+        "tamanho_bytes": 16969097
+      },
+      "instagram": {
+        "legenda": "Siga @codigodavirada_br",
+        "status": "pendente"
+      },
+      "facebook": {
+        "legenda": "Siga @codigodavirada_br",
+        "status": "pendente"
+      }
+    },
+    {
+      "id": "reel-20261017-0900-c93eeedb07",
+      "data": "2026-10-17",
+      "horario": "09:00",
+      "status": "pendente",
+      "origem": {
+        "arquivo": "96.mp4",
+        "sha256": "c93eeedb07dd1311905e65d70a2e7946fe0a37e68c993285e9e4276d174a372c"
+      },
+      "midia": {
+        "asset": "96.mp4",
+        "url_publica": "https://github.com/cristianoladik/codigo-da-virada-automacao/releases/download/fila-instagram-facebook/96.mp4",
+        "sha256": "c93eeedb07dd1311905e65d70a2e7946fe0a37e68c993285e9e4276d174a372c",
+        "tamanho_bytes": 24443990
+      },
+      "instagram": {
+        "legenda": "Siga @codigodavirada_br",
+        "status": "pendente"
+      },
+      "facebook": {
+        "legenda": "Siga @codigodavirada_br",
+        "status": "pendente"
+      }
+    },
+    {
+      "id": "reel-20261017-2100-0ba8370f2d",
+      "data": "2026-10-17",
+      "horario": "21:00",
+      "status": "pendente",
+      "origem": {
+        "arquivo": "97.mp4",
+        "sha256": "0ba8370f2d739f78444acfe967611e2fbf91d3f100ff82b2da29e67c414f8ac3"
+      },
+      "midia": {
+        "asset": "97.mp4",
+        "url_publica": "https://github.com/cristianoladik/codigo-da-virada-automacao/releases/download/fila-instagram-facebook/97.mp4",
+        "sha256": "0ba8370f2d739f78444acfe967611e2fbf91d3f100ff82b2da29e67c414f8ac3",
+        "tamanho_bytes": 7585453
+      },
+      "instagram": {
+        "legenda": "Siga @codigodavirada_br",
+        "status": "pendente"
+      },
+      "facebook": {
+        "legenda": "Siga @codigodavirada_br",
+        "status": "pendente"
+      }
+    },
+    {
+      "id": "reel-20261018-0900-0b001ec34c",
+      "data": "2026-10-18",
+      "horario": "09:00",
+      "status": "pendente",
+      "origem": {
+        "arquivo": "99.mp4",
+        "sha256": "0b001ec34c65879322acf26d05f63dc356d3224f9b52cf9b5562832be544ef32"
+      },
+      "midia": {
+        "asset": "99.mp4",
+        "url_publica": "https://github.com/cristianoladik/codigo-da-virada-automacao/releases/download/fila-instagram-facebook/99.mp4",
+        "sha256": "0b001ec34c65879322acf26d05f63dc356d3224f9b52cf9b5562832be544ef32",
+        "tamanho_bytes": 3682374
+      },
+      "instagram": {
+        "legenda": "Siga @codigodavirada_br",
+        "status": "pendente"
+      },
+      "facebook": {
+        "legenda": "Siga @codigodavirada_br",
+        "status": "pendente"
+      }
+    },
+    {
+      "id": "reel-20261018-2100-d770c5e5f4",
+      "data": "2026-10-18",
+      "horario": "21:00",
+      "status": "pendente",
+      "origem": {
+        "arquivo": "100.mp4",
+        "sha256": "d770c5e5f4db3295b14858cb80c72c22a81eca356085c2a8104012f1baf36aeb"
+      },
+      "midia": {
+        "asset": "100.mp4",
+        "url_publica": "https://github.com/cristianoladik/codigo-da-virada-automacao/releases/download/fila-instagram-facebook/100.mp4",
+        "sha256": "d770c5e5f4db3295b14858cb80c72c22a81eca356085c2a8104012f1baf36aeb",
+        "tamanho_bytes": 8419459
+      },
+      "instagram": {
+        "legenda": "Siga @codigodavirada_br",
+        "status": "pendente"
+      },
+      "facebook": {
+        "legenda": "Siga @codigodavirada_br",
+        "status": "pendente"
+      }
+    },
+    {
+      "id": "reel-20261019-0900-cac554d79e",
+      "data": "2026-10-19",
+      "horario": "09:00",
+      "status": "pendente",
+      "origem": {
+        "arquivo": "101.mp4",
+        "sha256": "cac554d79ef09b9b33eb1a6219899b104335eb2106d508c7bb4537adc609738f"
+      },
+      "midia": {
+        "asset": "101.mp4",
+        "url_publica": "https://github.com/cristianoladik/codigo-da-virada-automacao/releases/download/fila-instagram-facebook/101.mp4",
+        "sha256": "cac554d79ef09b9b33eb1a6219899b104335eb2106d508c7bb4537adc609738f",
+        "tamanho_bytes": 19771674
+      },
+      "instagram": {
+        "legenda": "Siga @codigodavirada_br",
+        "status": "pendente"
+      },
+      "facebook": {
+        "legenda": "Siga @codigodavirada_br",
+        "status": "pendente"
+      }
+    },
+    {
+      "id": "reel-20261019-2100-f406dfc6ad",
+      "data": "2026-10-19",
+      "horario": "21:00",
+      "status": "pendente",
+      "origem": {
+        "arquivo": "102.mp4",
+        "sha256": "f406dfc6adae13f33f3722b36c46b5e0503bbf0f7d4f436687790b5bd97a1a93"
+      },
+      "midia": {
+        "asset": "102.mp4",
+        "url_publica": "https://github.com/cristianoladik/codigo-da-virada-automacao/releases/download/fila-instagram-facebook/102.mp4",
+        "sha256": "f406dfc6adae13f33f3722b36c46b5e0503bbf0f7d4f436687790b5bd97a1a93",
+        "tamanho_bytes": 12122862
+      },
+      "instagram": {
+        "legenda": "Siga @codigodavirada_br",
+        "status": "pendente"
+      },
+      "facebook": {
+        "legenda": "Siga @codigodavirada_br",
+        "status": "pendente"
+      }
+    },
+    {
+      "id": "reel-20261020-0900-1187e4e64b",
+      "data": "2026-10-20",
+      "horario": "09:00",
+      "status": "pendente",
+      "origem": {
+        "arquivo": "103.mp4",
+        "sha256": "1187e4e64b8e30bb3512bf70b3f84b9505a01ca263be3d585fc7317995556c73"
+      },
+      "midia": {
+        "asset": "103.mp4",
+        "url_publica": "https://github.com/cristianoladik/codigo-da-virada-automacao/releases/download/fila-instagram-facebook/103.mp4",
+        "sha256": "1187e4e64b8e30bb3512bf70b3f84b9505a01ca263be3d585fc7317995556c73",
+        "tamanho_bytes": 5395365
+      },
+      "instagram": {
+        "legenda": "Siga @codigodavirada_br",
+        "status": "pendente"
+      },
+      "facebook": {
+        "legenda": "Siga @codigodavirada_br",
+        "status": "pendente"
+      }
+    },
+    {
+      "id": "reel-20261020-2100-ffc4a1382e",
+      "data": "2026-10-20",
+      "horario": "21:00",
+      "status": "pendente",
+      "origem": {
+        "arquivo": "104.mp4",
+        "sha256": "ffc4a1382e06f829c44260666bfd74688a87d2285ca929d6bdb0c559f1109866"
+      },
+      "midia": {
+        "asset": "104.mp4",
+        "url_publica": "https://github.com/cristianoladik/codigo-da-virada-automacao/releases/download/fila-instagram-facebook/104.mp4",
+        "sha256": "ffc4a1382e06f829c44260666bfd74688a87d2285ca929d6bdb0c559f1109866",
+        "tamanho_bytes": 24416395
+      },
+      "instagram": {
+        "legenda": "Siga @codigodavirada_br",
+        "status": "pendente"
+      },
+      "facebook": {
+        "legenda": "Siga @codigodavirada_br",
+        "status": "pendente"
+      }
+    },
+    {
+      "id": "reel-20261021-0900-47504aad7f",
+      "data": "2026-10-21",
+      "horario": "09:00",
+      "status": "pendente",
+      "origem": {
+        "arquivo": "105.mp4",
+        "sha256": "47504aad7ff32e8afea3a0be2fb69e02d0b814235bd6970b8b0dc51c42ae5fa0"
+      },
+      "midia": {
+        "asset": "105.mp4",
+        "url_publica": "https://github.com/cristianoladik/codigo-da-virada-automacao/releases/download/fila-instagram-facebook/105.mp4",
+        "sha256": "47504aad7ff32e8afea3a0be2fb69e02d0b814235bd6970b8b0dc51c42ae5fa0",
+        "tamanho_bytes": 9025109
+      },
+      "instagram": {
+        "legenda": "Siga @codigodavirada_br",
+        "status": "pendente"
+      },
+      "facebook": {
+        "legenda": "Siga @codigodavirada_br",
+        "status": "pendente"
+      }
+    },
+    {
+      "id": "reel-20261021-2100-2140596d59",
+      "data": "2026-10-21",
+      "horario": "21:00",
+      "status": "pendente",
+      "origem": {
+        "arquivo": "106.mp4",
+        "sha256": "2140596d59a86a80b3f674fa25e2cdd9752380f292160a9f81ce004febbdfe28"
+      },
+      "midia": {
+        "asset": "106.mp4",
+        "url_publica": "https://github.com/cristianoladik/codigo-da-virada-automacao/releases/download/fila-instagram-facebook/106.mp4",
+        "sha256": "2140596d59a86a80b3f674fa25e2cdd9752380f292160a9f81ce004febbdfe28",
+        "tamanho_bytes": 3798130
+      },
+      "instagram": {
+        "legenda": "Siga @codigodavirada_br",
+        "status": "pendente"
+      },
+      "facebook": {
+        "legenda": "Siga @codigodavirada_br",
+        "status": "pendente"
+      }
+    },
+    {
+      "id": "reel-20261022-0900-25dfcb2b71",
+      "data": "2026-10-22",
+      "horario": "09:00",
+      "status": "pendente",
+      "origem": {
+        "arquivo": "107.mp4",
+        "sha256": "25dfcb2b71749e58cde318ba93bccdfc47adc13b905036df74490f33b11ee7a0"
+      },
+      "midia": {
+        "asset": "107.mp4",
+        "url_publica": "https://github.com/cristianoladik/codigo-da-virada-automacao/releases/download/fila-instagram-facebook/107.mp4",
+        "sha256": "25dfcb2b71749e58cde318ba93bccdfc47adc13b905036df74490f33b11ee7a0",
+        "tamanho_bytes": 11784855
+      },
+      "instagram": {
+        "legenda": "Siga @codigodavirada_br",
+        "status": "pendente"
+      },
+      "facebook": {
+        "legenda": "Siga @codigodavirada_br",
+        "status": "pendente"
+      }
+    },
+    {
+      "id": "reel-20261022-2100-0f5b8ea668",
+      "data": "2026-10-22",
+      "horario": "21:00",
+      "status": "pendente",
+      "origem": {
+        "arquivo": "108.mp4",
+        "sha256": "0f5b8ea668498e0206c1b557b14b35800c073bfe45d02124f5ae9a8d89bf61e8"
+      },
+      "midia": {
+        "asset": "108.mp4",
+        "url_publica": "https://github.com/cristianoladik/codigo-da-virada-automacao/releases/download/fila-instagram-facebook/108.mp4",
+        "sha256": "0f5b8ea668498e0206c1b557b14b35800c073bfe45d02124f5ae9a8d89bf61e8",
+        "tamanho_bytes": 7514821
+      },
+      "instagram": {
+        "legenda": "Siga @codigodavirada_br",
+        "status": "pendente"
+      },
+      "facebook": {
+        "legenda": "Siga @codigodavirada_br",
+        "status": "pendente"
+      }
+    },
+    {
+      "id": "reel-20261023-0900-49045a871b",
+      "data": "2026-10-23",
+      "horario": "09:00",
+      "status": "pendente",
+      "origem": {
+        "arquivo": "110.mp4",
+        "sha256": "49045a871ba05956e63ac4429e73bb4713fedf6bdecf4c22f4c6d893b93013c2"
+      },
+      "midia": {
+        "asset": "110.mp4",
+        "url_publica": "https://github.com/cristianoladik/codigo-da-virada-automacao/releases/download/fila-instagram-facebook/110.mp4",
+        "sha256": "49045a871ba05956e63ac4429e73bb4713fedf6bdecf4c22f4c6d893b93013c2",
+        "tamanho_bytes": 25434728
+      },
+      "instagram": {
+        "legenda": "Siga @codigodavirada_br",
+        "status": "pendente"
+      },
+      "facebook": {
+        "legenda": "Siga @codigodavirada_br",
+        "status": "pendente"
+      }
+    },
+    {
+      "id": "reel-20261023-2100-8f97c3eb23",
+      "data": "2026-10-23",
+      "horario": "21:00",
+      "status": "pendente",
+      "origem": {
+        "arquivo": "111.mp4",
+        "sha256": "8f97c3eb23bb05c9bacbd0727d7ca291475b2c0bf8dac0d537edbd292ea21ecd"
+      },
+      "midia": {
+        "asset": "111.mp4",
+        "url_publica": "https://github.com/cristianoladik/codigo-da-virada-automacao/releases/download/fila-instagram-facebook/111.mp4",
+        "sha256": "8f97c3eb23bb05c9bacbd0727d7ca291475b2c0bf8dac0d537edbd292ea21ecd",
+        "tamanho_bytes": 12741602
+      },
+      "instagram": {
+        "legenda": "Siga @codigodavirada_br",
+        "status": "pendente"
+      },
+      "facebook": {
+        "legenda": "Siga @codigodavirada_br",
+        "status": "pendente"
+      }
+    },
+    {
+      "id": "reel-20261024-0900-b63009e9e4",
+      "data": "2026-10-24",
+      "horario": "09:00",
+      "status": "pendente",
+      "origem": {
+        "arquivo": "112.mp4",
+        "sha256": "b63009e9e41c21bfe02c8dfcb57cad36bbb8dc3a34e72f65509e578c0fdb5365"
+      },
+      "midia": {
+        "asset": "112.mp4",
+        "url_publica": "https://github.com/cristianoladik/codigo-da-virada-automacao/releases/download/fila-instagram-facebook/112.mp4",
+        "sha256": "b63009e9e41c21bfe02c8dfcb57cad36bbb8dc3a34e72f65509e578c0fdb5365",
+        "tamanho_bytes": 7018386
+      },
+      "instagram": {
+        "legenda": "Siga @codigodavirada_br",
+        "status": "pendente"
+      },
+      "facebook": {
+        "legenda": "Siga @codigodavirada_br",
+        "status": "pendente"
+      }
+    },
+    {
+      "id": "reel-20261024-2100-6ff160a33f",
+      "data": "2026-10-24",
+      "horario": "21:00",
+      "status": "pendente",
+      "origem": {
+        "arquivo": "113.mp4",
+        "sha256": "6ff160a33f1965d3b232fb2e62223ece4eda9a4a4d73a9e9fcc49f65fd20e43a"
+      },
+      "midia": {
+        "asset": "113.mp4",
+        "url_publica": "https://github.com/cristianoladik/codigo-da-virada-automacao/releases/download/fila-instagram-facebook/113.mp4",
+        "sha256": "6ff160a33f1965d3b232fb2e62223ece4eda9a4a4d73a9e9fcc49f65fd20e43a",
+        "tamanho_bytes": 13235743
+      },
+      "instagram": {
+        "legenda": "Siga @codigodavirada_br",
+        "status": "pendente"
+      },
+      "facebook": {
+        "legenda": "Siga @codigodavirada_br",
+        "status": "pendente"
+      }
+    },
+    {
+      "id": "reel-20261025-0900-678b4097c3",
+      "data": "2026-10-25",
+      "horario": "09:00",
+      "status": "pendente",
+      "origem": {
+        "arquivo": "114.mp4",
+        "sha256": "678b4097c391c9ceedf00aa50a970f1ea80578869ca46a6cc2b63cf625335dc5"
+      },
+      "midia": {
+        "asset": "114.mp4",
+        "url_publica": "https://github.com/cristianoladik/codigo-da-virada-automacao/releases/download/fila-instagram-facebook/114.mp4",
+        "sha256": "678b4097c391c9ceedf00aa50a970f1ea80578869ca46a6cc2b63cf625335dc5",
+        "tamanho_bytes": 8113616
+      },
+      "instagram": {
+        "legenda": "Siga @codigodavirada_br",
+        "status": "pendente"
+      },
+      "facebook": {
+        "legenda": "Siga @codigodavirada_br",
+        "status": "pendente"
+      }
+    },
+    {
+      "id": "reel-20261025-2100-27937b919e",
+      "data": "2026-10-25",
+      "horario": "21:00",
+      "status": "pendente",
+      "origem": {
+        "arquivo": "115.mp4",
+        "sha256": "27937b919e5c50fbfbe38b9d9db06c9fdd099f8d93163c1b7e5df7ff55d237d2"
+      },
+      "midia": {
+        "asset": "115.mp4",
+        "url_publica": "https://github.com/cristianoladik/codigo-da-virada-automacao/releases/download/fila-instagram-facebook/115.mp4",
+        "sha256": "27937b919e5c50fbfbe38b9d9db06c9fdd099f8d93163c1b7e5df7ff55d237d2",
+        "tamanho_bytes": 9735090
+      },
+      "instagram": {
+        "legenda": "Siga @codigodavirada_br",
+        "status": "pendente"
+      },
+      "facebook": {
+        "legenda": "Siga @codigodavirada_br",
+        "status": "pendente"
+      }
+    },
+    {
+      "id": "reel-20261026-0900-74fdc96ade",
+      "data": "2026-10-26",
+      "horario": "09:00",
+      "status": "pendente",
+      "origem": {
+        "arquivo": "116.mp4",
+        "sha256": "74fdc96ade187639bf24e2bc05012a7aa52ffafa1215eecdc09847dc2ce9b1fd"
+      },
+      "midia": {
+        "asset": "116.mp4",
+        "url_publica": "https://github.com/cristianoladik/codigo-da-virada-automacao/releases/download/fila-instagram-facebook/116.mp4",
+        "sha256": "74fdc96ade187639bf24e2bc05012a7aa52ffafa1215eecdc09847dc2ce9b1fd",
+        "tamanho_bytes": 8454877
+      },
+      "instagram": {
+        "legenda": "Siga @codigodavirada_br",
+        "status": "pendente"
+      },
+      "facebook": {
+        "legenda": "Siga @codigodavirada_br",
+        "status": "pendente"
+      }
+    },
+    {
+      "id": "reel-20261026-2100-8b302a64c2",
+      "data": "2026-10-26",
+      "horario": "21:00",
+      "status": "pendente",
+      "origem": {
+        "arquivo": "117.mp4",
+        "sha256": "8b302a64c2a9b291d8e7ead5f754f11d6faceebae883095b242ef7fa9afed6b2"
+      },
+      "midia": {
+        "asset": "117.mp4",
+        "url_publica": "https://github.com/cristianoladik/codigo-da-virada-automacao/releases/download/fila-instagram-facebook/117.mp4",
+        "sha256": "8b302a64c2a9b291d8e7ead5f754f11d6faceebae883095b242ef7fa9afed6b2",
+        "tamanho_bytes": 13309690
+      },
+      "instagram": {
+        "legenda": "Siga @codigodavirada_br",
+        "status": "pendente"
+      },
+      "facebook": {
+        "legenda": "Siga @codigodavirada_br",
+        "status": "pendente"
+      }
+    },
+    {
+      "id": "reel-20261027-0900-d622beec43",
+      "data": "2026-10-27",
+      "horario": "09:00",
+      "status": "pendente",
+      "origem": {
+        "arquivo": "118.mp4",
+        "sha256": "d622beec437a856d15091a7bb4c23e1d7f7131c3a66cab0f866020137862718d"
+      },
+      "midia": {
+        "asset": "118.mp4",
+        "url_publica": "https://github.com/cristianoladik/codigo-da-virada-automacao/releases/download/fila-instagram-facebook/118.mp4",
+        "sha256": "d622beec437a856d15091a7bb4c23e1d7f7131c3a66cab0f866020137862718d",
+        "tamanho_bytes": 4336159
+      },
+      "instagram": {
+        "legenda": "Siga @codigodavirada_br",
+        "status": "pendente"
+      },
+      "facebook": {
+        "legenda": "Siga @codigodavirada_br",
+        "status": "pendente"
+      }
+    },
+    {
+      "id": "reel-20261027-2100-f88fa0511b",
+      "data": "2026-10-27",
+      "horario": "21:00",
+      "status": "pendente",
+      "origem": {
+        "arquivo": "119.mp4",
+        "sha256": "f88fa0511b523390b1281dc944d7ceaf2f7e7bb7ee290d024afd3babc12c7b81"
+      },
+      "midia": {
+        "asset": "119.mp4",
+        "url_publica": "https://github.com/cristianoladik/codigo-da-virada-automacao/releases/download/fila-instagram-facebook/119.mp4",
+        "sha256": "f88fa0511b523390b1281dc944d7ceaf2f7e7bb7ee290d024afd3babc12c7b81",
+        "tamanho_bytes": 10521881
+      },
+      "instagram": {
+        "legenda": "Siga @codigodavirada_br",
+        "status": "pendente"
+      },
+      "facebook": {
+        "legenda": "Siga @codigodavirada_br",
+        "status": "pendente"
+      }
+    },
+    {
+      "id": "reel-20261028-0900-bf6cbf4193",
+      "data": "2026-10-28",
+      "horario": "09:00",
+      "status": "pendente",
+      "origem": {
+        "arquivo": "120.mp4",
+        "sha256": "bf6cbf41936711839eb5526e5d5e9144f66b009e78ce306cbdffa6f8b94ee4d7"
+      },
+      "midia": {
+        "asset": "120.mp4",
+        "url_publica": "https://github.com/cristianoladik/codigo-da-virada-automacao/releases/download/fila-instagram-facebook/120.mp4",
+        "sha256": "bf6cbf41936711839eb5526e5d5e9144f66b009e78ce306cbdffa6f8b94ee4d7",
+        "tamanho_bytes": 12080511
+      },
+      "instagram": {
+        "legenda": "Siga @codigodavirada_br",
+        "status": "pendente"
+      },
+      "facebook": {
+        "legenda": "Siga @codigodavirada_br",
+        "status": "pendente"
+      }
+    },
+    {
+      "id": "reel-20261028-2100-951bd295ad",
+      "data": "2026-10-28",
+      "horario": "21:00",
+      "status": "pendente",
+      "origem": {
+        "arquivo": "121.mp4",
+        "sha256": "951bd295adf12e2f3f538e85aca1684cf2ceb520d01a32e68bd5479c80f616ae"
+      },
+      "midia": {
+        "asset": "121.mp4",
+        "url_publica": "https://github.com/cristianoladik/codigo-da-virada-automacao/releases/download/fila-instagram-facebook/121.mp4",
+        "sha256": "951bd295adf12e2f3f538e85aca1684cf2ceb520d01a32e68bd5479c80f616ae",
+        "tamanho_bytes": 8623599
+      },
+      "instagram": {
+        "legenda": "Siga @codigodavirada_br",
+        "status": "pendente"
+      },
+      "facebook": {
+        "legenda": "Siga @codigodavirada_br",
+        "status": "pendente"
+      }
+    },
+    {
+      "id": "reel-20261029-0900-fa680b4de7",
+      "data": "2026-10-29",
+      "horario": "09:00",
+      "status": "pendente",
+      "origem": {
+        "arquivo": "122.mp4",
+        "sha256": "fa680b4de7ac1689c8d67b3c1e5a971361387234cac8b38dfcc1816bcdd38af2"
+      },
+      "midia": {
+        "asset": "122.mp4",
+        "url_publica": "https://github.com/cristianoladik/codigo-da-virada-automacao/releases/download/fila-instagram-facebook/122.mp4",
+        "sha256": "fa680b4de7ac1689c8d67b3c1e5a971361387234cac8b38dfcc1816bcdd38af2",
+        "tamanho_bytes": 13761186
+      },
+      "instagram": {
+        "legenda": "Siga @codigodavirada_br",
+        "status": "pendente"
+      },
+      "facebook": {
+        "legenda": "Siga @codigodavirada_br",
+        "status": "pendente"
+      }
+    },
+    {
+      "id": "reel-20261029-2100-0b37e361ba",
+      "data": "2026-10-29",
+      "horario": "21:00",
+      "status": "pendente",
+      "origem": {
+        "arquivo": "123.mp4",
+        "sha256": "0b37e361bac606e61ed121d4d89e6ba6c2e59bde8f5ffa7b9b53b70e05c82ad5"
+      },
+      "midia": {
+        "asset": "123.mp4",
+        "url_publica": "https://github.com/cristianoladik/codigo-da-virada-automacao/releases/download/fila-instagram-facebook/123.mp4",
+        "sha256": "0b37e361bac606e61ed121d4d89e6ba6c2e59bde8f5ffa7b9b53b70e05c82ad5",
+        "tamanho_bytes": 12601666
+      },
+      "instagram": {
+        "legenda": "Siga @codigodavirada_br",
+        "status": "pendente"
+      },
+      "facebook": {
+        "legenda": "Siga @codigodavirada_br",
+        "status": "pendente"
+      }
+    },
+    {
+      "id": "reel-20261030-0900-c137d06b43",
+      "data": "2026-10-30",
+      "horario": "09:00",
+      "status": "pendente",
+      "origem": {
+        "arquivo": "124.mp4",
+        "sha256": "c137d06b43007af472d7becc06219f6b8bac54a9aa1b7b5b0d3cdf28a90b0235"
+      },
+      "midia": {
+        "asset": "124.mp4",
+        "url_publica": "https://github.com/cristianoladik/codigo-da-virada-automacao/releases/download/fila-instagram-facebook/124.mp4",
+        "sha256": "c137d06b43007af472d7becc06219f6b8bac54a9aa1b7b5b0d3cdf28a90b0235",
+        "tamanho_bytes": 9284111
+      },
+      "instagram": {
+        "legenda": "Siga @codigodavirada_br",
+        "status": "pendente"
+      },
+      "facebook": {
+        "legenda": "Siga @codigodavirada_br",
+        "status": "pendente"
+      }
+    },
+    {
+      "id": "reel-20261030-2100-afe69f553d",
+      "data": "2026-10-30",
+      "horario": "21:00",
+      "status": "pendente",
+      "origem": {
+        "arquivo": "125.mp4",
+        "sha256": "afe69f553dc228471e13c1af959f821a8e114ca1bd782c62319271b5839b947c"
+      },
+      "midia": {
+        "asset": "125.mp4",
+        "url_publica": "https://github.com/cristianoladik/codigo-da-virada-automacao/releases/download/fila-instagram-facebook/125.mp4",
+        "sha256": "afe69f553dc228471e13c1af959f821a8e114ca1bd782c62319271b5839b947c",
+        "tamanho_bytes": 20296652
+      },
+      "instagram": {
+        "legenda": "Siga @codigodavirada_br",
+        "status": "pendente"
+      },
+      "facebook": {
+        "legenda": "Siga @codigodavirada_br",
+        "status": "pendente"
+      }
+    },
+    {
+      "id": "reel-20261031-0900-7f929a657d",
+      "data": "2026-10-31",
+      "horario": "09:00",
+      "status": "pendente",
+      "origem": {
+        "arquivo": "126.mp4",
+        "sha256": "7f929a657d6f7798d90e92f98b7159084fe70cd3dbdcd07a046c7fd5035a32ec"
+      },
+      "midia": {
+        "asset": "126.mp4",
+        "url_publica": "https://github.com/cristianoladik/codigo-da-virada-automacao/releases/download/fila-instagram-facebook/126.mp4",
+        "sha256": "7f929a657d6f7798d90e92f98b7159084fe70cd3dbdcd07a046c7fd5035a32ec",
+        "tamanho_bytes": 14829272
+      },
+      "instagram": {
+        "legenda": "Siga @codigodavirada_br",
+        "status": "pendente"
+      },
+      "facebook": {
+        "legenda": "Siga @codigodavirada_br",
+        "status": "pendente"
+      }
+    },
+    {
+      "id": "reel-20261031-2100-46ea75a08d",
+      "data": "2026-10-31",
+      "horario": "21:00",
+      "status": "pendente",
+      "origem": {
+        "arquivo": "127.mp4",
+        "sha256": "46ea75a08d524681b643b0c5c95962fedd1df45eb7aec180821c6f5b074ec589"
+      },
+      "midia": {
+        "asset": "127.mp4",
+        "url_publica": "https://github.com/cristianoladik/codigo-da-virada-automacao/releases/download/fila-instagram-facebook/127.mp4",
+        "sha256": "46ea75a08d524681b643b0c5c95962fedd1df45eb7aec180821c6f5b074ec589",
+        "tamanho_bytes": 43543366
+      },
+      "instagram": {
+        "legenda": "Siga @codigodavirada_br",
+        "status": "pendente"
+      },
+      "facebook": {
+        "legenda": "Siga @codigodavirada_br",
+        "status": "pendente"
+      }
+    },
+    {
+      "id": "reel-20261101-0900-b20d349925",
+      "data": "2026-11-01",
+      "horario": "09:00",
+      "status": "pendente",
+      "origem": {
+        "arquivo": "128.mp4",
+        "sha256": "b20d349925b70e4d40c487bb403fa9a1b39d33bd92af002a62dd7a4678475aae"
+      },
+      "midia": {
+        "asset": "128.mp4",
+        "url_publica": "https://github.com/cristianoladik/codigo-da-virada-automacao/releases/download/fila-instagram-facebook/128.mp4",
+        "sha256": "b20d349925b70e4d40c487bb403fa9a1b39d33bd92af002a62dd7a4678475aae",
+        "tamanho_bytes": 19073236
+      },
+      "instagram": {
+        "legenda": "Siga @codigodavirada_br",
+        "status": "pendente"
+      },
+      "facebook": {
+        "legenda": "Siga @codigodavirada_br",
+        "status": "pendente"
+      }
+    },
+    {
+      "id": "reel-20261101-2100-480a877f8f",
+      "data": "2026-11-01",
+      "horario": "21:00",
+      "status": "pendente",
+      "origem": {
+        "arquivo": "129.mp4",
+        "sha256": "480a877f8f0631fbbfd382e69916800cbad8d4d313984b7c95e0bf7a52f1864b"
+      },
+      "midia": {
+        "asset": "129.mp4",
+        "url_publica": "https://github.com/cristianoladik/codigo-da-virada-automacao/releases/download/fila-instagram-facebook/129.mp4",
+        "sha256": "480a877f8f0631fbbfd382e69916800cbad8d4d313984b7c95e0bf7a52f1864b",
+        "tamanho_bytes": 17990369
+      },
+      "instagram": {
+        "legenda": "Siga @codigodavirada_br",
+        "status": "pendente"
+      },
+      "facebook": {
+        "legenda": "Siga @codigodavirada_br",
+        "status": "pendente"
+      }
+    },
+    {
+      "id": "reel-20261102-0900-48ea74e182",
+      "data": "2026-11-02",
+      "horario": "09:00",
+      "status": "pendente",
+      "origem": {
+        "arquivo": "130.mp4",
+        "sha256": "48ea74e1821f3d745506a1a96771959c54f84ff51a7ee306f3a688bcbb3d9ae4"
+      },
+      "midia": {
+        "asset": "130.mp4",
+        "url_publica": "https://github.com/cristianoladik/codigo-da-virada-automacao/releases/download/fila-instagram-facebook/130.mp4",
+        "sha256": "48ea74e1821f3d745506a1a96771959c54f84ff51a7ee306f3a688bcbb3d9ae4",
+        "tamanho_bytes": 13907618
+      },
+      "instagram": {
+        "legenda": "Siga @codigodavirada_br",
+        "status": "pendente"
+      },
+      "facebook": {
+        "legenda": "Siga @codigodavirada_br",
+        "status": "pendente"
+      }
+    },
+    {
+      "id": "reel-20261102-2100-d2fd87d58c",
+      "data": "2026-11-02",
+      "horario": "21:00",
+      "status": "pendente",
+      "origem": {
+        "arquivo": "131.mp4",
+        "sha256": "d2fd87d58c4fddcd87d747fcd3674da60adcdcea833f0b592e552045b0c02be5"
+      },
+      "midia": {
+        "asset": "131.mp4",
+        "url_publica": "https://github.com/cristianoladik/codigo-da-virada-automacao/releases/download/fila-instagram-facebook/131.mp4",
+        "sha256": "d2fd87d58c4fddcd87d747fcd3674da60adcdcea833f0b592e552045b0c02be5",
+        "tamanho_bytes": 14478700
+      },
+      "instagram": {
+        "legenda": "Siga @codigodavirada_br",
+        "status": "pendente"
+      },
+      "facebook": {
+        "legenda": "Siga @codigodavirada_br",
+        "status": "pendente"
+      }
+    },
+    {
+      "id": "reel-20261103-0900-e7698496d1",
+      "data": "2026-11-03",
+      "horario": "09:00",
+      "status": "pendente",
+      "origem": {
+        "arquivo": "132.mp4",
+        "sha256": "e7698496d1a9a365e2fb1aa1258610a3f5391eff8ee482de1415acc957dd05ca"
+      },
+      "midia": {
+        "asset": "132.mp4",
+        "url_publica": "https://github.com/cristianoladik/codigo-da-virada-automacao/releases/download/fila-instagram-facebook/132.mp4",
+        "sha256": "e7698496d1a9a365e2fb1aa1258610a3f5391eff8ee482de1415acc957dd05ca",
+        "tamanho_bytes": 6160978
+      },
+      "instagram": {
+        "legenda": "Siga @codigodavirada_br",
+        "status": "pendente"
+      },
+      "facebook": {
+        "legenda": "Siga @codigodavirada_br",
+        "status": "pendente"
+      }
+    },
+    {
+      "id": "reel-20261103-2100-458fc96ee2",
+      "data": "2026-11-03",
+      "horario": "21:00",
+      "status": "pendente",
+      "origem": {
+        "arquivo": "133.mp4",
+        "sha256": "458fc96ee24b062a25b16d0263020b7ba2cb5d92cc18db7e8de9543b897b51b0"
+      },
+      "midia": {
+        "asset": "133.mp4",
+        "url_publica": "https://github.com/cristianoladik/codigo-da-virada-automacao/releases/download/fila-instagram-facebook/133.mp4",
+        "sha256": "458fc96ee24b062a25b16d0263020b7ba2cb5d92cc18db7e8de9543b897b51b0",
+        "tamanho_bytes": 22177285
+      },
+      "instagram": {
+        "legenda": "Siga @codigodavirada_br",
+        "status": "pendente"
+      },
+      "facebook": {
+        "legenda": "Siga @codigodavirada_br",
+        "status": "pendente"
+      }
+    },
+    {
+      "id": "reel-20261104-0900-9854160759",
+      "data": "2026-11-04",
+      "horario": "09:00",
+      "status": "pendente",
+      "origem": {
+        "arquivo": "134.mp4",
+        "sha256": "9854160759d4da45316139baad9790c76b945d2cca372b06388fcd37a6a902e7"
+      },
+      "midia": {
+        "asset": "134.mp4",
+        "url_publica": "https://github.com/cristianoladik/codigo-da-virada-automacao/releases/download/fila-instagram-facebook/134.mp4",
+        "sha256": "9854160759d4da45316139baad9790c76b945d2cca372b06388fcd37a6a902e7",
+        "tamanho_bytes": 19897558
+      },
+      "instagram": {
+        "legenda": "Siga @codigodavirada_br",
+        "status": "pendente"
+      },
+      "facebook": {
+        "legenda": "Siga @codigodavirada_br",
+        "status": "pendente"
+      }
+    },
+    {
+      "id": "reel-20261104-2100-be1c752bf9",
+      "data": "2026-11-04",
+      "horario": "21:00",
+      "status": "pendente",
+      "origem": {
+        "arquivo": "135.mp4",
+        "sha256": "be1c752bf9ba6440fd8374c8110eb7895b17d637f7069d0f3a32173ab2c137c8"
+      },
+      "midia": {
+        "asset": "135.mp4",
+        "url_publica": "https://github.com/cristianoladik/codigo-da-virada-automacao/releases/download/fila-instagram-facebook/135.mp4",
+        "sha256": "be1c752bf9ba6440fd8374c8110eb7895b17d637f7069d0f3a32173ab2c137c8",
+        "tamanho_bytes": 17441557
+      },
+      "instagram": {
+        "legenda": "Siga @codigodavirada_br",
+        "status": "pendente"
+      },
+      "facebook": {
+        "legenda": "Siga @codigodavirada_br",
+        "status": "pendente"
+      }
+    },
+    {
+      "id": "reel-20261105-0900-80903c975a",
+      "data": "2026-11-05",
+      "horario": "09:00",
+      "status": "pendente",
+      "origem": {
+        "arquivo": "136.mp4",
+        "sha256": "80903c975a2015385cfd00aa47ace1823348e51dcf8936ff10a54830c54029a0"
+      },
+      "midia": {
+        "asset": "136.mp4",
+        "url_publica": "https://github.com/cristianoladik/codigo-da-virada-automacao/releases/download/fila-instagram-facebook/136.mp4",
+        "sha256": "80903c975a2015385cfd00aa47ace1823348e51dcf8936ff10a54830c54029a0",
+        "tamanho_bytes": 9041816
+      },
+      "instagram": {
+        "legenda": "Siga @codigodavirada_br",
+        "status": "pendente"
+      },
+      "facebook": {
+        "legenda": "Siga @codigodavirada_br",
+        "status": "pendente"
+      }
+    },
+    {
+      "id": "reel-20261105-2100-cd1cef09a4",
+      "data": "2026-11-05",
+      "horario": "21:00",
+      "status": "pendente",
+      "origem": {
+        "arquivo": "137.mp4",
+        "sha256": "cd1cef09a4635c5f93487344d449243069967244f085df3f1d96d8d9fc3a2142"
+      },
+      "midia": {
+        "asset": "137.mp4",
+        "url_publica": "https://github.com/cristianoladik/codigo-da-virada-automacao/releases/download/fila-instagram-facebook/137.mp4",
+        "sha256": "cd1cef09a4635c5f93487344d449243069967244f085df3f1d96d8d9fc3a2142",
+        "tamanho_bytes": 17019980
+      },
+      "instagram": {
+        "legenda": "Siga @codigodavirada_br",
+        "status": "pendente"
+      },
+      "facebook": {
+        "legenda": "Siga @codigodavirada_br",
+        "status": "pendente"
+      }
+    },
+    {
+      "id": "reel-20261106-0900-437ebb3efa",
+      "data": "2026-11-06",
+      "horario": "09:00",
+      "status": "pendente",
+      "origem": {
+        "arquivo": "138.mp4",
+        "sha256": "437ebb3efa5c0fb0f4db81ba4cb9547d95e884f68738a2c716f094be5fab722f"
+      },
+      "midia": {
+        "asset": "138.mp4",
+        "url_publica": "https://github.com/cristianoladik/codigo-da-virada-automacao/releases/download/fila-instagram-facebook/138.mp4",
+        "sha256": "437ebb3efa5c0fb0f4db81ba4cb9547d95e884f68738a2c716f094be5fab722f",
+        "tamanho_bytes": 7240583
+      },
+      "instagram": {
+        "legenda": "Siga @codigodavirada_br",
+        "status": "pendente"
+      },
+      "facebook": {
+        "legenda": "Siga @codigodavirada_br",
+        "status": "pendente"
+      }
+    },
+    {
+      "id": "reel-20261106-2100-e8a1a2e596",
+      "data": "2026-11-06",
+      "horario": "21:00",
+      "status": "pendente",
+      "origem": {
+        "arquivo": "139.mp4",
+        "sha256": "e8a1a2e5966cb4bc1d9bf6298b9d4ee32fc58e58c4510339afcbf22de416c34b"
+      },
+      "midia": {
+        "asset": "139.mp4",
+        "url_publica": "https://github.com/cristianoladik/codigo-da-virada-automacao/releases/download/fila-instagram-facebook/139.mp4",
+        "sha256": "e8a1a2e5966cb4bc1d9bf6298b9d4ee32fc58e58c4510339afcbf22de416c34b",
+        "tamanho_bytes": 12328480
+      },
+      "instagram": {
+        "legenda": "Siga @codigodavirada_br",
+        "status": "pendente"
+      },
+      "facebook": {
+        "legenda": "Siga @codigodavirada_br",
+        "status": "pendente"
+      }
+    },
+    {
+      "id": "reel-20261107-0900-fc2f175a17",
+      "data": "2026-11-07",
+      "horario": "09:00",
+      "status": "pendente",
+      "origem": {
+        "arquivo": "140.mp4",
+        "sha256": "fc2f175a17371d00f9f5885e4d6a161cef7ed0d9b0e210c09688adb73fee94ea"
+      },
+      "midia": {
+        "asset": "140.mp4",
+        "url_publica": "https://github.com/cristianoladik/codigo-da-virada-automacao/releases/download/fila-instagram-facebook/140.mp4",
+        "sha256": "fc2f175a17371d00f9f5885e4d6a161cef7ed0d9b0e210c09688adb73fee94ea",
+        "tamanho_bytes": 16726021
+      },
+      "instagram": {
+        "legenda": "Siga @codigodavirada_br",
+        "status": "pendente"
+      },
+      "facebook": {
+        "legenda": "Siga @codigodavirada_br",
+        "status": "pendente"
+      }
+    },
+    {
+      "id": "reel-20261107-2100-345b7b6337",
+      "data": "2026-11-07",
+      "horario": "21:00",
+      "status": "pendente",
+      "origem": {
+        "arquivo": "141.mp4",
+        "sha256": "345b7b63370a2c39e8877022420cfc2d253ac172a6650e3d77392bc41b5c9128"
+      },
+      "midia": {
+        "asset": "141.mp4",
+        "url_publica": "https://github.com/cristianoladik/codigo-da-virada-automacao/releases/download/fila-instagram-facebook/141.mp4",
+        "sha256": "345b7b63370a2c39e8877022420cfc2d253ac172a6650e3d77392bc41b5c9128",
+        "tamanho_bytes": 15211822
+      },
+      "instagram": {
+        "legenda": "Siga @codigodavirada_br",
+        "status": "pendente"
+      },
+      "facebook": {
+        "legenda": "Siga @codigodavirada_br",
+        "status": "pendente"
+      }
+    },
+    {
+      "id": "reel-20261108-0900-eca45c91b3",
+      "data": "2026-11-08",
+      "horario": "09:00",
+      "status": "pendente",
+      "origem": {
+        "arquivo": "142.mp4",
+        "sha256": "eca45c91b3d6bdf9360fd1c8f440c5f84300677c225a04b5fff42af8235e9f47"
+      },
+      "midia": {
+        "asset": "142.mp4",
+        "url_publica": "https://github.com/cristianoladik/codigo-da-virada-automacao/releases/download/fila-instagram-facebook/142.mp4",
+        "sha256": "eca45c91b3d6bdf9360fd1c8f440c5f84300677c225a04b5fff42af8235e9f47",
+        "tamanho_bytes": 19445634
+      },
+      "instagram": {
+        "legenda": "Siga @codigodavirada_br",
+        "status": "pendente"
+      },
+      "facebook": {
+        "legenda": "Siga @codigodavirada_br",
+        "status": "pendente"
+      }
+    },
+    {
+      "id": "reel-20261108-2100-89ca65f198",
+      "data": "2026-11-08",
+      "horario": "21:00",
+      "status": "pendente",
+      "origem": {
+        "arquivo": "143.mp4",
+        "sha256": "89ca65f1982e81185289ba390d9fd7dcdd04c7534177458242f0d088992f25b5"
+      },
+      "midia": {
+        "asset": "143.mp4",
+        "url_publica": "https://github.com/cristianoladik/codigo-da-virada-automacao/releases/download/fila-instagram-facebook/143.mp4",
+        "sha256": "89ca65f1982e81185289ba390d9fd7dcdd04c7534177458242f0d088992f25b5",
+        "tamanho_bytes": 13153704
+      },
+      "instagram": {
+        "legenda": "Siga @codigodavirada_br",
+        "status": "pendente"
+      },
+      "facebook": {
+        "legenda": "Siga @codigodavirada_br",
+        "status": "pendente"
+      }
+    },
+    {
+      "id": "reel-20261109-0900-5b0867a88e",
+      "data": "2026-11-09",
+      "horario": "09:00",
+      "status": "pendente",
+      "origem": {
+        "arquivo": "144.mp4",
+        "sha256": "5b0867a88eaf961c429310852051f30b706e79856247accacc9980e0b19f8d50"
+      },
+      "midia": {
+        "asset": "144.mp4",
+        "url_publica": "https://github.com/cristianoladik/codigo-da-virada-automacao/releases/download/fila-instagram-facebook/144.mp4",
+        "sha256": "5b0867a88eaf961c429310852051f30b706e79856247accacc9980e0b19f8d50",
+        "tamanho_bytes": 10548537
+      },
+      "instagram": {
+        "legenda": "Siga @codigodavirada_br",
+        "status": "pendente"
+      },
+      "facebook": {
+        "legenda": "Siga @codigodavirada_br",
+        "status": "pendente"
+      }
+    },
+    {
+      "id": "reel-20261109-2100-6b626237dc",
+      "data": "2026-11-09",
+      "horario": "21:00",
+      "status": "pendente",
+      "origem": {
+        "arquivo": "145.mp4",
+        "sha256": "6b626237dc02e40ab27224cc9bee55adf99e826dbe427c411766457218beedb2"
+      },
+      "midia": {
+        "asset": "145.mp4",
+        "url_publica": "https://github.com/cristianoladik/codigo-da-virada-automacao/releases/download/fila-instagram-facebook/145.mp4",
+        "sha256": "6b626237dc02e40ab27224cc9bee55adf99e826dbe427c411766457218beedb2",
+        "tamanho_bytes": 16888246
+      },
+      "instagram": {
+        "legenda": "Siga @codigodavirada_br",
+        "status": "pendente"
+      },
+      "facebook": {
+        "legenda": "Siga @codigodavirada_br",
+        "status": "pendente"
+      }
+    },
+    {
+      "id": "reel-20261110-0900-8305a5dc4e",
+      "data": "2026-11-10",
+      "horario": "09:00",
+      "status": "pendente",
+      "origem": {
+        "arquivo": "146.mp4",
+        "sha256": "8305a5dc4e97deb2b67f439baf45830a09efcfaff1a7e7807ebe30e269adc7f9"
+      },
+      "midia": {
+        "asset": "146.mp4",
+        "url_publica": "https://github.com/cristianoladik/codigo-da-virada-automacao/releases/download/fila-instagram-facebook/146.mp4",
+        "sha256": "8305a5dc4e97deb2b67f439baf45830a09efcfaff1a7e7807ebe30e269adc7f9",
+        "tamanho_bytes": 11618346
+      },
+      "instagram": {
+        "legenda": "Siga @codigodavirada_br",
+        "status": "pendente"
+      },
+      "facebook": {
+        "legenda": "Siga @codigodavirada_br",
+        "status": "pendente"
+      }
+    },
+    {
+      "id": "reel-20261110-2100-1e5abff2b9",
+      "data": "2026-11-10",
+      "horario": "21:00",
+      "status": "pendente",
+      "origem": {
+        "arquivo": "147.mp4",
+        "sha256": "1e5abff2b9a5b1b1dd62c33d4749842ff1cb2a5529d9f9596a07458d2b9f746b"
+      },
+      "midia": {
+        "asset": "147.mp4",
+        "url_publica": "https://github.com/cristianoladik/codigo-da-virada-automacao/releases/download/fila-instagram-facebook/147.mp4",
+        "sha256": "1e5abff2b9a5b1b1dd62c33d4749842ff1cb2a5529d9f9596a07458d2b9f746b",
+        "tamanho_bytes": 6152391
+      },
+      "instagram": {
+        "legenda": "Siga @codigodavirada_br",
+        "status": "pendente"
+      },
+      "facebook": {
+        "legenda": "Siga @codigodavirada_br",
+        "status": "pendente"
+      }
+    },
+    {
+      "id": "reel-20261111-0900-600673175e",
+      "data": "2026-11-11",
+      "horario": "09:00",
+      "status": "pendente",
+      "origem": {
+        "arquivo": "148.mp4",
+        "sha256": "600673175ec55cfce6c28dab33fe745f7ff36428dc680304abe5b0aa250e9569"
+      },
+      "midia": {
+        "asset": "148.mp4",
+        "url_publica": "https://github.com/cristianoladik/codigo-da-virada-automacao/releases/download/fila-instagram-facebook/148.mp4",
+        "sha256": "600673175ec55cfce6c28dab33fe745f7ff36428dc680304abe5b0aa250e9569",
+        "tamanho_bytes": 5031447
+      },
+      "instagram": {
+        "legenda": "Siga @codigodavirada_br",
+        "status": "pendente"
+      },
+      "facebook": {
+        "legenda": "Siga @codigodavirada_br",
+        "status": "pendente"
+      }
+    },
+    {
+      "id": "reel-20261111-2100-4d6f2324a9",
+      "data": "2026-11-11",
+      "horario": "21:00",
+      "status": "pendente",
+      "origem": {
+        "arquivo": "149.mp4",
+        "sha256": "4d6f2324a93a089e7311e9ea591d45b9623a4638e115b337f74db7a89f34162f"
+      },
+      "midia": {
+        "asset": "149.mp4",
+        "url_publica": "https://github.com/cristianoladik/codigo-da-virada-automacao/releases/download/fila-instagram-facebook/149.mp4",
+        "sha256": "4d6f2324a93a089e7311e9ea591d45b9623a4638e115b337f74db7a89f34162f",
+        "tamanho_bytes": 18793784
+      },
+      "instagram": {
+        "legenda": "Siga @codigodavirada_br",
+        "status": "pendente"
+      },
+      "facebook": {
+        "legenda": "Siga @codigodavirada_br",
+        "status": "pendente"
+      }
+    },
+    {
+      "id": "reel-20261112-0900-9d7dbd4db0",
+      "data": "2026-11-12",
+      "horario": "09:00",
+      "status": "pendente",
+      "origem": {
+        "arquivo": "150.mp4",
+        "sha256": "9d7dbd4db0d172db0969ae89487765a4630089c20f479713c289903ceffebedc"
+      },
+      "midia": {
+        "asset": "150.mp4",
+        "url_publica": "https://github.com/cristianoladik/codigo-da-virada-automacao/releases/download/fila-instagram-facebook/150.mp4",
+        "sha256": "9d7dbd4db0d172db0969ae89487765a4630089c20f479713c289903ceffebedc",
+        "tamanho_bytes": 3377280
+      },
+      "instagram": {
+        "legenda": "Siga @codigodavirada_br",
+        "status": "pendente"
+      },
+      "facebook": {
+        "legenda": "Siga @codigodavirada_br",
+        "status": "pendente"
+      }
+    },
+    {
+      "id": "reel-20261112-2100-62e32815ae",
+      "data": "2026-11-12",
+      "horario": "21:00",
+      "status": "pendente",
+      "origem": {
+        "arquivo": "151.mp4",
+        "sha256": "62e32815ae87aa99310a94e66fc9276af267dd29a3dfc6295135804ddaa92d6c"
+      },
+      "midia": {
+        "asset": "151.mp4",
+        "url_publica": "https://github.com/cristianoladik/codigo-da-virada-automacao/releases/download/fila-instagram-facebook/151.mp4",
+        "sha256": "62e32815ae87aa99310a94e66fc9276af267dd29a3dfc6295135804ddaa92d6c",
+        "tamanho_bytes": 16880824
+      },
+      "instagram": {
+        "legenda": "Siga @codigodavirada_br",
+        "status": "pendente"
+      },
+      "facebook": {
+        "legenda": "Siga @codigodavirada_br",
+        "status": "pendente"
+      }
+    },
+    {
+      "id": "reel-20261113-0900-2af477999e",
+      "data": "2026-11-13",
+      "horario": "09:00",
+      "status": "pendente",
+      "origem": {
+        "arquivo": "152.mp4",
+        "sha256": "2af477999e346fe0a4996d259386a7b3e553cfe43dee6ff58dcc4a13cc4bc729"
+      },
+      "midia": {
+        "asset": "152.mp4",
+        "url_publica": "https://github.com/cristianoladik/codigo-da-virada-automacao/releases/download/fila-instagram-facebook/152.mp4",
+        "sha256": "2af477999e346fe0a4996d259386a7b3e553cfe43dee6ff58dcc4a13cc4bc729",
+        "tamanho_bytes": 5181579
+      },
+      "instagram": {
+        "legenda": "Siga @codigodavirada_br",
+        "status": "pendente"
+      },
+      "facebook": {
+        "legenda": "Siga @codigodavirada_br",
+        "status": "pendente"
+      }
+    },
+    {
+      "id": "reel-20261113-2100-0c23478d12",
+      "data": "2026-11-13",
+      "horario": "21:00",
+      "status": "pendente",
+      "origem": {
+        "arquivo": "153.mp4",
+        "sha256": "0c23478d12a9c104a87696a7e62d09f976f68423b159b262470d436d5f4ba260"
+      },
+      "midia": {
+        "asset": "153.mp4",
+        "url_publica": "https://github.com/cristianoladik/codigo-da-virada-automacao/releases/download/fila-instagram-facebook/153.mp4",
+        "sha256": "0c23478d12a9c104a87696a7e62d09f976f68423b159b262470d436d5f4ba260",
+        "tamanho_bytes": 13818382
+      },
+      "instagram": {
+        "legenda": "Siga @codigodavirada_br",
+        "status": "pendente"
+      },
+      "facebook": {
+        "legenda": "Siga @codigodavirada_br",
+        "status": "pendente"
+      }
+    },
+    {
+      "id": "reel-20261114-0900-f7ba074c5e",
+      "data": "2026-11-14",
+      "horario": "09:00",
+      "status": "pendente",
+      "origem": {
+        "arquivo": "154.mp4",
+        "sha256": "f7ba074c5e5b1e1c89757bffc60c3916ec1b59d9d6629e5281a7fdba9f15dccf"
+      },
+      "midia": {
+        "asset": "154.mp4",
+        "url_publica": "https://github.com/cristianoladik/codigo-da-virada-automacao/releases/download/fila-instagram-facebook/154.mp4",
+        "sha256": "f7ba074c5e5b1e1c89757bffc60c3916ec1b59d9d6629e5281a7fdba9f15dccf",
+        "tamanho_bytes": 16144945
+      },
+      "instagram": {
+        "legenda": "Siga @codigodavirada_br",
+        "status": "pendente"
+      },
+      "facebook": {
+        "legenda": "Siga @codigodavirada_br",
+        "status": "pendente"
+      }
+    },
+    {
+      "id": "reel-20261114-2100-410c100d92",
+      "data": "2026-11-14",
+      "horario": "21:00",
+      "status": "pendente",
+      "origem": {
+        "arquivo": "155.mp4",
+        "sha256": "410c100d922123e982c06cec5668ced84d6db2a1c238b9d135d8eb498c05c41b"
+      },
+      "midia": {
+        "asset": "155.mp4",
+        "url_publica": "https://github.com/cristianoladik/codigo-da-virada-automacao/releases/download/fila-instagram-facebook/155.mp4",
+        "sha256": "410c100d922123e982c06cec5668ced84d6db2a1c238b9d135d8eb498c05c41b",
+        "tamanho_bytes": 20127444
+      },
+      "instagram": {
+        "legenda": "Siga @codigodavirada_br",
+        "status": "pendente"
+      },
+      "facebook": {
+        "legenda": "Siga @codigodavirada_br",
+        "status": "pendente"
+      }
+    },
+    {
+      "id": "reel-20261115-0900-a2eb83ae47",
+      "data": "2026-11-15",
+      "horario": "09:00",
+      "status": "pendente",
+      "origem": {
+        "arquivo": "156.mp4",
+        "sha256": "a2eb83ae47b171b3a66b86b08ee0448570e48dae1ea887b40a6c5a0cef7cc26f"
+      },
+      "midia": {
+        "asset": "156.mp4",
+        "url_publica": "https://github.com/cristianoladik/codigo-da-virada-automacao/releases/download/fila-instagram-facebook/156.mp4",
+        "sha256": "a2eb83ae47b171b3a66b86b08ee0448570e48dae1ea887b40a6c5a0cef7cc26f",
+        "tamanho_bytes": 13393913
+      },
+      "instagram": {
+        "legenda": "Siga @codigodavirada_br",
+        "status": "pendente"
+      },
+      "facebook": {
+        "legenda": "Siga @codigodavirada_br",
+        "status": "pendente"
+      }
+    },
+    {
+      "id": "reel-20261115-2100-92c5270125",
+      "data": "2026-11-15",
+      "horario": "21:00",
+      "status": "pendente",
+      "origem": {
+        "arquivo": "157.mp4",
+        "sha256": "92c527012580079bb981ae638efe4e5d62c489b8bf3eef0f9f32e92a533a6990"
+      },
+      "midia": {
+        "asset": "157.mp4",
+        "url_publica": "https://github.com/cristianoladik/codigo-da-virada-automacao/releases/download/fila-instagram-facebook/157.mp4",
+        "sha256": "92c527012580079bb981ae638efe4e5d62c489b8bf3eef0f9f32e92a533a6990",
+        "tamanho_bytes": 9501195
+      },
+      "instagram": {
+        "legenda": "Siga @codigodavirada_br",
+        "status": "pendente"
+      },
+      "facebook": {
+        "legenda": "Siga @codigodavirada_br",
+        "status": "pendente"
+      }
+    },
+    {
+      "id": "reel-20261116-0900-9d3a544052",
+      "data": "2026-11-16",
+      "horario": "09:00",
+      "status": "pendente",
+      "origem": {
+        "arquivo": "158.mp4",
+        "sha256": "9d3a544052dfc48f2609044861fdd07fc1c3c863fc5f112c4f44a69d9fd510f8"
+      },
+      "midia": {
+        "asset": "158.mp4",
+        "url_publica": "https://github.com/cristianoladik/codigo-da-virada-automacao/releases/download/fila-instagram-facebook/158.mp4",
+        "sha256": "9d3a544052dfc48f2609044861fdd07fc1c3c863fc5f112c4f44a69d9fd510f8",
+        "tamanho_bytes": 11396915
+      },
+      "instagram": {
+        "legenda": "Siga @codigodavirada_br",
+        "status": "pendente"
+      },
+      "facebook": {
+        "legenda": "Siga @codigodavirada_br",
+        "status": "pendente"
+      }
+    },
+    {
+      "id": "reel-20261116-2100-16da52c7dd",
+      "data": "2026-11-16",
+      "horario": "21:00",
+      "status": "pendente",
+      "origem": {
+        "arquivo": "159.mp4",
+        "sha256": "16da52c7dd05ce494cfc863635882be206d1bd76d5f72ea588eccce0a6ee878e"
+      },
+      "midia": {
+        "asset": "159.mp4",
+        "url_publica": "https://github.com/cristianoladik/codigo-da-virada-automacao/releases/download/fila-instagram-facebook/159.mp4",
+        "sha256": "16da52c7dd05ce494cfc863635882be206d1bd76d5f72ea588eccce0a6ee878e",
+        "tamanho_bytes": 23300304
+      },
+      "instagram": {
+        "legenda": "Siga @codigodavirada_br",
+        "status": "pendente"
+      },
+      "facebook": {
+        "legenda": "Siga @codigodavirada_br",
+        "status": "pendente"
+      }
+    },
+    {
+      "id": "reel-20261117-0900-7abdbd23e6",
+      "data": "2026-11-17",
+      "horario": "09:00",
+      "status": "pendente",
+      "origem": {
+        "arquivo": "160.mp4",
+        "sha256": "7abdbd23e63a0498f64414dfc7c679a9efa15e9822b6cd29b1c2c652b643260e"
+      },
+      "midia": {
+        "asset": "160.mp4",
+        "url_publica": "https://github.com/cristianoladik/codigo-da-virada-automacao/releases/download/fila-instagram-facebook/160.mp4",
+        "sha256": "7abdbd23e63a0498f64414dfc7c679a9efa15e9822b6cd29b1c2c652b643260e",
+        "tamanho_bytes": 11775687
+      },
+      "instagram": {
+        "legenda": "Siga @codigodavirada_br",
+        "status": "pendente"
+      },
+      "facebook": {
+        "legenda": "Siga @codigodavirada_br",
+        "status": "pendente"
+      }
+    },
+    {
+      "id": "reel-20261117-2100-e9d00ed665",
+      "data": "2026-11-17",
+      "horario": "21:00",
+      "status": "pendente",
+      "origem": {
+        "arquivo": "161.mp4",
+        "sha256": "e9d00ed6659a37f8487d14854a6e4684624664b9974df8a2f6202a653b4a4c38"
+      },
+      "midia": {
+        "asset": "161.mp4",
+        "url_publica": "https://github.com/cristianoladik/codigo-da-virada-automacao/releases/download/fila-instagram-facebook/161.mp4",
+        "sha256": "e9d00ed6659a37f8487d14854a6e4684624664b9974df8a2f6202a653b4a4c38",
+        "tamanho_bytes": 24318189
+      },
+      "instagram": {
+        "legenda": "Siga @codigodavirada_br",
+        "status": "pendente"
+      },
+      "facebook": {
+        "legenda": "Siga @codigodavirada_br",
+        "status": "pendente"
+      }
+    },
+    {
+      "id": "reel-20261118-0900-4dc562206d",
+      "data": "2026-11-18",
+      "horario": "09:00",
+      "status": "pendente",
+      "origem": {
+        "arquivo": "162.mp4",
+        "sha256": "4dc562206d9f304e1fc54316083db2aea1619fddb05b4fb6ef79f5ce1faed073"
+      },
+      "midia": {
+        "asset": "162.mp4",
+        "url_publica": "https://github.com/cristianoladik/codigo-da-virada-automacao/releases/download/fila-instagram-facebook/162.mp4",
+        "sha256": "4dc562206d9f304e1fc54316083db2aea1619fddb05b4fb6ef79f5ce1faed073",
+        "tamanho_bytes": 6444218
+      },
+      "instagram": {
+        "legenda": "Siga @codigodavirada_br",
+        "status": "pendente"
+      },
+      "facebook": {
+        "legenda": "Siga @codigodavirada_br",
+        "status": "pendente"
+      }
+    },
+    {
+      "id": "reel-20261118-2100-d459d483a0",
+      "data": "2026-11-18",
+      "horario": "21:00",
+      "status": "pendente",
+      "origem": {
+        "arquivo": "163.mp4",
+        "sha256": "d459d483a0d331aed769f7dfac0709d510175ec7918d7a225c5f52511c6b47cc"
+      },
+      "midia": {
+        "asset": "163.mp4",
+        "url_publica": "https://github.com/cristianoladik/codigo-da-virada-automacao/releases/download/fila-instagram-facebook/163.mp4",
+        "sha256": "d459d483a0d331aed769f7dfac0709d510175ec7918d7a225c5f52511c6b47cc",
+        "tamanho_bytes": 12692761
+      },
+      "instagram": {
+        "legenda": "Siga @codigodavirada_br",
+        "status": "pendente"
+      },
+      "facebook": {
+        "legenda": "Siga @codigodavirada_br",
+        "status": "pendente"
+      }
+    },
+    {
+      "id": "reel-20261119-0900-be5c8c9b36",
+      "data": "2026-11-19",
+      "horario": "09:00",
+      "status": "pendente",
+      "origem": {
+        "arquivo": "164.mp4",
+        "sha256": "be5c8c9b360c893da68bf4f4147897a93659f3c98e6bb6d349ff326039474db8"
+      },
+      "midia": {
+        "asset": "164.mp4",
+        "url_publica": "https://github.com/cristianoladik/codigo-da-virada-automacao/releases/download/fila-instagram-facebook/164.mp4",
+        "sha256": "be5c8c9b360c893da68bf4f4147897a93659f3c98e6bb6d349ff326039474db8",
+        "tamanho_bytes": 44070078
+      },
+      "instagram": {
+        "legenda": "Siga @codigodavirada_br",
+        "status": "pendente"
+      },
+      "facebook": {
+        "legenda": "Siga @codigodavirada_br",
+        "status": "pendente"
+      }
+    },
+    {
+      "id": "reel-20261119-2100-5917c1beb8",
+      "data": "2026-11-19",
+      "horario": "21:00",
+      "status": "pendente",
+      "origem": {
+        "arquivo": "165.mp4",
+        "sha256": "5917c1beb8b57c2290f314254c320614dc1f8ed598d9138d08a447b294eef402"
+      },
+      "midia": {
+        "asset": "165.mp4",
+        "url_publica": "https://github.com/cristianoladik/codigo-da-virada-automacao/releases/download/fila-instagram-facebook/165.mp4",
+        "sha256": "5917c1beb8b57c2290f314254c320614dc1f8ed598d9138d08a447b294eef402",
+        "tamanho_bytes": 58012362
+      },
+      "instagram": {
+        "legenda": "Siga @codigodavirada_br",
+        "status": "pendente"
+      },
+      "facebook": {
+        "legenda": "Siga @codigodavirada_br",
+        "status": "pendente"
+      }
+    },
+    {
+      "id": "reel-20261120-0900-75f8965bf4",
+      "data": "2026-11-20",
+      "horario": "09:00",
+      "status": "pendente",
+      "origem": {
+        "arquivo": "166.mp4",
+        "sha256": "75f8965bf4cdec55e7d479554aa1fffa02f6b24546ed4dff7f72120b58b2604b"
+      },
+      "midia": {
+        "asset": "166.mp4",
+        "url_publica": "https://github.com/cristianoladik/codigo-da-virada-automacao/releases/download/fila-instagram-facebook/166.mp4",
+        "sha256": "75f8965bf4cdec55e7d479554aa1fffa02f6b24546ed4dff7f72120b58b2604b",
+        "tamanho_bytes": 5619401
+      },
+      "instagram": {
+        "legenda": "Siga @codigodavirada_br",
+        "status": "pendente"
+      },
+      "facebook": {
+        "legenda": "Siga @codigodavirada_br",
+        "status": "pendente"
+      }
+    },
+    {
+      "id": "reel-20261120-2100-ef5b4d37e0",
+      "data": "2026-11-20",
+      "horario": "21:00",
+      "status": "pendente",
+      "origem": {
+        "arquivo": "167.mp4",
+        "sha256": "ef5b4d37e01c2872b3b8cde797d62b8d41f2b0a6151e8cff5f0c6f8819680863"
+      },
+      "midia": {
+        "asset": "167.mp4",
+        "url_publica": "https://github.com/cristianoladik/codigo-da-virada-automacao/releases/download/fila-instagram-facebook/167.mp4",
+        "sha256": "ef5b4d37e01c2872b3b8cde797d62b8d41f2b0a6151e8cff5f0c6f8819680863",
+        "tamanho_bytes": 15944193
+      },
+      "instagram": {
+        "legenda": "Siga @codigodavirada_br",
+        "status": "pendente"
+      },
+      "facebook": {
+        "legenda": "Siga @codigodavirada_br",
+        "status": "pendente"
+      }
+    },
+    {
+      "id": "reel-20261121-0900-c844e0c187",
+      "data": "2026-11-21",
+      "horario": "09:00",
+      "status": "pendente",
+      "origem": {
+        "arquivo": "168.mp4",
+        "sha256": "c844e0c187745e4a397af8e77ca1503700e45a169b4c75cf3080afefa6154302"
+      },
+      "midia": {
+        "asset": "168.mp4",
+        "url_publica": "https://github.com/cristianoladik/codigo-da-virada-automacao/releases/download/fila-instagram-facebook/168.mp4",
+        "sha256": "c844e0c187745e4a397af8e77ca1503700e45a169b4c75cf3080afefa6154302",
+        "tamanho_bytes": 10755536
+      },
+      "instagram": {
+        "legenda": "Siga @codigodavirada_br",
+        "status": "pendente"
+      },
+      "facebook": {
+        "legenda": "Siga @codigodavirada_br",
+        "status": "pendente"
+      }
+    },
+    {
+      "id": "reel-20261121-2100-42ba765d1e",
+      "data": "2026-11-21",
+      "horario": "21:00",
+      "status": "pendente",
+      "origem": {
+        "arquivo": "169.mp4",
+        "sha256": "42ba765d1ebc0f18e8fd60febc306b1d9e0046fdb60cb5ae57dd6725a8cd8764"
+      },
+      "midia": {
+        "asset": "169.mp4",
+        "url_publica": "https://github.com/cristianoladik/codigo-da-virada-automacao/releases/download/fila-instagram-facebook/169.mp4",
+        "sha256": "42ba765d1ebc0f18e8fd60febc306b1d9e0046fdb60cb5ae57dd6725a8cd8764",
+        "tamanho_bytes": 21626867
+      },
+      "instagram": {
+        "legenda": "Siga @codigodavirada_br",
+        "status": "pendente"
+      },
+      "facebook": {
+        "legenda": "Siga @codigodavirada_br",
+        "status": "pendente"
+      }
+    },
+    {
+      "id": "reel-20261122-0900-dba1c10b59",
+      "data": "2026-11-22",
+      "horario": "09:00",
+      "status": "pendente",
+      "origem": {
+        "arquivo": "170.mp4",
+        "sha256": "dba1c10b59c8a8a6e24267402c673565498036a7099a58cb9c721d464c9a1267"
+      },
+      "midia": {
+        "asset": "170.mp4",
+        "url_publica": "https://github.com/cristianoladik/codigo-da-virada-automacao/releases/download/fila-instagram-facebook/170.mp4",
+        "sha256": "dba1c10b59c8a8a6e24267402c673565498036a7099a58cb9c721d464c9a1267",
+        "tamanho_bytes": 22129555
+      },
+      "instagram": {
+        "legenda": "Siga @codigodavirada_br",
+        "status": "pendente"
+      },
+      "facebook": {
+        "legenda": "Siga @codigodavirada_br",
+        "status": "pendente"
+      }
+    },
+    {
+      "id": "reel-20261122-2100-b9dbf17672",
+      "data": "2026-11-22",
+      "horario": "21:00",
+      "status": "pendente",
+      "origem": {
+        "arquivo": "171.mp4",
+        "sha256": "b9dbf176723a3a81cc95f53d41c2a441e935557e18504ec53ed27c6f572c573d"
+      },
+      "midia": {
+        "asset": "171.mp4",
+        "url_publica": "https://github.com/cristianoladik/codigo-da-virada-automacao/releases/download/fila-instagram-facebook/171.mp4",
+        "sha256": "b9dbf176723a3a81cc95f53d41c2a441e935557e18504ec53ed27c6f572c573d",
+        "tamanho_bytes": 3107102
+      },
+      "instagram": {
+        "legenda": "Siga @codigodavirada_br",
+        "status": "pendente"
+      },
+      "facebook": {
+        "legenda": "Siga @codigodavirada_br",
+        "status": "pendente"
+      }
+    },
+    {
+      "id": "reel-20261123-0900-4f62686709",
+      "data": "2026-11-23",
+      "horario": "09:00",
+      "status": "pendente",
+      "origem": {
+        "arquivo": "172.mp4",
+        "sha256": "4f62686709ebe678ce43773c515f9676b34ba7b5abd71275d89adb3fdd0eae07"
+      },
+      "midia": {
+        "asset": "172.mp4",
+        "url_publica": "https://github.com/cristianoladik/codigo-da-virada-automacao/releases/download/fila-instagram-facebook/172.mp4",
+        "sha256": "4f62686709ebe678ce43773c515f9676b34ba7b5abd71275d89adb3fdd0eae07",
+        "tamanho_bytes": 14790061
+      },
+      "instagram": {
+        "legenda": "Siga @codigodavirada_br",
+        "status": "pendente"
+      },
+      "facebook": {
+        "legenda": "Siga @codigodavirada_br",
+        "status": "pendente"
+      }
+    },
+    {
+      "id": "reel-20261123-2100-caa894a724",
+      "data": "2026-11-23",
+      "horario": "21:00",
+      "status": "pendente",
+      "origem": {
+        "arquivo": "173.mp4",
+        "sha256": "caa894a7244b9b54192d995080028bb934e92151432c346ee61018f17b4c9deb"
+      },
+      "midia": {
+        "asset": "173.mp4",
+        "url_publica": "https://github.com/cristianoladik/codigo-da-virada-automacao/releases/download/fila-instagram-facebook/173.mp4",
+        "sha256": "caa894a7244b9b54192d995080028bb934e92151432c346ee61018f17b4c9deb",
+        "tamanho_bytes": 26746754
+      },
+      "instagram": {
+        "legenda": "Siga @codigodavirada_br",
+        "status": "pendente"
+      },
+      "facebook": {
+        "legenda": "Siga @codigodavirada_br",
+        "status": "pendente"
+      }
+    },
+    {
+      "id": "reel-20261124-0900-dc3b2b634e",
+      "data": "2026-11-24",
+      "horario": "09:00",
+      "status": "pendente",
+      "origem": {
+        "arquivo": "174.mp4",
+        "sha256": "dc3b2b634eb9c0ed2676ea94cee50da1bea0558e550ee5275e4d612a4fd81467"
+      },
+      "midia": {
+        "asset": "174.mp4",
+        "url_publica": "https://github.com/cristianoladik/codigo-da-virada-automacao/releases/download/fila-instagram-facebook/174.mp4",
+        "sha256": "dc3b2b634eb9c0ed2676ea94cee50da1bea0558e550ee5275e4d612a4fd81467",
+        "tamanho_bytes": 14056592
+      },
+      "instagram": {
+        "legenda": "Siga @codigodavirada_br",
+        "status": "pendente"
+      },
+      "facebook": {
+        "legenda": "Siga @codigodavirada_br",
+        "status": "pendente"
+      }
+    },
+    {
+      "id": "reel-20261124-2100-a2eabf38a1",
+      "data": "2026-11-24",
+      "horario": "21:00",
+      "status": "pendente",
+      "origem": {
+        "arquivo": "175.mp4",
+        "sha256": "a2eabf38a15c6c2a69b031bc051aab6e91eb2f802e6aa2a1c1e3ecf216c3473b"
+      },
+      "midia": {
+        "asset": "175.mp4",
+        "url_publica": "https://github.com/cristianoladik/codigo-da-virada-automacao/releases/download/fila-instagram-facebook/175.mp4",
+        "sha256": "a2eabf38a15c6c2a69b031bc051aab6e91eb2f802e6aa2a1c1e3ecf216c3473b",
+        "tamanho_bytes": 7219734
+      },
+      "instagram": {
+        "legenda": "Siga @codigodavirada_br",
+        "status": "pendente"
+      },
+      "facebook": {
+        "legenda": "Siga @codigodavirada_br",
+        "status": "pendente"
+      }
+    },
+    {
+      "id": "reel-20261125-0900-f8fc882b8c",
+      "data": "2026-11-25",
+      "horario": "09:00",
+      "status": "pendente",
+      "origem": {
+        "arquivo": "176.mp4",
+        "sha256": "f8fc882b8cae86d8c5dadcccb4f94f6dc465adb347be3850403f4b08c0259913"
+      },
+      "midia": {
+        "asset": "176.mp4",
+        "url_publica": "https://github.com/cristianoladik/codigo-da-virada-automacao/releases/download/fila-instagram-facebook/176.mp4",
+        "sha256": "f8fc882b8cae86d8c5dadcccb4f94f6dc465adb347be3850403f4b08c0259913",
+        "tamanho_bytes": 12677824
+      },
+      "instagram": {
+        "legenda": "Siga @codigodavirada_br",
+        "status": "pendente"
+      },
+      "facebook": {
+        "legenda": "Siga @codigodavirada_br",
+        "status": "pendente"
+      }
+    },
+    {
+      "id": "reel-20261125-2100-5cac773455",
+      "data": "2026-11-25",
+      "horario": "21:00",
+      "status": "pendente",
+      "origem": {
+        "arquivo": "177.mp4",
+        "sha256": "5cac773455fa36cec6d5e04d2629cd47c9b514d227e16ab97433e4d2618f0fa2"
+      },
+      "midia": {
+        "asset": "177.mp4",
+        "url_publica": "https://github.com/cristianoladik/codigo-da-virada-automacao/releases/download/fila-instagram-facebook/177.mp4",
+        "sha256": "5cac773455fa36cec6d5e04d2629cd47c9b514d227e16ab97433e4d2618f0fa2",
+        "tamanho_bytes": 13178341
+      },
+      "instagram": {
+        "legenda": "Siga @codigodavirada_br",
+        "status": "pendente"
+      },
+      "facebook": {
+        "legenda": "Siga @codigodavirada_br",
+        "status": "pendente"
+      }
+    },
+    {
+      "id": "reel-20261126-0900-e3d3753be5",
+      "data": "2026-11-26",
+      "horario": "09:00",
+      "status": "pendente",
+      "origem": {
+        "arquivo": "178.mp4",
+        "sha256": "e3d3753be56faab56e0ba559ba9402eb44bd8eb288d7fbd01d333ff2a87be32b"
+      },
+      "midia": {
+        "asset": "178.mp4",
+        "url_publica": "https://github.com/cristianoladik/codigo-da-virada-automacao/releases/download/fila-instagram-facebook/178.mp4",
+        "sha256": "e3d3753be56faab56e0ba559ba9402eb44bd8eb288d7fbd01d333ff2a87be32b",
+        "tamanho_bytes": 7470236
+      },
+      "instagram": {
+        "legenda": "Siga @codigodavirada_br",
+        "status": "pendente"
+      },
+      "facebook": {
+        "legenda": "Siga @codigodavirada_br",
+        "status": "pendente"
+      }
+    },
+    {
+      "id": "reel-20261126-2100-0ca24d231f",
+      "data": "2026-11-26",
+      "horario": "21:00",
+      "status": "pendente",
+      "origem": {
+        "arquivo": "179.mp4",
+        "sha256": "0ca24d231f516a2ba38117e939fbe5e3c53c15b67c18d2e612b3820ae6e08496"
+      },
+      "midia": {
+        "asset": "179.mp4",
+        "url_publica": "https://github.com/cristianoladik/codigo-da-virada-automacao/releases/download/fila-instagram-facebook/179.mp4",
+        "sha256": "0ca24d231f516a2ba38117e939fbe5e3c53c15b67c18d2e612b3820ae6e08496",
+        "tamanho_bytes": 11004254
+      },
+      "instagram": {
+        "legenda": "Siga @codigodavirada_br",
+        "status": "pendente"
+      },
+      "facebook": {
+        "legenda": "Siga @codigodavirada_br",
+        "status": "pendente"
+      }
+    },
+    {
+      "id": "reel-20261127-0900-ab3f2901ec",
+      "data": "2026-11-27",
+      "horario": "09:00",
+      "status": "pendente",
+      "origem": {
+        "arquivo": "180.mp4",
+        "sha256": "ab3f2901ecb0d9c27040481a7ea4e6eaafefe6cb09e02f44d58e5eae01dda797"
+      },
+      "midia": {
+        "asset": "180.mp4",
+        "url_publica": "https://github.com/cristianoladik/codigo-da-virada-automacao/releases/download/fila-instagram-facebook/180.mp4",
+        "sha256": "ab3f2901ecb0d9c27040481a7ea4e6eaafefe6cb09e02f44d58e5eae01dda797",
+        "tamanho_bytes": 7970161
+      },
+      "instagram": {
+        "legenda": "Siga @codigodavirada_br",
+        "status": "pendente"
+      },
+      "facebook": {
+        "legenda": "Siga @codigodavirada_br",
+        "status": "pendente"
+      }
+    },
+    {
+      "id": "reel-20261127-2100-0b163cb7b6",
+      "data": "2026-11-27",
+      "horario": "21:00",
+      "status": "pendente",
+      "origem": {
+        "arquivo": "181.mp4",
+        "sha256": "0b163cb7b6e9abea64b5834af36bea7b5f645b3ab109e0f184b1923e677a4e3b"
+      },
+      "midia": {
+        "asset": "181.mp4",
+        "url_publica": "https://github.com/cristianoladik/codigo-da-virada-automacao/releases/download/fila-instagram-facebook/181.mp4",
+        "sha256": "0b163cb7b6e9abea64b5834af36bea7b5f645b3ab109e0f184b1923e677a4e3b",
+        "tamanho_bytes": 13986674
+      },
+      "instagram": {
+        "legenda": "Siga @codigodavirada_br",
+        "status": "pendente"
+      },
+      "facebook": {
+        "legenda": "Siga @codigodavirada_br",
+        "status": "pendente"
+      }
+    },
+    {
+      "id": "reel-20261128-0900-24b6d67a48",
+      "data": "2026-11-28",
+      "horario": "09:00",
+      "status": "pendente",
+      "origem": {
+        "arquivo": "182.mp4",
+        "sha256": "24b6d67a489355b11f185a6297b8fb22092ce395152a373b4d5bd5d45a5af6ee"
+      },
+      "midia": {
+        "asset": "182.mp4",
+        "url_publica": "https://github.com/cristianoladik/codigo-da-virada-automacao/releases/download/fila-instagram-facebook/182.mp4",
+        "sha256": "24b6d67a489355b11f185a6297b8fb22092ce395152a373b4d5bd5d45a5af6ee",
+        "tamanho_bytes": 8806655
+      },
+      "instagram": {
+        "legenda": "Siga @codigodavirada_br",
+        "status": "pendente"
+      },
+      "facebook": {
+        "legenda": "Siga @codigodavirada_br",
+        "status": "pendente"
+      }
+    },
+    {
+      "id": "reel-20261128-2100-24f1e4b17a",
+      "data": "2026-11-28",
+      "horario": "21:00",
+      "status": "pendente",
+      "origem": {
+        "arquivo": "183.mp4",
+        "sha256": "24f1e4b17a730f12887272504c2158fe3b5851d6dd681c756edc052ac49eebc3"
+      },
+      "midia": {
+        "asset": "183.mp4",
+        "url_publica": "https://github.com/cristianoladik/codigo-da-virada-automacao/releases/download/fila-instagram-facebook/183.mp4",
+        "sha256": "24f1e4b17a730f12887272504c2158fe3b5851d6dd681c756edc052ac49eebc3",
+        "tamanho_bytes": 10099754
+      },
+      "instagram": {
+        "legenda": "Siga @codigodavirada_br",
+        "status": "pendente"
+      },
+      "facebook": {
+        "legenda": "Siga @codigodavirada_br",
+        "status": "pendente"
+      }
+    },
+    {
+      "id": "reel-20261129-0900-d13eb8685d",
+      "data": "2026-11-29",
+      "horario": "09:00",
+      "status": "pendente",
+      "origem": {
+        "arquivo": "184.mp4",
+        "sha256": "d13eb8685dd906173a092437bced898331575867d53b35816458c6689244b57a"
+      },
+      "midia": {
+        "asset": "184.mp4",
+        "url_publica": "https://github.com/cristianoladik/codigo-da-virada-automacao/releases/download/fila-instagram-facebook/184.mp4",
+        "sha256": "d13eb8685dd906173a092437bced898331575867d53b35816458c6689244b57a",
+        "tamanho_bytes": 29443965
+      },
+      "instagram": {
+        "legenda": "Siga @codigodavirada_br",
+        "status": "pendente"
+      },
+      "facebook": {
+        "legenda": "Siga @codigodavirada_br",
+        "status": "pendente"
+      }
+    },
+    {
+      "id": "reel-20261129-2100-0830521075",
+      "data": "2026-11-29",
+      "horario": "21:00",
+      "status": "pendente",
+      "origem": {
+        "arquivo": "185.mp4",
+        "sha256": "0830521075d3906c2c6e80243f289619f7dd1d3c4de7826e7eedb6f5ad3b3c1d"
+      },
+      "midia": {
+        "asset": "185.mp4",
+        "url_publica": "https://github.com/cristianoladik/codigo-da-virada-automacao/releases/download/fila-instagram-facebook/185.mp4",
+        "sha256": "0830521075d3906c2c6e80243f289619f7dd1d3c4de7826e7eedb6f5ad3b3c1d",
+        "tamanho_bytes": 42125859
+      },
+      "instagram": {
+        "legenda": "Siga @codigodavirada_br",
+        "status": "pendente"
+      },
+      "facebook": {
+        "legenda": "Siga @codigodavirada_br",
+        "status": "pendente"
+      }
+    },
+    {
+      "id": "reel-20261130-0900-a2a19b816d",
+      "data": "2026-11-30",
+      "horario": "09:00",
+      "status": "pendente",
+      "origem": {
+        "arquivo": "186.mp4",
+        "sha256": "a2a19b816da6cb77049bb42f8e4c1503b77afbd915b92e5787073fafc76f28ef"
+      },
+      "midia": {
+        "asset": "186.mp4",
+        "url_publica": "https://github.com/cristianoladik/codigo-da-virada-automacao/releases/download/fila-instagram-facebook/186.mp4",
+        "sha256": "a2a19b816da6cb77049bb42f8e4c1503b77afbd915b92e5787073fafc76f28ef",
+        "tamanho_bytes": 5286797
+      },
+      "instagram": {
+        "legenda": "Siga @codigodavirada_br",
+        "status": "pendente"
+      },
+      "facebook": {
+        "legenda": "Siga @codigodavirada_br",
+        "status": "pendente"
+      }
+    },
+    {
+      "id": "reel-20261130-2100-dc31c39a8b",
+      "data": "2026-11-30",
+      "horario": "21:00",
+      "status": "pendente",
+      "origem": {
+        "arquivo": "187.mp4",
+        "sha256": "dc31c39a8b914f24c234021c3163f09898234d48dd3a4e3675d4fdd3a8f54d64"
+      },
+      "midia": {
+        "asset": "187.mp4",
+        "url_publica": "https://github.com/cristianoladik/codigo-da-virada-automacao/releases/download/fila-instagram-facebook/187.mp4",
+        "sha256": "dc31c39a8b914f24c234021c3163f09898234d48dd3a4e3675d4fdd3a8f54d64",
+        "tamanho_bytes": 5241841
+      },
+      "instagram": {
+        "legenda": "Siga @codigodavirada_br",
+        "status": "pendente"
+      },
+      "facebook": {
+        "legenda": "Siga @codigodavirada_br",
+        "status": "pendente"
+      }
+    },
+    {
+      "id": "reel-20261201-0900-1a8e2779bc",
+      "data": "2026-12-01",
+      "horario": "09:00",
+      "status": "pendente",
+      "origem": {
+        "arquivo": "188.mp4",
+        "sha256": "1a8e2779bc9a9d5246a0b99bf174b156a34521cef5b91b68110b063ce6473ba4"
+      },
+      "midia": {
+        "asset": "188.mp4",
+        "url_publica": "https://github.com/cristianoladik/codigo-da-virada-automacao/releases/download/fila-instagram-facebook/188.mp4",
+        "sha256": "1a8e2779bc9a9d5246a0b99bf174b156a34521cef5b91b68110b063ce6473ba4",
+        "tamanho_bytes": 7743774
+      },
+      "instagram": {
+        "legenda": "Siga @codigodavirada_br",
+        "status": "pendente"
+      },
+      "facebook": {
+        "legenda": "Siga @codigodavirada_br",
+        "status": "pendente"
+      }
+    },
+    {
+      "id": "reel-20261201-2100-afdd405992",
+      "data": "2026-12-01",
+      "horario": "21:00",
+      "status": "pendente",
+      "origem": {
+        "arquivo": "189.mp4",
+        "sha256": "afdd40599290bb337293eaf404707b85ed1e74eddade3b62cfbcd08e868fa81a"
+      },
+      "midia": {
+        "asset": "189.mp4",
+        "url_publica": "https://github.com/cristianoladik/codigo-da-virada-automacao/releases/download/fila-instagram-facebook/189.mp4",
+        "sha256": "afdd40599290bb337293eaf404707b85ed1e74eddade3b62cfbcd08e868fa81a",
+        "tamanho_bytes": 15360144
+      },
+      "instagram": {
+        "legenda": "Siga @codigodavirada_br",
+        "status": "pendente"
+      },
+      "facebook": {
+        "legenda": "Siga @codigodavirada_br",
+        "status": "pendente"
+      }
+    },
+    {
+      "id": "reel-20261202-0900-f5bdfd533e",
+      "data": "2026-12-02",
+      "horario": "09:00",
+      "status": "pendente",
+      "origem": {
+        "arquivo": "190.mp4",
+        "sha256": "f5bdfd533e3fb5e064025fe4e739ee23e850b8e628f8e765e4483097b5bb92f1"
+      },
+      "midia": {
+        "asset": "190.mp4",
+        "url_publica": "https://github.com/cristianoladik/codigo-da-virada-automacao/releases/download/fila-instagram-facebook/190.mp4",
+        "sha256": "f5bdfd533e3fb5e064025fe4e739ee23e850b8e628f8e765e4483097b5bb92f1",
+        "tamanho_bytes": 15546405
+      },
+      "instagram": {
+        "legenda": "Siga @codigodavirada_br",
+        "status": "pendente"
+      },
+      "facebook": {
+        "legenda": "Siga @codigodavirada_br",
+        "status": "pendente"
+      }
+    },
+    {
+      "id": "reel-20261202-2100-a37d1c7c16",
+      "data": "2026-12-02",
+      "horario": "21:00",
+      "status": "pendente",
+      "origem": {
+        "arquivo": "191.mp4",
+        "sha256": "a37d1c7c161a89ae9a1e188df34f35e660d5f37661870e92bd07bd9328446f7b"
+      },
+      "midia": {
+        "asset": "191.mp4",
+        "url_publica": "https://github.com/cristianoladik/codigo-da-virada-automacao/releases/download/fila-instagram-facebook/191.mp4",
+        "sha256": "a37d1c7c161a89ae9a1e188df34f35e660d5f37661870e92bd07bd9328446f7b",
+        "tamanho_bytes": 13373793
+      },
+      "instagram": {
+        "legenda": "Siga @codigodavirada_br",
+        "status": "pendente"
+      },
+      "facebook": {
+        "legenda": "Siga @codigodavirada_br",
+        "status": "pendente"
+      }
+    },
+    {
+      "id": "reel-20261203-0900-0e9cdf6c94",
+      "data": "2026-12-03",
+      "horario": "09:00",
+      "status": "pendente",
+      "origem": {
+        "arquivo": "192.mp4",
+        "sha256": "0e9cdf6c94194debff6fae635e6e7c116f3e964abfb000cb1d478ebf23220329"
+      },
+      "midia": {
+        "asset": "192.mp4",
+        "url_publica": "https://github.com/cristianoladik/codigo-da-virada-automacao/releases/download/fila-instagram-facebook/192.mp4",
+        "sha256": "0e9cdf6c94194debff6fae635e6e7c116f3e964abfb000cb1d478ebf23220329",
+        "tamanho_bytes": 16546215
+      },
+      "instagram": {
+        "legenda": "Siga @codigodavirada_br",
+        "status": "pendente"
+      },
+      "facebook": {
+        "legenda": "Siga @codigodavirada_br",
+        "status": "pendente"
+      }
+    },
+    {
+      "id": "reel-20261203-2100-e40c098553",
+      "data": "2026-12-03",
+      "horario": "21:00",
+      "status": "pendente",
+      "origem": {
+        "arquivo": "193.mp4",
+        "sha256": "e40c098553d7e64f70b1ec09ad308979d4a7d5858fcb2170ea52c46e5f7aebf5"
+      },
+      "midia": {
+        "asset": "193.mp4",
+        "url_publica": "https://github.com/cristianoladik/codigo-da-virada-automacao/releases/download/fila-instagram-facebook/193.mp4",
+        "sha256": "e40c098553d7e64f70b1ec09ad308979d4a7d5858fcb2170ea52c46e5f7aebf5",
+        "tamanho_bytes": 29874901
+      },
+      "instagram": {
+        "legenda": "Siga @codigodavirada_br",
+        "status": "pendente"
+      },
+      "facebook": {
+        "legenda": "Siga @codigodavirada_br",
+        "status": "pendente"
+      }
+    },
+    {
+      "id": "reel-20261204-0900-777b796075",
+      "data": "2026-12-04",
+      "horario": "09:00",
+      "status": "pendente",
+      "origem": {
+        "arquivo": "194.mp4",
+        "sha256": "777b796075baa3046c714cc5d623b39f24cd179fa03e1515bd0ed952f2767cf7"
+      },
+      "midia": {
+        "asset": "194.mp4",
+        "url_publica": "https://github.com/cristianoladik/codigo-da-virada-automacao/releases/download/fila-instagram-facebook/194.mp4",
+        "sha256": "777b796075baa3046c714cc5d623b39f24cd179fa03e1515bd0ed952f2767cf7",
+        "tamanho_bytes": 4766145
+      },
+      "instagram": {
+        "legenda": "Siga @codigodavirada_br",
+        "status": "pendente"
+      },
+      "facebook": {
+        "legenda": "Siga @codigodavirada_br",
+        "status": "pendente"
+      }
+    },
+    {
+      "id": "reel-20261204-2100-3086b30445",
+      "data": "2026-12-04",
+      "horario": "21:00",
+      "status": "pendente",
+      "origem": {
+        "arquivo": "195.mp4",
+        "sha256": "3086b30445c675caa8814b30cfa4b9bc5036a3b30874df5491ae1583a8c1f1ba"
+      },
+      "midia": {
+        "asset": "195.mp4",
+        "url_publica": "https://github.com/cristianoladik/codigo-da-virada-automacao/releases/download/fila-instagram-facebook/195.mp4",
+        "sha256": "3086b30445c675caa8814b30cfa4b9bc5036a3b30874df5491ae1583a8c1f1ba",
+        "tamanho_bytes": 3017571
+      },
+      "instagram": {
+        "legenda": "Siga @codigodavirada_br",
+        "status": "pendente"
+      },
+      "facebook": {
+        "legenda": "Siga @codigodavirada_br",
+        "status": "pendente"
+      }
+    },
+    {
+      "id": "reel-20261205-0900-622b09bf0e",
+      "data": "2026-12-05",
+      "horario": "09:00",
+      "status": "pendente",
+      "origem": {
+        "arquivo": "196.mp4",
+        "sha256": "622b09bf0e7273800fdea020888b3e169345326b8a28dae665f67a07fb13131c"
+      },
+      "midia": {
+        "asset": "196.mp4",
+        "url_publica": "https://github.com/cristianoladik/codigo-da-virada-automacao/releases/download/fila-instagram-facebook/196.mp4",
+        "sha256": "622b09bf0e7273800fdea020888b3e169345326b8a28dae665f67a07fb13131c",
+        "tamanho_bytes": 17748654
+      },
+      "instagram": {
+        "legenda": "Siga @codigodavirada_br",
+        "status": "pendente"
+      },
+      "facebook": {
+        "legenda": "Siga @codigodavirada_br",
+        "status": "pendente"
+      }
+    },
+    {
+      "id": "reel-20261205-2100-c1ba758291",
+      "data": "2026-12-05",
+      "horario": "21:00",
+      "status": "pendente",
+      "origem": {
+        "arquivo": "197.mp4",
+        "sha256": "c1ba758291540b3ed868a6bbb7fe797ceb65c7bef4f6a2fd68154a6461d5ff7e"
+      },
+      "midia": {
+        "asset": "197.mp4",
+        "url_publica": "https://github.com/cristianoladik/codigo-da-virada-automacao/releases/download/fila-instagram-facebook/197.mp4",
+        "sha256": "c1ba758291540b3ed868a6bbb7fe797ceb65c7bef4f6a2fd68154a6461d5ff7e",
+        "tamanho_bytes": 23585183
+      },
+      "instagram": {
+        "legenda": "Siga @codigodavirada_br",
+        "status": "pendente"
+      },
+      "facebook": {
+        "legenda": "Siga @codigodavirada_br",
+        "status": "pendente"
+      }
+    },
+    {
+      "id": "reel-20261206-0900-db01114e10",
+      "data": "2026-12-06",
+      "horario": "09:00",
+      "status": "pendente",
+      "origem": {
+        "arquivo": "198.mp4",
+        "sha256": "db01114e10c8b2a5465943539d00e2b764fae9eed8ef5c55a73a60f36835e9b1"
+      },
+      "midia": {
+        "asset": "198.mp4",
+        "url_publica": "https://github.com/cristianoladik/codigo-da-virada-automacao/releases/download/fila-instagram-facebook/198.mp4",
+        "sha256": "db01114e10c8b2a5465943539d00e2b764fae9eed8ef5c55a73a60f36835e9b1",
+        "tamanho_bytes": 8877006
+      },
+      "instagram": {
+        "legenda": "Siga @codigodavirada_br",
+        "status": "pendente"
+      },
+      "facebook": {
+        "legenda": "Siga @codigodavirada_br",
+        "status": "pendente"
+      }
+    },
+    {
+      "id": "reel-20261206-2100-96676eb2d3",
+      "data": "2026-12-06",
+      "horario": "21:00",
+      "status": "pendente",
+      "origem": {
+        "arquivo": "199.mp4",
+        "sha256": "96676eb2d3d959004ccfcc690f8d77372f4e9846066e7691185fefd87fb7c0c7"
+      },
+      "midia": {
+        "asset": "199.mp4",
+        "url_publica": "https://github.com/cristianoladik/codigo-da-virada-automacao/releases/download/fila-instagram-facebook/199.mp4",
+        "sha256": "96676eb2d3d959004ccfcc690f8d77372f4e9846066e7691185fefd87fb7c0c7",
+        "tamanho_bytes": 19284594
+      },
+      "instagram": {
+        "legenda": "Siga @codigodavirada_br",
+        "status": "pendente"
+      },
+      "facebook": {
+        "legenda": "Siga @codigodavirada_br",
+        "status": "pendente"
+      }
+    },
+    {
+      "id": "reel-20261207-0900-150b8c98bf",
+      "data": "2026-12-07",
+      "horario": "09:00",
+      "status": "pendente",
+      "origem": {
+        "arquivo": "200.mp4",
+        "sha256": "150b8c98bfc75a609a104380fae7c9eeadb8200b097eecd3f9362095c21e1e6f"
+      },
+      "midia": {
+        "asset": "200.mp4",
+        "url_publica": "https://github.com/cristianoladik/codigo-da-virada-automacao/releases/download/fila-instagram-facebook/200.mp4",
+        "sha256": "150b8c98bfc75a609a104380fae7c9eeadb8200b097eecd3f9362095c21e1e6f",
+        "tamanho_bytes": 12342261
+      },
+      "instagram": {
+        "legenda": "Siga @codigodavirada_br",
+        "status": "pendente"
+      },
+      "facebook": {
+        "legenda": "Siga @codigodavirada_br",
+        "status": "pendente"
+      }
+    },
+    {
+      "id": "reel-20261207-2100-139e6af3bd",
+      "data": "2026-12-07",
+      "horario": "21:00",
+      "status": "pendente",
+      "origem": {
+        "arquivo": "201.mp4",
+        "sha256": "139e6af3bd17994ad53ab23f7c62406ae2eafd7741de2b2e481ca126a5205c66"
+      },
+      "midia": {
+        "asset": "201.mp4",
+        "url_publica": "https://github.com/cristianoladik/codigo-da-virada-automacao/releases/download/fila-instagram-facebook/201.mp4",
+        "sha256": "139e6af3bd17994ad53ab23f7c62406ae2eafd7741de2b2e481ca126a5205c66",
+        "tamanho_bytes": 2978411
+      },
+      "instagram": {
+        "legenda": "Siga @codigodavirada_br",
+        "status": "pendente"
+      },
+      "facebook": {
+        "legenda": "Siga @codigodavirada_br",
+        "status": "pendente"
+      }
+    },
+    {
+      "id": "reel-20261208-0900-780a376653",
+      "data": "2026-12-08",
+      "horario": "09:00",
+      "status": "pendente",
+      "origem": {
+        "arquivo": "202.mp4",
+        "sha256": "780a3766539b33aea96617d2f68d92e22ad27eaa38d338d3c93b043478b19d35"
+      },
+      "midia": {
+        "asset": "202.mp4",
+        "url_publica": "https://github.com/cristianoladik/codigo-da-virada-automacao/releases/download/fila-instagram-facebook/202.mp4",
+        "sha256": "780a3766539b33aea96617d2f68d92e22ad27eaa38d338d3c93b043478b19d35",
+        "tamanho_bytes": 1634840
+      },
+      "instagram": {
+        "legenda": "Siga @codigodavirada_br",
+        "status": "pendente"
+      },
+      "facebook": {
+        "legenda": "Siga @codigodavirada_br",
+        "status": "pendente"
+      }
+    },
+    {
+      "id": "reel-20261208-2100-1e95dfe06c",
+      "data": "2026-12-08",
+      "horario": "21:00",
+      "status": "pendente",
+      "origem": {
+        "arquivo": "203.mp4",
+        "sha256": "1e95dfe06c313b5dd6117ebff23079033af7240ff24564fa3fd6c9e4aac2f5c2"
+      },
+      "midia": {
+        "asset": "203.mp4",
+        "url_publica": "https://github.com/cristianoladik/codigo-da-virada-automacao/releases/download/fila-instagram-facebook/203.mp4",
+        "sha256": "1e95dfe06c313b5dd6117ebff23079033af7240ff24564fa3fd6c9e4aac2f5c2",
+        "tamanho_bytes": 3439163
+      },
+      "instagram": {
+        "legenda": "Siga @codigodavirada_br",
+        "status": "pendente"
+      },
+      "facebook": {
+        "legenda": "Siga @codigodavirada_br",
+        "status": "pendente"
+      }
+    },
+    {
+      "id": "reel-20261209-0900-b67a4b2991",
+      "data": "2026-12-09",
+      "horario": "09:00",
+      "status": "pendente",
+      "origem": {
+        "arquivo": "204.mp4",
+        "sha256": "b67a4b29913e0bb4998abe71247b732229761ba9a77d6973c3c2c7927dee1e47"
+      },
+      "midia": {
+        "asset": "204.mp4",
+        "url_publica": "https://github.com/cristianoladik/codigo-da-virada-automacao/releases/download/fila-instagram-facebook/204.mp4",
+        "sha256": "b67a4b29913e0bb4998abe71247b732229761ba9a77d6973c3c2c7927dee1e47",
+        "tamanho_bytes": 2006455
+      },
+      "instagram": {
+        "legenda": "Siga @codigodavirada_br",
+        "status": "pendente"
+      },
+      "facebook": {
+        "legenda": "Siga @codigodavirada_br",
+        "status": "pendente"
+      }
+    },
+    {
+      "id": "reel-20261209-2100-13e3509dac",
+      "data": "2026-12-09",
+      "horario": "21:00",
+      "status": "pendente",
+      "origem": {
+        "arquivo": "205.mp4",
+        "sha256": "13e3509dacca9b9c51b5509d34ea99cec4d2b246acec3bc1906e95639e37b85c"
+      },
+      "midia": {
+        "asset": "205.mp4",
+        "url_publica": "https://github.com/cristianoladik/codigo-da-virada-automacao/releases/download/fila-instagram-facebook/205.mp4",
+        "sha256": "13e3509dacca9b9c51b5509d34ea99cec4d2b246acec3bc1906e95639e37b85c",
+        "tamanho_bytes": 2948375
+      },
+      "instagram": {
+        "legenda": "Siga @codigodavirada_br",
+        "status": "pendente"
+      },
+      "facebook": {
+        "legenda": "Siga @codigodavirada_br",
+        "status": "pendente"
+      }
+    },
+    {
+      "id": "reel-20261210-0900-16b464f17d",
+      "data": "2026-12-10",
+      "horario": "09:00",
+      "status": "pendente",
+      "origem": {
+        "arquivo": "206.mp4",
+        "sha256": "16b464f17d2113c4fff8c4f77d96912a14653b2fa76d6e06124760b9b2c443cb"
+      },
+      "midia": {
+        "asset": "206.mp4",
+        "url_publica": "https://github.com/cristianoladik/codigo-da-virada-automacao/releases/download/fila-instagram-facebook/206.mp4",
+        "sha256": "16b464f17d2113c4fff8c4f77d96912a14653b2fa76d6e06124760b9b2c443cb",
+        "tamanho_bytes": 9968072
+      },
+      "instagram": {
+        "legenda": "Siga @codigodavirada_br",
+        "status": "pendente"
+      },
+      "facebook": {
+        "legenda": "Siga @codigodavirada_br",
+        "status": "pendente"
+      }
+    },
+    {
+      "id": "reel-20261210-2100-92e7658fa5",
+      "data": "2026-12-10",
+      "horario": "21:00",
+      "status": "pendente",
+      "origem": {
+        "arquivo": "207.mp4",
+        "sha256": "92e7658fa5bd15a1a4b3ad045a5ff487c1f16c0e95818a06258ca27f9d7a0468"
+      },
+      "midia": {
+        "asset": "207.mp4",
+        "url_publica": "https://github.com/cristianoladik/codigo-da-virada-automacao/releases/download/fila-instagram-facebook/207.mp4",
+        "sha256": "92e7658fa5bd15a1a4b3ad045a5ff487c1f16c0e95818a06258ca27f9d7a0468",
+        "tamanho_bytes": 7501373
+      },
+      "instagram": {
+        "legenda": "Siga @codigodavirada_br",
+        "status": "pendente"
+      },
+      "facebook": {
+        "legenda": "Siga @codigodavirada_br",
+        "status": "pendente"
+      }
+    },
+    {
+      "id": "reel-20261211-0900-c2f8023f70",
+      "data": "2026-12-11",
+      "horario": "09:00",
+      "status": "pendente",
+      "origem": {
+        "arquivo": "208.mp4",
+        "sha256": "c2f8023f700fb1e82c083e84536c10d5b9af826c1f8299881353fdbd122df713"
+      },
+      "midia": {
+        "asset": "208.mp4",
+        "url_publica": "https://github.com/cristianoladik/codigo-da-virada-automacao/releases/download/fila-instagram-facebook/208.mp4",
+        "sha256": "c2f8023f700fb1e82c083e84536c10d5b9af826c1f8299881353fdbd122df713",
+        "tamanho_bytes": 8865625
+      },
+      "instagram": {
+        "legenda": "Siga @codigodavirada_br",
+        "status": "pendente"
+      },
+      "facebook": {
+        "legenda": "Siga @codigodavirada_br",
+        "status": "pendente"
+      }
+    },
+    {
+      "id": "reel-20261211-2100-c85d7cdfa6",
+      "data": "2026-12-11",
+      "horario": "21:00",
+      "status": "pendente",
+      "origem": {
+        "arquivo": "209.mp4",
+        "sha256": "c85d7cdfa6b67dc38f78a7fcd1631d5d3122f6702910f02df8df66df9ddec1d8"
+      },
+      "midia": {
+        "asset": "209.mp4",
+        "url_publica": "https://github.com/cristianoladik/codigo-da-virada-automacao/releases/download/fila-instagram-facebook/209.mp4",
+        "sha256": "c85d7cdfa6b67dc38f78a7fcd1631d5d3122f6702910f02df8df66df9ddec1d8",
+        "tamanho_bytes": 5439843
+      },
+      "instagram": {
+        "legenda": "Siga @codigodavirada_br",
+        "status": "pendente"
+      },
+      "facebook": {
+        "legenda": "Siga @codigodavirada_br",
+        "status": "pendente"
+      }
+    },
+    {
+      "id": "reel-20261212-0900-49bd0c3bde",
+      "data": "2026-12-12",
+      "horario": "09:00",
+      "status": "pendente",
+      "origem": {
+        "arquivo": "210.mp4",
+        "sha256": "49bd0c3bde5617debdc9d46a1a4acd8c78e1fb4eb63adf603db1fc7d0fa13d0f"
+      },
+      "midia": {
+        "asset": "210.mp4",
+        "url_publica": "https://github.com/cristianoladik/codigo-da-virada-automacao/releases/download/fila-instagram-facebook/210.mp4",
+        "sha256": "49bd0c3bde5617debdc9d46a1a4acd8c78e1fb4eb63adf603db1fc7d0fa13d0f",
+        "tamanho_bytes": 12146278
+      },
+      "instagram": {
+        "legenda": "Siga @codigodavirada_br",
+        "status": "pendente"
+      },
+      "facebook": {
+        "legenda": "Siga @codigodavirada_br",
+        "status": "pendente"
+      }
+    },
+    {
+      "id": "reel-20261212-2100-0a53a589c8",
+      "data": "2026-12-12",
+      "horario": "21:00",
+      "status": "pendente",
+      "origem": {
+        "arquivo": "211.mp4",
+        "sha256": "0a53a589c8f37b0d10787733f9ca238a937c185cd75637dacd2f24274a1783f4"
+      },
+      "midia": {
+        "asset": "211.mp4",
+        "url_publica": "https://github.com/cristianoladik/codigo-da-virada-automacao/releases/download/fila-instagram-facebook/211.mp4",
+        "sha256": "0a53a589c8f37b0d10787733f9ca238a937c185cd75637dacd2f24274a1783f4",
+        "tamanho_bytes": 18091685
+      },
+      "instagram": {
+        "legenda": "Siga @codigodavirada_br",
+        "status": "pendente"
+      },
+      "facebook": {
+        "legenda": "Siga @codigodavirada_br",
+        "status": "pendente"
+      }
+    },
+    {
+      "id": "reel-20261213-0900-e55aea8eaf",
+      "data": "2026-12-13",
+      "horario": "09:00",
+      "status": "pendente",
+      "origem": {
+        "arquivo": "212.mp4",
+        "sha256": "e55aea8eaf3a67273517e0bd938eb7e952d62c4bf5ed264d71db6eeb666ecc26"
+      },
+      "midia": {
+        "asset": "212.mp4",
+        "url_publica": "https://github.com/cristianoladik/codigo-da-virada-automacao/releases/download/fila-instagram-facebook/212.mp4",
+        "sha256": "e55aea8eaf3a67273517e0bd938eb7e952d62c4bf5ed264d71db6eeb666ecc26",
+        "tamanho_bytes": 4169401
+      },
+      "instagram": {
+        "legenda": "Siga @codigodavirada_br",
+        "status": "pendente"
+      },
+      "facebook": {
+        "legenda": "Siga @codigodavirada_br",
+        "status": "pendente"
+      }
+    },
+    {
+      "id": "reel-20261213-2100-4bd253ac84",
+      "data": "2026-12-13",
+      "horario": "21:00",
+      "status": "pendente",
+      "origem": {
+        "arquivo": "213.mp4",
+        "sha256": "4bd253ac84b258c6f992547300631c7a8e5ff29ed55550988cbe57d1f6e701a8"
+      },
+      "midia": {
+        "asset": "213.mp4",
+        "url_publica": "https://github.com/cristianoladik/codigo-da-virada-automacao/releases/download/fila-instagram-facebook/213.mp4",
+        "sha256": "4bd253ac84b258c6f992547300631c7a8e5ff29ed55550988cbe57d1f6e701a8",
+        "tamanho_bytes": 3718091
+      },
+      "instagram": {
+        "legenda": "Siga @codigodavirada_br",
+        "status": "pendente"
+      },
+      "facebook": {
+        "legenda": "Siga @codigodavirada_br",
+        "status": "pendente"
+      }
+    },
+    {
+      "id": "reel-20261214-0900-f6abc97a18",
+      "data": "2026-12-14",
+      "horario": "09:00",
+      "status": "pendente",
+      "origem": {
+        "arquivo": "214.mp4",
+        "sha256": "f6abc97a18c0fa8abc34602fa92cf2d5b33a48926b7c04619215e7e990fcad62"
+      },
+      "midia": {
+        "asset": "214.mp4",
+        "url_publica": "https://github.com/cristianoladik/codigo-da-virada-automacao/releases/download/fila-instagram-facebook/214.mp4",
+        "sha256": "f6abc97a18c0fa8abc34602fa92cf2d5b33a48926b7c04619215e7e990fcad62",
+        "tamanho_bytes": 4433726
+      },
+      "instagram": {
+        "legenda": "Siga @codigodavirada_br",
+        "status": "pendente"
+      },
+      "facebook": {
+        "legenda": "Siga @codigodavirada_br",
+        "status": "pendente"
+      }
+    },
+    {
+      "id": "reel-20261214-2100-97c6f364cb",
+      "data": "2026-12-14",
+      "horario": "21:00",
+      "status": "pendente",
+      "origem": {
+        "arquivo": "215.mp4",
+        "sha256": "97c6f364cb7224d07df65bb751fd0db862cb911fe17f65f1414163374bfbf241"
+      },
+      "midia": {
+        "asset": "215.mp4",
+        "url_publica": "https://github.com/cristianoladik/codigo-da-virada-automacao/releases/download/fila-instagram-facebook/215.mp4",
+        "sha256": "97c6f364cb7224d07df65bb751fd0db862cb911fe17f65f1414163374bfbf241",
+        "tamanho_bytes": 10663587
+      },
+      "instagram": {
+        "legenda": "Siga @codigodavirada_br",
+        "status": "pendente"
+      },
+      "facebook": {
+        "legenda": "Siga @codigodavirada_br",
+        "status": "pendente"
+      }
+    },
+    {
+      "id": "reel-20261215-0900-f61bdd54d2",
+      "data": "2026-12-15",
+      "horario": "09:00",
+      "status": "pendente",
+      "origem": {
+        "arquivo": "216.mp4",
+        "sha256": "f61bdd54d28afef107c8070ff24c86fc094226083aa9eaaebe0a2ac6eaa07020"
+      },
+      "midia": {
+        "asset": "216.mp4",
+        "url_publica": "https://github.com/cristianoladik/codigo-da-virada-automacao/releases/download/fila-instagram-facebook/216.mp4",
+        "sha256": "f61bdd54d28afef107c8070ff24c86fc094226083aa9eaaebe0a2ac6eaa07020",
+        "tamanho_bytes": 10900756
+      },
+      "instagram": {
+        "legenda": "Siga @codigodavirada_br",
+        "status": "pendente"
+      },
+      "facebook": {
+        "legenda": "Siga @codigodavirada_br",
+        "status": "pendente"
+      }
+    },
+    {
+      "id": "reel-20261215-2100-f1bd671635",
+      "data": "2026-12-15",
+      "horario": "21:00",
+      "status": "pendente",
+      "origem": {
+        "arquivo": "217.mp4",
+        "sha256": "f1bd6716356c1208fc797da5921a891d6725125927f0c61b3d9819c12d2b9712"
+      },
+      "midia": {
+        "asset": "217.mp4",
+        "url_publica": "https://github.com/cristianoladik/codigo-da-virada-automacao/releases/download/fila-instagram-facebook/217.mp4",
+        "sha256": "f1bd6716356c1208fc797da5921a891d6725125927f0c61b3d9819c12d2b9712",
+        "tamanho_bytes": 23134506
+      },
+      "instagram": {
+        "legenda": "Siga @codigodavirada_br",
+        "status": "pendente"
+      },
+      "facebook": {
+        "legenda": "Siga @codigodavirada_br",
+        "status": "pendente"
+      }
+    },
+    {
+      "id": "reel-20261216-0900-4a5fc23ade",
+      "data": "2026-12-16",
+      "horario": "09:00",
+      "status": "pendente",
+      "origem": {
+        "arquivo": "218.mp4",
+        "sha256": "4a5fc23adebde15ca9e3d6195c8443f056f5ae3dc99cd3c1de472ef8c44eccd0"
+      },
+      "midia": {
+        "asset": "218.mp4",
+        "url_publica": "https://github.com/cristianoladik/codigo-da-virada-automacao/releases/download/fila-instagram-facebook/218.mp4",
+        "sha256": "4a5fc23adebde15ca9e3d6195c8443f056f5ae3dc99cd3c1de472ef8c44eccd0",
+        "tamanho_bytes": 22021405
+      },
+      "instagram": {
+        "legenda": "Siga @codigodavirada_br",
+        "status": "pendente"
+      },
+      "facebook": {
+        "legenda": "Siga @codigodavirada_br",
+        "status": "pendente"
+      }
+    },
+    {
+      "id": "reel-20261216-2100-456490440a",
+      "data": "2026-12-16",
+      "horario": "21:00",
+      "status": "pendente",
+      "origem": {
+        "arquivo": "219.mp4",
+        "sha256": "456490440ac0ba21b199accb7195ac8dfa565a989c5d606825391825b8744d9a"
+      },
+      "midia": {
+        "asset": "219.mp4",
+        "url_publica": "https://github.com/cristianoladik/codigo-da-virada-automacao/releases/download/fila-instagram-facebook/219.mp4",
+        "sha256": "456490440ac0ba21b199accb7195ac8dfa565a989c5d606825391825b8744d9a",
+        "tamanho_bytes": 3516584
+      },
+      "instagram": {
+        "legenda": "Siga @codigodavirada_br",
+        "status": "pendente"
+      },
+      "facebook": {
+        "legenda": "Siga @codigodavirada_br",
+        "status": "pendente"
+      }
+    },
+    {
+      "id": "reel-20261217-0900-63e99b8ae4",
+      "data": "2026-12-17",
+      "horario": "09:00",
+      "status": "pendente",
+      "origem": {
+        "arquivo": "220.mp4",
+        "sha256": "63e99b8ae40600c67c884545e22b51ecad47049fff037402590a436963cdd440"
+      },
+      "midia": {
+        "asset": "220.mp4",
+        "url_publica": "https://github.com/cristianoladik/codigo-da-virada-automacao/releases/download/fila-instagram-facebook/220.mp4",
+        "sha256": "63e99b8ae40600c67c884545e22b51ecad47049fff037402590a436963cdd440",
+        "tamanho_bytes": 3699597
+      },
+      "instagram": {
+        "legenda": "Siga @codigodavirada_br",
+        "status": "pendente"
+      },
+      "facebook": {
+        "legenda": "Siga @codigodavirada_br",
+        "status": "pendente"
+      }
+    }
+  ]
 }
