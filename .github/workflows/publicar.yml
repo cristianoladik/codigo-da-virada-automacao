@@ -1,0 +1,60 @@
+name: Publicar Reels Instagram e Facebook
+
+on:
+  schedule:
+    # 09:00 e 21:00 em Brasília (UTC-3).
+    - cron: "0 12 * * *"
+    - cron: "0 0 * * *"
+  workflow_dispatch:
+    inputs:
+      data_publicacao:
+        description: "Data do Reel (AAAA-MM-DD); vazio usa hoje"
+        required: false
+        type: string
+      horario_publicacao:
+        description: "Horário do Reel (09:00 ou 21:00); vazio usa horário atual de Brasília"
+        required: false
+        type: string
+
+concurrency:
+  group: publicacao-instagram-facebook
+  cancel-in-progress: false
+
+jobs:
+  publicar:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+      - run: pip install -r requirements.txt
+      - name: Publicar Reel
+        env:
+          IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
+          IG_BUSINESS_ID: ${{ secrets.IG_BUSINESS_ID }}
+          FB_PAGE_ACCESS_TOKEN: ${{ secrets.FB_PAGE_ACCESS_TOKEN }}
+          FB_PAGE_ID: ${{ secrets.FB_PAGE_ID }}
+          GITHUB_REPOSITORY: ${{ github.repository }}
+          MEDIA_CACHE_DIR: ${{ runner.temp }}/midias
+          DATA_PUBLICACAO: ${{ inputs.data_publicacao }}
+          HORARIO_PUBLICACAO: ${{ inputs.horario_publicacao }}
+        run: python publicar.py
+      - name: Remover mídia temporária já publicada
+        if: always()
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+          GITHUB_REPOSITORY: ${{ github.repository }}
+          RELEASE_TAG: fila-instagram-facebook
+        run: python limpar_release.py --fila fila/fila-reels.json
+      - name: Salvar resultado
+        if: always()
+        run: |
+          git config user.name "GitHub Actions"
+          git config user.email "actions@github.com"
+          git add fila/fila-reels.json
+          git diff --staged --quiet || git commit -m "chore: atualizar reels $(date +%F)"
+          git push
