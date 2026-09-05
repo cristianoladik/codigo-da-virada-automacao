@@ -21,13 +21,13 @@
         "legenda": "Siga @codigodavirada_br",
         "status": "erro",
         "erro": "Segredo obrigatório ausente: IG_ACCESS_TOKEN",
-        "ultima_tentativa_em": "2026-09-04T23:24:58.330360-03:00"
+        "ultima_tentativa_em": "2026-09-05T09:21:53.665306-03:00"
       },
       "facebook": {
         "legenda": "Siga @codigodavirada_br",
         "status": "erro",
         "erro": "Segredo obrigatório ausente: FB_PAGE_ACCESS_TOKEN",
-        "ultima_tentativa_em": "2026-09-04T23:24:58.330382-03:00"
+        "ultima_tentativa_em": "2026-09-05T09:21:53.665325-03:00"
       }
     },
     {
