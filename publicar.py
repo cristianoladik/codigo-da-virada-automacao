@@ -21,7 +21,7 @@ FILA_FILE = ROOT / "fila" / "fila-reels.json"
 BRT = timezone(timedelta(hours=-3))
 GRAPH_BASE = f"https://graph.facebook.com/{os.getenv('META_GRAPH_VERSION', 'v23.0')}"
 PLATAFORMAS = ("instagram", "facebook")
-FACEBOOK_ATIVO = False  # Reative quando a Meta aprovar pages_manage_posts (App Review)
+FACEBOOK_ATIVO = True  # pages_manage_posts liberado em Standard Access (05/09/2026)
 
 
 def obrigatoria(nome: str) -> str:
