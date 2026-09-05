@@ -6,7 +6,7 @@
       "id": "reel-20260904-2100-6b5a426c90",
       "data": "2026-09-04",
       "horario": "21:00",
-      "status": "pendente",
+      "status": "concluido",
       "origem": {
         "arquivo": "7.mp4",
         "sha256": "6b5a426c90f5bf427e07317cd4398e4ca83b9394379b344399c174e49477be8d"
@@ -15,7 +15,8 @@
         "asset": "7.mp4",
         "url_publica": "https://github.com/cristianoladik/codigo-da-virada-automacao/releases/download/fila-instagram-facebook/7.mp4",
         "sha256": "6b5a426c90f5bf427e07317cd4398e4ca83b9394379b344399c174e49477be8d",
-        "tamanho_bytes": 9311837
+        "tamanho_bytes": 9311837,
+        "removido_da_release_em": "2026-09-05T10:57:39.520670-03:00"
       },
       "instagram": {
         "legenda": "Siga @codigodavirada_br",
@@ -26,10 +27,10 @@
       },
       "facebook": {
         "legenda": "Siga @codigodavirada_br",
-        "status": "erro",
-        "erro": "Meta HTTP 403: {\"error\":{\"message\":\"(#200) Subject does not have permission to post videos on this target, due to lack of pages_manage_posts permission.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"AGJZ67YDqsF1MQiNYBnKPhq\"}}",
+        "status": "pausado",
         "ultima_tentativa_em": "2026-09-05T10:44:51.969747-03:00"
-      }
+      },
+      "concluido_em": "2026-09-05T10:57:38.804710-03:00"
     },
     {
       "id": "reel-20260905-0900-cb49ca6513",
