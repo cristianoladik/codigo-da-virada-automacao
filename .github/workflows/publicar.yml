@@ -2,8 +2,14 @@ name: Publicar Reels Instagram e Facebook
 
 on:
   schedule:
-    # 09:00 e 21:00 em Brasília (UTC-3).
+    # Rampa de horários em Brasília (UTC-3). O robô só publica os horários que
+    # já estiverem liberados para o dia (ver HORARIOS_POR_FASE em publicar.py):
+    # 05:00, 09:00, 13:00, 17:00 e 21:00. Rodar sempre nos 5 é inofensivo —
+    # publicar.py verifica se algum Reel está devido antes de fazer qualquer coisa.
+    - cron: "0 8 * * *"
     - cron: "0 12 * * *"
+    - cron: "0 16 * * *"
+    - cron: "0 20 * * *"
     - cron: "0 0 * * *"
   workflow_dispatch:
     inputs:
@@ -12,7 +18,7 @@ on:
         required: false
         type: string
       horario_publicacao:
-        description: "Horário do Reel (09:00 ou 21:00); vazio usa horário atual de Brasília"
+        description: "Horário do Reel (05:00, 09:00, 13:00, 17:00 ou 21:00); vazio usa horário atual de Brasília"
         required: false
         type: string
 
