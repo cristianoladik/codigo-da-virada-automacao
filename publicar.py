@@ -21,6 +21,7 @@ FILA_FILE = ROOT / "fila" / "fila-reels.json"
 BRT = timezone(timedelta(hours=-3))
 GRAPH_BASE = f"https://graph.facebook.com/{os.getenv('META_GRAPH_VERSION', 'v23.0')}"
 PLATAFORMAS = ("instagram", "facebook")
+FACEBOOK_ATIVO = False  # Reative quando a Meta aprovar pages_manage_posts (App Review)
 
 
 def obrigatoria(nome: str) -> str:
@@ -174,11 +175,18 @@ def main() -> None:
         print("Nenhum Reel pendente e devido para publicação.")
         return
     executar(item, "instagram", publicar_instagram)
-    executar(item, "facebook", publicar_facebook)
-    if all(item[p].get("status") == "publicado" for p in PLATAFORMAS):
+    if FACEBOOK_ATIVO:
+        executar(item, "facebook", publicar_facebook)
+    else:
+        item["facebook"]["status"] = "pausado"
+        item["facebook"].pop("erro", None)
+    concluiu = item["instagram"].get("status") == "publicado" and (
+        not FACEBOOK_ATIVO or item["facebook"].get("status") == "publicado"
+    )
+    if concluiu:
         item.update({"status": "concluido", "concluido_em": datetime.now(BRT).isoformat()})
     salvar_fila(fila)
-    if any(item[p].get("status") == "erro" for p in PLATAFORMAS):
+    if item["instagram"].get("status") == "erro" or (FACEBOOK_ATIVO and item["facebook"].get("status") == "erro"):
         raise SystemExit(1)
 
 
