@@ -19,15 +19,16 @@
       },
       "instagram": {
         "legenda": "Siga @codigodavirada_br",
-        "status": "erro",
-        "erro": "Segredo obrigatório ausente: IG_ACCESS_TOKEN",
-        "ultima_tentativa_em": "2026-09-05T10:13:14.787757-03:00"
+        "status": "publicado",
+        "ultima_tentativa_em": "2026-09-05T10:13:14.787757-03:00",
+        "id": "17907904188531603",
+        "publicado_em": "2026-09-05T10:44:49.938104-03:00"
       },
       "facebook": {
         "legenda": "Siga @codigodavirada_br",
         "status": "erro",
-        "erro": "Segredo obrigatório ausente: FB_PAGE_ACCESS_TOKEN",
-        "ultima_tentativa_em": "2026-09-05T10:13:14.787782-03:00"
+        "erro": "Meta HTTP 403: {\"error\":{\"message\":\"(#200) Subject does not have permission to post videos on this target, due to lack of pages_manage_posts permission.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"AGJZ67YDqsF1MQiNYBnKPhq\"}}",
+        "ultima_tentativa_em": "2026-09-05T10:44:51.969747-03:00"
       }
     },
     {
