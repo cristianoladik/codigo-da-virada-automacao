@@ -19,11 +19,16 @@
       },
       "instagram": {
         "legenda": "Siga @codigodavirada_br",
-        "status": "pendente"
+        "status": "publicado",
+        "ultima_tentativa_em": "2026-09-05T10:13:14.787757-03:00",
+        "id": "17907904188531603",
+        "publicado_em": "2026-09-05T10:44:49.938104-03:00"
       },
       "facebook": {
         "legenda": "Siga @codigodavirada_br",
-        "status": "pendente"
+        "status": "erro",
+        "erro": "Meta HTTP 403: {\"error\":{\"message\":\"(#200) Subject does not have permission to post videos on this target, due to lack of pages_manage_posts permission.\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"AGJZ67YDqsF1MQiNYBnKPhq\"}}",
+        "ultima_tentativa_em": "2026-09-05T10:44:51.969747-03:00"
       }
     },
     {
