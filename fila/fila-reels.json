@@ -94,7 +94,7 @@
       "id": "reel-20260906-0900-f0b36bcb02",
       "data": "2026-09-06",
       "horario": "09:00",
-      "status": "pendente",
+      "status": "concluido",
       "origem": {
         "arquivo": "11.mp4",
         "sha256": "f0b36bcb027b00ebf46ced9483ec86f985d75c8126d7e0f8865147c4579ca33a"
@@ -103,16 +103,22 @@
         "asset": "11.mp4",
         "url_publica": "https://github.com/cristianoladik/codigo-da-virada-automacao/releases/download/fila-instagram-facebook/11.mp4",
         "sha256": "f0b36bcb027b00ebf46ced9483ec86f985d75c8126d7e0f8865147c4579ca33a",
-        "tamanho_bytes": 8202557
+        "tamanho_bytes": 8202557,
+        "removido_da_release_em": "2026-09-06T12:05:06.281618-03:00"
       },
       "instagram": {
         "legenda": "Siga @codigodavirada_br",
-        "status": "pendente"
+        "status": "publicado",
+        "id": "18041504450684578",
+        "publicado_em": "2026-09-06T12:04:53.168026-03:00"
       },
       "facebook": {
         "legenda": "Siga @codigodavirada_br",
-        "status": "pendente"
-      }
+        "status": "publicado",
+        "id": "1672056218253757",
+        "publicado_em": "2026-09-06T12:05:05.338028-03:00"
+      },
+      "concluido_em": "2026-09-06T12:05:05.338052-03:00"
     },
     {
       "id": "reel-20260906-2100-c55413d361",
