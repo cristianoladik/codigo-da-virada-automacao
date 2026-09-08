@@ -2,10 +2,17 @@ name: Verificar fila e publicar Reels — Instagram e Facebook
 
 on:
   schedule:
+    # Prioridade do Reel matinal no horário exato; Stories são verificados às 09:10.
+    - cron: "0 12 * * *"
     # Verifica a fila a cada 10 minutos, fora do minuto 0 (mais congestionado no
     # GitHub Actions). O publicador ignora itens futuros e recupera todos os itens
     # vencidos em ordem cronológica, até o limite de segurança por execução.
-    - cron: "7,17,27,37,47,57 * * * *"
+    - cron: "7,17,27,37,47,57 0-5,7-11,13-23 * * *"
+    # Às 09h BRT, uma segunda tentativa curta às 09:07 recupera eventual atraso;
+    # depois disso a janela fica livre para o pacote diário de Stories.
+    - cron: "7 12 * * *"
+    # Mantém livre a janela 03:15–03:50 BRT para o escritor local das filas.
+    - cron: "7,57 6 * * *"
   workflow_dispatch:
     inputs:
       data_publicacao:
@@ -18,13 +25,16 @@ on:
         type: string
 
 concurrency:
-  group: publicacao-instagram-facebook
+  # Grupo próprio mantém somente o Reel mais recente pendente. O lock Git CAS
+  # continua serializando este workflow, Stories e os escritores do PC.
+  group: publicacao-instagram-facebook-reels
   cancel-in-progress: false
 
 jobs:
   publicar:
     name: Verificar fila, publicar e comprovar o resultado
     runs-on: ubuntu-latest
+    timeout-minutes: 90
     permissions:
       contents: write
     steps:
@@ -42,6 +52,15 @@ jobs:
       - run: pip install -r requirements.txt
       - name: Validar publicador
         run: python -m unittest discover -s tests
+      - name: Adquirir lock remoto das filas IG/FB
+        id: lock_remoto
+        env:
+          DONO_LOCK: github-reels-${{ github.run_id }}-${{ github.run_attempt }}
+        run: python lock_publicacao.py adquirir --repositorio . --dono "$DONO_LOCK" --arquivo-token "$RUNNER_TEMP/lock-publicacao.txt" --timeout 1800
+      - name: Atualizar main depois de obter o lock
+        run: |
+          git fetch origin main
+          git merge --ff-only origin/main
       - name: Processar Reels devidos
         id: publicacao
         env:
@@ -63,7 +82,7 @@ jobs:
           git config user.email "actions@github.com"
           git add fila/fila-reels.json
           git diff --staged --quiet || git commit -m "chore: atualizar reels $(date +%F)"
-          git push
+          python push_confirmado.py --repositorio .
       - name: Remover mídia temporária já publicada
         id: limpeza
         if: ${{ always() && steps.persistencia.outcome == 'success' }}
@@ -72,12 +91,20 @@ jobs:
           GITHUB_REPOSITORY: ${{ github.repository }}
           RELEASE_TAG: fila-instagram-facebook
         run: python limpar_release.py --fila fila/fila-reels.json
+      - name: Persistir marcadores da limpeza
+        id: persistencia_limpeza
+        if: ${{ always() && (steps.limpeza.outcome == 'success' || steps.limpeza.outcome == 'failure') }}
+        run: |
+          git add fila/fila-reels.json
+          git diff --staged --quiet || git commit -m "chore: registrar limpeza de reels $(date +%F)"
+          python push_confirmado.py --repositorio .
       - name: Registrar saúde operacional no Summary
         if: ${{ always() }}
         env:
           PROCESSAMENTO: ${{ steps.publicacao.outcome }}
           PERSISTENCIA: ${{ steps.persistencia.outcome }}
           LIMPEZA: ${{ steps.limpeza.outcome }}
+          PERSISTENCIA_LIMPEZA: ${{ steps.persistencia_limpeza.outcome }}
         run: |
           {
             echo ""
@@ -88,6 +115,7 @@ jobs:
             echo "| Processamento da fila | \`${PROCESSAMENTO}\` |"
             echo "| Gravação da fila no GitHub | \`${PERSISTENCIA}\` |"
             echo "| Limpeza da mídia temporária | \`${LIMPEZA}\` |"
+            echo "| Gravação do marcador de limpeza | \`${PERSISTENCIA_LIMPEZA}\` |"
           } >> "$GITHUB_STEP_SUMMARY"
       - name: "Resultado: PUBLICAÇÃO CONFIRMADA"
         if: ${{ always() && steps.publicacao.outputs.resultado == 'PUBLICADO' }}
@@ -114,5 +142,10 @@ jobs:
           echo "::error title=RESULTADO INVÁLIDO OU AUSENTE::O publicador não informou um dos quatro estados reconhecidos."
           exit 1
       - name: "Resultado adicional: FALHA APÓS PROCESSAR A FILA"
-        if: ${{ always() && steps.publicacao.outputs.resultado != 'FALHA' && (steps.persistencia.outcome == 'failure' || steps.limpeza.outcome == 'failure') }}
-        run: echo "::error title=FALHA OPERACIONAL APÓS PROCESSAR::O resultado da Meta está no Summary, mas uma etapa posterior de limpeza ou gravação falhou."
+        if: ${{ always() && steps.publicacao.outputs.resultado != 'FALHA' && (steps.persistencia.outcome == 'failure' || steps.limpeza.outcome == 'failure' || steps.persistencia_limpeza.outcome == 'failure') }}
+        run: |
+          echo "::error title=FALHA OPERACIONAL APÓS PROCESSAR::O resultado da Meta está no Summary, mas uma etapa posterior de limpeza ou gravação falhou."
+          exit 1
+      - name: Liberar lock remoto das filas IG/FB
+        if: ${{ always() && steps.persistencia.outcome != 'failure' }}
+        run: python lock_publicacao.py liberar --repositorio . --arquivo-token "$RUNNER_TEMP/lock-publicacao.txt"

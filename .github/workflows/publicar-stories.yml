@@ -1,0 +1,156 @@
+name: Verificar fila e publicar Stories — Instagram e Facebook
+
+on:
+  schedule:
+    # O pacote vence às 09:00. O Reel da manhã tenta primeiro e Stories são
+    # verificados às 09:10 para evitar que a espera da Meta atrase o Reel;
+    # as rodadas horárias seguintes recuperam atrasos sem despejar backlog.
+    # O Actions pode iniciar depois do minuto previsto, por isso o Summary grava
+    # separadamente o horário agendado e a confirmação efetiva da Meta.
+    - cron: "10 0-5,7-23 * * *"
+    # A hora 06 UTC fica livre para a sincronização local das 03:15 BRT.
+  workflow_dispatch:
+    inputs:
+      data_publicacao:
+        description: "Data do pacote de Stories (AAAA-MM-DD); vazio processa os vencidos"
+        required: false
+        type: string
+      diagnosticar_contas_meta:
+        description: "Validar conta BUSINESS e Page Token sem publicar"
+        required: false
+        default: false
+        type: boolean
+
+concurrency:
+  # Grupo próprio evita que uma verificação frequente de Reels substitua um
+  # Story pendente. A exclusão entre os dois fluxos é feita pelo lock Git CAS.
+  group: publicacao-instagram-facebook-stories
+  cancel-in-progress: false
+
+jobs:
+  publicar:
+    name: Verificar Stories, publicar e comprovar o resultado
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    permissions:
+      contents: write
+    steps:
+      # Uma execução pode aguardar o workflow de Reels. Ao obter o lock, deve
+      # ler o estado mais recente de main, não o SHA antigo do evento agendado.
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+      - run: pip install -r requirements.txt
+      - name: Validar publicadores
+        run: python -m unittest discover -s tests
+      - name: Adquirir lock remoto das filas IG/FB
+        id: lock_remoto
+        env:
+          DONO_LOCK: github-stories-${{ github.run_id }}-${{ github.run_attempt }}
+        run: python lock_publicacao.py adquirir --repositorio . --dono "$DONO_LOCK" --arquivo-token "$RUNNER_TEMP/lock-publicacao.txt" --timeout 1800
+      - name: Atualizar main depois de obter o lock
+        run: |
+          git fetch origin main
+          git merge --ff-only origin/main
+      - name: Processar pacotes de Stories devidos
+        id: publicacao
+        env:
+          IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
+          IG_BUSINESS_ID: ${{ secrets.IG_BUSINESS_ID }}
+          IG_EXPECTED_USERNAME: codigodavirada_br
+          FB_PAGE_ACCESS_TOKEN: ${{ secrets.FB_PAGE_ACCESS_TOKEN }}
+          FB_PAGE_ID: ${{ secrets.FB_PAGE_ID }}
+          FB_EXPECTED_PAGE_ID: ${{ vars.FB_EXPECTED_PAGE_ID }}
+          GITHUB_REPOSITORY: ${{ github.repository }}
+          MEDIA_CACHE_DIR: ${{ runner.temp }}/midias
+          DATA_PUBLICACAO: ${{ inputs.data_publicacao }}
+          MAX_PACOTES_POR_EXECUCAO: "1"
+          DIAGNOSTICAR_CONTAS_META: ${{ inputs.diagnosticar_contas_meta }}
+        run: python publicar_stories.py
+      - name: Persistir estado antes de remover assets
+        id: persistencia
+        if: ${{ always() && inputs.diagnosticar_contas_meta != true && steps.publicacao.outputs.resultado != 'DIAGNOSTICO_META_OK' && (steps.publicacao.outcome == 'success' || steps.publicacao.outcome == 'failure') }}
+        run: |
+          git config user.name "GitHub Actions"
+          git config user.email "actions@github.com"
+          python -c "import json; from pathlib import Path; import publicar_stories as p; p.validar_fila(json.loads(Path('fila/fila-stories.json').read_text(encoding='utf-8')))"
+          git add fila/fila-stories.json
+          git diff --staged --quiet || git commit -m "chore: atualizar stories $(date +%F)"
+          python push_confirmado.py --repositorio .
+      - name: Remover partes temporárias já publicadas
+        id: limpeza
+        if: ${{ always() && steps.persistencia.outcome == 'success' }}
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+          GITHUB_REPOSITORY: ${{ github.repository }}
+          RELEASE_TAG: fila-instagram-facebook
+        run: python limpar_release.py --fila fila/fila-stories.json
+      - name: Persistir marcadores da limpeza
+        id: persistencia_limpeza
+        if: ${{ always() && (steps.limpeza.outcome == 'success' || steps.limpeza.outcome == 'failure') }}
+        run: |
+          python -c "import json; from pathlib import Path; import publicar_stories as p; p.validar_fila(json.loads(Path('fila/fila-stories.json').read_text(encoding='utf-8')))"
+          git add fila/fila-stories.json
+          git diff --staged --quiet || git commit -m "chore: registrar limpeza de stories $(date +%F)"
+          python push_confirmado.py --repositorio .
+      - name: Registrar saúde operacional no Summary
+        if: ${{ always() }}
+        env:
+          PROCESSAMENTO: ${{ steps.publicacao.outcome }}
+          PERSISTENCIA: ${{ steps.persistencia.outcome }}
+          LIMPEZA: ${{ steps.limpeza.outcome }}
+          PERSISTENCIA_LIMPEZA: ${{ steps.persistencia_limpeza.outcome }}
+        run: |
+          {
+            echo ""
+            echo "### Saúde operacional do workflow de Stories"
+            echo ""
+            echo "| Etapa | Resultado |"
+            echo "|---|---|"
+            echo "| Processamento da fila | \`${PROCESSAMENTO}\` |"
+            echo "| Gravação antes da limpeza | \`${PERSISTENCIA}\` |"
+            echo "| Limpeza dos assets | \`${LIMPEZA}\` |"
+            echo "| Gravação dos marcadores de limpeza | \`${PERSISTENCIA_LIMPEZA}\` |"
+          } >> "$GITHUB_STEP_SUMMARY"
+      - name: "Resultado: PUBLICAÇÃO DE STORIES CONFIRMADA"
+        if: ${{ always() && steps.publicacao.outputs.resultado == 'PUBLICADO' }}
+        env:
+          PACOTES_CONCLUIDOS: ${{ steps.publicacao.outputs.pacotes_concluidos }}
+          PARTES_CONCLUIDAS: ${{ steps.publicacao.outputs.partes_concluidas }}
+          INSTAGRAM_PUBLICADOS: ${{ steps.publicacao.outputs.instagram_publicados }}
+          FACEBOOK_PUBLICADOS: ${{ steps.publicacao.outputs.facebook_publicados }}
+        run: |
+          echo "::notice title=PUBLICAÇÃO DE STORIES CONFIRMADA::${PACOTES_CONCLUIDOS} pacote(s) e ${PARTES_CONCLUIDAS} parte(s) concluído(s); ${INSTAGRAM_PUBLICADOS} publicação(ões) no Instagram e ${FACEBOOK_PUBLICADOS} no Facebook. IDs no Summary."
+      - name: "Resultado: NENHUM STORY DEVIDO — NADA PUBLICADO"
+        if: ${{ always() && steps.publicacao.outputs.resultado == 'NENHUM_STORY_DEVIDO' }}
+        run: echo "::notice title=NENHUM STORY DEVIDO — NADA PUBLICADO::A verificação terminou normalmente, mas nenhuma publicação foi realizada."
+      - name: "Resultado: FILA DE STORIES RECONCILIADA — NADA NOVO PUBLICADO"
+        if: ${{ always() && steps.publicacao.outputs.resultado == 'RECONCILIADO_SEM_NOVA_PUBLICACAO' }}
+        run: echo "::notice title=FILA DE STORIES RECONCILIADA — NADA NOVO PUBLICADO::As partes devidas já tinham confirmação; nenhuma chamada nova de publicação foi concluída."
+      - name: "Resultado: DIAGNÓSTICO META APROVADO — NADA PUBLICADO"
+        if: ${{ always() && steps.publicacao.outputs.resultado == 'DIAGNOSTICO_META_OK' }}
+        run: echo "::notice title=DIAGNÓSTICO META APROVADO — NADA PUBLICADO::A conta BUSINESS do Instagram e o Page Token do Facebook foram confirmados; nenhuma mídia foi publicada ou removida."
+      - name: "Resultado: FALHA NA PUBLICAÇÃO DE STORIES"
+        if: ${{ always() && steps.publicacao.outputs.resultado == 'FALHA' }}
+        run: |
+          echo "::error title=FALHA NA PUBLICAÇÃO DE STORIES::Consulte o Summary para ver o pacote, a parte, a rede e o erro."
+          exit 1
+      - name: "Resultado: INVÁLIDO OU AUSENTE — EXECUÇÃO INVÁLIDA"
+        if: ${{ always() && steps.publicacao.outputs.resultado != 'PUBLICADO' && steps.publicacao.outputs.resultado != 'NENHUM_STORY_DEVIDO' && steps.publicacao.outputs.resultado != 'RECONCILIADO_SEM_NOVA_PUBLICACAO' && steps.publicacao.outputs.resultado != 'DIAGNOSTICO_META_OK' && steps.publicacao.outputs.resultado != 'FALHA' }}
+        run: |
+          echo "::error title=RESULTADO INVÁLIDO OU AUSENTE::O publicador de Stories não informou um dos quatro estados reconhecidos."
+          exit 1
+      - name: "Resultado adicional: FALHA APÓS PROCESSAR A FILA"
+        if: ${{ always() && steps.publicacao.outputs.resultado != 'FALHA' && (steps.persistencia.outcome == 'failure' || steps.limpeza.outcome == 'failure' || steps.persistencia_limpeza.outcome == 'failure') }}
+        run: |
+          echo "::error title=FALHA OPERACIONAL APÓS PROCESSAR::O resultado da Meta está no Summary, mas uma etapa de persistência ou limpeza falhou."
+          exit 1
+      - name: Liberar lock remoto das filas IG/FB
+        # Se um estado posterior à Meta não chegou a main, preserve o lock
+        # para impedir reenvio automático; a Action fica vermelha para intervenção.
+        if: ${{ always() && steps.persistencia.outcome != 'failure' }}
+        run: python lock_publicacao.py liberar --repositorio . --arquivo-token "$RUNNER_TEMP/lock-publicacao.txt"

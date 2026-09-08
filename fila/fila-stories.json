@@ -1,0 +1,8 @@
+{
+  "canal": "instagram-facebook-stories",
+  "timezone": "America/Sao_Paulo",
+  "pacotes_por_dia": 1,
+  "horario": "09:00",
+  "limite_parte_segundos": 59,
+  "pacotes": []
+}

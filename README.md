@@ -1,8 +1,9 @@
 # Automação Instagram e Facebook — Código da Virada
 
-Este repositório executa somente este fluxo, mesmo com o computador desligado:
+Este repositório executa estes fluxos, mesmo com o computador desligado:
 
-- publicação conforme a rampa de horários gravada na fila, no horário de Brasília;
+- Reels conforme a rampa de horários gravada na fila;
+- um pacote diário de Stories agendado às 09:00, com partes sequenciais de até 59 segundos;
 - publicação independente no Instagram e na Página do Facebook;
 - confirmação separada por rede, sem repetir a rede que já confirmou.
 
@@ -14,11 +15,16 @@ quando `pages_manage_posts` foi liberado em Standard Access; no publicador, isso
 `pausado` pertencem ao período anterior à liberação e não representam o estado
 atual da automação.
 
-O workflow verifica a fila a cada dez minutos, nos minutos 07, 17, 27, 37, 47
-e 57. Essa frequência reduz os atrasos do agendador do GitHub. Se uma execução
-atrasar ou não acontecer, a próxima processa os Reels vencidos em ordem
-cronológica, até dez itens por vez. Em caso de erro, o processamento para no
-item com problema e o retoma na execução seguinte.
+Reels são normalmente verificados nos minutos 07, 17, 27, 37, 47 e 57, além
+da tentativa prioritária das 09:00. Na hora das 09h, há somente a recuperação
+das 09:07; a janela seguinte fica livre para Stories, verificados uma vez por hora no minuto 10,
+inclusive às 09:10 para o pacote agendado às 09:00. Cada fluxo tem seu grupo de
+concorrência, para uma execução frequente de Reels não substituir um Story
+pendente; o lock remoto Git CAS serializa os dois workflows e os escritores do
+PC. Se uma execução atrasar, a próxima recupera em ordem cronológica até dez
+Reels; Stories recuperam no máximo um pacote por dia, sem
+despejar a fila acumulada. Em caso de erro, o processamento
+para no item ou na parte com problema e o retoma sem repetir a rede confirmada.
 
 ## Como saber se houve publicação
 
@@ -29,8 +35,12 @@ confira o estado explícito:
 - `PUBLICADO`: a Meta confirmou uma ou mais publicações novas; o resumo mostra
   as quantidades e os IDs separados de Instagram e Facebook;
 - `NENHUM_REEL_DEVIDO`: a fila foi verificada, mas nada foi publicado;
+- `NENHUM_STORY_DEVIDO`: a fila de Stories foi verificada, mas nada foi
+  publicado;
 - `RECONCILIADO_SEM_NOVA_PUBLICACAO`: um estado antigo da fila foi concluído,
   sem uma nova chamada de publicação;
+- `DIAGNOSTICO_META_OK`: a conta BUSINESS do Instagram e o Page Token foram
+  confirmados em modo somente leitura, sem publicar nem limpar mídia;
 - `FALHA`: houve erro; a execução fica vermelha e o resumo identifica a rede e
   o motivo.
 
@@ -50,6 +60,40 @@ mostrar `PUBLICADO` e os IDs confirmados pela Meta.
 A fila é `fila/fila-reels.json`. Cada item aponta para um asset temporário da
 release `fila-instagram-facebook`; ele não entra no histórico Git. O asset só
 é removido depois da confirmação das duas redes.
+
+## Stories
+
+A fila independente é `fila/fila-stories.json`. Há no máximo um pacote por dia,
+sempre às 09:00 de Brasília. A Action o verifica a partir das 09:10, depois da tentativa do Reel matinal. Um pacote contém uma ou mais partes em ordem
+contínua (`1..N`), com no máximo dez partes; cada uma tem duração máxima de 59 segundos e estado separado
+para Instagram e Facebook. O pacote só fica `concluido` quando todas as partes
+foram confirmadas nas duas redes.
+
+O workflow **Verificar fila e publicar Stories — Instagram e Facebook** salva a
+fila depois de cada tentativa em cada rede. Depois, persiste o resultado no Git
+antes de remover os assets temporários e faz uma segunda persistência para
+guardar os marcadores da limpeza.
+
+No Facebook, o retorno do upload não basta: a automação pesquisa o `post_id` ou
+`video_id` no edge de Stories da própria Página e só conclui quando a Meta
+devolve `PUBLISHED` (ou `ARCHIVED` numa reconciliação histórica). Em timeout,
+grava `incerto` e apenas reconcilia os mesmos
+IDs nas próximas execuções, sem reenviar o vídeo.
+
+Todos os escritores automáticos de Reels e Stories usam a ref efêmera
+`lock-publicacao-instagram-facebook` como mutex remoto. Depois de adquirir o
+lock, atualizam `main`; somente então leem a fila ou alteram a Release. A
+liberação compara o SHA do proprietário e nunca apaga o lock de outro processo.
+
+No Drive, o fluxo operacional do Código da Virada usa as pastas fornecidas pelo
+responsável:
+
+1. `Story/Vídeos para Story` — vídeos de origem;
+2. `Story/Cortados - Preparados` — pacotes com partes de até 59 segundos;
+3. `Story/Postados - Agendados` — destino local após confirmação da publicação.
+
+A fila foi criada vazia. Nenhum Story é publicado até que o repositor local
+prepare um pacote, envie suas partes à Release e grave o agendamento na fila.
 
 ### Visibilidade da fila
 
@@ -83,5 +127,7 @@ Nenhuma senha ou credencial deve ser gravada no código, no Git ou no Drive.
 ## Arquitetura
 
 Baseado no publicador `cristianoladik/como-jesus-cristo-faria-automacao`
-(mesmo mecanismo usado também por `pzoadriana/ig-agendamento-github`), sem a
-parte de Stories e YouTube — aqui é só Reels no Instagram e Facebook.
+(mesmo mecanismo usado também por `pzoadriana/ig-agendamento-github`), com
+filas e workflows separados para Reels e Stories. O projeto mantém somente a
+identidade, as contas, os caminhos e os estados do Código da Virada; nenhum
+arquivo de fila ou credencial do projeto Jesus é compartilhado.
