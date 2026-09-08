@@ -24,6 +24,10 @@ GRAPH_BASE = f"https://graph.facebook.com/{os.getenv('META_GRAPH_VERSION', 'v23.
 PLATAFORMAS = ("instagram", "facebook")
 FACEBOOK_ATIVO = True  # pages_manage_posts liberado em Standard Access (05/09/2026)
 MAX_ITENS_POR_EXECUCAO_PADRAO = 10
+RESULTADO_PUBLICADO = "PUBLICADO"
+RESULTADO_NENHUM_DEVIDO = "NENHUM_REEL_DEVIDO"
+RESULTADO_RECONCILIADO = "RECONCILIADO_SEM_NOVA_PUBLICACAO"
+RESULTADO_FALHA = "FALHA"
 
 
 def obrigatoria(nome: str) -> str:
@@ -136,16 +140,19 @@ def publicar_facebook(item: dict) -> str:
         caminho_video.unlink(missing_ok=True)
 
 
-def executar(item: dict, plataforma: str, funcao) -> None:
+def executar(item: dict, plataforma: str, funcao) -> str | None:
     dados = item[plataforma]
     if dados.get("status") == "publicado":
-        return
+        return None
     try:
-        dados.update({"status": "publicado", "id": funcao(item), "publicado_em": datetime.now(BRT).isoformat()})
+        publicacao_id = str(funcao(item))
+        dados.update({"status": "publicado", "id": publicacao_id, "publicado_em": datetime.now(BRT).isoformat()})
         dados.pop("erro", None)
+        return publicacao_id
     except Exception as erro:
         dados.update({"status": "erro", "erro": str(erro), "ultima_tentativa_em": datetime.now(BRT).isoformat()})
         print(f"ERRO {plataforma}: {erro}")
+        return None
 
 
 def limite_por_execucao() -> int:
@@ -187,21 +194,49 @@ def item_com_erro(item: dict) -> bool:
     )
 
 
-def main() -> None:
-    fila = json.loads(FILA_FILE.read_text(encoding="utf-8"))
-    itens = proximos_itens(fila)
+def proximo_item_pendente(fila: dict) -> dict | None:
+    pendentes = [item for item in fila.get("conteudos", []) if item.get("status") != "concluido"]
+    if not pendentes:
+        return None
+    return min(pendentes, key=lambda item: (item["data"], item["horario"], item.get("id", "")))
+
+
+def erros_do_item(item: dict) -> list[str]:
+    erros = []
+    for plataforma in PLATAFORMAS:
+        if item[plataforma].get("status") == "erro":
+            erros.append(f"{plataforma}: {item[plataforma].get('erro', 'erro sem detalhe')}")
+    return erros
+
+
+def processar_fila(fila: dict, agora: datetime | None = None) -> dict:
+    itens = proximos_itens(fila, agora=agora)
     if not itens:
         print("Nenhum Reel pendente e devido para publicação.")
-        return
+        return {
+            "resultado": RESULTADO_NENHUM_DEVIDO,
+            "reels_devidos": 0,
+            "reels_concluidos": 0,
+            "publicacoes": [],
+            "erros": [],
+            "proximo": proximo_item_pendente(fila),
+        }
+
+    publicacoes = []
+    reels_concluidos = 0
     print(f"{len(itens)} Reel(s) vencido(s) serão processado(s) nesta execução.")
     for indice, item in enumerate(itens, start=1):
         print(f"Processando [{indice}/{len(itens)}] {item['data']} {item['horario']} ({item['id']})")
 
-        executar(item, "instagram", publicar_instagram)
+        instagram_id = executar(item, "instagram", publicar_instagram)
+        if instagram_id:
+            publicacoes.append({"reel": item["id"], "rede": "Instagram", "id": instagram_id})
         salvar_fila(fila)
 
         if FACEBOOK_ATIVO:
-            executar(item, "facebook", publicar_facebook)
+            facebook_id = executar(item, "facebook", publicar_facebook)
+            if facebook_id:
+                publicacoes.append({"reel": item["id"], "rede": "Facebook", "id": facebook_id})
         else:
             item["facebook"]["status"] = "pausado"
             item["facebook"].pop("erro", None)
@@ -212,12 +247,138 @@ def main() -> None:
         )
         if concluiu:
             item.update({"status": "concluido", "concluido_em": datetime.now(BRT).isoformat()})
+            reels_concluidos += 1
         salvar_fila(fila)
 
         if item_com_erro(item):
             print("Processamento interrompido para preservar a ordem da fila; o item será retomado na próxima execução.")
-            raise SystemExit(1)
+            return {
+                "resultado": RESULTADO_FALHA,
+                "reels_devidos": len(itens),
+                "reels_concluidos": reels_concluidos,
+                "publicacoes": publicacoes,
+                "erros": erros_do_item(item),
+                "item_falho": item,
+                "proximo": proximo_item_pendente(fila),
+            }
+
+    return {
+        "resultado": RESULTADO_PUBLICADO if publicacoes else RESULTADO_RECONCILIADO,
+        "reels_devidos": len(itens),
+        "reels_concluidos": reels_concluidos,
+        "publicacoes": publicacoes,
+        "erros": [],
+        "proximo": proximo_item_pendente(fila),
+    }
+
+
+def mensagem_resultado(relatorio: dict) -> str:
+    resultado = relatorio["resultado"]
+    publicacoes = relatorio.get("publicacoes", [])
+    instagram = sum(publicacao["rede"] == "Instagram" for publicacao in publicacoes)
+    facebook = sum(publicacao["rede"] == "Facebook" for publicacao in publicacoes)
+    if resultado == RESULTADO_PUBLICADO:
+        return (
+            f"Publicação confirmada pela Meta: {relatorio['reels_concluidos']} Reel(s) concluído(s), "
+            f"{instagram} no Instagram e {facebook} no Facebook nesta execução."
+        )
+    if resultado == RESULTADO_NENHUM_DEVIDO:
+        return "Nenhuma publicação realizada: não havia Reel pendente e devido."
+    if resultado == RESULTADO_RECONCILIADO:
+        return "Fila reconciliada, mas nenhuma nova publicação foi realizada nesta execução."
+    detalhes = "; ".join(relatorio.get("erros", [])) or "erro sem detalhe"
+    return f"Falha na publicação: {detalhes}."
+
+
+def resumo_markdown(relatorio: dict) -> str:
+    titulos = {
+        RESULTADO_PUBLICADO: "✅ PUBLICAÇÃO CONFIRMADA",
+        RESULTADO_NENHUM_DEVIDO: "🟡 NENHUM REEL DEVIDO — NADA FOI PUBLICADO",
+        RESULTADO_RECONCILIADO: "🟡 FILA RECONCILIADA — NADA NOVO FOI PUBLICADO",
+        RESULTADO_FALHA: "❌ FALHA NA PUBLICAÇÃO",
+    }
+    publicacoes = relatorio.get("publicacoes", [])
+    instagram = sum(publicacao["rede"] == "Instagram" for publicacao in publicacoes)
+    facebook = sum(publicacao["rede"] == "Facebook" for publicacao in publicacoes)
+    linhas = [
+        f"## {titulos.get(relatorio['resultado'], relatorio['resultado'])}",
+        "",
+        mensagem_resultado(relatorio),
+        f"Executado em `{relatorio['executado_em']}` (horário de Brasília).",
+        "",
+        "| Estado | Reels devidos | Reels concluídos | Instagram | Facebook |",
+        "|---|---:|---:|---:|---:|",
+        (
+            f"| `{relatorio['resultado']}` | {relatorio.get('reels_devidos', 0)} | "
+            f"{relatorio.get('reels_concluidos', 0)} | {instagram} | {facebook} |"
+        ),
+    ]
+    if publicacoes:
+        linhas.extend(["", "### IDs confirmados pela Meta", "", "| Reel | Rede | ID |", "|---|---|---|"])
+        linhas.extend(
+            f"| `{publicacao['reel']}` | {publicacao['rede']} | `{publicacao['id']}` |"
+            for publicacao in publicacoes
+        )
+    if relatorio.get("erros"):
+        linhas.extend(["", "### Erros", ""])
+        linhas.extend(f"- {erro}" for erro in relatorio["erros"])
+    proximo = relatorio.get("proximo")
+    if proximo:
+        linhas.extend([
+            "",
+            f"Próximo item pendente: `{proximo['data']} {proximo['horario']}` (`{proximo['id']}`).",
+        ])
+    return "\n".join(linhas) + "\n"
+
+
+def registrar_resultado(relatorio: dict) -> None:
+    relatorio = dict(relatorio)
+    relatorio.setdefault("executado_em", datetime.now(BRT).isoformat(timespec="seconds"))
+    mensagem = mensagem_resultado(relatorio)
+    publicacoes = relatorio.get("publicacoes", [])
+    saidas = {
+        "resultado": relatorio["resultado"],
+        "mensagem": mensagem,
+        "reels_devidos": relatorio.get("reels_devidos", 0),
+        "reels_concluidos": relatorio.get("reels_concluidos", 0),
+        "instagram_publicados": sum(publicacao["rede"] == "Instagram" for publicacao in publicacoes),
+        "facebook_publicados": sum(publicacao["rede"] == "Facebook" for publicacao in publicacoes),
+        "executado_em": relatorio["executado_em"],
+    }
+    print(f"RESULTADO_INEQUIVOCO={relatorio['resultado']}")
+    print(mensagem)
+    github_output = os.getenv("GITHUB_OUTPUT", "").strip()
+    if github_output:
+        with Path(github_output).open("a", encoding="utf-8") as arquivo:
+            for nome, valor in saidas.items():
+                arquivo.write(f"{nome}={str(valor).replace(chr(10), ' ')}\n")
+    github_summary = os.getenv("GITHUB_STEP_SUMMARY", "").strip()
+    if github_summary:
+        with Path(github_summary).open("a", encoding="utf-8") as arquivo:
+            arquivo.write(resumo_markdown(relatorio))
+
+
+def relatorio_falha_inesperada(erro: Exception) -> dict:
+    return {
+        "resultado": RESULTADO_FALHA,
+        "reels_devidos": 0,
+        "reels_concluidos": 0,
+        "publicacoes": [],
+        "erros": [f"erro inesperado: {erro}"],
+        "proximo": None,
+    }
+
+
+def main() -> int:
+    try:
+        fila = json.loads(FILA_FILE.read_text(encoding="utf-8"))
+        relatorio = processar_fila(fila)
+    except Exception as erro:
+        registrar_resultado(relatorio_falha_inesperada(erro))
+        raise
+    registrar_resultado(relatorio)
+    return 1 if relatorio["resultado"] == RESULTADO_FALHA else 0
 
 
 if __name__ == "__main__":
-    main()
+    raise SystemExit(main())

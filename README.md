@@ -12,6 +12,24 @@ atrasar ou não acontecer, a próxima processa os Reels vencidos em ordem
 cronológica, até dez itens por vez. Em caso de erro, o processamento para no
 item com problema e o retoma na execução seguinte.
 
+## Como saber se houve publicação
+
+O selo verde do workflow informa que a verificação da fila terminou sem erro;
+sozinho, ele não comprova uma publicação. Abra o **Summary** da execução e
+confira o estado explícito:
+
+- `PUBLICADO`: a Meta confirmou uma ou mais publicações novas; o resumo mostra
+  as quantidades e os IDs separados de Instagram e Facebook;
+- `NENHUM_REEL_DEVIDO`: a fila foi verificada, mas nada foi publicado;
+- `RECONCILIADO_SEM_NOVA_PUBLICACAO`: um estado antigo da fila foi concluído,
+  sem uma nova chamada de publicação;
+- `FALHA`: houve erro; a execução fica vermelha e o resumo identifica a rede e
+  o motivo.
+
+Na página do job, somente um dos passos de resultado é executado com um desses
+nomes. Considere uma execução como prova de postagem apenas quando o Summary
+mostrar `PUBLICADO` e os IDs confirmados pela Meta.
+
 ## Rampa de publicação
 
 | Dias desde 05/09/2026 | Reels por dia | Horários de Brasília |

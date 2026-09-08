@@ -1,4 +1,4 @@
-name: Publicar Reels Instagram e Facebook
+name: Verificar fila e publicar Reels — Instagram e Facebook
 
 on:
   schedule:
@@ -23,6 +23,7 @@ concurrency:
 
 jobs:
   publicar:
+    name: Verificar fila, publicar e comprovar o resultado
     runs-on: ubuntu-latest
     permissions:
       contents: write
@@ -35,7 +36,8 @@ jobs:
       - run: pip install -r requirements.txt
       - name: Validar publicador
         run: python -m unittest discover -s tests
-      - name: Publicar Reel
+      - name: Processar Reels devidos
+        id: publicacao
         env:
           IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
           IG_BUSINESS_ID: ${{ secrets.IG_BUSINESS_ID }}
@@ -47,18 +49,64 @@ jobs:
           HORARIO_PUBLICACAO: ${{ inputs.horario_publicacao }}
           MAX_ITENS_POR_EXECUCAO: "10"
         run: python publicar.py
-      - name: Remover mídia temporária já publicada
-        if: always()
-        env:
-          GITHUB_TOKEN: ${{ github.token }}
-          GITHUB_REPOSITORY: ${{ github.repository }}
-          RELEASE_TAG: fila-instagram-facebook
-        run: python limpar_release.py --fila fila/fila-reels.json
       - name: Salvar resultado
-        if: always()
+        id: persistencia
+        if: ${{ always() && (steps.publicacao.outcome == 'success' || steps.publicacao.outcome == 'failure') }}
         run: |
           git config user.name "GitHub Actions"
           git config user.email "actions@github.com"
           git add fila/fila-reels.json
           git diff --staged --quiet || git commit -m "chore: atualizar reels $(date +%F)"
           git push
+      - name: Remover mídia temporária já publicada
+        id: limpeza
+        if: ${{ always() && steps.persistencia.outcome == 'success' }}
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+          GITHUB_REPOSITORY: ${{ github.repository }}
+          RELEASE_TAG: fila-instagram-facebook
+        run: python limpar_release.py --fila fila/fila-reels.json
+      - name: Registrar saúde operacional no Summary
+        if: ${{ always() }}
+        env:
+          PROCESSAMENTO: ${{ steps.publicacao.outcome }}
+          PERSISTENCIA: ${{ steps.persistencia.outcome }}
+          LIMPEZA: ${{ steps.limpeza.outcome }}
+        run: |
+          {
+            echo ""
+            echo "### Saúde operacional do workflow"
+            echo ""
+            echo "| Etapa | Resultado |"
+            echo "|---|---|"
+            echo "| Processamento da fila | \`${PROCESSAMENTO}\` |"
+            echo "| Gravação da fila no GitHub | \`${PERSISTENCIA}\` |"
+            echo "| Limpeza da mídia temporária | \`${LIMPEZA}\` |"
+          } >> "$GITHUB_STEP_SUMMARY"
+      - name: "Resultado: PUBLICAÇÃO CONFIRMADA"
+        if: ${{ always() && steps.publicacao.outputs.resultado == 'PUBLICADO' }}
+        env:
+          REELS_CONCLUIDOS: ${{ steps.publicacao.outputs.reels_concluidos }}
+          INSTAGRAM_PUBLICADOS: ${{ steps.publicacao.outputs.instagram_publicados }}
+          FACEBOOK_PUBLICADOS: ${{ steps.publicacao.outputs.facebook_publicados }}
+        run: |
+          echo "::notice title=PUBLICAÇÃO CONFIRMADA::${REELS_CONCLUIDOS} Reel(s) concluído(s); ${INSTAGRAM_PUBLICADOS} publicação(ões) no Instagram e ${FACEBOOK_PUBLICADOS} no Facebook. IDs no resumo da execução."
+      - name: "Resultado: NENHUM REEL DEVIDO — NADA PUBLICADO"
+        if: ${{ always() && steps.publicacao.outputs.resultado == 'NENHUM_REEL_DEVIDO' }}
+        run: echo "::notice title=NENHUM REEL DEVIDO — NADA PUBLICADO::A verificação terminou normalmente, mas nenhuma publicação foi realizada."
+      - name: "Resultado: FILA RECONCILIADA — NADA NOVO PUBLICADO"
+        if: ${{ always() && steps.publicacao.outputs.resultado == 'RECONCILIADO_SEM_NOVA_PUBLICACAO' }}
+        run: echo "::notice title=FILA RECONCILIADA — NADA NOVO PUBLICADO::Os itens devidos já tinham confirmação; nenhuma chamada nova de publicação foi concluída."
+      - name: "Resultado: FALHA NA PUBLICAÇÃO"
+        if: ${{ always() && steps.publicacao.outputs.resultado == 'FALHA' }}
+        run: |
+          echo "::error title=FALHA NA PUBLICAÇÃO::Consulte o resumo da execução para ver a rede e o erro."
+          exit 1
+      - name: "Resultado: INVÁLIDO OU AUSENTE — EXECUÇÃO INVÁLIDA"
+        if: ${{ always() && steps.publicacao.outputs.resultado != 'PUBLICADO' && steps.publicacao.outputs.resultado != 'NENHUM_REEL_DEVIDO' && steps.publicacao.outputs.resultado != 'RECONCILIADO_SEM_NOVA_PUBLICACAO' && steps.publicacao.outputs.resultado != 'FALHA' }}
+        run: |
+          echo "::error title=RESULTADO INVÁLIDO OU AUSENTE::O publicador não informou um dos quatro estados reconhecidos."
+          exit 1
+      - name: "Resultado adicional: FALHA APÓS PROCESSAR A FILA"
+        if: ${{ always() && steps.publicacao.outputs.resultado != 'FALHA' && (steps.persistencia.outcome == 'failure' || steps.limpeza.outcome == 'failure') }}
+        run: echo "::error title=FALHA OPERACIONAL APÓS PROCESSAR::O resultado da Meta está no Summary, mas uma etapa posterior de limpeza ou gravação falhou."
