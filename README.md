@@ -51,6 +51,13 @@ A fila é `fila/fila-reels.json`. Cada item aponta para um asset temporário da
 release `fila-instagram-facebook`; ele não entra no histórico Git. O asset só
 é removido depois da confirmação das duas redes.
 
+### Visibilidade da fila
+
+O repositório e a Release são públicos, então os assets futuros podem ser
+acessados antes da publicação. Essa exposição é conhecida e foi aceita pelo
+responsável pelo projeto em 08/09/2026; o fluxo não precisa ser tornado privado
+por esse motivo.
+
 O Drive continua sendo o acervo permanente. O computador local só repõe a fila
 quando voltar a ficar ligado, copiando vídeos de
 `03 - Finalizados/02 - Instagram e Facebook/01 - Prontos para Programar` e
