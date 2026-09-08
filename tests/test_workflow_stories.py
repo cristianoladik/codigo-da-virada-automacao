@@ -1,5 +1,6 @@
 import json
 import unittest
+from datetime import date
 from pathlib import Path
 
 
@@ -41,12 +42,32 @@ class WorkflowStoriesTest(unittest.TestCase):
         self.assertIn("resultado != 'DIAGNOSTICO_META_OK'", passo_persistencia)
         self.assertIn("inputs.diagnosticar_contas_meta != true", passo_persistencia)
 
-    def test_fila_inicial_e_vazia_e_tem_contrato_diario(self):
+    def test_fila_ativa_tem_contrato_diario(self):
         fila = json.loads(FILA.read_text(encoding="utf-8"))
-        self.assertEqual(fila["pacotes"], [])
         self.assertEqual(fila["pacotes_por_dia"], 1)
         self.assertEqual(fila["horario"], "09:00")
         self.assertEqual(fila["limite_parte_segundos"], 59)
+
+        datas = []
+        ids = set()
+        for pacote in fila["pacotes"]:
+            self.assertNotIn(pacote["id"], ids)
+            ids.add(pacote["id"])
+            datas.append(date.fromisoformat(pacote["data"]))
+            self.assertEqual(pacote["horario"], "09:00")
+            self.assertIn(
+                pacote["status"],
+                {"pendente", "em_andamento", "erro", "concluido"},
+            )
+            self.assertGreaterEqual(len(pacote["partes"]), 1)
+            self.assertLessEqual(len(pacote["partes"]), 10)
+            self.assertEqual(
+                [parte["ordem"] for parte in pacote["partes"]],
+                list(range(1, len(pacote["partes"]) + 1)),
+            )
+
+        self.assertEqual(datas, sorted(datas))
+        self.assertEqual(len(datas), len(set(datas)))
 
     def test_reels_tambem_persiste_o_marcador_depois_da_limpeza(self):
         texto = WORKFLOW_REELS.read_text(encoding="utf-8")
