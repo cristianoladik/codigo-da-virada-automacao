@@ -39,8 +39,8 @@ confira o estado explícito:
   publicado;
 - `RECONCILIADO_SEM_NOVA_PUBLICACAO`: um estado antigo da fila foi concluído,
   sem uma nova chamada de publicação;
-- `DIAGNOSTICO_META_OK`: a conta BUSINESS do Instagram e o Page Token foram
-  confirmados em modo somente leitura, sem publicar nem limpar mídia;
+- `DIAGNOSTICO_META_OK`: a identidade do Instagram, o vínculo com a Página e o
+  Page Token foram confirmados em modo somente leitura, sem publicar nem limpar mídia;
 - `FALHA`: houve erro; a execução fica vermelha e o resumo identifica a rede e
   o motivo.
 

@@ -246,7 +246,7 @@ class PublicacaoApiTest(unittest.TestCase):
         instagram.assert_not_called()
         facebook.assert_not_called()
 
-    def test_preflight_confirma_instagram_business_e_pagina(self):
+    def test_preflight_confirma_identidade_vinculo_instagram_e_pagina(self):
         segredos = {
             "IG_ACCESS_TOKEN": "ig-token",
             "IG_BUSINESS_ID": "ig-id",
@@ -262,7 +262,6 @@ class PublicacaoApiTest(unittest.TestCase):
                 {
                     "id": "ig-id",
                     "username": "codigodavirada_br",
-                    "account_type": "BUSINESS",
                 },
                 {
                     "id": "page-id",
@@ -277,10 +276,12 @@ class PublicacaoApiTest(unittest.TestCase):
         ):
             resultado = publicar_stories.validar_contas_meta()
 
-        self.assertEqual(resultado["instagram"]["account_type"], "BUSINESS")
+        self.assertEqual(
+            resultado["instagram"]["vinculo"], "instagram_business_account"
+        )
         self.assertEqual(resultado["facebook"]["id"], "page-id")
 
-    def test_preflight_rejeita_instagram_creator_antes_de_consultar_pagina(self):
+    def test_preflight_rejeita_id_instagram_divergente_antes_de_consultar_pagina(self):
         segredos = {"IG_ACCESS_TOKEN": "ig-token", "IG_BUSINESS_ID": "ig-id"}
         with patch.object(
             publicar_stories, "obrigatoria", side_effect=lambda nome: segredos[nome]
@@ -288,12 +289,11 @@ class PublicacaoApiTest(unittest.TestCase):
             publicar_stories,
             "graph_get",
             return_value={
-                "id": "ig-id",
-                "username": "conta",
-                "account_type": "MEDIA_CREATOR",
+                "id": "outro-ig-id",
+                "username": "codigodavirada_br",
             },
         ) as consultar:
-            with self.assertRaisesRegex(RuntimeError, "exigem conta BUSINESS"):
+            with self.assertRaisesRegex(RuntimeError, "conta Instagram diferente"):
                 publicar_stories.validar_contas_meta()
 
         consultar.assert_called_once()
@@ -308,7 +308,6 @@ class PublicacaoApiTest(unittest.TestCase):
             return_value={
                 "id": "ig-id",
                 "username": "outra_conta",
-                "account_type": "BUSINESS",
             },
         ) as consultar:
             with self.assertRaisesRegex(RuntimeError, "conta esperada"):
@@ -937,7 +936,7 @@ class ResultadoExecucaoTest(unittest.TestCase):
     def test_modo_diagnostico_nao_processa_fila_mesmo_com_pacote_devido(self):
         fila = {"pacotes": [pacote("2026-09-01")]}
         contas = {
-            "instagram": {"account_type": "BUSINESS"},
+            "instagram": {"vinculo": "instagram_business_account"},
             "facebook": {"id": "pagina"},
         }
         with patch.dict(

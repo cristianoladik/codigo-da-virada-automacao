@@ -82,19 +82,13 @@ def aguardar_container_instagram(container_id: str, token: str) -> None:
 
 
 def validar_contas_meta() -> dict:
-    """Confirma a conta BUSINESS do Instagram e o token da Página."""
+    """Confirma identidade, Page Token e vínculo Page → Instagram profissional."""
     ig_token = obrigatoria("IG_ACCESS_TOKEN")
     ig_id = obrigatoria("IG_BUSINESS_ID")
     instagram = graph_get(
         ig_id,
-        {"fields": "id,username,account_type", "access_token": ig_token},
+        {"fields": "id,username", "access_token": ig_token},
     )
-    tipo = str(instagram.get("account_type", "")).upper()
-    if tipo != "BUSINESS":
-        raise RuntimeError(
-            "Stories via Instagram API exigem conta BUSINESS; "
-            f"a Meta informou {tipo or 'tipo ausente'}."
-        )
     if str(instagram.get("id", "")) != str(ig_id):
         raise RuntimeError("A Meta retornou uma conta Instagram diferente da configurada.")
     username = str(instagram.get("username", "")).strip().lstrip("@").casefold()
@@ -141,7 +135,7 @@ def validar_contas_meta() -> dict:
         "instagram": {
             "id": str(instagram["id"]),
             "username": str(instagram.get("username", "")),
-            "account_type": tipo,
+            "vinculo": "instagram_business_account",
         },
         "facebook": {
             "id": str(facebook["id"]),
@@ -151,7 +145,7 @@ def validar_contas_meta() -> dict:
     }
     print(
         "Contas Meta validadas: "
-        f"Instagram @{resultado['instagram']['username']} ({tipo}); "
+        f"Instagram @{resultado['instagram']['username']} vinculado à Página; "
         f"Facebook {resultado['facebook']['name']} ({resultado['facebook']['id']})."
     )
     return resultado
@@ -1032,7 +1026,7 @@ def resumo_markdown(relatorio: dict) -> str:
                 "### Contas confirmadas (sem expor tokens)",
                 "",
                 f"- Instagram: `@{instagram.get('username', '')}` — "
-                f"`{instagram.get('account_type', '')}` — ID `{instagram.get('id', '')}`",
+                f"vínculo `{instagram.get('vinculo', '')}` — ID `{instagram.get('id', '')}`",
                 f"- Facebook: `{facebook.get('name', '')}` — ID `{facebook.get('id', '')}`",
             ]
         )

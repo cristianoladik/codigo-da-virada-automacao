@@ -16,7 +16,7 @@ on:
         required: false
         type: string
       diagnosticar_contas_meta:
-        description: "Validar conta BUSINESS e Page Token sem publicar"
+        description: "Validar identidade, vínculo Instagram/Page e Page Token sem publicar"
         required: false
         default: false
         type: boolean
@@ -133,7 +133,7 @@ jobs:
         run: echo "::notice title=FILA DE STORIES RECONCILIADA — NADA NOVO PUBLICADO::As partes devidas já tinham confirmação; nenhuma chamada nova de publicação foi concluída."
       - name: "Resultado: DIAGNÓSTICO META APROVADO — NADA PUBLICADO"
         if: ${{ always() && steps.publicacao.outputs.resultado == 'DIAGNOSTICO_META_OK' }}
-        run: echo "::notice title=DIAGNÓSTICO META APROVADO — NADA PUBLICADO::A conta BUSINESS do Instagram e o Page Token do Facebook foram confirmados; nenhuma mídia foi publicada ou removida."
+        run: echo "::notice title=DIAGNÓSTICO META APROVADO — NADA PUBLICADO::A identidade do Instagram, o vínculo com a Página e o Page Token foram confirmados; nenhuma mídia foi publicada ou removida."
       - name: "Resultado: FALHA NA PUBLICAÇÃO DE STORIES"
         if: ${{ always() && steps.publicacao.outputs.resultado == 'FALHA' }}
         run: |
