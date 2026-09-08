@@ -60,6 +60,10 @@ movendo-os para `02 - Programados` assim que entram na fila.
 
 - Instagram e Facebook: `Siga @codigodavirada_br`
 
+`@codigodavirada_br` é o arroba atual e deve permanecer na legenda. O arquivo
+de vídeo pode conter visualmente o arroba anterior `@codigo_da_virada_oficial`:
+Reels legados continuam autorizados e o publicador não os rejeita por isso.
+
 ## Segredos do GitHub (Settings → Secrets and variables → Actions)
 
 - `IG_ACCESS_TOKEN`
