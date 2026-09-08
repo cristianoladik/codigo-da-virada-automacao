@@ -28,7 +28,13 @@ jobs:
     permissions:
       contents: write
     steps:
+      # Uma execução pode ficar aguardando a anterior por causa do `concurrency`.
+      # Nesse intervalo, a execução anterior atualiza a fila em `main`. Fazer o
+      # checkout explícito da branch evita processar novamente o SHA antigo que
+      # disparou a execução enfileirada.
       - uses: actions/checkout@v4
+        with:
+          ref: main
       - uses: actions/setup-python@v5
         with:
           python-version: "3.11"
