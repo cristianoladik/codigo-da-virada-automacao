@@ -1,6 +1,8 @@
+import io
 import os
 import tempfile
 import unittest
+from contextlib import redirect_stdout
 from datetime import datetime
 from pathlib import Path
 from unittest.mock import patch
@@ -61,7 +63,8 @@ class ResultadoExecucaoTest(unittest.TestCase):
     def processar(self, fila):
         with patch.dict(os.environ, {"MAX_ITENS_POR_EXECUCAO": "10"}, clear=True):
             with patch.object(publicar, "salvar_fila"):
-                return publicar.processar_fila(fila, agora=self.agora)
+                with redirect_stdout(io.StringIO()):
+                    return publicar.processar_fila(fila, agora=self.agora)
 
     def test_informa_que_nada_foi_publicado_quando_nao_ha_reel_devido(self):
         fila = {"conteudos": [item("2026-09-08", "09:00")]}
@@ -155,7 +158,8 @@ class ResultadoExecucaoTest(unittest.TestCase):
             ambiente = {"GITHUB_OUTPUT": str(output), "GITHUB_STEP_SUMMARY": str(summary)}
 
             with patch.dict(os.environ, ambiente, clear=True):
-                publicar.registrar_resultado(relatorio)
+                with redirect_stdout(io.StringIO()):
+                    publicar.registrar_resultado(relatorio)
 
             saidas = output.read_text(encoding="utf-8")
             resumo = summary.read_text(encoding="utf-8")
