@@ -6,6 +6,14 @@ Este repositório executa somente este fluxo, mesmo com o computador desligado:
 - publicação independente no Instagram e na Página do Facebook;
 - confirmação separada por rede, sem repetir a rede que já confirmou.
 
+## Estado das redes
+
+Instagram e Facebook estão **ativos**. O Facebook publica desde 05/09/2026,
+quando `pages_manage_posts` foi liberado em Standard Access; no publicador, isso
+é representado por `FACEBOOK_ATIVO = True`. Registros antigos com status
+`pausado` pertencem ao período anterior à liberação e não representam o estado
+atual da automação.
+
 O workflow verifica a fila a cada dez minutos, nos minutos 07, 17, 27, 37, 47
 e 57. Essa frequência reduz os atrasos do agendador do GitHub. Se uma execução
 atrasar ou não acontecer, a próxima processa os Reels vencidos em ordem
