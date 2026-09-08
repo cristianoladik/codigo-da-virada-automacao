@@ -1,8 +1,9 @@
-"""Publica a próxima peça pendente de Reels no Instagram e Facebook.
+"""Publica as peças pendentes e vencidas de Reels no Instagram e Facebook.
 
 As mídias não entram no histórico Git. Cada item aponta para um asset temporário
 da release ``fila-instagram-facebook``; o runner o baixa somente para o upload
-resumível da Página do Facebook.
+resumível da Página do Facebook. Uma execução recupera atrasos processando os
+itens vencidos em ordem cronológica, até um limite de segurança configurável.
 """
 
 from __future__ import annotations
@@ -22,6 +23,7 @@ BRT = timezone(timedelta(hours=-3))
 GRAPH_BASE = f"https://graph.facebook.com/{os.getenv('META_GRAPH_VERSION', 'v23.0')}"
 PLATAFORMAS = ("instagram", "facebook")
 FACEBOOK_ATIVO = True  # pages_manage_posts liberado em Standard Access (05/09/2026)
+MAX_ITENS_POR_EXECUCAO_PADRAO = 10
 
 
 def obrigatoria(nome: str) -> str:
@@ -146,7 +148,17 @@ def executar(item: dict, plataforma: str, funcao) -> None:
         print(f"ERRO {plataforma}: {erro}")
 
 
-def proximo_item(fila: dict) -> dict | None:
+def limite_por_execucao() -> int:
+    try:
+        limite = int(os.getenv("MAX_ITENS_POR_EXECUCAO", str(MAX_ITENS_POR_EXECUCAO_PADRAO)))
+    except ValueError as erro:
+        raise RuntimeError("MAX_ITENS_POR_EXECUCAO deve ser um número inteiro.") from erro
+    if limite < 1:
+        raise RuntimeError("MAX_ITENS_POR_EXECUCAO deve ser maior que zero.")
+    return limite
+
+
+def proximos_itens(fila: dict, agora: datetime | None = None) -> list[dict]:
     data_forcada = os.getenv("DATA_PUBLICACAO", "").strip()
     horario_forcado = os.getenv("HORARIO_PUBLICACAO", "").strip()
     if bool(data_forcada) != bool(horario_forcado):
@@ -156,8 +168,8 @@ def proximo_item(fila: dict) -> dict | None:
         encontrados = [x for x in conteudos if x["data"] == data_forcada and x["horario"] == horario_forcado and x.get("status") != "concluido"]
         if len(encontrados) > 1:
             raise RuntimeError("A fila tem mais de um Reel para esta data e horário.")
-        return encontrados[0] if encontrados else None
-    agora = datetime.now(BRT)
+        return encontrados[:1]
+    agora = agora or datetime.now(BRT)
     devidos = []
     for item in conteudos:
         if item.get("status") == "concluido":
@@ -165,29 +177,46 @@ def proximo_item(fila: dict) -> dict | None:
         agendado = datetime.fromisoformat(f"{item['data']}T{item['horario']}:00").replace(tzinfo=BRT)
         if agendado <= agora:
             devidos.append((agendado, item))
-    return min(devidos, key=lambda par: par[0])[1] if devidos else None
+    devidos.sort(key=lambda par: par[0])
+    return [item for _, item in devidos[:limite_por_execucao()]]
+
+
+def item_com_erro(item: dict) -> bool:
+    return item["instagram"].get("status") == "erro" or (
+        FACEBOOK_ATIVO and item["facebook"].get("status") == "erro"
+    )
 
 
 def main() -> None:
     fila = json.loads(FILA_FILE.read_text(encoding="utf-8"))
-    item = proximo_item(fila)
-    if not item:
+    itens = proximos_itens(fila)
+    if not itens:
         print("Nenhum Reel pendente e devido para publicação.")
         return
-    executar(item, "instagram", publicar_instagram)
-    if FACEBOOK_ATIVO:
-        executar(item, "facebook", publicar_facebook)
-    else:
-        item["facebook"]["status"] = "pausado"
-        item["facebook"].pop("erro", None)
-    concluiu = item["instagram"].get("status") == "publicado" and (
-        not FACEBOOK_ATIVO or item["facebook"].get("status") == "publicado"
-    )
-    if concluiu:
-        item.update({"status": "concluido", "concluido_em": datetime.now(BRT).isoformat()})
-    salvar_fila(fila)
-    if item["instagram"].get("status") == "erro" or (FACEBOOK_ATIVO and item["facebook"].get("status") == "erro"):
-        raise SystemExit(1)
+    print(f"{len(itens)} Reel(s) vencido(s) serão processado(s) nesta execução.")
+    for indice, item in enumerate(itens, start=1):
+        print(f"Processando [{indice}/{len(itens)}] {item['data']} {item['horario']} ({item['id']})")
+
+        executar(item, "instagram", publicar_instagram)
+        salvar_fila(fila)
+
+        if FACEBOOK_ATIVO:
+            executar(item, "facebook", publicar_facebook)
+        else:
+            item["facebook"]["status"] = "pausado"
+            item["facebook"].pop("erro", None)
+        salvar_fila(fila)
+
+        concluiu = item["instagram"].get("status") == "publicado" and (
+            not FACEBOOK_ATIVO or item["facebook"].get("status") == "publicado"
+        )
+        if concluiu:
+            item.update({"status": "concluido", "concluido_em": datetime.now(BRT).isoformat()})
+        salvar_fila(fila)
+
+        if item_com_erro(item):
+            print("Processamento interrompido para preservar a ordem da fila; o item será retomado na próxima execução.")
+            raise SystemExit(1)
 
 
 if __name__ == "__main__":

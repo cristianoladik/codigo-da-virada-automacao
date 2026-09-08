@@ -2,15 +2,10 @@ name: Publicar Reels Instagram e Facebook
 
 on:
   schedule:
-    # Rampa de horários em Brasília (UTC-3). O robô só publica os horários que
-    # já estiverem liberados para o dia (ver HORARIOS_POR_FASE em publicar.py):
-    # 05:00, 09:00, 13:00, 17:00 e 21:00. Rodar sempre nos 5 é inofensivo —
-    # publicar.py verifica se algum Reel está devido antes de fazer qualquer coisa.
-    - cron: "0 8 * * *"
-    - cron: "0 12 * * *"
-    - cron: "0 16 * * *"
-    - cron: "0 20 * * *"
-    - cron: "0 0 * * *"
+    # Verifica a fila a cada 10 minutos, fora do minuto 0 (mais congestionado no
+    # GitHub Actions). O publicador ignora itens futuros e recupera todos os itens
+    # vencidos em ordem cronológica, até o limite de segurança por execução.
+    - cron: "7,17,27,37,47,57 * * * *"
   workflow_dispatch:
     inputs:
       data_publicacao:
@@ -38,6 +33,8 @@ jobs:
           python-version: "3.11"
           cache: pip
       - run: pip install -r requirements.txt
+      - name: Validar publicador
+        run: python -m unittest discover -s tests
       - name: Publicar Reel
         env:
           IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
@@ -48,6 +45,7 @@ jobs:
           MEDIA_CACHE_DIR: ${{ runner.temp }}/midias
           DATA_PUBLICACAO: ${{ inputs.data_publicacao }}
           HORARIO_PUBLICACAO: ${{ inputs.horario_publicacao }}
+          MAX_ITENS_POR_EXECUCAO: "10"
         run: python publicar.py
       - name: Remover mídia temporária já publicada
         if: always()
