@@ -30,12 +30,12 @@
           "instagram": {
             "status": "erro",
             "container_terminal": {
-              "id": "18098123474160657",
+              "id": "18098148515160657",
               "status": "ERROR",
-              "detectado_em": "2026-09-09T19:30:02-03:00"
+              "detectado_em": "2026-09-09T22:01:32-03:00"
             },
             "erro": "O container do Instagram terminou em ERROR/EXPIRED antes do publish; ele foi descartado e um novo container poderá ser criado na próxima execução.",
-            "ultima_tentativa_em": "2026-09-09T19:30:02-03:00"
+            "ultima_tentativa_em": "2026-09-09T22:01:32-03:00"
           },
           "facebook": {
             "status": "publicado",
