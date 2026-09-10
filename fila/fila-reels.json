@@ -317,11 +317,15 @@
       },
       "instagram": {
         "legenda": "Siga @codigodavirada_br",
-        "status": "pendente"
+        "status": "erro",
+        "erro": "Instagram não processou o Reel: {'status_code': 'ERROR', 'status': 'Error: Media upload has failed with error code 2207076', 'id': '18098142842160657'}",
+        "ultima_tentativa_em": "2026-09-09T21:33:21.315668-03:00"
       },
       "facebook": {
         "legenda": "Siga @codigodavirada_br",
-        "status": "pendente"
+        "status": "publicado",
+        "id": "1615984733311467",
+        "publicado_em": "2026-09-09T21:33:33.552723-03:00"
       }
     },
     {
