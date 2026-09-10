@@ -9,7 +9,7 @@
       "id": "story-20260909-b28892489d",
       "data": "2026-09-09",
       "horario": "09:00",
-      "status": "pendente",
+      "status": "concluido",
       "origem": {
         "arquivo": "1.mp4",
         "sha256": "b28892489db503fd4b638ad2df08f834271cfde5209a5848117f6397e586392c",
@@ -19,7 +19,7 @@
       "partes": [
         {
           "ordem": 1,
-          "status": "pendente",
+          "status": "concluido",
           "midia": {
             "asset": "story-001-parte-01.mp4",
             "url_publica": "https://github.com/cristianoladik/codigo-da-virada-automacao/releases/download/fila-instagram-facebook/story-001-parte-01.mp4",
@@ -28,14 +28,17 @@
             "duracao_segundos": 27.867
           },
           "instagram": {
-            "status": "erro",
+            "status": "publicado",
             "container_terminal": {
               "id": "18098148515160657",
               "status": "ERROR",
               "detectado_em": "2026-09-09T22:01:32-03:00"
             },
-            "erro": "O container do Instagram terminou em ERROR/EXPIRED antes do publish; ele foi descartado e um novo container poderá ser criado na próxima execução.",
-            "ultima_tentativa_em": "2026-09-09T22:01:32-03:00"
+            "ultima_tentativa_em": "2026-09-09T22:01:32-03:00",
+            "container_id": "18098306399160657",
+            "publish_iniciado_em": "2026-09-10T09:12:58-03:00",
+            "id": "18223872328328935",
+            "publicado_em": "2026-09-10T09:13:06-03:00"
           },
           "facebook": {
             "status": "publicado",
@@ -48,9 +51,11 @@
             "id_tipo": "post_id",
             "id": "957536226616851",
             "publicado_em": "2026-09-09T09:57:26-03:00"
-          }
+          },
+          "concluido_em": "2026-09-10T09:13:06-03:00"
         }
-      ]
+      ],
+      "concluido_em": "2026-09-10T09:13:06-03:00"
     },
     {
       "id": "story-20260910-531c63b2cf",
