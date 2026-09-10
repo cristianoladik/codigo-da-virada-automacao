@@ -304,7 +304,7 @@
       "id": "reel-20260909-2100-d61cb1285c",
       "data": "2026-09-09",
       "horario": "21:00",
-      "status": "pendente",
+      "status": "concluido",
       "origem": {
         "arquivo": "19.mp4",
         "sha256": "d61cb1285ce5c3f7ea2ccf6239b063d56b9db8708f8b379216267f3cb17b9401"
@@ -317,16 +317,18 @@
       },
       "instagram": {
         "legenda": "Siga @codigodavirada_br",
-        "status": "erro",
-        "erro": "Instagram não processou o Reel: {'status_code': 'ERROR', 'status': 'Error: Media upload has failed with error code 2207076', 'id': '18098203427160657'}",
-        "ultima_tentativa_em": "2026-09-10T02:13:38.341877-03:00"
+        "status": "publicado",
+        "ultima_tentativa_em": "2026-09-10T02:13:38.341877-03:00",
+        "id": "17906886294514218",
+        "publicado_em": "2026-09-10T06:49:28.037563-03:00"
       },
       "facebook": {
         "legenda": "Siga @codigodavirada_br",
         "status": "publicado",
         "id": "1615984733311467",
         "publicado_em": "2026-09-09T21:33:33.552723-03:00"
-      }
+      },
+      "concluido_em": "2026-09-10T06:49:28.046404-03:00"
     },
     {
       "id": "reel-20260910-0900-e153725210",
