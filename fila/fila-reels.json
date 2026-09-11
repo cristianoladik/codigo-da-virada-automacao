@@ -366,7 +366,7 @@
       "id": "reel-20260910-2100-e067d0e2d0",
       "data": "2026-09-10",
       "horario": "21:00",
-      "status": "pendente",
+      "status": "concluido",
       "origem": {
         "arquivo": "21.mp4",
         "sha256": "e067d0e2d08dd3ba464e96d6e9d9e880eb0889d05776d37c0f041a0c520bda8c"
@@ -379,12 +379,17 @@
       },
       "instagram": {
         "legenda": "Siga @codigodavirada_br",
-        "status": "pendente"
+        "status": "publicado",
+        "id": "18126789565756381",
+        "publicado_em": "2026-09-10T21:31:11.313477-03:00"
       },
       "facebook": {
         "legenda": "Siga @codigodavirada_br",
-        "status": "pendente"
-      }
+        "status": "publicado",
+        "id": "1077083931914536",
+        "publicado_em": "2026-09-10T21:31:23.714694-03:00"
+      },
+      "concluido_em": "2026-09-10T21:31:23.720268-03:00"
     },
     {
       "id": "reel-20260911-0900-64c2bdb5e8",
