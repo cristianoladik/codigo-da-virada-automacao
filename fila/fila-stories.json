@@ -1058,6 +1058,316 @@
           }
         }
       ]
+    },
+    {
+      "id": "story-20261009-02950a6f1d",
+      "data": "2026-10-09",
+      "horario": "09:00",
+      "status": "pendente",
+      "origem": {
+        "arquivo": "35.mp4",
+        "sha256": "02950a6f1df0e8d5821398d95de8a05ee6a6d362dd1e6fc2efcd2c8f1454ee5d",
+        "pacote": "031 - sem-titulo",
+        "pacote_id": "story-031-02950a6f1df0"
+      },
+      "partes": [
+        {
+          "ordem": 1,
+          "status": "pendente",
+          "midia": {
+            "asset": "story-031-parte-01.mp4",
+            "url_publica": "https://github.com/cristianoladik/codigo-da-virada-automacao/releases/download/fila-instagram-facebook/story-031-parte-01.mp4",
+            "sha256": "6b2114e89958e306ceed49cfb7459e0c203910e8b5f8196716801bc91772c2b2",
+            "tamanho_bytes": 10032848,
+            "duracao_segundos": 43.866
+          },
+          "instagram": {
+            "status": "pendente"
+          },
+          "facebook": {
+            "status": "pendente"
+          }
+        }
+      ]
+    },
+    {
+      "id": "story-20261010-37b97888f6",
+      "data": "2026-10-10",
+      "horario": "09:00",
+      "status": "pendente",
+      "origem": {
+        "arquivo": "36.mp4",
+        "sha256": "37b97888f631a54578752c36cfd75e32f5338f0870b5788957a5aa13b100f09e",
+        "pacote": "032 - sem-titulo",
+        "pacote_id": "story-032-37b97888f631"
+      },
+      "partes": [
+        {
+          "ordem": 1,
+          "status": "pendente",
+          "midia": {
+            "asset": "story-032-parte-01.mp4",
+            "url_publica": "https://github.com/cristianoladik/codigo-da-virada-automacao/releases/download/fila-instagram-facebook/story-032-parte-01.mp4",
+            "sha256": "c40b2fc17e39f44f458a5e419ca9937342b03671ea0072a9800d3582021fadc0",
+            "tamanho_bytes": 7272177,
+            "duracao_segundos": 37.733
+          },
+          "instagram": {
+            "status": "pendente"
+          },
+          "facebook": {
+            "status": "pendente"
+          }
+        }
+      ]
+    },
+    {
+      "id": "story-20261011-da954a79de",
+      "data": "2026-10-11",
+      "horario": "09:00",
+      "status": "pendente",
+      "origem": {
+        "arquivo": "37.mp4",
+        "sha256": "da954a79de2e71e5552179089042a99c4176f168b7d5515ca9c469b64f80cdbf",
+        "pacote": "033 - sem-titulo",
+        "pacote_id": "story-033-da954a79de2e"
+      },
+      "partes": [
+        {
+          "ordem": 1,
+          "status": "pendente",
+          "midia": {
+            "asset": "story-033-parte-01.mp4",
+            "url_publica": "https://github.com/cristianoladik/codigo-da-virada-automacao/releases/download/fila-instagram-facebook/story-033-parte-01.mp4",
+            "sha256": "49d70dce116ea41ad68d1c4336933692bedcb65f1ca787c5c0761c94a1599cd5",
+            "tamanho_bytes": 13023454,
+            "duracao_segundos": 55.426
+          },
+          "instagram": {
+            "status": "pendente"
+          },
+          "facebook": {
+            "status": "pendente"
+          }
+        }
+      ]
+    },
+    {
+      "id": "story-20261012-3c0e0503ff",
+      "data": "2026-10-12",
+      "horario": "09:00",
+      "status": "pendente",
+      "origem": {
+        "arquivo": "38.mp4",
+        "sha256": "3c0e0503ffa3908ec55b606af72db603a8895411531e66d352042b7d20a06c3d",
+        "pacote": "034 - sem-titulo",
+        "pacote_id": "story-034-3c0e0503ffa3"
+      },
+      "partes": [
+        {
+          "ordem": 1,
+          "status": "pendente",
+          "midia": {
+            "asset": "story-034-parte-01.mp4",
+            "url_publica": "https://github.com/cristianoladik/codigo-da-virada-automacao/releases/download/fila-instagram-facebook/story-034-parte-01.mp4",
+            "sha256": "ffba5534d65c32c03a98b90b9af6e342f5887ed65243b721be015ed86b1fa3aa",
+            "tamanho_bytes": 7948912,
+            "duracao_segundos": 35.933
+          },
+          "instagram": {
+            "status": "pendente"
+          },
+          "facebook": {
+            "status": "pendente"
+          }
+        }
+      ]
+    },
+    {
+      "id": "story-20261013-d40d9e9de4",
+      "data": "2026-10-13",
+      "horario": "09:00",
+      "status": "pendente",
+      "origem": {
+        "arquivo": "39.mp4",
+        "sha256": "d40d9e9de457a5999272e8e60632a047bde40b09e3006a0bbecdd3abe03782c5",
+        "pacote": "035 - sem-titulo",
+        "pacote_id": "story-035-d40d9e9de457"
+      },
+      "partes": [
+        {
+          "ordem": 1,
+          "status": "pendente",
+          "midia": {
+            "asset": "story-035-parte-01.mp4",
+            "url_publica": "https://github.com/cristianoladik/codigo-da-virada-automacao/releases/download/fila-instagram-facebook/story-035-parte-01.mp4",
+            "sha256": "f64c579da272009fdff23cba313d3e30655895dee5061c3c57a384d66569537c",
+            "tamanho_bytes": 11950540,
+            "duracao_segundos": 48.878
+          },
+          "instagram": {
+            "status": "pendente"
+          },
+          "facebook": {
+            "status": "pendente"
+          }
+        }
+      ]
+    },
+    {
+      "id": "story-20261014-b2dccd4a96",
+      "data": "2026-10-14",
+      "horario": "09:00",
+      "status": "pendente",
+      "origem": {
+        "arquivo": "40.mp4",
+        "sha256": "b2dccd4a961ab4f554dce0ecbd86793cad5ba4fcbe98c2e424b053bc3f9c09f7",
+        "pacote": "036 - sem-titulo",
+        "pacote_id": "story-036-b2dccd4a961a"
+      },
+      "partes": [
+        {
+          "ordem": 1,
+          "status": "pendente",
+          "midia": {
+            "asset": "story-036-parte-01.mp4",
+            "url_publica": "https://github.com/cristianoladik/codigo-da-virada-automacao/releases/download/fila-instagram-facebook/story-036-parte-01.mp4",
+            "sha256": "1b695c9f959351c274e5ae2ecebeb82552943293411cf645905b4d8c2900328e",
+            "tamanho_bytes": 9564716,
+            "duracao_segundos": 31.231
+          },
+          "instagram": {
+            "status": "pendente"
+          },
+          "facebook": {
+            "status": "pendente"
+          }
+        }
+      ]
+    },
+    {
+      "id": "story-20261015-999d1eecb4",
+      "data": "2026-10-15",
+      "horario": "09:00",
+      "status": "pendente",
+      "origem": {
+        "arquivo": "41.mp4",
+        "sha256": "999d1eecb4222ab30c04e2cfa627055e7747534d916f3dec4f15cef1f2096358",
+        "pacote": "037 - sem-titulo",
+        "pacote_id": "story-037-999d1eecb422"
+      },
+      "partes": [
+        {
+          "ordem": 1,
+          "status": "pendente",
+          "midia": {
+            "asset": "story-037-parte-01.mp4",
+            "url_publica": "https://github.com/cristianoladik/codigo-da-virada-automacao/releases/download/fila-instagram-facebook/story-037-parte-01.mp4",
+            "sha256": "c772db2c5f714813192e88cfaa482255e034ada8addd94405be5a75cd28442ae",
+            "tamanho_bytes": 9031865,
+            "duracao_segundos": 34.2
+          },
+          "instagram": {
+            "status": "pendente"
+          },
+          "facebook": {
+            "status": "pendente"
+          }
+        }
+      ]
+    },
+    {
+      "id": "story-20261016-cf7f93f2e7",
+      "data": "2026-10-16",
+      "horario": "09:00",
+      "status": "pendente",
+      "origem": {
+        "arquivo": "42.mp4",
+        "sha256": "cf7f93f2e766e0ddf38341eaf88a8d0ec53251236f7470a85d6e9953e1444a27",
+        "pacote": "038 - sem-titulo",
+        "pacote_id": "story-038-cf7f93f2e766"
+      },
+      "partes": [
+        {
+          "ordem": 1,
+          "status": "pendente",
+          "midia": {
+            "asset": "story-038-parte-01.mp4",
+            "url_publica": "https://github.com/cristianoladik/codigo-da-virada-automacao/releases/download/fila-instagram-facebook/story-038-parte-01.mp4",
+            "sha256": "5482fad333b14b66005421ee580b0e1d33502fec05b2281876f2e2fb52eed2cd",
+            "tamanho_bytes": 6414633,
+            "duracao_segundos": 21.037
+          },
+          "instagram": {
+            "status": "pendente"
+          },
+          "facebook": {
+            "status": "pendente"
+          }
+        }
+      ]
+    },
+    {
+      "id": "story-20261017-5cbb224623",
+      "data": "2026-10-17",
+      "horario": "09:00",
+      "status": "pendente",
+      "origem": {
+        "arquivo": "43.mp4",
+        "sha256": "5cbb2246231fbc1c68c214d10b5eea012bbf2a916773ceaaf8d836ea3e39d8ef",
+        "pacote": "039 - sem-titulo",
+        "pacote_id": "story-039-5cbb2246231f"
+      },
+      "partes": [
+        {
+          "ordem": 1,
+          "status": "pendente",
+          "midia": {
+            "asset": "story-039-parte-01.mp4",
+            "url_publica": "https://github.com/cristianoladik/codigo-da-virada-automacao/releases/download/fila-instagram-facebook/story-039-parte-01.mp4",
+            "sha256": "ed7d47e538d989768f7497f679b6939811b0f68773391bfe8be5b1f0dd20a38d",
+            "tamanho_bytes": 14836147,
+            "duracao_segundos": 53.766
+          },
+          "instagram": {
+            "status": "pendente"
+          },
+          "facebook": {
+            "status": "pendente"
+          }
+        }
+      ]
+    },
+    {
+      "id": "story-20261018-fdc9a7bed7",
+      "data": "2026-10-18",
+      "horario": "09:00",
+      "status": "pendente",
+      "origem": {
+        "arquivo": "44.mp4",
+        "sha256": "fdc9a7bed7c2dfafcd75223f192e53dacaf4b8f1b2450632987b265fc33e8ed3",
+        "pacote": "040 - sem-titulo",
+        "pacote_id": "story-040-fdc9a7bed7c2"
+      },
+      "partes": [
+        {
+          "ordem": 1,
+          "status": "pendente",
+          "midia": {
+            "asset": "story-040-parte-01.mp4",
+            "url_publica": "https://github.com/cristianoladik/codigo-da-virada-automacao/releases/download/fila-instagram-facebook/story-040-parte-01.mp4",
+            "sha256": "8a416fdd88d42549810f46c18574ea68e15fa98964a8c6f7f15925e3a87943d4",
+            "tamanho_bytes": 7865433,
+            "duracao_segundos": 32.02
+          },
+          "instagram": {
+            "status": "pendente"
+          },
+          "facebook": {
+            "status": "pendente"
+          }
+        }
+      ]
     }
   ],
   "estoque_minimo_dias": 30,
