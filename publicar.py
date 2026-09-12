@@ -150,7 +150,14 @@ def executar(item: dict, plataforma: str, funcao) -> str | None:
         dados.pop("erro", None)
         return publicacao_id
     except Exception as erro:
-        dados.update({"status": "erro", "erro": str(erro), "ultima_tentativa_em": datetime.now(BRT).isoformat()})
+        dados.update(
+            {
+                "status": "erro",
+                "erro": str(erro),
+                "ultima_tentativa_em": datetime.now(BRT).isoformat(),
+                "tentativas": int(dados.get("tentativas", 0)) + 1,
+            }
+        )
         print(f"ERRO {plataforma}: {erro}")
         return None
 
@@ -188,6 +195,37 @@ def proximos_itens(fila: dict, agora: datetime | None = None) -> list[dict]:
     return [item for _, item in devidos[:limite_por_execucao()]]
 
 
+MAX_TENTATIVAS_POR_ITEM = 3
+
+# Erro que nunca vai passar por mais que se tente: o arquivo em si nao serve.
+# O 2207082 foi o que prendeu a fila em 11/09/2026, com o video 23.mp4 corrompido.
+MARCAS_DE_ERRO_PERMANENTE = (
+    "2207082",   # Media upload has failed
+    "2207026",   # formato de video nao suportado
+    "2207020",   # midia invalida ou corrompida
+    "media upload has failed",
+    "unsupported",
+    "invalid media",
+    "não suportado",
+)
+
+
+def erro_permanente(item: dict) -> str | None:
+    """Diz por que este item nunca vai publicar, ou None se ainda vale tentar."""
+
+    for plataforma in ("instagram", "facebook"):
+        dados = item.get(plataforma) or {}
+        if dados.get("status") != "erro":
+            continue
+        texto = str(dados.get("erro", "")).lower()
+        for marca in MARCAS_DE_ERRO_PERMANENTE:
+            if marca in texto:
+                return f"{plataforma}: o arquivo foi recusado ({marca})"
+        if int(dados.get("tentativas", 0)) >= MAX_TENTATIVAS_POR_ITEM:
+            return f"{plataforma}: falhou {dados['tentativas']} vezes seguidas"
+    return None
+
+
 def item_com_erro(item: dict) -> bool:
     return item["instagram"].get("status") == "erro" or (
         FACEBOOK_ATIVO and item["facebook"].get("status") == "erro"
@@ -223,6 +261,8 @@ def processar_fila(fila: dict, agora: datetime | None = None) -> dict:
         }
 
     publicacoes = []
+    postos_de_lado = []
+    adiados = []
     reels_concluidos = 0
     print(f"{len(itens)} Reel(s) vencido(s) serão processado(s) nesta execução.")
     for indice, item in enumerate(itens, start=1):
@@ -251,23 +291,37 @@ def processar_fila(fila: dict, agora: datetime | None = None) -> dict:
         salvar_fila(fila)
 
         if item_com_erro(item):
-            print("Processamento interrompido para preservar a ordem da fila; o item será retomado na próxima execução.")
-            return {
-                "resultado": RESULTADO_FALHA,
-                "reels_devidos": len(itens),
-                "reels_concluidos": reels_concluidos,
-                "publicacoes": publicacoes,
-                "erros": erros_do_item(item),
-                "item_falho": item,
-                "proximo": proximo_item_pendente(fila),
-            }
+            # Regra do Cristiano em 12/09/2026: nunca travar a fila. Antes daqui
+            # o robo voltava e o item ficava barrando todos os outros, sem prazo.
+            motivo = erro_permanente(item)
+            if motivo:
+                item["status"] = "com_defeito"
+                item["motivo_defeito"] = motivo
+                item["posto_de_lado_em"] = datetime.now(BRT).isoformat()
+                print(f"POSTO DE LADO: {item['id']} — {motivo}")
+                postos_de_lado.append({"reel": item["id"], "motivo": motivo})
+            else:
+                print(f"FALHOU, tentaremos de novo: {item['id']}")
+                adiados.append({"reel": item["id"], "erros": erros_do_item(item)})
+            salvar_fila(fila)
+            continue
 
+    # Qualquer item que falhou deixa a rodada VERMELHA, mesmo que outros tenham
+    # publicado. A fila anda, mas o Cristiano precisa enxergar que algo deu errado.
+    if postos_de_lado or adiados:
+        resultado_final = RESULTADO_FALHA
+    elif publicacoes:
+        resultado_final = RESULTADO_PUBLICADO
+    else:
+        resultado_final = RESULTADO_RECONCILIADO
     return {
-        "resultado": RESULTADO_PUBLICADO if publicacoes else RESULTADO_RECONCILIADO,
+        "resultado": resultado_final,
         "reels_devidos": len(itens),
         "reels_concluidos": reels_concluidos,
         "publicacoes": publicacoes,
-        "erros": [],
+        "postos_de_lado": postos_de_lado,
+        "adiados": adiados,
+        "erros": [e for a in adiados for e in a["erros"]],
         "proximo": proximo_item_pendente(fila),
     }
 
