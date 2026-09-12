@@ -423,34 +423,6 @@
       "concluido_em": "2026-09-11T10:54:43.883713-03:00"
     },
     {
-      "id": "reel-20260911-2100-8fff5df185",
-      "data": "2026-09-11",
-      "horario": "21:00",
-      "status": "pendente",
-      "origem": {
-        "arquivo": "23.mp4",
-        "sha256": "8fff5df185c3718eb0b987e9f8284c70a32d578f7f1d5a613bdbdfc449c8837f"
-      },
-      "midia": {
-        "asset": "23.mp4",
-        "url_publica": "https://github.com/cristianoladik/codigo-da-virada-automacao/releases/download/fila-instagram-facebook/23.mp4",
-        "sha256": "8fff5df185c3718eb0b987e9f8284c70a32d578f7f1d5a613bdbdfc449c8837f",
-        "tamanho_bytes": 10864898
-      },
-      "instagram": {
-        "legenda": "Siga @codigodavirada_br",
-        "status": "erro",
-        "erro": "Instagram não processou o Reel: {'status_code': 'ERROR', 'status': 'Error: Media upload has failed with error code 2207082', 'id': '18098857646160657'}",
-        "ultima_tentativa_em": "2026-09-11T21:37:30.680346-03:00"
-      },
-      "facebook": {
-        "legenda": "Siga @codigodavirada_br",
-        "status": "publicado",
-        "id": "1046864167966750",
-        "publicado_em": "2026-09-11T21:37:41.400455-03:00"
-      }
-    },
-    {
       "id": "reel-20260912-0500-4d7aca9182",
       "data": "2026-09-12",
       "horario": "05:00",
