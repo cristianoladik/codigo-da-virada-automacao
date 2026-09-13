@@ -15,6 +15,14 @@ on:
         description: "Data do pacote de Stories (AAAA-MM-DD); vazio processa os vencidos"
         required: false
         type: string
+      permitir_data_futura:
+        description: "Deixa o disparo manual usar uma data futura (queima aquele dia)"
+        required: false
+        default: "NAO"
+        type: choice
+        options:
+          - "NAO"
+          - "SIM"
       diagnosticar_contas_meta:
         description: "Validar identidade, vínculo Instagram/Page e Page Token sem publicar"
         required: false
@@ -35,6 +43,25 @@ jobs:
     permissions:
       contents: write
     steps:
+      - name: Recusar data futura em disparo manual
+        # Um teste manual apontado para amanha publica o conteudo HOJE e ainda
+        # marca aquele dia como feito. No dia certo nada sai e o canal fica mudo
+        # sem ninguem perceber. Foi o que calou a Mente Decifrada em 12 e
+        # 13/09/2026, depois dos testes de 11/09. Por padrao o disparo manual so
+        # mexe no dia de hoje; para furar isso e preciso dizer SIM na mao.
+        if: ${{ github.event_name == 'workflow_dispatch' }}
+        shell: bash
+        env:
+          DATA_PEDIDA: ${{ inputs.data_publicacao }}
+          PERMITIR_FUTURO: ${{ inputs.permitir_data_futura }}
+        run: |
+          hoje="$(TZ=America/Sao_Paulo date +%F)"
+          if [ -n "$DATA_PEDIDA" ] && [ "$DATA_PEDIDA" \> "$hoje" ] && [ "$PERMITIR_FUTURO" != "SIM" ]; then
+            echo "Recusado: $DATA_PEDIDA e uma data futura; hoje e $hoje." >&2
+            echo "Publicar um slot futuro agora deixa aquele dia mudo." >&2
+            echo "Se for mesmo o que voce quer, marque permitir_data_futura=SIM." >&2
+            exit 1
+          fi
       # Uma execução pode aguardar o workflow de Reels. Ao obter o lock, deve
       # ler o estado mais recente de main, não o SHA antigo do evento agendado.
       - uses: actions/checkout@v4

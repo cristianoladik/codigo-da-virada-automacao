@@ -19,6 +19,14 @@ on:
         description: "Data do Reel (AAAA-MM-DD); vazio usa hoje"
         required: false
         type: string
+      permitir_data_futura:
+        description: "Deixa o disparo manual usar uma data futura (queima aquele dia)"
+        required: false
+        default: "NAO"
+        type: choice
+        options:
+          - "NAO"
+          - "SIM"
       horario_publicacao:
         description: "Horário do Reel (05:00, 09:00, 13:00, 17:00 ou 21:00); vazio usa horário atual de Brasília"
         required: false
@@ -38,6 +46,25 @@ jobs:
     permissions:
       contents: write
     steps:
+      - name: Recusar data futura em disparo manual
+        # Um teste manual apontado para amanha publica o conteudo HOJE e ainda
+        # marca aquele dia como feito. No dia certo nada sai e o canal fica mudo
+        # sem ninguem perceber. Foi o que calou a Mente Decifrada em 12 e
+        # 13/09/2026, depois dos testes de 11/09. Por padrao o disparo manual so
+        # mexe no dia de hoje; para furar isso e preciso dizer SIM na mao.
+        if: ${{ github.event_name == 'workflow_dispatch' }}
+        shell: bash
+        env:
+          DATA_PEDIDA: ${{ inputs.data_publicacao }}
+          PERMITIR_FUTURO: ${{ inputs.permitir_data_futura }}
+        run: |
+          hoje="$(TZ=America/Sao_Paulo date +%F)"
+          if [ -n "$DATA_PEDIDA" ] && [ "$DATA_PEDIDA" \> "$hoje" ] && [ "$PERMITIR_FUTURO" != "SIM" ]; then
+            echo "Recusado: $DATA_PEDIDA e uma data futura; hoje e $hoje." >&2
+            echo "Publicar um slot futuro agora deixa aquele dia mudo." >&2
+            echo "Se for mesmo o que voce quer, marque permitir_data_futura=SIM." >&2
+            exit 1
+          fi
       # Uma execução pode ficar aguardando a anterior por causa do `concurrency`.
       # Nesse intervalo, a execução anterior atualiza a fila em `main`. Fazer o
       # checkout explícito da branch evita processar novamente o SHA antigo que
