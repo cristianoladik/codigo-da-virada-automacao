@@ -104,7 +104,7 @@ jobs:
         run: |
           git config user.name "GitHub Actions"
           git config user.email "actions@github.com"
-          python -c "import json; from pathlib import Path; import publicar_stories as p; p.validar_fila(json.loads(Path('fila/fila-stories.json').read_text(encoding='utf-8')))"
+          python -c "import json; from pathlib import Path; import publicar_stories as p; p.avisar_defeitos(p.validar_fila(json.loads(Path('fila/fila-stories.json').read_text(encoding='utf-8'))))"
           git add fila/fila-stories.json
           git diff --staged --quiet || git commit -m "chore: atualizar stories $(date +%F)"
           python push_confirmado.py --repositorio .
@@ -120,7 +120,7 @@ jobs:
         id: persistencia_limpeza
         if: ${{ always() && (steps.limpeza.outcome == 'success' || steps.limpeza.outcome == 'failure') }}
         run: |
-          python -c "import json; from pathlib import Path; import publicar_stories as p; p.validar_fila(json.loads(Path('fila/fila-stories.json').read_text(encoding='utf-8')))"
+          python -c "import json; from pathlib import Path; import publicar_stories as p; p.avisar_defeitos(p.validar_fila(json.loads(Path('fila/fila-stories.json').read_text(encoding='utf-8'))))"
           git add fila/fila-stories.json
           git diff --staged --quiet || git commit -m "chore: registrar limpeza de stories $(date +%F)"
           python push_confirmado.py --repositorio .

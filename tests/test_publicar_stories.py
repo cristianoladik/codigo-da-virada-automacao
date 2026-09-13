@@ -49,6 +49,34 @@ class SelecaoEValidacaoTest(unittest.TestCase):
     def setUp(self):
         self.agora = datetime(2026, 9, 10, 12, 0, tzinfo=publicar_stories.BRT)
 
+    def defeito(self, item):
+        """Motivo do defeito deste pacote, exigindo que exista algum."""
+        motivo = publicar_stories.defeito_do_pacote(item, item["id"])
+        self.assertIsNotNone(motivo, "esperava defeito neste pacote")
+        return motivo
+
+    def test_pacote_ruim_no_fim_nao_cala_o_story_de_hoje(self):
+        # Incidente de 12/09/2026: um vídeo com duração errada lá no fim da
+        # fila derrubava o conferidor e o canal ficava sem publicar de manhã.
+        hoje = pacote("2026-09-09", "story-hoje")
+        ruim = pacote("2026-09-30", "story-ruim")
+        ruim["partes"][0]["midia"]["duracao_segundos"] = 999
+        fila = {"pacotes": [hoje, ruim]}
+        defeitos = publicar_stories.validar_fila(fila)
+        self.assertEqual(list(defeitos), ["story-ruim"])
+        with patch.dict(os.environ, {"MAX_PACOTES_POR_EXECUCAO": "1"}, clear=True):
+            escolhidos = publicar_stories.proximos_pacotes(fila, agora=self.agora)
+        self.assertEqual([item["id"] for item in escolhidos], ["story-hoje"])
+
+    def test_slot_do_pacote_ruim_e_recusado_com_motivo(self):
+        ruim = pacote("2026-09-09", "story-ruim")
+        ruim["partes"][0]["midia"]["duracao_segundos"] = 999
+        with patch.dict(os.environ, {"MAX_PACOTES_POR_EXECUCAO": "1"}, clear=True):
+            with self.assertRaisesRegex(RuntimeError, "recusado por defeito"):
+                publicar_stories.proximos_pacotes(
+                    {"pacotes": [ruim]}, agora=self.agora
+                )
+
     def test_recupera_um_pacote_vencido_por_dia_em_ordem(self):
         fila = {
             "pacotes": [
@@ -149,46 +177,39 @@ class SelecaoEValidacaoTest(unittest.TestCase):
     def test_rejeita_partes_fora_de_ordem(self):
         item = pacote("2026-09-08", quantidade_partes=2)
         item["partes"].reverse()
-        with self.assertRaisesRegex(RuntimeError, "ordem contínua"):
-            publicar_stories.validar_fila({"pacotes": [item]})
+        self.assertRegex(self.defeito(item), "ordem contínua")
 
     def test_rejeita_pacote_com_partes_demais(self):
         item = pacote(
             "2026-09-08",
             quantidade_partes=publicar_stories.MAX_PARTES_POR_PACOTE + 1,
         )
-        with self.assertRaisesRegex(RuntimeError, "excede o limite"):
-            publicar_stories.validar_fila({"pacotes": [item]})
+        self.assertRegex(self.defeito(item), "excede o limite")
 
     def test_rejeita_parte_acima_de_59_segundos(self):
         item = pacote("2026-09-08")
         item["partes"][0]["midia"]["duracao_segundos"] = 59.001
-        with self.assertRaisesRegex(RuntimeError, "intervalo aceito é 3–59s"):
-            publicar_stories.validar_fila({"pacotes": [item]})
+        self.assertRegex(self.defeito(item), "intervalo aceito é 3–59s")
 
     def test_rejeita_parte_curta_ou_acima_de_100_mb(self):
         curta = pacote("2026-09-08")
         curta["partes"][0]["midia"]["duracao_segundos"] = 2.999
-        with self.assertRaisesRegex(RuntimeError, "intervalo aceito é 3–59s"):
-            publicar_stories.validar_fila({"pacotes": [curta]})
+        self.assertRegex(self.defeito(curta), "intervalo aceito é 3–59s")
 
         grande = pacote("2026-09-08")
         grande["partes"][0]["midia"]["tamanho_bytes"] = 100_000_001
-        with self.assertRaisesRegex(RuntimeError, "Tamanho inválido"):
-            publicar_stories.validar_fila({"pacotes": [grande]})
+        self.assertRegex(self.defeito(grande), "Tamanho inválido")
 
     def test_rejeita_origem_sem_arquivo_e_duracao_nao_finita(self):
         sem_arquivo = pacote("2026-09-08")
         sem_arquivo["origem"].pop("arquivo")
-        with self.assertRaisesRegex(RuntimeError, "Origem ausente"):
-            publicar_stories.validar_fila({"pacotes": [sem_arquivo]})
+        self.assertRegex(self.defeito(sem_arquivo), "Origem ausente")
 
         for duracao in (float("nan"), float("inf"), float("-inf")):
             item = pacote("2026-09-08")
             item["partes"][0]["midia"]["duracao_segundos"] = duracao
             with self.subTest(duracao=duracao):
-                with self.assertRaisesRegex(RuntimeError, "tem .*s"):
-                    publicar_stories.validar_fila({"pacotes": [item]})
+                self.assertRegex(self.defeito(item), "tem .*s")
 
     def test_rejeita_limite_de_execucao_invalido(self):
         for valor in ("0", "2", "10"):
@@ -201,21 +222,21 @@ class SelecaoEValidacaoTest(unittest.TestCase):
     def test_rejeita_origem_e_asset_repetidos(self):
         primeiro = pacote("2026-09-08")
         segundo = pacote("2026-09-09")
+        # repetição só aparece comparando pacotes, então vem pelo conferidor
         segundo["origem"]["sha256"] = primeiro["origem"]["sha256"]
-        with self.assertRaisesRegex(RuntimeError, "origem repetido"):
-            publicar_stories.validar_fila({"pacotes": [primeiro, segundo]})
+        defeitos = publicar_stories.validar_fila({"pacotes": [primeiro, segundo]})
+        self.assertRegex(defeitos[segundo["id"]], "origem repetido")
 
         segundo = pacote("2026-09-09")
         segundo["partes"][0]["midia"]["asset"] = primeiro["partes"][0]["midia"]["asset"]
-        with self.assertRaisesRegex(RuntimeError, "Asset repetido"):
-            publicar_stories.validar_fila({"pacotes": [primeiro, segundo]})
+        defeitos = publicar_stories.validar_fila({"pacotes": [primeiro, segundo]})
+        self.assertRegex(defeitos[segundo["id"]], "Asset repetido")
 
     def test_rejeita_conclusao_sem_ids_das_duas_redes(self):
         item = pacote("2026-09-08", status="concluido")
         item["partes"][0]["status"] = "concluido"
         item["partes"][0]["instagram"] = {"status": "publicado", "id": "ig"}
-        with self.assertRaisesRegex(RuntimeError, "concluída sem confirmação"):
-            publicar_stories.validar_fila({"pacotes": [item]})
+        self.assertRegex(self.defeito(item), "concluída sem confirmação")
 
 
 class PublicacaoApiTest(unittest.TestCase):
@@ -524,8 +545,11 @@ class PublicacaoApiTest(unittest.TestCase):
         self.assertEqual(item["instagram"]["status"], "incerto")
         self.assertEqual(item["instagram"]["container_id"], "container-incerto")
         self.assertIn("publish_iniciado_em", item["instagram"])
-        publicar_stories.validar_fila(
-            {"pacotes": [{**pacote("2026-09-08"), "partes": [item]}]}
+        self.assertEqual(
+            publicar_stories.validar_fila(
+                {"pacotes": [{**pacote("2026-09-08"), "partes": [item]}]}
+            ),
+            {},
         )
 
         with patch.object(publicar_stories, "obrigatoria", return_value="x"), patch.object(
@@ -739,8 +763,11 @@ class PublicacaoApiTest(unittest.TestCase):
         self.assertIsNone(resultado)
         self.assertEqual(item["facebook"]["status"], "incerto")
         self.assertEqual(item["facebook"]["video_id"], "video-1")
-        publicar_stories.validar_fila(
-            {"pacotes": [{**pacote("2026-09-08"), "partes": [item]}]}
+        self.assertEqual(
+            publicar_stories.validar_fila(
+                {"pacotes": [{**pacote("2026-09-08"), "partes": [item]}]}
+            ),
+            {},
         )
 
     def test_finish_pode_ser_repetido_uma_vez_no_mesmo_video_sem_reupload(self):

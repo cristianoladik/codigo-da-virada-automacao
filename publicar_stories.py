@@ -152,6 +152,9 @@ def validar_contas_meta() -> dict:
 
 
 def salvar_fila(fila: dict) -> None:
+    # Guarda de gravação: só o erro estrutural barra a escrita. Defeito de um
+    # pacote não pode impedir de salvar o estado do que acabou de ser
+    # publicado, senão a Meta confirma e a fila esquece (12/09/2026).
     validar_fila(fila)
     temporario = FILA_FILE.with_name(f".{FILA_FILE.name}.{uuid.uuid4().hex}.tmp")
     try:
@@ -545,39 +548,28 @@ def limite_por_execucao() -> int:
     return limite
 
 
-def validar_fila(fila: dict) -> None:
-    pacotes = fila.get("pacotes")
-    if not isinstance(pacotes, list):
-        raise RuntimeError("A fila de Stories precisa conter uma lista 'pacotes'.")
+def defeito_do_pacote(
+    pacote: dict,
+    pacote_id: str,
+    origens: set[str] | None = None,
+    assets: set[str] | None = None,
+) -> str | None:
+    """Devolve o problema que afeta SÓ este pacote de Stories, ou None.
 
-    ids: set[str] = set()
-    datas: set[str] = set()
-    origens: set[str] = set()
-    assets: set[str] = set()
-    for pacote in pacotes:
-        pacote_id = str(pacote.get("id", "")).strip()
-        data = str(pacote.get("data", "")).strip()
-        horario = str(pacote.get("horario", HORARIO_STORY)).strip()
-        if not pacote_id or pacote_id in ids:
-            raise RuntimeError(f"ID de pacote ausente ou repetido: {pacote_id!r}.")
-        ids.add(pacote_id)
-        try:
-            datetime.strptime(data, "%Y-%m-%d")
-        except ValueError as erro:
-            raise RuntimeError(f"Data inválida no pacote {pacote_id}: {data!r}.") from erro
-        if data in datas:
-            raise RuntimeError(f"Há mais de um pacote de Stories em {data}.")
-        datas.add(data)
-        if horario != HORARIO_STORY:
-            raise RuntimeError(
-                f"Horário inválido no pacote {pacote_id}: Stories devem ser às {HORARIO_STORY}."
-            )
+    Um vídeo com duração errada lá no fim da fila não pode calar o canal
+    inteiro. Era o que acontecia: o conferidor parava no primeiro pacote com
+    defeito e a publicação do dia nem chegava a ser tentada. Em 12/09/2026
+    cinco vídeos agendados para novembro deixaram um canal irmão sem publicar
+    de manhã.
 
-        status_pacote = str(pacote.get("status", ""))
-        if status_pacote not in STATUS_ITEM:
-            raise RuntimeError(
-                f"Status inválido no pacote {pacote_id}: {status_pacote!r}."
-            )
+    Os conjuntos `origens` e `assets` vêm do laço de validar_fila, porque a
+    repetição de SHA-256 e de asset só aparece comparando um pacote com os
+    outros. Quem confere um pacote isolado não precisa deles.
+    """
+    origens = set() if origens is None else origens
+    assets = set() if assets is None else assets
+    status_pacote = str(pacote.get("status", ""))
+    try:
         origem = pacote.get("origem")
         if not isinstance(origem, dict) or not str(origem.get("arquivo", "")).strip():
             raise RuntimeError(f"Origem ausente no pacote {pacote_id}.")
@@ -710,10 +702,90 @@ def validar_fila(fila: dict) -> None:
             raise RuntimeError(
                 f"Pacote {pacote_id} está concluído sem todas as partes confirmadas."
             )
+    except RuntimeError as erro:
+        return str(erro)
+    return None
+
+
+def validar_fila(fila: dict) -> dict[str, str]:
+    """Confere a fila e devolve os defeitos de pacote, sem derrubar por eles.
+
+    Erro ESTRUTURAL continua fatal: cabeçalho, ID ausente ou repetido, data
+    inválida, janela repetida, horário fora das 09:00 e status de pacote fora
+    da lista. Nesses casos a fila inteira perdeu a confiança, então parar é o
+    certo. Defeito de UM pacote vira aviso e a fila segue: quem barra o pacote
+    ruim é a escolha do dia, em proximos_pacotes.
+    """
+    pacotes = fila.get("pacotes")
+    if not isinstance(pacotes, list):
+        raise RuntimeError("A fila de Stories precisa conter uma lista 'pacotes'.")
+
+    ids: set[str] = set()
+    datas: set[str] = set()
+    origens: set[str] = set()
+    assets: set[str] = set()
+    defeitos: dict[str, str] = {}
+    for pacote in pacotes:
+        pacote_id = str(pacote.get("id", "")).strip()
+        data = str(pacote.get("data", "")).strip()
+        horario = str(pacote.get("horario", HORARIO_STORY)).strip()
+        if not pacote_id or pacote_id in ids:
+            raise RuntimeError(f"ID de pacote ausente ou repetido: {pacote_id!r}.")
+        ids.add(pacote_id)
+        try:
+            datetime.strptime(data, "%Y-%m-%d")
+        except ValueError as erro:
+            raise RuntimeError(f"Data inválida no pacote {pacote_id}: {data!r}.") from erro
+        if data in datas:
+            raise RuntimeError(f"Há mais de um pacote de Stories em {data}.")
+        datas.add(data)
+        if horario != HORARIO_STORY:
+            raise RuntimeError(
+                f"Horário inválido no pacote {pacote_id}: Stories devem ser às {HORARIO_STORY}."
+            )
+
+        status_pacote = str(pacote.get("status", ""))
+        if status_pacote not in STATUS_ITEM:
+            raise RuntimeError(
+                f"Status inválido no pacote {pacote_id}: {status_pacote!r}."
+            )
+        defeito = defeito_do_pacote(pacote, pacote_id, origens, assets)
+        if defeito:
+            defeitos[pacote_id] = defeito
+    return defeitos
+
+
+def avisar_defeitos(defeitos: dict[str, str]) -> None:
+    """Imprime os pacotes com defeito como AVISO, sem derrubar o conferidor."""
+    if not defeitos:
+        return
+    print(
+        f"AVISO: {len(defeitos)} item(ns) com defeito; "
+        "serão pulados na publicação:"
+    )
+    for pacote_id, motivo in sorted(defeitos.items()):
+        print(f"  - {pacote_id}: {motivo}")
+
+
+def recusar_defeituosos(
+    escolhidos: list[dict], defeitos: dict[str, str]
+) -> list[dict]:
+    """Barra o pacote escolhido para este horário quando ele é o defeituoso.
+
+    Falha só esta execução, com motivo claro. Os outros dias da fila seguem
+    normais, em vez de o canal inteiro ficar mudo por causa de um pacote ruim.
+    """
+    for pacote in escolhidos:
+        motivo = defeitos.get(str(pacote.get("id", "")).strip())
+        if motivo:
+            raise RuntimeError(f"Story do slot recusado por defeito: {motivo}")
+    return escolhidos
 
 
 def proximos_pacotes(fila: dict, agora: datetime | None = None) -> list[dict]:
-    validar_fila(fila)
+    # Defeito de um pacote só avisa; quem recusa é a escolha do dia, abaixo.
+    defeitos = validar_fila(fila)
+    avisar_defeitos(defeitos)
     limite = limite_por_execucao()
     agora = agora or datetime.now(BRT)
     data_forcada = os.getenv("DATA_PUBLICACAO", "").strip()
@@ -783,7 +855,7 @@ def proximos_pacotes(fila: dict, agora: datetime | None = None) -> list[dict]:
                     "DATA_PUBLICACAO não pode pular o pacote pendente anterior "
                     f"{primeiro['data']} ({primeiro['id']})."
                 )
-        return encontrados[:1]
+        return recusar_defeituosos(encontrados[:1], defeitos)
 
     # Stories seguem a cadência editorial de um pacote por dia. Uma fila
     # atrasada é recuperada em dias sucessivos, nunca despejada em sequência no
@@ -802,7 +874,9 @@ def proximos_pacotes(fila: dict, agora: datetime | None = None) -> list[dict]:
         if agendado <= agora:
             devidos.append((agendado, pacote["id"], pacote))
     devidos.sort(key=lambda item: (item[0], item[1]))
-    return [pacote for _, _, pacote in devidos[:limite]]
+    return recusar_defeituosos(
+        [pacote for _, _, pacote in devidos[:limite]], defeitos
+    )
 
 
 def proximo_pacote_pendente(fila: dict) -> dict | None:
