@@ -1416,9 +1416,838 @@
           }
         }
       ]
+    },
+    {
+      "id": "story-20261019-bab8c1466b",
+      "data": "2026-10-19",
+      "horario": "09:00",
+      "status": "pendente",
+      "origem": {
+        "arquivo": "200 - O verdadeiro significado da medalha que Joel presenteou! 💥🙏 [S_3xHH3r5HA].mp4",
+        "sha256": "bab8c1466bab0334a120ebe0498de7074bd9d3f9c72724d5fc364da9d5fa1808",
+        "pacote": "041 - O verdadeiro significado da medalha que Joel presenteou! 💥🙏 [S_3xHH3r5HA]",
+        "pacote_id": "story-041-bab8c1466bab"
+      },
+      "partes": [
+        {
+          "ordem": 1,
+          "status": "pendente",
+          "midia": {
+            "asset": "story-041-parte-01.mp4",
+            "url_publica": "https://github.com/cristianoladik/codigo-da-virada-automacao/releases/download/fila-instagram-facebook/story-041-parte-01.mp4",
+            "sha256": "f7141663c08615316b98dc014979e8ed744dbe90c607783f5151188b450726d3",
+            "tamanho_bytes": 18672869,
+            "duracao_segundos": 45.035
+          },
+          "instagram": {
+            "status": "pendente"
+          },
+          "facebook": {
+            "status": "pendente"
+          }
+        }
+      ]
+    },
+    {
+      "id": "story-20261020-ca9862c76f",
+      "data": "2026-10-20",
+      "horario": "09:00",
+      "status": "pendente",
+      "origem": {
+        "arquivo": "200 - Apaixone-se pelo que você faz! [7pq1GZ-_qYM].mp4",
+        "sha256": "ca9862c76fc6d15e9240703bd1232a35b5dc123a1516ee206bc91d6fc1ff7c14",
+        "pacote": "042 - Apaixone-se pelo que você faz! [7pq1GZ-_qYM]",
+        "pacote_id": "story-042-ca9862c76fc6"
+      },
+      "partes": [
+        {
+          "ordem": 1,
+          "status": "pendente",
+          "midia": {
+            "asset": "story-042-parte-01.mp4",
+            "url_publica": "https://github.com/cristianoladik/codigo-da-virada-automacao/releases/download/fila-instagram-facebook/story-042-parte-01.mp4",
+            "sha256": "df38908a5f8552eadaa3e4227db62da551f096c465163b463808c7821b05cf46",
+            "tamanho_bytes": 6695533,
+            "duracao_segundos": 26.0
+          },
+          "instagram": {
+            "status": "pendente"
+          },
+          "facebook": {
+            "status": "pendente"
+          }
+        }
+      ]
+    },
+    {
+      "id": "story-20261021-519dceec06",
+      "data": "2026-10-21",
+      "horario": "09:00",
+      "status": "pendente",
+      "origem": {
+        "arquivo": "199 - Essa mensagem de Rodrigo Silva vai mudar seu dia! ❤️ [fvLVeEaiAV0].mp4",
+        "sha256": "519dceec06157ebb07d3492d2cd6857f86acb3e2e8bac95eafb120a7354b2457",
+        "pacote": "043 - Essa mensagem de Rodrigo Silva vai mudar seu dia! ❤️ [fvLVeEaiAV0]",
+        "pacote_id": "story-043-519dceec0615"
+      },
+      "partes": [
+        {
+          "ordem": 1,
+          "status": "pendente",
+          "midia": {
+            "asset": "story-043-parte-01.mp4",
+            "url_publica": "https://github.com/cristianoladik/codigo-da-virada-automacao/releases/download/fila-instagram-facebook/story-043-parte-01.mp4",
+            "sha256": "ca8efa0b470818418b9d6239933b91063d7eabc7e3b33c9be173a5e63c4691bd",
+            "tamanho_bytes": 19176959,
+            "duracao_segundos": 47.033
+          },
+          "instagram": {
+            "status": "pendente"
+          },
+          "facebook": {
+            "status": "pendente"
+          }
+        }
+      ]
+    },
+    {
+      "id": "story-20261022-0cf33681f6",
+      "data": "2026-10-22",
+      "horario": "09:00",
+      "status": "pendente",
+      "origem": {
+        "arquivo": "199 - Networking do bem! [86BnmDi2yxo].mp4",
+        "sha256": "0cf33681f67e42469202d9c06db6db001d2e94942734371856d3f83d8e9d1a5c",
+        "pacote": "044 - Networking do bem! [86BnmDi2yxo]",
+        "pacote_id": "story-044-0cf33681f67e"
+      },
+      "partes": [
+        {
+          "ordem": 1,
+          "status": "pendente",
+          "midia": {
+            "asset": "story-044-parte-01.mp4",
+            "url_publica": "https://github.com/cristianoladik/codigo-da-virada-automacao/releases/download/fila-instagram-facebook/story-044-parte-01.mp4",
+            "sha256": "5322d4b67d3c70267a84084aec4878e335246cf17d5ac557eb06b0cea111c2c5",
+            "tamanho_bytes": 20289647,
+            "duracao_segundos": 44.533
+          },
+          "instagram": {
+            "status": "pendente"
+          },
+          "facebook": {
+            "status": "pendente"
+          }
+        }
+      ]
+    },
+    {
+      "id": "story-20261023-486d144943",
+      "data": "2026-10-23",
+      "horario": "09:00",
+      "status": "pendente",
+      "origem": {
+        "arquivo": "198 - Joel Jota fica sem palavras： O que Junior Rostirola disse？ [UAQJgDMTq_A].mp4",
+        "sha256": "486d144943fe84194940f146da381f08554fa4021602f1fd43bd214c2be142ff",
+        "pacote": "045 - Joel Jota fica sem palavras O que Junior Rostirola disse？ [UAQJgDMTq_A]",
+        "pacote_id": "story-045-486d144943fe"
+      },
+      "partes": [
+        {
+          "ordem": 1,
+          "status": "pendente",
+          "midia": {
+            "asset": "story-045-parte-01.mp4",
+            "url_publica": "https://github.com/cristianoladik/codigo-da-virada-automacao/releases/download/fila-instagram-facebook/story-045-parte-01.mp4",
+            "sha256": "cc1c998bea4b36d9be3a06ba3ab66783e7ff8216d4be5c0ae97c23e71eb943f1",
+            "tamanho_bytes": 17881034,
+            "duracao_segundos": 48.733
+          },
+          "instagram": {
+            "status": "pendente"
+          },
+          "facebook": {
+            "status": "pendente"
+          }
+        }
+      ]
+    },
+    {
+      "id": "story-20261024-603c7cf451",
+      "data": "2026-10-24",
+      "horario": "09:00",
+      "status": "pendente",
+      "origem": {
+        "arquivo": "198 - Pense Positivo! [bt8tiO0Ilx8].mp4",
+        "sha256": "603c7cf451c84916117a8946438ad1390ed34168e8dbf61bfa6f76363a83df28",
+        "pacote": "046 - Pense Positivo! [bt8tiO0Ilx8]",
+        "pacote_id": "story-046-603c7cf451c8"
+      },
+      "partes": [
+        {
+          "ordem": 1,
+          "status": "pendente",
+          "midia": {
+            "asset": "story-046-parte-01.mp4",
+            "url_publica": "https://github.com/cristianoladik/codigo-da-virada-automacao/releases/download/fila-instagram-facebook/story-046-parte-01.mp4",
+            "sha256": "ccfe05aa9e7f36b2369afa22c4739c855533a2f6093aa1dbd93439a507bdf616",
+            "tamanho_bytes": 6320735,
+            "duracao_segundos": 30.44
+          },
+          "instagram": {
+            "status": "pendente"
+          },
+          "facebook": {
+            "status": "pendente"
+          }
+        },
+        {
+          "ordem": 2,
+          "status": "pendente",
+          "midia": {
+            "asset": "story-046-parte-02.mp4",
+            "url_publica": "https://github.com/cristianoladik/codigo-da-virada-automacao/releases/download/fila-instagram-facebook/story-046-parte-02.mp4",
+            "sha256": "c5fbb3ee6841314aaed04bccba86d6699b2a9225842fdc50a8e22b85be403523",
+            "tamanho_bytes": 6184045,
+            "duracao_segundos": 30.433
+          },
+          "instagram": {
+            "status": "pendente"
+          },
+          "facebook": {
+            "status": "pendente"
+          }
+        }
+      ]
+    },
+    {
+      "id": "story-20261025-a07e2066e7",
+      "data": "2026-10-25",
+      "horario": "09:00",
+      "status": "pendente",
+      "origem": {
+        "arquivo": "197 - Junior Rostirola tem uma mensagem linda pra você! 😱❤️ [gjUnxgJ_gqw].mp4",
+        "sha256": "a07e2066e7b07de48aaac98e8b64541ea5ef33aac227d53997830641156b8a37",
+        "pacote": "047 - Junior Rostirola tem uma mensagem linda pra você! 😱❤️ [gjUnxgJ_gqw]",
+        "pacote_id": "story-047-a07e2066e7b0"
+      },
+      "partes": [
+        {
+          "ordem": 1,
+          "status": "pendente",
+          "midia": {
+            "asset": "story-047-parte-01.mp4",
+            "url_publica": "https://github.com/cristianoladik/codigo-da-virada-automacao/releases/download/fila-instagram-facebook/story-047-parte-01.mp4",
+            "sha256": "b9660aa3ff85e8b0c91c92e1532197c5942ad3887b1bd47086e7196a37b6b216",
+            "tamanho_bytes": 14094934,
+            "duracao_segundos": 31.033
+          },
+          "instagram": {
+            "status": "pendente"
+          },
+          "facebook": {
+            "status": "pendente"
+          }
+        }
+      ]
+    },
+    {
+      "id": "story-20261026-9fccc2244d",
+      "data": "2026-10-26",
+      "horario": "09:00",
+      "status": "pendente",
+      "origem": {
+        "arquivo": "197 - Agindo como Geraldo Rufino! [42-N6uHxSLQ].mp4",
+        "sha256": "9fccc2244d18573cc31f241452268345f035c0529c660e009d71754ff7b3edde",
+        "pacote": "048 - Agindo como Geraldo Rufino! [42-N6uHxSLQ]",
+        "pacote_id": "story-048-9fccc2244d18"
+      },
+      "partes": [
+        {
+          "ordem": 1,
+          "status": "pendente",
+          "midia": {
+            "asset": "story-048-parte-01.mp4",
+            "url_publica": "https://github.com/cristianoladik/codigo-da-virada-automacao/releases/download/fila-instagram-facebook/story-048-parte-01.mp4",
+            "sha256": "7aef074b9ad5002a7e3b908808233c64937db2c53c8776fbf8a109c6fced59e3",
+            "tamanho_bytes": 11078456,
+            "duracao_segundos": 33.133
+          },
+          "instagram": {
+            "status": "pendente"
+          },
+          "facebook": {
+            "status": "pendente"
+          }
+        }
+      ]
+    },
+    {
+      "id": "story-20261027-b9335f2c3c",
+      "data": "2026-10-27",
+      "horario": "09:00",
+      "status": "pendente",
+      "origem": {
+        "arquivo": "196 - Qual é o objetivo do seu trabalho？ [6Fs5CfK1Nuc].mp4",
+        "sha256": "b9335f2c3cae4505764713f797883b59983a4f576081e0f37e2bb21751625dfd",
+        "pacote": "049 - Qual é o objetivo do seu trabalho？ [6Fs5CfK1Nuc]",
+        "pacote_id": "story-049-b9335f2c3cae"
+      },
+      "partes": [
+        {
+          "ordem": 1,
+          "status": "pendente",
+          "midia": {
+            "asset": "story-049-parte-01.mp4",
+            "url_publica": "https://github.com/cristianoladik/codigo-da-virada-automacao/releases/download/fila-instagram-facebook/story-049-parte-01.mp4",
+            "sha256": "a32139195e8acf7e19e9f4f46508d04030ce13429e35ce59895b224d4d40337a",
+            "tamanho_bytes": 14450493,
+            "duracao_segundos": 29.48
+          },
+          "instagram": {
+            "status": "pendente"
+          },
+          "facebook": {
+            "status": "pendente"
+          }
+        },
+        {
+          "ordem": 2,
+          "status": "pendente",
+          "midia": {
+            "asset": "story-049-parte-02.mp4",
+            "url_publica": "https://github.com/cristianoladik/codigo-da-virada-automacao/releases/download/fila-instagram-facebook/story-049-parte-02.mp4",
+            "sha256": "1a82340062815e91d92d75049a5cf901ccc3d2621b354e1adbec0538a2f6122d",
+            "tamanho_bytes": 11580569,
+            "duracao_segundos": 29.467
+          },
+          "instagram": {
+            "status": "pendente"
+          },
+          "facebook": {
+            "status": "pendente"
+          }
+        }
+      ]
+    },
+    {
+      "id": "story-20261028-5a651d6724",
+      "data": "2026-10-28",
+      "horario": "09:00",
+      "status": "pendente",
+      "origem": {
+        "arquivo": "196 - O que é ser rico？ [RU_NiAR4yTw].mp4",
+        "sha256": "5a651d67249c3de1b2d3ed657f0c5f3d0c397354411acb4e41be1f70488d06d0",
+        "pacote": "050 - O que é ser rico？ [RU_NiAR4yTw]",
+        "pacote_id": "story-050-5a651d67249c"
+      },
+      "partes": [
+        {
+          "ordem": 1,
+          "status": "pendente",
+          "midia": {
+            "asset": "story-050-parte-01.mp4",
+            "url_publica": "https://github.com/cristianoladik/codigo-da-virada-automacao/releases/download/fila-instagram-facebook/story-050-parte-01.mp4",
+            "sha256": "6a15a05903a5c41c3adf43108be13e31cf80cf65319a7fb32cf73e68eb35ccb0",
+            "tamanho_bytes": 11530951,
+            "duracao_segundos": 58.475
+          },
+          "instagram": {
+            "status": "pendente"
+          },
+          "facebook": {
+            "status": "pendente"
+          }
+        }
+      ]
+    },
+    {
+      "id": "story-20261029-444bfdc72e",
+      "data": "2026-10-29",
+      "horario": "09:00",
+      "status": "pendente",
+      "origem": {
+        "arquivo": "195 - O livro que o Ninja indica! 📖🔥 [Q3FLxoMjjOo].mp4",
+        "sha256": "444bfdc72eb6215e8bf4430fd1361f2847788330ddd7db4b5f3ca0028377874a",
+        "pacote": "051 - O livro que o Ninja indica! 📖🔥 [Q3FLxoMjjOo]",
+        "pacote_id": "story-051-444bfdc72eb6"
+      },
+      "partes": [
+        {
+          "ordem": 1,
+          "status": "pendente",
+          "midia": {
+            "asset": "story-051-parte-01.mp4",
+            "url_publica": "https://github.com/cristianoladik/codigo-da-virada-automacao/releases/download/fila-instagram-facebook/story-051-parte-01.mp4",
+            "sha256": "6e2004051fbeaa2e6688875028819bad86b9e554126b67bec38627bca0787e1e",
+            "tamanho_bytes": 11259584,
+            "duracao_segundos": 28.438
+          },
+          "instagram": {
+            "status": "pendente"
+          },
+          "facebook": {
+            "status": "pendente"
+          }
+        }
+      ]
+    },
+    {
+      "id": "story-20261030-b5d994be6a",
+      "data": "2026-10-30",
+      "horario": "09:00",
+      "status": "pendente",
+      "origem": {
+        "arquivo": "195 - 2 GERALDOS？ [bSMbm_G2_o8].mp4",
+        "sha256": "b5d994be6aa12d43abbe03d34dcc48059f2bc3c5626bfddf711540b6d9c2dd97",
+        "pacote": "052 - 2 GERALDOS？ [bSMbm_G2_o8]",
+        "pacote_id": "story-052-b5d994be6aa1"
+      },
+      "partes": [
+        {
+          "ordem": 1,
+          "status": "pendente",
+          "midia": {
+            "asset": "story-052-parte-01.mp4",
+            "url_publica": "https://github.com/cristianoladik/codigo-da-virada-automacao/releases/download/fila-instagram-facebook/story-052-parte-01.mp4",
+            "sha256": "9c47b9eb23b05eb58231fa7bf871c6685620f75a062ee769b6f2e87ae7508033",
+            "tamanho_bytes": 13143565,
+            "duracao_segundos": 43.073
+          },
+          "instagram": {
+            "status": "pendente"
+          },
+          "facebook": {
+            "status": "pendente"
+          }
+        }
+      ]
+    },
+    {
+      "id": "story-20261031-69a91dd936",
+      "data": "2026-10-31",
+      "horario": "09:00",
+      "status": "pendente",
+      "origem": {
+        "arquivo": "194 - Papo reto do Ninja que vai mudar sua mente! 😮 [s8cH9YDRdds].mp4",
+        "sha256": "69a91dd93666a2948e5626a8a78a6dd1302c75603f80975ab79ee21d90debd1b",
+        "pacote": "053 - Papo reto do Ninja que vai mudar sua mente! 😮 [s8cH9YDRdds]",
+        "pacote_id": "story-053-69a91dd93666"
+      },
+      "partes": [
+        {
+          "ordem": 1,
+          "status": "pendente",
+          "midia": {
+            "asset": "story-053-parte-01.mp4",
+            "url_publica": "https://github.com/cristianoladik/codigo-da-virada-automacao/releases/download/fila-instagram-facebook/story-053-parte-01.mp4",
+            "sha256": "d1374d37987995d3d6b0bcd33297f60355987444c02cb8239871bee756523fd7",
+            "tamanho_bytes": 7896334,
+            "duracao_segundos": 20.0
+          },
+          "instagram": {
+            "status": "pendente"
+          },
+          "facebook": {
+            "status": "pendente"
+          }
+        }
+      ]
+    },
+    {
+      "id": "story-20261101-e40c22325e",
+      "data": "2026-11-01",
+      "horario": "09:00",
+      "status": "pendente",
+      "origem": {
+        "arquivo": "194 - Como curar dor na alma？ [b2upARut7EQ].mp4",
+        "sha256": "e40c22325e9510284aa8af192cd05b0981333bd064391d0914e4fa7cd6c098da",
+        "pacote": "054 - Como curar dor na alma？ [b2upARut7EQ]",
+        "pacote_id": "story-054-e40c22325e95"
+      },
+      "partes": [
+        {
+          "ordem": 1,
+          "status": "pendente",
+          "midia": {
+            "asset": "story-054-parte-01.mp4",
+            "url_publica": "https://github.com/cristianoladik/codigo-da-virada-automacao/releases/download/fila-instagram-facebook/story-054-parte-01.mp4",
+            "sha256": "a12f7721e54941f1e3fd003665183ef476aebda214726e68ca9dc0ae0d531303",
+            "tamanho_bytes": 10009761,
+            "duracao_segundos": 47.733
+          },
+          "instagram": {
+            "status": "pendente"
+          },
+          "facebook": {
+            "status": "pendente"
+          }
+        }
+      ]
+    },
+    {
+      "id": "story-20261102-dc17a88684",
+      "data": "2026-11-02",
+      "horario": "09:00",
+      "status": "pendente",
+      "origem": {
+        "arquivo": "193 - O livro que vai mudar sua visão da vida! 📖💥 [2Cic1Mp0pxs].mp4",
+        "sha256": "dc17a88684e64400cc130804786087939f35771e7dc4e0041c681380b032c79b",
+        "pacote": "055 - O livro que vai mudar sua visão da vida! 📖💥 [2Cic1Mp0pxs]",
+        "pacote_id": "story-055-dc17a88684e6"
+      },
+      "partes": [
+        {
+          "ordem": 1,
+          "status": "pendente",
+          "midia": {
+            "asset": "story-055-parte-01.mp4",
+            "url_publica": "https://github.com/cristianoladik/codigo-da-virada-automacao/releases/download/fila-instagram-facebook/story-055-parte-01.mp4",
+            "sha256": "ab496d2dd04c0729873fd1a7ec3f12d7bc7e2e1ac716dfa0e13331db5328564c",
+            "tamanho_bytes": 15519494,
+            "duracao_segundos": 42.8
+          },
+          "instagram": {
+            "status": "pendente"
+          },
+          "facebook": {
+            "status": "pendente"
+          }
+        }
+      ]
+    },
+    {
+      "id": "story-20261103-4ddfc6f810",
+      "data": "2026-11-03",
+      "horario": "09:00",
+      "status": "pendente",
+      "origem": {
+        "arquivo": "193 - Quem é o seu maior inimigo？ [1wEhehC_OxE].mp4",
+        "sha256": "4ddfc6f810d76ac0362c286a01f374ec36ca76a483df4153f433dc1f22726c4a",
+        "pacote": "056 - Quem é o seu maior inimigo？ [1wEhehC_OxE]",
+        "pacote_id": "story-056-4ddfc6f810d7"
+      },
+      "partes": [
+        {
+          "ordem": 1,
+          "status": "pendente",
+          "midia": {
+            "asset": "story-056-parte-01.mp4",
+            "url_publica": "https://github.com/cristianoladik/codigo-da-virada-automacao/releases/download/fila-instagram-facebook/story-056-parte-01.mp4",
+            "sha256": "6f2d581e90b51434a170769a27e8bf9b45f836f6ab09dc0bc9946cb61b0731e6",
+            "tamanho_bytes": 3088174,
+            "duracao_segundos": 15.6
+          },
+          "instagram": {
+            "status": "pendente"
+          },
+          "facebook": {
+            "status": "pendente"
+          }
+        }
+      ]
+    },
+    {
+      "id": "story-20261104-bb2f659433",
+      "data": "2026-11-04",
+      "horario": "09:00",
+      "status": "pendente",
+      "origem": {
+        "arquivo": "192 - Quem você chamaria para pedir um CONSELHO tomando um CAFÉ？ ☕💬 [zPumeMSCd1E].mp4",
+        "sha256": "bb2f6594332da428c956705decd45704acc7f9b7611541f7c6f8ef332b74584a",
+        "pacote": "057 - Quem você chamaria para pedir um CONSELHO tomando um CAFÉ？ ☕💬 [zPumeMSCd1E]",
+        "pacote_id": "story-057-bb2f6594332d"
+      },
+      "partes": [
+        {
+          "ordem": 1,
+          "status": "pendente",
+          "midia": {
+            "asset": "story-057-parte-01.mp4",
+            "url_publica": "https://github.com/cristianoladik/codigo-da-virada-automacao/releases/download/fila-instagram-facebook/story-057-parte-01.mp4",
+            "sha256": "2a3aac9ed1a97add63dda6434f54a3cc8e5df9cce198069bbd3a519cdf2c64f4",
+            "tamanho_bytes": 20210612,
+            "duracao_segundos": 50.433
+          },
+          "instagram": {
+            "status": "pendente"
+          },
+          "facebook": {
+            "status": "pendente"
+          }
+        }
+      ]
+    },
+    {
+      "id": "story-20261105-13b1cba865",
+      "data": "2026-11-05",
+      "horario": "09:00",
+      "status": "pendente",
+      "origem": {
+        "arquivo": "192 - Escolha o luxo de ser gigante por dentro. [13KLUFjsca4].mp4",
+        "sha256": "13b1cba86585171f3fccad1acbd90aa0d8cc466b293eee3ea1f5c0341fa86199",
+        "pacote": "058 - Escolha o luxo de ser gigante por dentro. [13KLUFjsca4]",
+        "pacote_id": "story-058-13b1cba86585"
+      },
+      "partes": [
+        {
+          "ordem": 1,
+          "status": "pendente",
+          "midia": {
+            "asset": "story-058-parte-01.mp4",
+            "url_publica": "https://github.com/cristianoladik/codigo-da-virada-automacao/releases/download/fila-instagram-facebook/story-058-parte-01.mp4",
+            "sha256": "4c1939b7b43c9792cba49bd53307862db63e1f3761dd9a1ea65a3caad39f94c8",
+            "tamanho_bytes": 7239514,
+            "duracao_segundos": 43.546
+          },
+          "instagram": {
+            "status": "pendente"
+          },
+          "facebook": {
+            "status": "pendente"
+          }
+        },
+        {
+          "ordem": 2,
+          "status": "pendente",
+          "midia": {
+            "asset": "story-058-parte-02.mp4",
+            "url_publica": "https://github.com/cristianoladik/codigo-da-virada-automacao/releases/download/fila-instagram-facebook/story-058-parte-02.mp4",
+            "sha256": "46f74f370c09d889756843ba3630b8636017d58cca85ff2a3862c325a0fb1064",
+            "tamanho_bytes": 7512002,
+            "duracao_segundos": 43.546
+          },
+          "instagram": {
+            "status": "pendente"
+          },
+          "facebook": {
+            "status": "pendente"
+          }
+        },
+        {
+          "ordem": 3,
+          "status": "pendente",
+          "midia": {
+            "asset": "story-058-parte-03.mp4",
+            "url_publica": "https://github.com/cristianoladik/codigo-da-virada-automacao/releases/download/fila-instagram-facebook/story-058-parte-03.mp4",
+            "sha256": "cd20a8940b388756988863343ecc305a7d4c9f8706fd1f9bc2ba7332b038ceb2",
+            "tamanho_bytes": 7206511,
+            "duracao_segundos": 43.533
+          },
+          "instagram": {
+            "status": "pendente"
+          },
+          "facebook": {
+            "status": "pendente"
+          }
+        }
+      ]
+    },
+    {
+      "id": "story-20261106-90cef39fee",
+      "data": "2026-11-06",
+      "horario": "09:00",
+      "status": "pendente",
+      "origem": {
+        "arquivo": "191 - Vá até o limite da estupidez! 😱🔥 [ml8RJZIM_PI].mp4",
+        "sha256": "90cef39fee9afc6cb09c041938ed2bf4d2706240314ddd52d1b7dd1a22fcd264",
+        "pacote": "059 - Vá até o limite da estupidez! 😱🔥 [ml8RJZIM_PI]",
+        "pacote_id": "story-059-90cef39fee9a"
+      },
+      "partes": [
+        {
+          "ordem": 1,
+          "status": "pendente",
+          "midia": {
+            "asset": "story-059-parte-01.mp4",
+            "url_publica": "https://github.com/cristianoladik/codigo-da-virada-automacao/releases/download/fila-instagram-facebook/story-059-parte-01.mp4",
+            "sha256": "b257908bd51b242d0131eb7922fa33c34f7a4803a192550a477b7badfbaad491",
+            "tamanho_bytes": 7259566,
+            "duracao_segundos": 16.733
+          },
+          "instagram": {
+            "status": "pendente"
+          },
+          "facebook": {
+            "status": "pendente"
+          }
+        }
+      ]
+    },
+    {
+      "id": "story-20261107-4b1912bc82",
+      "data": "2026-11-07",
+      "horario": "09:00",
+      "status": "pendente",
+      "origem": {
+        "arquivo": "191 - Ninguém faz nada sozinho! [noIrBrJvKKE].mp4",
+        "sha256": "4b1912bc8227ed443b743ebfa5aadbff0715a215bdc961db2c971a7dc395a52d",
+        "pacote": "060 - Ninguém faz nada sozinho! [noIrBrJvKKE]",
+        "pacote_id": "story-060-4b1912bc8227"
+      },
+      "partes": [
+        {
+          "ordem": 1,
+          "status": "pendente",
+          "midia": {
+            "asset": "story-060-parte-01.mp4",
+            "url_publica": "https://github.com/cristianoladik/codigo-da-virada-automacao/releases/download/fila-instagram-facebook/story-060-parte-01.mp4",
+            "sha256": "c9c7457bc514eb74452a7ae0c8f78ab5b0ad1f04c303280d45bb6e86d2c57b64",
+            "tamanho_bytes": 7543282,
+            "duracao_segundos": 34.166
+          },
+          "instagram": {
+            "status": "pendente"
+          },
+          "facebook": {
+            "status": "pendente"
+          }
+        }
+      ]
+    },
+    {
+      "id": "story-20261108-6908057e94",
+      "data": "2026-11-08",
+      "horario": "09:00",
+      "status": "pendente",
+      "origem": {
+        "arquivo": "190 - Se está batendo a META na primeira semana, olhe para o que isso significa! 💡📈 [OBDrx4z9nxE].mp4",
+        "sha256": "6908057e94a7d84deb4fa6628c186f7dc33fded2b11d1024ab177c1666fa4504",
+        "pacote": "061 - Se está batendo a META na primeira semana, olhe para o que isso significa! 💡📈 [O",
+        "pacote_id": "story-061-6908057e94a7"
+      },
+      "partes": [
+        {
+          "ordem": 1,
+          "status": "pendente",
+          "midia": {
+            "asset": "story-061-parte-01.mp4",
+            "url_publica": "https://github.com/cristianoladik/codigo-da-virada-automacao/releases/download/fila-instagram-facebook/story-061-parte-01.mp4",
+            "sha256": "286b5f0e1cbc60c834b4d9591913ceee08ebb50429788623efc86c32c46082de",
+            "tamanho_bytes": 11248458,
+            "duracao_segundos": 26.475
+          },
+          "instagram": {
+            "status": "pendente"
+          },
+          "facebook": {
+            "status": "pendente"
+          }
+        }
+      ]
+    },
+    {
+      "id": "story-20261109-0f8830765d",
+      "data": "2026-11-09",
+      "horario": "09:00",
+      "status": "pendente",
+      "origem": {
+        "arquivo": "190 - Roberto Caruso no Geral do Talk [nSqFmiumdno].mp4",
+        "sha256": "0f8830765d300d8289bd0c0f8bf3d810f5710ffd7e78525a1677fe147bcbeb38",
+        "pacote": "062 - Roberto Caruso no Geral do Talk [nSqFmiumdno]",
+        "pacote_id": "story-062-0f8830765d30"
+      },
+      "partes": [
+        {
+          "ordem": 1,
+          "status": "pendente",
+          "midia": {
+            "asset": "story-062-parte-01.mp4",
+            "url_publica": "https://github.com/cristianoladik/codigo-da-virada-automacao/releases/download/fila-instagram-facebook/story-062-parte-01.mp4",
+            "sha256": "20c70fd211a80c5ff6dad70579db4d24d8fdce89da936b2cdf1308af32009914",
+            "tamanho_bytes": 15881011,
+            "duracao_segundos": 54.038
+          },
+          "instagram": {
+            "status": "pendente"
+          },
+          "facebook": {
+            "status": "pendente"
+          }
+        }
+      ]
+    },
+    {
+      "id": "story-20261110-ac6a4b5604",
+      "data": "2026-11-10",
+      "horario": "09:00",
+      "status": "pendente",
+      "origem": {
+        "arquivo": "189 - Vendedor despreparado： Veja os erros! ❌💥 [mCVkxihTVhY].mp4",
+        "sha256": "ac6a4b56040ebd9b8c1972f03d0fe0e0b95b25426c4de18e95dfbf5fe87ebe8d",
+        "pacote": "063 - Vendedor despreparado Veja os erros! ❌💥 [mCVkxihTVhY]",
+        "pacote_id": "story-063-ac6a4b56040e"
+      },
+      "partes": [
+        {
+          "ordem": 1,
+          "status": "pendente",
+          "midia": {
+            "asset": "story-063-parte-01.mp4",
+            "url_publica": "https://github.com/cristianoladik/codigo-da-virada-automacao/releases/download/fila-instagram-facebook/story-063-parte-01.mp4",
+            "sha256": "f3606dc49c3ff8380389182c6ef27aa1d8326394af476cd384ae2160c26fb2cf",
+            "tamanho_bytes": 7717270,
+            "duracao_segundos": 25.367
+          },
+          "instagram": {
+            "status": "pendente"
+          },
+          "facebook": {
+            "status": "pendente"
+          }
+        }
+      ]
+    },
+    {
+      "id": "story-20261111-b564d07a4d",
+      "data": "2026-11-11",
+      "horario": "09:00",
+      "status": "pendente",
+      "origem": {
+        "arquivo": "189 - Melhor exemplo! [NvBnMWZURYE].mp4",
+        "sha256": "b564d07a4dadfbc44cea9955df63df6e2aceea7b85f2dc02b5f4a064635e540c",
+        "pacote": "064 - Melhor exemplo! [NvBnMWZURYE]",
+        "pacote_id": "story-064-b564d07a4dad"
+      },
+      "partes": [
+        {
+          "ordem": 1,
+          "status": "pendente",
+          "midia": {
+            "asset": "story-064-parte-01.mp4",
+            "url_publica": "https://github.com/cristianoladik/codigo-da-virada-automacao/releases/download/fila-instagram-facebook/story-064-parte-01.mp4",
+            "sha256": "da64e74cdda9dbc290c12cc621b95567fa1ea50c68e902d0aa44b68ffe6c4c0b",
+            "tamanho_bytes": 6177062,
+            "duracao_segundos": 35.2
+          },
+          "instagram": {
+            "status": "pendente"
+          },
+          "facebook": {
+            "status": "pendente"
+          }
+        },
+        {
+          "ordem": 2,
+          "status": "pendente",
+          "midia": {
+            "asset": "story-064-parte-02.mp4",
+            "url_publica": "https://github.com/cristianoladik/codigo-da-virada-automacao/releases/download/fila-instagram-facebook/story-064-parte-02.mp4",
+            "sha256": "205233fb2ba830305739fd4b0844944939953c23fceb292daaccb25a658f1034",
+            "tamanho_bytes": 5574618,
+            "duracao_segundos": 35.2
+          },
+          "instagram": {
+            "status": "pendente"
+          },
+          "facebook": {
+            "status": "pendente"
+          }
+        }
+      ]
     }
   ],
   "estoque_minimo_dias": 30,
   "estoque_alvo_dias": 60,
-  "reposicao_em_andamento": true
+  "reposicao_em_andamento": false
 }
