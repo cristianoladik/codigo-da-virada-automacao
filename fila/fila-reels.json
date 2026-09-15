@@ -7307,6 +7307,102 @@
         "legenda": "Siga @codigodavirada_br",
         "status": "pendente"
       }
+    },
+    {
+      "id": "reel-20261113-1300-233b5ca65c",
+      "data": "2026-11-13",
+      "horario": "13:00",
+      "status": "pendente",
+      "origem": {
+        "arquivo": "001 - ELA TEM QUE ME LEVAR A FAZER DAS PEQUENAS COISAS.mp4",
+        "sha256": "233b5ca65cbce0a8c017cca7349a9da2181bba053bbe4512b8d133956e886e7c"
+      },
+      "midia": {
+        "asset": "001---ELA-TEM-QUE-ME-LEVAR-A-FAZER-DAS-PEQUENAS-COISAS.mp4",
+        "url_publica": "https://github.com/cristianoladik/codigo-da-virada-automacao/releases/download/fila-instagram-facebook/001---ELA-TEM-QUE-ME-LEVAR-A-FAZER-DAS-PEQUENAS-COISAS.mp4",
+        "sha256": "233b5ca65cbce0a8c017cca7349a9da2181bba053bbe4512b8d133956e886e7c",
+        "tamanho_bytes": 12984240
+      },
+      "instagram": {
+        "legenda": "Siga @codigodavirada_br",
+        "status": "pendente"
+      },
+      "facebook": {
+        "legenda": "Siga @codigodavirada_br",
+        "status": "pendente"
+      }
+    },
+    {
+      "id": "reel-20261113-1700-a0497f1553",
+      "data": "2026-11-13",
+      "horario": "17:00",
+      "status": "pendente",
+      "origem": {
+        "arquivo": "001 - EM DEZEMBRO DE 23, EU TOMO UM TOMBO MUITO GRANDE.mp4",
+        "sha256": "a0497f1553ed8e5e1baad8425807664150f66bd5be033b1d1c8758cd3563608a"
+      },
+      "midia": {
+        "asset": "001---EM-DEZEMBRO-DE-23-EU-TOMO-UM-TOMBO-MUITO-GRANDE.mp4",
+        "url_publica": "https://github.com/cristianoladik/codigo-da-virada-automacao/releases/download/fila-instagram-facebook/001---EM-DEZEMBRO-DE-23-EU-TOMO-UM-TOMBO-MUITO-GRANDE.mp4",
+        "sha256": "a0497f1553ed8e5e1baad8425807664150f66bd5be033b1d1c8758cd3563608a",
+        "tamanho_bytes": 26213621
+      },
+      "instagram": {
+        "legenda": "Siga @codigodavirada_br",
+        "status": "pendente"
+      },
+      "facebook": {
+        "legenda": "Siga @codigodavirada_br",
+        "status": "pendente"
+      }
+    },
+    {
+      "id": "reel-20261113-2100-1564102e51",
+      "data": "2026-11-13",
+      "horario": "21:00",
+      "status": "pendente",
+      "origem": {
+        "arquivo": "001 - A EMPRESA CRESCE ATÉ O LIMITE DO EMPRESÁRIO QUE É A LIDERA.mp4",
+        "sha256": "1564102e51ad97d21f5ed266373a4a3912d7dcf2ba4724bddd2cf7eb665ac6d4"
+      },
+      "midia": {
+        "asset": "001---A-EMPRESA-CRESCE-AT-O-LIMITE-DO-EMPRES-RIO-QUE-A-LIDERA.mp4",
+        "url_publica": "https://github.com/cristianoladik/codigo-da-virada-automacao/releases/download/fila-instagram-facebook/001---A-EMPRESA-CRESCE-AT-O-LIMITE-DO-EMPRES-RIO-QUE-A-LIDERA.mp4",
+        "sha256": "1564102e51ad97d21f5ed266373a4a3912d7dcf2ba4724bddd2cf7eb665ac6d4",
+        "tamanho_bytes": 28944092
+      },
+      "instagram": {
+        "legenda": "Siga @codigodavirada_br",
+        "status": "pendente"
+      },
+      "facebook": {
+        "legenda": "Siga @codigodavirada_br",
+        "status": "pendente"
+      }
+    },
+    {
+      "id": "reel-20261114-0500-f4527e2bde",
+      "data": "2026-11-14",
+      "horario": "05:00",
+      "status": "pendente",
+      "origem": {
+        "arquivo": "0001.mp4",
+        "sha256": "f4527e2bdee1b1d9ef596be5038e6e773aec75200e9d7a97f557de491b1fcd3d"
+      },
+      "midia": {
+        "asset": "0001.mp4",
+        "url_publica": "https://github.com/cristianoladik/codigo-da-virada-automacao/releases/download/fila-instagram-facebook/0001.mp4",
+        "sha256": "f4527e2bdee1b1d9ef596be5038e6e773aec75200e9d7a97f557de491b1fcd3d",
+        "tamanho_bytes": 11917983
+      },
+      "instagram": {
+        "legenda": "Siga @codigodavirada_br",
+        "status": "pendente"
+      },
+      "facebook": {
+        "legenda": "Siga @codigodavirada_br",
+        "status": "pendente"
+      }
     }
   ]
 }
