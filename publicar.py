@@ -172,6 +172,10 @@ def limite_por_execucao() -> int:
     return limite
 
 
+# Concluido ou posto de lado: nenhum dos dois volta para a fila do dia.
+STATUS_FINAIS = ("concluido", "com_defeito")
+
+
 def proximos_itens(fila: dict, agora: datetime | None = None) -> list[dict]:
     data_forcada = os.getenv("DATA_PUBLICACAO", "").strip()
     horario_forcado = os.getenv("HORARIO_PUBLICACAO", "").strip()
@@ -179,14 +183,14 @@ def proximos_itens(fila: dict, agora: datetime | None = None) -> list[dict]:
         raise RuntimeError("Informe data e horário juntos para executar manualmente.")
     conteudos = fila.get("conteudos", [])
     if data_forcada:
-        encontrados = [x for x in conteudos if x["data"] == data_forcada and x["horario"] == horario_forcado and x.get("status") != "concluido"]
+        encontrados = [x for x in conteudos if x["data"] == data_forcada and x["horario"] == horario_forcado and x.get("status") not in STATUS_FINAIS]
         if len(encontrados) > 1:
             raise RuntimeError("A fila tem mais de um Reel para esta data e horário.")
         return encontrados[:1]
     agora = agora or datetime.now(BRT)
     devidos = []
     for item in conteudos:
-        if item.get("status") == "concluido":
+        if item.get("status") in STATUS_FINAIS:
             continue
         agendado = datetime.fromisoformat(f"{item['data']}T{item['horario']}:00").replace(tzinfo=BRT)
         if agendado <= agora:
@@ -233,7 +237,7 @@ def item_com_erro(item: dict) -> bool:
 
 
 def proximo_item_pendente(fila: dict) -> dict | None:
-    pendentes = [item for item in fila.get("conteudos", []) if item.get("status") != "concluido"]
+    pendentes = [item for item in fila.get("conteudos", []) if item.get("status") not in STATUS_FINAIS]
     if not pendentes:
         return None
     return min(pendentes, key=lambda item: (item["data"], item["horario"], item.get("id", "")))

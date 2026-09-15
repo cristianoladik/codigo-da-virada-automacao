@@ -21,6 +21,8 @@ import requests
 
 from publicar import (
     BRT,
+    MARCAS_DE_ERRO_PERMANENTE,
+    MAX_TENTATIVAS_POR_ITEM,
     PLATAFORMAS,
     baixar_midia,
     graph_get,
@@ -504,6 +506,7 @@ def executar_rede(parte: dict, plataforma: str, funcao) -> str | None:
     dados = parte[plataforma]
     if dados.get("status") == "publicado":
         return None
+    dados["tentativas"] = int(dados.get("tentativas", 0) or 0) + 1
     try:
         publicacao_id = str(funcao(parte))
         dados.update(
@@ -866,7 +869,7 @@ def proximos_pacotes(fila: dict, agora: datetime | None = None) -> list[dict]:
         return []
     devidos: list[tuple[datetime, str, dict]] = []
     for pacote in pacotes:
-        if pacote.get("status") == "concluido":
+        if pacote.get("status") in {"concluido", "com_defeito"}:
             continue
         agendado = datetime.fromisoformat(
             f"{pacote['data']}T{pacote.get('horario', HORARIO_STORY)}:00"
@@ -882,7 +885,7 @@ def proximos_pacotes(fila: dict, agora: datetime | None = None) -> list[dict]:
 def proximo_pacote_pendente(fila: dict) -> dict | None:
     pendentes = [
         pacote for pacote in fila.get("pacotes", [])
-        if pacote.get("status") != "concluido"
+        if pacote.get("status") not in {"concluido", "com_defeito"}
     ]
     if not pendentes:
         return None
@@ -894,6 +897,57 @@ def proximo_pacote_pendente(fila: dict) -> dict | None:
             pacote.get("id", ""),
         ),
     )
+
+
+def defeito_permanente_da_parte(parte: dict) -> str | None:
+    """Diz por que esta parte nunca vai publicar, ou None se ainda vale tentar.
+
+    Mesma regra dos Reels (12/09/2026) e pedido do Cristiano em 15/09/2026:
+    recusa definitiva ou tres falhas seguidas poem o pacote de lado, e o
+    proximo pacote pendente assume o dia, para o canal nao ficar sem Story.
+    """
+
+    for plataforma in PLATAFORMAS:
+        dados = parte.get(plataforma) or {}
+        if dados.get("status") not in {"erro", "incerto"}:
+            continue
+        texto = str(dados.get("erro", "")).lower()
+        for marca in MARCAS_DE_ERRO_PERMANENTE:
+            if marca in texto:
+                return f"{plataforma}: o arquivo foi recusado ({marca})"
+        if int(dados.get("tentativas", 0) or 0) >= MAX_TENTATIVAS_POR_ITEM:
+            return f"{plataforma}: falhou {dados['tentativas']} vezes seguidas"
+    return None
+
+
+def por_de_lado_e_puxar_proximo(fila: dict, pacote: dict, motivo: str) -> dict | None:
+    """Marca o pacote como com_defeito e traz o proximo pendente para o mesmo dia."""
+
+    pacote["status"] = "com_defeito"
+    pacote["motivo_defeito"] = motivo
+    pacote["posto_de_lado_em"] = datetime.now(BRT).isoformat(timespec="seconds")
+    print(f"POSTO DE LADO: {pacote['id']} — {motivo}")
+    data = str(pacote.get("data", ""))
+    horario = str(pacote.get("horario", HORARIO_STORY))
+    candidatos = sorted(
+        (
+            outro
+            for outro in fila.get("pacotes", [])
+            if outro is not pacote
+            and outro.get("status") not in {"concluido", "com_defeito"}
+            and (str(outro.get("data", "")), str(outro.get("horario", HORARIO_STORY))) > (data, horario)
+        ),
+        key=lambda outro: (str(outro.get("data", "")), str(outro.get("horario", HORARIO_STORY)), outro.get("id", "")),
+    )
+    if not candidatos:
+        print(f"Sem proximo pacote pendente para assumir {data} {horario}.")
+        return None
+    proximo = candidatos[0]
+    proximo["reagendado_de"] = f"{proximo.get('data')} {proximo.get('horario', HORARIO_STORY)}"
+    proximo["data"] = data
+    proximo["horario"] = horario
+    print(f"{proximo['id']} assume {data} {horario} no lugar do pacote posto de lado.")
+    return proximo
 
 
 def parte_com_erro(parte: dict) -> bool:
@@ -944,11 +998,14 @@ def processar_fila(fila: dict, agora: datetime | None = None) -> dict:
     partes_concluidas = 0
     print(f"{len(pacotes)} pacote(s) de Stories vencido(s) serão processado(s).")
 
+    postos_de_lado: list[dict] = []
+    substituicoes = 0
     for indice_pacote, pacote in enumerate(pacotes, start=1):
         print(
             f"Processando pacote [{indice_pacote}/{len(pacotes)}] "
             f"{pacote['data']} {pacote.get('horario', HORARIO_STORY)} ({pacote['id']})"
         )
+        pacote_posto_de_lado = False
         for parte in pacote["partes"]:
             instagram_id = executar_rede(parte, "instagram", publicar_instagram)
             if instagram_id:
@@ -989,6 +1046,17 @@ def processar_fila(fila: dict, agora: datetime | None = None) -> dict:
             salvar_fila(fila)
 
             if parte_com_erro(parte):
+                motivo = defeito_permanente_da_parte(parte)
+                if motivo and substituicoes < MAX_TENTATIVAS_POR_ITEM:
+                    proximo = por_de_lado_e_puxar_proximo(fila, pacote, motivo)
+                    postos_de_lado.append({"pacote": pacote["id"], "motivo": motivo})
+                    salvar_fila(fila)
+                    if proximo is not None:
+                        validar_midias_antes_de_publicar([proximo])
+                        pacotes.append(proximo)
+                        substituicoes += 1
+                    pacote_posto_de_lado = True
+                    break
                 print(
                     "Processamento interrompido para preservar a ordem das partes; "
                     "a rede pendente será retomada na próxima execução."
@@ -1005,6 +1073,8 @@ def processar_fila(fila: dict, agora: datetime | None = None) -> dict:
                     "proximo": proximo_pacote_pendente(fila),
                 }
 
+        if pacote_posto_de_lado:
+            continue
         if all(parte.get("status") == "concluido" for parte in pacote["partes"]):
             if pacote.get("status") != "concluido":
                 pacote.update(
@@ -1016,6 +1086,19 @@ def processar_fila(fila: dict, agora: datetime | None = None) -> dict:
                 pacotes_concluidos += 1
             salvar_fila(fila)
 
+    # Pacote posto de lado deixa a rodada vermelha mesmo com o substituto no ar:
+    # a fila anda, mas o Cristiano precisa enxergar que algo foi recusado.
+    if postos_de_lado:
+        return {
+            "resultado": RESULTADO_FALHA,
+            "pacotes_devidos": len(pacotes),
+            "pacotes_concluidos": pacotes_concluidos,
+            "partes_concluidas": partes_concluidas,
+            "publicacoes": publicacoes,
+            "erros": [f"{p['pacote']}: {p['motivo']}" for p in postos_de_lado],
+            "postos_de_lado": postos_de_lado,
+            "proximo": proximo_pacote_pendente(fila),
+        }
     return {
         "resultado": RESULTADO_PUBLICADO if publicacoes else RESULTADO_RECONCILIADO,
         "pacotes_devidos": len(pacotes),
