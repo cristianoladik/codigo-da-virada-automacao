@@ -7421,6 +7421,126 @@
         "legenda": "Siga @codigodavirada_br",
         "status": "pendente"
       }
+    },
+    {
+      "id": "reel-20261114-0900-7ddff7c81e",
+      "data": "2026-11-14",
+      "horario": "09:00",
+      "status": "pendente",
+      "origem": {
+        "arquivo": "002 - TODO HOMEM PRECISA TER UMA FILHA MULHER.mp4",
+        "sha256": "7ddff7c81e59ca95785f1a81694af6fa2643590bdd1c94b6128ecd0c2a062005"
+      },
+      "midia": {
+        "asset": "002---TODO-HOMEM-PRECISA-TER-UMA-FILHA-MULHER.mp4",
+        "url_publica": "https://github.com/cristianoladik/codigo-da-virada-automacao/releases/download/fila-instagram-facebook/002---TODO-HOMEM-PRECISA-TER-UMA-FILHA-MULHER.mp4",
+        "sha256": "7ddff7c81e59ca95785f1a81694af6fa2643590bdd1c94b6128ecd0c2a062005",
+        "tamanho_bytes": 14962322
+      },
+      "instagram": {
+        "legenda": "Siga @codigodavirada_br",
+        "status": "pendente"
+      },
+      "facebook": {
+        "legenda": "Siga @codigodavirada_br",
+        "status": "pendente"
+      }
+    },
+    {
+      "id": "reel-20261114-1300-c4f57d1aab",
+      "data": "2026-11-14",
+      "horario": "13:00",
+      "status": "pendente",
+      "origem": {
+        "arquivo": "0002.mp4",
+        "sha256": "c4f57d1aab8ef888b8ea80d590b902be129e8b17965c4e45cf3b2ff885bb130b"
+      },
+      "midia": {
+        "asset": "0002.mp4",
+        "url_publica": "https://github.com/cristianoladik/codigo-da-virada-automacao/releases/download/fila-instagram-facebook/0002.mp4",
+        "sha256": "c4f57d1aab8ef888b8ea80d590b902be129e8b17965c4e45cf3b2ff885bb130b",
+        "tamanho_bytes": 8135449
+      },
+      "instagram": {
+        "legenda": "Siga @codigodavirada_br",
+        "status": "pendente"
+      },
+      "facebook": {
+        "legenda": "Siga @codigodavirada_br",
+        "status": "pendente"
+      }
+    },
+    {
+      "id": "reel-20261114-1700-7b684a401e",
+      "data": "2026-11-14",
+      "horario": "17:00",
+      "status": "pendente",
+      "origem": {
+        "arquivo": "003 - VIVER E DESENHAR SEM BORRACHA.mp4",
+        "sha256": "7b684a401e903c2697740829040dfffa34a129a85e4da155c09efcaf4e2d2a97"
+      },
+      "midia": {
+        "asset": "003---VIVER-E-DESENHAR-SEM-BORRACHA.mp4",
+        "url_publica": "https://github.com/cristianoladik/codigo-da-virada-automacao/releases/download/fila-instagram-facebook/003---VIVER-E-DESENHAR-SEM-BORRACHA.mp4",
+        "sha256": "7b684a401e903c2697740829040dfffa34a129a85e4da155c09efcaf4e2d2a97",
+        "tamanho_bytes": 20918300
+      },
+      "instagram": {
+        "legenda": "Siga @codigodavirada_br",
+        "status": "pendente"
+      },
+      "facebook": {
+        "legenda": "Siga @codigodavirada_br",
+        "status": "pendente"
+      }
+    },
+    {
+      "id": "reel-20261114-2100-62442dba2d",
+      "data": "2026-11-14",
+      "horario": "21:00",
+      "status": "pendente",
+      "origem": {
+        "arquivo": "0003.mp4",
+        "sha256": "62442dba2d349b988450e67bf185dbc7693a263d63be818d8c2911c02bfbebb3"
+      },
+      "midia": {
+        "asset": "0003.mp4",
+        "url_publica": "https://github.com/cristianoladik/codigo-da-virada-automacao/releases/download/fila-instagram-facebook/0003.mp4",
+        "sha256": "62442dba2d349b988450e67bf185dbc7693a263d63be818d8c2911c02bfbebb3",
+        "tamanho_bytes": 8458666
+      },
+      "instagram": {
+        "legenda": "Siga @codigodavirada_br",
+        "status": "pendente"
+      },
+      "facebook": {
+        "legenda": "Siga @codigodavirada_br",
+        "status": "pendente"
+      }
+    },
+    {
+      "id": "reel-20261115-0500-4a624079ec",
+      "data": "2026-11-15",
+      "horario": "05:00",
+      "status": "pendente",
+      "origem": {
+        "arquivo": "004 - EU PAGA UM PREÇO PESADO QUE SE CHAMOU DE SESSÃO.mp4",
+        "sha256": "4a624079ec190c958bf2964703bef0f17e8f120c73ba0e46e38d49d0efbb9a73"
+      },
+      "midia": {
+        "asset": "004---EU-PAGA-UM-PRE-O-PESADO-QUE-SE-CHAMOU-DE-SESS-O.mp4",
+        "url_publica": "https://github.com/cristianoladik/codigo-da-virada-automacao/releases/download/fila-instagram-facebook/004---EU-PAGA-UM-PRE-O-PESADO-QUE-SE-CHAMOU-DE-SESS-O.mp4",
+        "sha256": "4a624079ec190c958bf2964703bef0f17e8f120c73ba0e46e38d49d0efbb9a73",
+        "tamanho_bytes": 24590101
+      },
+      "instagram": {
+        "legenda": "Siga @codigodavirada_br",
+        "status": "pendente"
+      },
+      "facebook": {
+        "legenda": "Siga @codigodavirada_br",
+        "status": "pendente"
+      }
     }
   ]
 }
