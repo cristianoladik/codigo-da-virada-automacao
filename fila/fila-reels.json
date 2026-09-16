@@ -795,7 +795,8 @@
         "asset": "36.mp4",
         "url_publica": "https://github.com/cristianoladik/codigo-da-virada-automacao/releases/download/fila-instagram-facebook/36.mp4",
         "sha256": "37b97888f631a54578752c36cfd75e32f5338f0870b5788957a5aa13b100f09e",
-        "tamanho_bytes": 6829057
+        "tamanho_bytes": 6829057,
+        "removido_da_release_em": "2026-09-16T08:24:56.391519-03:00"
       },
       "instagram": {
         "legenda": "Siga @codigodavirada_br",
