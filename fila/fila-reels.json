@@ -7559,6 +7559,126 @@
         "legenda": "Siga @codigodavirada_br",
         "status": "pendente"
       }
+    },
+    {
+      "id": "reel-20261115-0900-dc0e89a394",
+      "data": "2026-11-15",
+      "horario": "09:00",
+      "status": "pendente",
+      "origem": {
+        "arquivo": "0004.mp4",
+        "sha256": "dc0e89a394052ad36a0803647411abcb396252cac6a576105fd1cbfdb6d33506"
+      },
+      "midia": {
+        "asset": "0004.mp4",
+        "url_publica": "https://github.com/cristianoladik/codigo-da-virada-automacao/releases/download/fila-instagram-facebook/0004.mp4",
+        "sha256": "dc0e89a394052ad36a0803647411abcb396252cac6a576105fd1cbfdb6d33506",
+        "tamanho_bytes": 5643656
+      },
+      "instagram": {
+        "legenda": "Siga @codigodavirada_br",
+        "status": "pendente"
+      },
+      "facebook": {
+        "legenda": "Siga @codigodavirada_br",
+        "status": "pendente"
+      }
+    },
+    {
+      "id": "reel-20261115-1300-cd71931bdd",
+      "data": "2026-11-15",
+      "horario": "13:00",
+      "status": "pendente",
+      "origem": {
+        "arquivo": "005 - TODA REAGRA NOVA TEM UMA OPORTUNIDADE E UM RISCO, CERTO.mp4",
+        "sha256": "cd71931bddb68038994ceb092b0ab865cdaf23d2c505fb92ad7fc71898caa8f4"
+      },
+      "midia": {
+        "asset": "005---TODA-REAGRA-NOVA-TEM-UMA-OPORTUNIDADE-E-UM-RISCO-CERTO.mp4",
+        "url_publica": "https://github.com/cristianoladik/codigo-da-virada-automacao/releases/download/fila-instagram-facebook/005---TODA-REAGRA-NOVA-TEM-UMA-OPORTUNIDADE-E-UM-RISCO-CERTO.mp4",
+        "sha256": "cd71931bddb68038994ceb092b0ab865cdaf23d2c505fb92ad7fc71898caa8f4",
+        "tamanho_bytes": 81690015
+      },
+      "instagram": {
+        "legenda": "Siga @codigodavirada_br",
+        "status": "pendente"
+      },
+      "facebook": {
+        "legenda": "Siga @codigodavirada_br",
+        "status": "pendente"
+      }
+    },
+    {
+      "id": "reel-20261115-1700-822349358e",
+      "data": "2026-11-15",
+      "horario": "17:00",
+      "status": "pendente",
+      "origem": {
+        "arquivo": "0005.mp4",
+        "sha256": "822349358ed33641e6e50242d56d4f3e2a2f634d9bfe1552040d91da8204a28d"
+      },
+      "midia": {
+        "asset": "0005.mp4",
+        "url_publica": "https://github.com/cristianoladik/codigo-da-virada-automacao/releases/download/fila-instagram-facebook/0005.mp4",
+        "sha256": "822349358ed33641e6e50242d56d4f3e2a2f634d9bfe1552040d91da8204a28d",
+        "tamanho_bytes": 14517363
+      },
+      "instagram": {
+        "legenda": "Siga @codigodavirada_br",
+        "status": "pendente"
+      },
+      "facebook": {
+        "legenda": "Siga @codigodavirada_br",
+        "status": "pendente"
+      }
+    },
+    {
+      "id": "reel-20261115-2100-81a1221db5",
+      "data": "2026-11-15",
+      "horario": "21:00",
+      "status": "pendente",
+      "origem": {
+        "arquivo": "006 - E AÍ VOCÊ TAMBÉM VAI SOFRER MENOS.mp4",
+        "sha256": "81a1221db542bfbbf4c0ad8bc9d41d817a28cb9d06174dfc3e2b8a7311696474"
+      },
+      "midia": {
+        "asset": "006---E-A-VOC-TAMB-M-VAI-SOFRER-MENOS.mp4",
+        "url_publica": "https://github.com/cristianoladik/codigo-da-virada-automacao/releases/download/fila-instagram-facebook/006---E-A-VOC-TAMB-M-VAI-SOFRER-MENOS.mp4",
+        "sha256": "81a1221db542bfbbf4c0ad8bc9d41d817a28cb9d06174dfc3e2b8a7311696474",
+        "tamanho_bytes": 28874710
+      },
+      "instagram": {
+        "legenda": "Siga @codigodavirada_br",
+        "status": "pendente"
+      },
+      "facebook": {
+        "legenda": "Siga @codigodavirada_br",
+        "status": "pendente"
+      }
+    },
+    {
+      "id": "reel-20261116-0500-2e96483daf",
+      "data": "2026-11-16",
+      "horario": "05:00",
+      "status": "pendente",
+      "origem": {
+        "arquivo": "0006.mp4",
+        "sha256": "2e96483daff380975b7b6be817f8d2be9118e9a5d4261a0233f06b4618af7d8e"
+      },
+      "midia": {
+        "asset": "0006.mp4",
+        "url_publica": "https://github.com/cristianoladik/codigo-da-virada-automacao/releases/download/fila-instagram-facebook/0006.mp4",
+        "sha256": "2e96483daff380975b7b6be817f8d2be9118e9a5d4261a0233f06b4618af7d8e",
+        "tamanho_bytes": 5331685
+      },
+      "instagram": {
+        "legenda": "Siga @codigodavirada_br",
+        "status": "pendente"
+      },
+      "facebook": {
+        "legenda": "Siga @codigodavirada_br",
+        "status": "pendente"
+      }
     }
   ]
 }
