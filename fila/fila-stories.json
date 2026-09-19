@@ -484,7 +484,7 @@
       "id": "story-20260918-c55413d361",
       "data": "2026-09-18",
       "horario": "09:00",
-      "status": "pendente",
+      "status": "concluido",
       "origem": {
         "arquivo": "13.mp4",
         "sha256": "c55413d3616de3c79a7231d821dc21fdf7d902b4c0beb321cf0c7d04643175fc",
@@ -494,7 +494,7 @@
       "partes": [
         {
           "ordem": 1,
-          "status": "pendente",
+          "status": "concluido",
           "midia": {
             "asset": "story-010-parte-01.mp4",
             "url_publica": "https://github.com/cristianoladik/codigo-da-virada-automacao/releases/download/fila-instagram-facebook/story-010-parte-01.mp4",
@@ -503,13 +503,30 @@
             "duracao_segundos": 50.434
           },
           "instagram": {
-            "status": "pendente"
+            "status": "publicado",
+            "tentativas": 1,
+            "container_id": "18101068199160657",
+            "publish_iniciado_em": "2026-09-19T12:50:33-03:00",
+            "id": "18088781939226204",
+            "publicado_em": "2026-09-19T12:50:41-03:00"
           },
           "facebook": {
-            "status": "pendente"
-          }
+            "status": "publicado",
+            "tentativas": 1,
+            "video_id": "2117063035560461",
+            "finish_tentativas": 1,
+            "finish_iniciado_em": "2026-09-19T12:50:49-03:00",
+            "post_id_candidato": "2587375328369793",
+            "finish_em": "2026-09-19T12:50:53-03:00",
+            "url": "https://facebook.com/stories/122104678257454572/UzpfSVNDOjI1ODczNzUzMzE3MDMxMjY=/?view_single=1",
+            "id_tipo": "post_id",
+            "id": "2587375328369793",
+            "publicado_em": "2026-09-19T12:51:30-03:00"
+          },
+          "concluido_em": "2026-09-19T12:51:30-03:00"
         }
-      ]
+      ],
+      "concluido_em": "2026-09-19T12:51:30-03:00"
     },
     {
       "id": "story-20260919-27518072ab",
