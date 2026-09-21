@@ -632,7 +632,8 @@
             "url_publica": "https://github.com/cristianoladik/codigo-da-virada-automacao/releases/download/fila-instagram-facebook/story-012-parte-01.mp4",
             "sha256": "a37bb341ec3f9691a50a601c34e7b49bfd97e4c4e99beaea7b61cb2dd08d2df4",
             "tamanho_bytes": 9417914,
-            "duracao_segundos": 34.316
+            "duracao_segundos": 34.316,
+            "removido_da_release_em": "2026-09-21T14:04:38.404442-03:00"
           },
           "instagram": {
             "status": "publicado",
@@ -665,7 +666,8 @@
             "url_publica": "https://github.com/cristianoladik/codigo-da-virada-automacao/releases/download/fila-instagram-facebook/story-012-parte-02.mp4",
             "sha256": "d97c63e478f4a8d24c52039e5aaf3eb3e5fe7d86e1ed56fef60d29e13ee98307",
             "tamanho_bytes": 9044599,
-            "duracao_segundos": 34.3
+            "duracao_segundos": 34.3,
+            "removido_da_release_em": "2026-09-21T14:04:38.793871-03:00"
           },
           "instagram": {
             "status": "publicado",
