@@ -1275,7 +1275,8 @@
         "asset": "52.mp4",
         "url_publica": "https://github.com/cristianoladik/codigo-da-virada-automacao/releases/download/fila-instagram-facebook/52.mp4",
         "sha256": "d53df3503b24fc8d93528c1fee5ce2f5364444225007dca23994b5e4fffa3dbc",
-        "tamanho_bytes": 16563116
+        "tamanho_bytes": 16563116,
+        "removido_da_release_em": "2026-09-21T09:42:01.716281-03:00"
       },
       "instagram": {
         "legenda": "Siga @codigodavirada_br",
@@ -1304,7 +1305,8 @@
         "asset": "53.mp4",
         "url_publica": "https://github.com/cristianoladik/codigo-da-virada-automacao/releases/download/fila-instagram-facebook/53.mp4",
         "sha256": "70d6cfe881997771a40e58d06e983042c85c04381467a9d1268553c193324685",
-        "tamanho_bytes": 9433749
+        "tamanho_bytes": 9433749,
+        "removido_da_release_em": "2026-09-21T09:42:02.055770-03:00"
       },
       "instagram": {
         "legenda": "Siga @codigodavirada_br",
