@@ -1576,7 +1576,8 @@
         "asset": "62.mp4",
         "url_publica": "https://github.com/cristianoladik/codigo-da-virada-automacao/releases/download/fila-instagram-facebook/62.mp4",
         "sha256": "d8112693d3e332e769ed2c6ac8eedb8e34a7361410c8ba42e1527b390cec31dd",
-        "tamanho_bytes": 16924265
+        "tamanho_bytes": 16924265,
+        "removido_da_release_em": "2026-09-23T13:09:23.970092-03:00"
       },
       "instagram": {
         "legenda": "Siga @codigodavirada_br",
@@ -7837,7 +7838,8 @@
         "asset": "Fl-vio-Augusto---Pense-Fora-da-Caixa---Parte-01---23-09-2026.mp4",
         "url_publica": "https://github.com/cristianoladik/codigo-da-virada-automacao/releases/download/fila-instagram-facebook/Fl-vio-Augusto---Pense-Fora-da-Caixa---Parte-01---23-09-2026.mp4",
         "sha256": "e07402e315bea42ebc7b00611c2c2071e668c373443fce1759b0abc3ad51048c",
-        "tamanho_bytes": 34343372
+        "tamanho_bytes": 34343372,
+        "removido_da_release_em": "2026-09-23T13:09:24.341022-03:00"
       },
       "instagram": {
         "legenda": "Pense Fora da Caixa | Parte 1 de 3. Assista na ordem: 1, 2 e 3.\n\nMensagem: Flávio Augusto.\n\nSiga @codigodavirada_br",
@@ -7897,7 +7899,8 @@
         "asset": "Fl-vio-Augusto---Pense-Fora-da-Caixa---Parte-03---23-09-2026.mp4",
         "url_publica": "https://github.com/cristianoladik/codigo-da-virada-automacao/releases/download/fila-instagram-facebook/Fl-vio-Augusto---Pense-Fora-da-Caixa---Parte-03---23-09-2026.mp4",
         "sha256": "b49ab29caad79b6712ad1f163a27488f0d290ccc2df7e6c98a1a2f1dc4a81883",
-        "tamanho_bytes": 28754572
+        "tamanho_bytes": 28754572,
+        "removido_da_release_em": "2026-09-23T13:09:24.793355-03:00"
       },
       "instagram": {
         "legenda": "Pense Fora da Caixa | Parte 3 de 3. Assista na ordem: 1, 2 e 3.\n\nMensagem: Flávio Augusto.\n\nSiga @codigodavirada_br",
