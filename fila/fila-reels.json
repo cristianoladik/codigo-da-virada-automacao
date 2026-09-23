@@ -1567,7 +1567,7 @@
       "id": "reel-20260923-1300-d8112693d3",
       "data": "2026-09-23",
       "horario": "13:00",
-      "status": "pendente",
+      "status": "concluido",
       "origem": {
         "arquivo": "62.mp4",
         "sha256": "d8112693d3e332e769ed2c6ac8eedb8e34a7361410c8ba42e1527b390cec31dd"
@@ -1580,12 +1580,17 @@
       },
       "instagram": {
         "legenda": "Siga @codigodavirada_br",
-        "status": "pendente"
+        "status": "publicado",
+        "id": "18049546775664279",
+        "publicado_em": "2026-09-23T13:05:52.514555-03:00"
       },
       "facebook": {
         "legenda": "Siga @codigodavirada_br",
-        "status": "pendente"
-      }
+        "status": "publicado",
+        "id": "2518060182018233",
+        "publicado_em": "2026-09-23T13:06:04.989399-03:00"
+      },
+      "concluido_em": "2026-09-23T13:06:04.995959-03:00"
     },
     {
       "id": "reel-20260923-2100-2ff9f34f90",
@@ -7823,7 +7828,7 @@
       "id": "reel-20260923-1302-e07402e315",
       "data": "2026-09-23",
       "horario": "13:02",
-      "status": "pendente",
+      "status": "concluido",
       "origem": {
         "arquivo": "Flávio Augusto - Pense Fora da Caixa - Parte 01 - 23-09-2026.mp4",
         "sha256": "e07402e315bea42ebc7b00611c2c2071e668c373443fce1759b0abc3ad51048c"
@@ -7836,18 +7841,23 @@
       },
       "instagram": {
         "legenda": "Pense Fora da Caixa | Parte 1 de 3. Assista na ordem: 1, 2 e 3.\n\nMensagem: Flávio Augusto.\n\nSiga @codigodavirada_br",
-        "status": "pendente"
+        "status": "publicado",
+        "id": "18128690467774416",
+        "publicado_em": "2026-09-23T13:07:09.522127-03:00"
       },
       "facebook": {
         "legenda": "Pense Fora da Caixa | Parte 1 de 3. Assista na ordem: 1, 2 e 3.\n\nMensagem: Flávio Augusto.\n\nSiga @codigodavirada_br",
-        "status": "pendente"
-      }
+        "status": "publicado",
+        "id": "1107445921856760",
+        "publicado_em": "2026-09-23T13:07:25.988521-03:00"
+      },
+      "concluido_em": "2026-09-23T13:07:25.994849-03:00"
     },
     {
       "id": "reel-20260923-1303-d92b8562d3",
       "data": "2026-09-23",
       "horario": "13:03",
-      "status": "pendente",
+      "status": "com_defeito",
       "origem": {
         "arquivo": "Flávio Augusto - Pense Fora da Caixa - Parte 02 - 23-09-2026.mp4",
         "sha256": "d92b8562d3238b555f5f856dd0dfad418215564078a6fc3fe681cb29c18ed24d"
@@ -7860,18 +7870,25 @@
       },
       "instagram": {
         "legenda": "Pense Fora da Caixa | Parte 2 de 3. Assista na ordem: 1, 2 e 3.\n\nMensagem: Flávio Augusto.\n\nSiga @codigodavirada_br",
-        "status": "pendente"
+        "status": "erro",
+        "erro": "Instagram não processou o Reel: {'id': '18101997131160657', 'status': 'Error: Media upload has failed with error code 2207077', 'status_code': 'ERROR'}",
+        "ultima_tentativa_em": "2026-09-23T13:07:38.257356-03:00",
+        "tentativas": 1
       },
       "facebook": {
         "legenda": "Pense Fora da Caixa | Parte 2 de 3. Assista na ordem: 1, 2 e 3.\n\nMensagem: Flávio Augusto.\n\nSiga @codigodavirada_br",
-        "status": "pendente"
-      }
+        "status": "publicado",
+        "id": "2155148188759254",
+        "publicado_em": "2026-09-23T13:07:52.365657-03:00"
+      },
+      "motivo_defeito": "instagram: o arquivo foi recusado (media upload has failed)",
+      "posto_de_lado_em": "2026-09-23T13:07:52.397439-03:00"
     },
     {
       "id": "reel-20260923-1304-b49ab29caa",
       "data": "2026-09-23",
       "horario": "13:04",
-      "status": "pendente",
+      "status": "concluido",
       "origem": {
         "arquivo": "Flávio Augusto - Pense Fora da Caixa - Parte 03 - 23-09-2026.mp4",
         "sha256": "b49ab29caad79b6712ad1f163a27488f0d290ccc2df7e6c98a1a2f1dc4a81883"
@@ -7884,12 +7901,17 @@
       },
       "instagram": {
         "legenda": "Pense Fora da Caixa | Parte 3 de 3. Assista na ordem: 1, 2 e 3.\n\nMensagem: Flávio Augusto.\n\nSiga @codigodavirada_br",
-        "status": "pendente"
+        "status": "publicado",
+        "id": "18117690625800637",
+        "publicado_em": "2026-09-23T13:09:05.333421-03:00"
       },
       "facebook": {
         "legenda": "Pense Fora da Caixa | Parte 3 de 3. Assista na ordem: 1, 2 e 3.\n\nMensagem: Flávio Augusto.\n\nSiga @codigodavirada_br",
-        "status": "pendente"
-      }
+        "status": "publicado",
+        "id": "1406292381686466",
+        "publicado_em": "2026-09-23T13:09:21.361007-03:00"
+      },
+      "concluido_em": "2026-09-23T13:09:21.367297-03:00"
     }
   ]
 }
