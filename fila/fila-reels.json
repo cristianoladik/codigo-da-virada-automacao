@@ -1657,7 +1657,7 @@
       "id": "reel-20260924-0900-41c5aa62c0",
       "data": "2026-09-24",
       "horario": "09:00",
-      "status": "pendente",
+      "status": "com_defeito",
       "origem": {
         "arquivo": "66.mp4",
         "sha256": "41c5aa62c0eaa4b331d05d60a6677783f1a3e02273a5f874935a415cdaaf880d"
@@ -1670,12 +1670,19 @@
       },
       "instagram": {
         "legenda": "Siga @codigodavirada_br",
-        "status": "pendente"
+        "status": "erro",
+        "erro": "Instagram não processou o Reel: {'id': '18102178913160657', 'status': 'Error: Media upload has failed with error code 2207082', 'status_code': 'ERROR'}",
+        "ultima_tentativa_em": "2026-09-24T09:45:09.492500-03:00",
+        "tentativas": 1
       },
       "facebook": {
         "legenda": "Siga @codigodavirada_br",
-        "status": "pendente"
-      }
+        "status": "publicado",
+        "id": "1612346683694415",
+        "publicado_em": "2026-09-24T09:45:22.019353-03:00"
+      },
+      "motivo_defeito": "instagram: o arquivo foi recusado (2207082)",
+      "posto_de_lado_em": "2026-09-24T09:45:22.034309-03:00"
     },
     {
       "id": "reel-20260924-1300-4aca280db6",
