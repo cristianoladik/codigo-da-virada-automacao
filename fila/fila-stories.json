@@ -1650,7 +1650,8 @@
             "url_publica": "https://github.com/cristianoladik/codigo-da-virada-automacao/releases/download/fila-instagram-facebook/story-030-parte-01.mp4",
             "sha256": "a5f5306d42dfc819703b1be0ef7608d2d89072ef317890edb113c278633c42a4",
             "tamanho_bytes": 11114371,
-            "duracao_segundos": 34.066
+            "duracao_segundos": 34.066,
+            "removido_da_release_em": "2026-10-09T13:09:37.648231-03:00"
           },
           "instagram": {
             "status": "publicado",
