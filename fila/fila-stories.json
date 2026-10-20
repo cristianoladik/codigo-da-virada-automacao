@@ -2173,7 +2173,7 @@
       "id": "story-20261019-bab8c1466b",
       "data": "2026-10-19",
       "horario": "09:00",
-      "status": "pendente",
+      "status": "concluido",
       "origem": {
         "arquivo": "200 - O verdadeiro significado da medalha que Joel presenteou! 💥🙏 [S_3xHH3r5HA].mp4",
         "sha256": "bab8c1466bab0334a120ebe0498de7074bd9d3f9c72724d5fc364da9d5fa1808",
@@ -2183,7 +2183,7 @@
       "partes": [
         {
           "ordem": 1,
-          "status": "pendente",
+          "status": "concluido",
           "midia": {
             "asset": "story-041-parte-01.mp4",
             "url_publica": "https://github.com/cristianoladik/codigo-da-virada-automacao/releases/download/fila-instagram-facebook/story-041-parte-01.mp4",
@@ -2192,13 +2192,30 @@
             "duracao_segundos": 45.035
           },
           "instagram": {
-            "status": "pendente"
+            "status": "publicado",
+            "tentativas": 1,
+            "container_id": "18107972057160657",
+            "publish_iniciado_em": "2026-10-20T09:41:39-03:00",
+            "id": "18127956469850701",
+            "publicado_em": "2026-10-20T09:41:46-03:00"
           },
           "facebook": {
-            "status": "pendente"
-          }
+            "status": "publicado",
+            "tentativas": 1,
+            "video_id": "1428294562067355",
+            "finish_tentativas": 1,
+            "finish_iniciado_em": "2026-10-20T09:41:54-03:00",
+            "post_id_candidato": "1420672820240133",
+            "finish_em": "2026-10-20T09:41:59-03:00",
+            "url": "https://facebook.com/stories/122104678257454572/UzpfSVNDOjE0MjA2NzI4MjM1NzM0NjY=/?view_single=1",
+            "id_tipo": "post_id",
+            "id": "1420672820240133",
+            "publicado_em": "2026-10-20T09:42:36-03:00"
+          },
+          "concluido_em": "2026-10-20T09:42:36-03:00"
         }
-      ]
+      ],
+      "concluido_em": "2026-10-20T09:42:36-03:00"
     },
     {
       "id": "story-20261020-ca9862c76f",
