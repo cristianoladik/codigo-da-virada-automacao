@@ -2222,7 +2222,7 @@
       "id": "story-20261020-ca9862c76f",
       "data": "2026-10-20",
       "horario": "09:00",
-      "status": "pendente",
+      "status": "concluido",
       "origem": {
         "arquivo": "200 - Apaixone-se pelo que você faz! [7pq1GZ-_qYM].mp4",
         "sha256": "ca9862c76fc6d15e9240703bd1232a35b5dc123a1516ee206bc91d6fc1ff7c14",
@@ -2232,7 +2232,7 @@
       "partes": [
         {
           "ordem": 1,
-          "status": "pendente",
+          "status": "concluido",
           "midia": {
             "asset": "story-042-parte-01.mp4",
             "url_publica": "https://github.com/cristianoladik/codigo-da-virada-automacao/releases/download/fila-instagram-facebook/story-042-parte-01.mp4",
@@ -2241,13 +2241,30 @@
             "duracao_segundos": 26.0
           },
           "instagram": {
-            "status": "pendente"
+            "status": "publicado",
+            "tentativas": 1,
+            "container_id": "18108197714160657",
+            "publish_iniciado_em": "2026-10-21T09:54:33-03:00",
+            "id": "18414141154095755",
+            "publicado_em": "2026-10-21T09:54:41-03:00"
           },
           "facebook": {
-            "status": "pendente"
-          }
+            "status": "publicado",
+            "tentativas": 1,
+            "video_id": "1853895538936311",
+            "finish_tentativas": 1,
+            "finish_iniciado_em": "2026-10-21T09:54:52-03:00",
+            "post_id_candidato": "1380140517661174",
+            "finish_em": "2026-10-21T09:54:57-03:00",
+            "url": "https://facebook.com/stories/122104678257454572/UzpfSVNDOjEzODAxNDA1MjA5OTQ1MDc=/?view_single=1",
+            "id_tipo": "post_id",
+            "id": "1380140517661174",
+            "publicado_em": "2026-10-21T09:55:34-03:00"
+          },
+          "concluido_em": "2026-10-21T09:55:34-03:00"
         }
-      ]
+      ],
+      "concluido_em": "2026-10-21T09:55:34-03:00"
     },
     {
       "id": "story-20261021-519dceec06",
