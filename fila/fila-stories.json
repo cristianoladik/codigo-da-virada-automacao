@@ -2271,7 +2271,7 @@
       "id": "story-20261021-519dceec06",
       "data": "2026-10-21",
       "horario": "09:00",
-      "status": "pendente",
+      "status": "concluido",
       "origem": {
         "arquivo": "199 - Essa mensagem de Rodrigo Silva vai mudar seu dia! ❤️ [fvLVeEaiAV0].mp4",
         "sha256": "519dceec06157ebb07d3492d2cd6857f86acb3e2e8bac95eafb120a7354b2457",
@@ -2281,7 +2281,7 @@
       "partes": [
         {
           "ordem": 1,
-          "status": "pendente",
+          "status": "concluido",
           "midia": {
             "asset": "story-043-parte-01.mp4",
             "url_publica": "https://github.com/cristianoladik/codigo-da-virada-automacao/releases/download/fila-instagram-facebook/story-043-parte-01.mp4",
@@ -2290,13 +2290,30 @@
             "duracao_segundos": 47.033
           },
           "instagram": {
-            "status": "pendente"
+            "status": "publicado",
+            "tentativas": 1,
+            "container_id": "18108410861160657",
+            "publish_iniciado_em": "2026-10-22T09:56:20-03:00",
+            "id": "18193772731394872",
+            "publicado_em": "2026-10-22T09:56:29-03:00"
           },
           "facebook": {
-            "status": "pendente"
-          }
+            "status": "publicado",
+            "tentativas": 1,
+            "video_id": "1626766695584384",
+            "finish_tentativas": 1,
+            "finish_iniciado_em": "2026-10-22T09:56:39-03:00",
+            "post_id_candidato": "4450596791873185",
+            "finish_em": "2026-10-22T09:56:43-03:00",
+            "url": "https://facebook.com/stories/122104678257454572/UzpfSVNDOjQ0NTA1OTY3OTg1Mzk4NTE=/?view_single=1",
+            "id_tipo": "post_id",
+            "id": "4450596791873185",
+            "publicado_em": "2026-10-22T09:57:20-03:00"
+          },
+          "concluido_em": "2026-10-22T09:57:20-03:00"
         }
-      ]
+      ],
+      "concluido_em": "2026-10-22T09:57:20-03:00"
     },
     {
       "id": "story-20261022-0cf33681f6",
