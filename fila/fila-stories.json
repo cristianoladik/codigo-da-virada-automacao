@@ -2320,7 +2320,7 @@
       "id": "story-20261022-0cf33681f6",
       "data": "2026-10-22",
       "horario": "09:00",
-      "status": "pendente",
+      "status": "concluido",
       "origem": {
         "arquivo": "199 - Networking do bem! [86BnmDi2yxo].mp4",
         "sha256": "0cf33681f67e42469202d9c06db6db001d2e94942734371856d3f83d8e9d1a5c",
@@ -2330,7 +2330,7 @@
       "partes": [
         {
           "ordem": 1,
-          "status": "pendente",
+          "status": "concluido",
           "midia": {
             "asset": "story-044-parte-01.mp4",
             "url_publica": "https://github.com/cristianoladik/codigo-da-virada-automacao/releases/download/fila-instagram-facebook/story-044-parte-01.mp4",
@@ -2339,13 +2339,30 @@
             "duracao_segundos": 44.533
           },
           "instagram": {
-            "status": "pendente"
+            "status": "publicado",
+            "tentativas": 1,
+            "container_id": "18108614408160657",
+            "publish_iniciado_em": "2026-10-23T09:36:24-03:00",
+            "id": "18129178819863071",
+            "publicado_em": "2026-10-23T09:36:33-03:00"
           },
           "facebook": {
-            "status": "pendente"
-          }
+            "status": "publicado",
+            "tentativas": 1,
+            "video_id": "2157589554830435",
+            "finish_tentativas": 1,
+            "finish_iniciado_em": "2026-10-23T09:36:39-03:00",
+            "post_id_candidato": "4509299849383980",
+            "finish_em": "2026-10-23T09:36:42-03:00",
+            "url": "https://facebook.com/stories/122104678257454572/UzpfSVNDOjQ1MDkyOTk4NTI3MTczMTM=/?view_single=1",
+            "id_tipo": "post_id",
+            "id": "4509299849383980",
+            "publicado_em": "2026-10-23T09:37:19-03:00"
+          },
+          "concluido_em": "2026-10-23T09:37:19-03:00"
         }
-      ]
+      ],
+      "concluido_em": "2026-10-23T09:37:19-03:00"
     },
     {
       "id": "story-20261023-486d144943",
