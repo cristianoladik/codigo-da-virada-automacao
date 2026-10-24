@@ -2369,7 +2369,7 @@
       "id": "story-20261023-486d144943",
       "data": "2026-10-23",
       "horario": "09:00",
-      "status": "pendente",
+      "status": "concluido",
       "origem": {
         "arquivo": "198 - Joel Jota fica sem palavras： O que Junior Rostirola disse？ [UAQJgDMTq_A].mp4",
         "sha256": "486d144943fe84194940f146da381f08554fa4021602f1fd43bd214c2be142ff",
@@ -2379,7 +2379,7 @@
       "partes": [
         {
           "ordem": 1,
-          "status": "pendente",
+          "status": "concluido",
           "midia": {
             "asset": "story-045-parte-01.mp4",
             "url_publica": "https://github.com/cristianoladik/codigo-da-virada-automacao/releases/download/fila-instagram-facebook/story-045-parte-01.mp4",
@@ -2388,13 +2388,30 @@
             "duracao_segundos": 48.733
           },
           "instagram": {
-            "status": "pendente"
+            "status": "publicado",
+            "tentativas": 1,
+            "container_id": "18108902240160657",
+            "publish_iniciado_em": "2026-10-24T12:52:19-03:00",
+            "id": "18350592499269819",
+            "publicado_em": "2026-10-24T12:52:29-03:00"
           },
           "facebook": {
-            "status": "pendente"
-          }
+            "status": "publicado",
+            "tentativas": 1,
+            "video_id": "2081236052597466",
+            "finish_tentativas": 1,
+            "finish_iniciado_em": "2026-10-24T12:52:35-03:00",
+            "post_id_candidato": "944670001763228",
+            "finish_em": "2026-10-24T12:52:39-03:00",
+            "url": "https://facebook.com/stories/122104678257454572/UzpfSVNDOjk0NDY3MDAwODQyOTg5NA==/?view_single=1",
+            "id_tipo": "post_id",
+            "id": "944670001763228",
+            "publicado_em": "2026-10-24T12:53:16-03:00"
+          },
+          "concluido_em": "2026-10-24T12:53:16-03:00"
         }
-      ]
+      ],
+      "concluido_em": "2026-10-24T12:53:16-03:00"
     },
     {
       "id": "story-20261024-603c7cf451",
