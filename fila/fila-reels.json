@@ -6055,11 +6055,17 @@
       },
       "instagram": {
         "legenda": "Siga @codigodavirada_br",
-        "status": "pendente"
+        "status": "erro",
+        "erro": "Meta HTTP 500: {\"error\":{\"code\":1,\"message\":\"An unknown error occurred\"}}",
+        "ultima_tentativa_em": "2026-10-26T18:41:18.865980-03:00",
+        "tentativas": 1
       },
       "facebook": {
         "legenda": "Siga @codigodavirada_br",
-        "status": "pendente"
+        "status": "erro",
+        "erro": "Meta HTTP 400: {\"error\":{\"message\":\"Cannot call API for app 1413695914039703 on behalf of user 122096446545473589\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"AVTxoArzt4VSvWMpvhscA0S\"}}",
+        "ultima_tentativa_em": "2026-10-26T18:41:20.424371-03:00",
+        "tentativas": 1
       }
     },
     {
