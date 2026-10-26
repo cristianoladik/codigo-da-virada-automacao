@@ -2501,7 +2501,7 @@
       "id": "story-20261025-a07e2066e7",
       "data": "2026-10-25",
       "horario": "09:00",
-      "status": "pendente",
+      "status": "concluido",
       "origem": {
         "arquivo": "197 - Junior Rostirola tem uma mensagem linda pra você! 😱❤️ [gjUnxgJ_gqw].mp4",
         "sha256": "a07e2066e7b07de48aaac98e8b64541ea5ef33aac227d53997830641156b8a37",
@@ -2511,7 +2511,7 @@
       "partes": [
         {
           "ordem": 1,
-          "status": "pendente",
+          "status": "concluido",
           "midia": {
             "asset": "story-047-parte-01.mp4",
             "url_publica": "https://github.com/cristianoladik/codigo-da-virada-automacao/releases/download/fila-instagram-facebook/story-047-parte-01.mp4",
@@ -2520,13 +2520,30 @@
             "duracao_segundos": 31.033
           },
           "instagram": {
-            "status": "pendente"
+            "status": "publicado",
+            "tentativas": 1,
+            "container_id": "18109410236160657",
+            "publish_iniciado_em": "2026-10-26T11:11:01-03:00",
+            "id": "18349963624266827",
+            "publicado_em": "2026-10-26T11:11:06-03:00"
           },
           "facebook": {
-            "status": "pendente"
-          }
+            "status": "publicado",
+            "tentativas": 1,
+            "video_id": "2166938157509403",
+            "finish_tentativas": 1,
+            "finish_iniciado_em": "2026-10-26T11:11:17-03:00",
+            "post_id_candidato": "2992168711127757",
+            "finish_em": "2026-10-26T11:11:21-03:00",
+            "url": "https://facebook.com/stories/122104678257454572/UzpfSVNDOjI5OTIxNjg3MTc3OTQ0MjM=/?view_single=1",
+            "id_tipo": "post_id",
+            "id": "2992168711127757",
+            "publicado_em": "2026-10-26T11:11:57-03:00"
+          },
+          "concluido_em": "2026-10-26T11:11:57-03:00"
         }
-      ]
+      ],
+      "concluido_em": "2026-10-26T11:11:57-03:00"
     },
     {
       "id": "story-20261026-9fccc2244d",
