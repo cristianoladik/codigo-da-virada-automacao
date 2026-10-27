@@ -2550,7 +2550,7 @@
       "id": "story-20261026-9fccc2244d",
       "data": "2026-10-26",
       "horario": "09:00",
-      "status": "pendente",
+      "status": "concluido",
       "origem": {
         "arquivo": "197 - Agindo como Geraldo Rufino! [42-N6uHxSLQ].mp4",
         "sha256": "9fccc2244d18573cc31f241452268345f035c0529c660e009d71754ff7b3edde",
@@ -2560,7 +2560,7 @@
       "partes": [
         {
           "ordem": 1,
-          "status": "pendente",
+          "status": "concluido",
           "midia": {
             "asset": "story-048-parte-01.mp4",
             "url_publica": "https://github.com/cristianoladik/codigo-da-virada-automacao/releases/download/fila-instagram-facebook/story-048-parte-01.mp4",
@@ -2569,13 +2569,30 @@
             "duracao_segundos": 33.133
           },
           "instagram": {
-            "status": "pendente"
+            "status": "publicado",
+            "tentativas": 1,
+            "container_id": "18109692449160657",
+            "publish_iniciado_em": "2026-10-27T13:31:38-03:00",
+            "id": "17939556180124149",
+            "publicado_em": "2026-10-27T13:31:46-03:00"
           },
           "facebook": {
-            "status": "pendente"
-          }
+            "status": "publicado",
+            "tentativas": 1,
+            "video_id": "1932282114409953",
+            "finish_tentativas": 1,
+            "finish_iniciado_em": "2026-10-27T13:31:58-03:00",
+            "post_id_candidato": "1425888709122452",
+            "finish_em": "2026-10-27T13:32:02-03:00",
+            "url": "https://facebook.com/stories/122104678257454572/UzpfSVNDOjE0MjU4ODg3MTkxMjI0NTE=/?view_single=1",
+            "id_tipo": "post_id",
+            "id": "1425888709122452",
+            "publicado_em": "2026-10-27T13:32:39-03:00"
+          },
+          "concluido_em": "2026-10-27T13:32:39-03:00"
         }
-      ]
+      ],
+      "concluido_em": "2026-10-27T13:32:39-03:00"
     },
     {
       "id": "story-20261027-b9335f2c3c",
