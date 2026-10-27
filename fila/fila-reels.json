@@ -6042,7 +6042,7 @@
       "id": "reel-20261026-1700-63e99b8ae4",
       "data": "2026-10-26",
       "horario": "17:00",
-      "status": "pendente",
+      "status": "concluido",
       "origem": {
         "arquivo": "220.mp4",
         "sha256": "63e99b8ae40600c67c884545e22b51ecad47049fff037402590a436963cdd440"
@@ -6055,24 +6055,27 @@
       },
       "instagram": {
         "legenda": "Siga @codigodavirada_br",
-        "status": "erro",
-        "erro": "Meta HTTP 500: {\"error\":{\"code\":1,\"message\":\"An unknown error occurred\"}}",
+        "status": "publicado",
         "ultima_tentativa_em": "2026-10-26T18:41:18.865980-03:00",
-        "tentativas": 1
+        "tentativas": 1,
+        "id": "18110196203624071",
+        "publicado_em": "2026-10-26T21:53:37.387174-03:00"
       },
       "facebook": {
         "legenda": "Siga @codigodavirada_br",
-        "status": "erro",
-        "erro": "Meta HTTP 400: {\"error\":{\"message\":\"Cannot call API for app 1413695914039703 on behalf of user 122096446545473589\",\"type\":\"OAuthException\",\"code\":200,\"fbtrace_id\":\"AVTxoArzt4VSvWMpvhscA0S\"}}",
+        "status": "publicado",
         "ultima_tentativa_em": "2026-10-26T18:41:20.424371-03:00",
-        "tentativas": 1
-      }
+        "tentativas": 1,
+        "id": "1727313571666239",
+        "publicado_em": "2026-10-26T21:53:46.912506-03:00"
+      },
+      "concluido_em": "2026-10-26T21:53:46.920944-03:00"
     },
     {
       "id": "reel-20261026-2100-fd1272ffbb",
       "data": "2026-10-26",
       "horario": "21:00",
-      "status": "pendente",
+      "status": "concluido",
       "origem": {
         "arquivo": "001 - Xxn8QffWOyk.mp4",
         "sha256": "fd1272ffbbea5e99c8971575238477e5d6d57b8eb04f71862042d2e6f0bafbdf",
@@ -6086,12 +6089,17 @@
       },
       "instagram": {
         "legenda": "Siga @codigodavirada_br",
-        "status": "pendente"
+        "status": "publicado",
+        "id": "17959339167255185",
+        "publicado_em": "2026-10-26T21:55:10.844810-03:00"
       },
       "facebook": {
         "legenda": "Siga @codigodavirada_br",
-        "status": "pendente"
-      }
+        "status": "publicado",
+        "id": "1645616743882197",
+        "publicado_em": "2026-10-26T21:55:20.943457-03:00"
+      },
+      "concluido_em": "2026-10-26T21:55:20.951987-03:00"
     },
     {
       "id": "reel-20261027-0500-1648cb8978",
