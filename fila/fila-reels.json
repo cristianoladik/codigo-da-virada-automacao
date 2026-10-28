@@ -6315,7 +6315,7 @@
       "id": "reel-20261028-1300-8dc2798e03",
       "data": "2026-10-28",
       "horario": "13:00",
-      "status": "pendente",
+      "status": "concluido",
       "origem": {
         "arquivo": "001 - O ＂não merecimento＂ é grave. Você tem isso？ [gxK5qVThmTs].mp4",
         "sha256": "8dc2798e03de77ddfa6a7a0c450c65bda48e14202da56dc5a89a2088c2083aa1",
@@ -6329,12 +6329,17 @@
       },
       "instagram": {
         "legenda": "Siga @codigodavirada_br",
-        "status": "pendente"
+        "status": "publicado",
+        "id": "18129760816883972",
+        "publicado_em": "2026-10-28T14:55:37.857508-03:00"
       },
       "facebook": {
         "legenda": "Siga @codigodavirada_br",
-        "status": "pendente"
-      }
+        "status": "publicado",
+        "id": "1361785580356078",
+        "publicado_em": "2026-10-28T14:55:49.856033-03:00"
+      },
+      "concluido_em": "2026-10-28T14:55:49.865067-03:00"
     },
     {
       "id": "reel-20261028-1700-545433b49f",
