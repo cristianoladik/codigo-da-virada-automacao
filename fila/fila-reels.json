@@ -6345,7 +6345,7 @@
       "id": "reel-20261028-1700-545433b49f",
       "data": "2026-10-28",
       "horario": "17:00",
-      "status": "pendente",
+      "status": "concluido",
       "origem": {
         "arquivo": "001 - O QUE O DINHEIRO NÃO COMPRA [rHT4eCoV9Fc].mp4",
         "sha256": "545433b49fd74e841d5894cedbe9658f69e818b3cecb611655707b4d70343a0b",
@@ -6359,12 +6359,17 @@
       },
       "instagram": {
         "legenda": "Siga @codigodavirada_br",
-        "status": "pendente"
+        "status": "publicado",
+        "id": "18200873752339790",
+        "publicado_em": "2026-10-28T17:02:47.048103-03:00"
       },
       "facebook": {
         "legenda": "Siga @codigodavirada_br",
-        "status": "pendente"
-      }
+        "status": "publicado",
+        "id": "1767485824479627",
+        "publicado_em": "2026-10-28T17:02:54.533312-03:00"
+      },
+      "concluido_em": "2026-10-28T17:02:54.541985-03:00"
     },
     {
       "id": "reel-20261028-2100-11edc1c90a",
