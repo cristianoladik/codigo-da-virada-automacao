@@ -2682,7 +2682,7 @@
       "id": "story-20261028-5a651d6724",
       "data": "2026-10-28",
       "horario": "09:00",
-      "status": "pendente",
+      "status": "concluido",
       "origem": {
         "arquivo": "196 - O que é ser rico？ [RU_NiAR4yTw].mp4",
         "sha256": "5a651d67249c3de1b2d3ed657f0c5f3d0c397354411acb4e41be1f70488d06d0",
@@ -2692,7 +2692,7 @@
       "partes": [
         {
           "ordem": 1,
-          "status": "pendente",
+          "status": "concluido",
           "midia": {
             "asset": "story-050-parte-01.mp4",
             "url_publica": "https://github.com/cristianoladik/codigo-da-virada-automacao/releases/download/fila-instagram-facebook/story-050-parte-01.mp4",
@@ -2701,13 +2701,30 @@
             "duracao_segundos": 58.475
           },
           "instagram": {
-            "status": "pendente"
+            "status": "publicado",
+            "tentativas": 1,
+            "container_id": "18110188727160657",
+            "publish_iniciado_em": "2026-10-29T11:11:50-03:00",
+            "id": "18216065347362435",
+            "publicado_em": "2026-10-29T11:11:57-03:00"
           },
           "facebook": {
-            "status": "pendente"
-          }
+            "status": "publicado",
+            "tentativas": 1,
+            "video_id": "2121394858746308",
+            "finish_tentativas": 1,
+            "finish_iniciado_em": "2026-10-29T11:12:03-03:00",
+            "post_id_candidato": "29024999360452682",
+            "finish_em": "2026-10-29T11:12:07-03:00",
+            "url": "https://facebook.com/stories/122104678257454572/UzpfSVNDOjI5MDI0OTk5Mzc3MTE5MzQ3/?view_single=1",
+            "id_tipo": "post_id",
+            "id": "29024999360452682",
+            "publicado_em": "2026-10-29T11:12:43-03:00"
+          },
+          "concluido_em": "2026-10-29T11:12:43-03:00"
         }
-      ]
+      ],
+      "concluido_em": "2026-10-29T11:12:43-03:00"
     },
     {
       "id": "story-20261029-444bfdc72e",
