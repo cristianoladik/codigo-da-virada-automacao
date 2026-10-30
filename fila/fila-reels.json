@@ -6615,7 +6615,7 @@
       "id": "reel-20261030-1300-961d752673",
       "data": "2026-10-30",
       "horario": "13:00",
-      "status": "pendente",
+      "status": "concluido",
       "origem": {
         "arquivo": "002 - O segredo do futebol é esse [3j7LPJSdLKU].mp4",
         "sha256": "961d75267364f14f7733b45187332aa26fc7388811816886a474fd8e93e17a24",
@@ -6629,12 +6629,17 @@
       },
       "instagram": {
         "legenda": "Siga @codigodavirada_br",
-        "status": "pendente"
+        "status": "publicado",
+        "id": "18026813933871514",
+        "publicado_em": "2026-10-30T14:44:09.115507-03:00"
       },
       "facebook": {
         "legenda": "Siga @codigodavirada_br",
-        "status": "pendente"
-      }
+        "status": "publicado",
+        "id": "1997880494222216",
+        "publicado_em": "2026-10-30T14:44:20.084571-03:00"
+      },
+      "concluido_em": "2026-10-30T14:44:20.092426-03:00"
     },
     {
       "id": "reel-20261030-1700-c99bd8131f",
