@@ -2731,7 +2731,7 @@
       "id": "story-20261029-444bfdc72e",
       "data": "2026-10-29",
       "horario": "09:00",
-      "status": "pendente",
+      "status": "concluido",
       "origem": {
         "arquivo": "195 - O livro que o Ninja indica! 📖🔥 [Q3FLxoMjjOo].mp4",
         "sha256": "444bfdc72eb6215e8bf4430fd1361f2847788330ddd7db4b5f3ca0028377874a",
@@ -2741,7 +2741,7 @@
       "partes": [
         {
           "ordem": 1,
-          "status": "pendente",
+          "status": "concluido",
           "midia": {
             "asset": "story-051-parte-01.mp4",
             "url_publica": "https://github.com/cristianoladik/codigo-da-virada-automacao/releases/download/fila-instagram-facebook/story-051-parte-01.mp4",
@@ -2750,13 +2750,30 @@
             "duracao_segundos": 28.438
           },
           "instagram": {
-            "status": "pendente"
+            "status": "publicado",
+            "tentativas": 1,
+            "container_id": "18110437523160657",
+            "publish_iniciado_em": "2026-10-30T11:03:20-03:00",
+            "id": "18145478542579623",
+            "publicado_em": "2026-10-30T11:03:25-03:00"
           },
           "facebook": {
-            "status": "pendente"
-          }
+            "status": "publicado",
+            "tentativas": 1,
+            "video_id": "2336905837142303",
+            "finish_tentativas": 1,
+            "finish_iniciado_em": "2026-10-30T11:03:30-03:00",
+            "post_id_candidato": "1876342257146274",
+            "finish_em": "2026-10-30T11:03:34-03:00",
+            "url": "https://facebook.com/stories/122104678257454572/UzpfSVNDOjE4NzYzNDIyNjA0Nzk2MDc=/?view_single=1",
+            "id_tipo": "post_id",
+            "id": "1876342257146274",
+            "publicado_em": "2026-10-30T11:04:10-03:00"
+          },
+          "concluido_em": "2026-10-30T11:04:10-03:00"
         }
-      ]
+      ],
+      "concluido_em": "2026-10-30T11:04:10-03:00"
     },
     {
       "id": "story-20261030-b5d994be6a",
