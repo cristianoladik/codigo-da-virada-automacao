@@ -2829,7 +2829,7 @@
       "id": "story-20261031-69a91dd936",
       "data": "2026-10-31",
       "horario": "09:00",
-      "status": "pendente",
+      "status": "concluido",
       "origem": {
         "arquivo": "194 - Papo reto do Ninja que vai mudar sua mente! 😮 [s8cH9YDRdds].mp4",
         "sha256": "69a91dd93666a2948e5626a8a78a6dd1302c75603f80975ab79ee21d90debd1b",
@@ -2839,7 +2839,7 @@
       "partes": [
         {
           "ordem": 1,
-          "status": "pendente",
+          "status": "concluido",
           "midia": {
             "asset": "story-053-parte-01.mp4",
             "url_publica": "https://github.com/cristianoladik/codigo-da-virada-automacao/releases/download/fila-instagram-facebook/story-053-parte-01.mp4",
@@ -2848,13 +2848,30 @@
             "duracao_segundos": 20.0
           },
           "instagram": {
-            "status": "pendente"
+            "status": "publicado",
+            "tentativas": 1,
+            "container_id": "18110942471160657",
+            "publish_iniciado_em": "2026-11-01T13:01:15-03:00",
+            "id": "18001339442820734",
+            "publicado_em": "2026-11-01T13:01:24-03:00"
           },
           "facebook": {
-            "status": "pendente"
-          }
+            "status": "publicado",
+            "tentativas": 1,
+            "video_id": "1110199341617042",
+            "finish_tentativas": 1,
+            "finish_iniciado_em": "2026-11-01T13:01:31-03:00",
+            "post_id_candidato": "1577429494072082",
+            "finish_em": "2026-11-01T13:01:37-03:00",
+            "url": "https://facebook.com/stories/122104678257454572/UzpfSVNDOjE1Nzc0Mjk0OTc0MDU0MTU=/?view_single=1",
+            "id_tipo": "post_id",
+            "id": "1577429494072082",
+            "publicado_em": "2026-11-01T13:02:14-03:00"
+          },
+          "concluido_em": "2026-11-01T13:02:14-03:00"
         }
-      ]
+      ],
+      "concluido_em": "2026-11-01T13:02:14-03:00"
     },
     {
       "id": "story-20261101-e40c22325e",
