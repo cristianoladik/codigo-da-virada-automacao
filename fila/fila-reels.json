@@ -6885,7 +6885,7 @@
       "id": "reel-20261101-0900-3c30aa9a05",
       "data": "2026-11-01",
       "horario": "09:00",
-      "status": "pendente",
+      "status": "concluido",
       "origem": {
         "arquivo": "003 - Deus é o maior servo que existe [6k3FifAoRsw].mp4",
         "sha256": "3c30aa9a05d049b739bc68160a6f89740307eae121b0db9a47bdbbd77436576b",
@@ -6899,12 +6899,17 @@
       },
       "instagram": {
         "legenda": "Siga @codigodavirada_br",
-        "status": "pendente"
+        "status": "publicado",
+        "id": "17993873387853112",
+        "publicado_em": "2026-11-01T10:11:00.461905-03:00"
       },
       "facebook": {
         "legenda": "Siga @codigodavirada_br",
-        "status": "pendente"
-      }
+        "status": "publicado",
+        "id": "1114341427641194",
+        "publicado_em": "2026-11-01T10:11:09.095025-03:00"
+      },
+      "concluido_em": "2026-11-01T10:11:09.104061-03:00"
     },
     {
       "id": "reel-20261101-1300-723d9fef4e",
