@@ -2878,7 +2878,7 @@
       "id": "story-20261101-e40c22325e",
       "data": "2026-11-01",
       "horario": "09:00",
-      "status": "pendente",
+      "status": "concluido",
       "origem": {
         "arquivo": "194 - Como curar dor na alma？ [b2upARut7EQ].mp4",
         "sha256": "e40c22325e9510284aa8af192cd05b0981333bd064391d0914e4fa7cd6c098da",
@@ -2888,7 +2888,7 @@
       "partes": [
         {
           "ordem": 1,
-          "status": "pendente",
+          "status": "concluido",
           "midia": {
             "asset": "story-054-parte-01.mp4",
             "url_publica": "https://github.com/cristianoladik/codigo-da-virada-automacao/releases/download/fila-instagram-facebook/story-054-parte-01.mp4",
@@ -2897,13 +2897,30 @@
             "duracao_segundos": 47.733
           },
           "instagram": {
-            "status": "pendente"
+            "status": "publicado",
+            "tentativas": 1,
+            "container_id": "18111183173160657",
+            "publish_iniciado_em": "2026-11-02T15:14:08-03:00",
+            "id": "18373562611245628",
+            "publicado_em": "2026-11-02T15:14:15-03:00"
           },
           "facebook": {
-            "status": "pendente"
-          }
+            "status": "publicado",
+            "tentativas": 1,
+            "video_id": "1147104651110785",
+            "finish_tentativas": 1,
+            "finish_iniciado_em": "2026-11-02T15:14:26-03:00",
+            "post_id_candidato": "1991462661547545",
+            "finish_em": "2026-11-02T15:14:31-03:00",
+            "url": "https://facebook.com/stories/122104678257454572/UzpfSVNDOjE5OTE0NjI2NzE1NDc1NDQ=/?view_single=1",
+            "id_tipo": "post_id",
+            "id": "1991462661547545",
+            "publicado_em": "2026-11-02T15:15:10-03:00"
+          },
+          "concluido_em": "2026-11-02T15:15:10-03:00"
         }
-      ]
+      ],
+      "concluido_em": "2026-11-02T15:15:10-03:00"
     },
     {
       "id": "story-20261102-dc17a88684",
