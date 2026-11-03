@@ -7155,7 +7155,7 @@
       "id": "reel-20261103-0500-5262c94bb6",
       "data": "2026-11-03",
       "horario": "05:00",
-      "status": "pendente",
+      "status": "concluido",
       "origem": {
         "arquivo": "004 - Você precisa levantar primeiro [elDPPAekcK8].mp4",
         "sha256": "5262c94bb63dd391f5469dbc964330d54d40d0586933f4bf9a6068c34926612c",
@@ -7169,12 +7169,17 @@
       },
       "instagram": {
         "legenda": "Siga @codigodavirada_br",
-        "status": "pendente"
+        "status": "publicado",
+        "id": "18007466378991736",
+        "publicado_em": "2026-11-03T06:38:29.876049-03:00"
       },
       "facebook": {
         "legenda": "Siga @codigodavirada_br",
-        "status": "pendente"
-      }
+        "status": "publicado",
+        "id": "2207440073201172",
+        "publicado_em": "2026-11-03T06:38:45.064712-03:00"
+      },
+      "concluido_em": "2026-11-03T06:38:45.071588-03:00"
     },
     {
       "id": "reel-20261103-0900-dd826306c1",
