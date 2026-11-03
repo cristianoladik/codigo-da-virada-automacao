@@ -2927,7 +2927,7 @@
       "id": "story-20261102-dc17a88684",
       "data": "2026-11-02",
       "horario": "09:00",
-      "status": "pendente",
+      "status": "concluido",
       "origem": {
         "arquivo": "193 - O livro que vai mudar sua visão da vida! 📖💥 [2Cic1Mp0pxs].mp4",
         "sha256": "dc17a88684e64400cc130804786087939f35771e7dc4e0041c681380b032c79b",
@@ -2937,7 +2937,7 @@
       "partes": [
         {
           "ordem": 1,
-          "status": "pendente",
+          "status": "concluido",
           "midia": {
             "asset": "story-055-parte-01.mp4",
             "url_publica": "https://github.com/cristianoladik/codigo-da-virada-automacao/releases/download/fila-instagram-facebook/story-055-parte-01.mp4",
@@ -2946,13 +2946,30 @@
             "duracao_segundos": 42.8
           },
           "instagram": {
-            "status": "pendente"
+            "status": "publicado",
+            "tentativas": 1,
+            "container_id": "18111381488160657",
+            "publish_iniciado_em": "2026-11-03T14:47:13-03:00",
+            "id": "18077029529571759",
+            "publicado_em": "2026-11-03T14:47:20-03:00"
           },
           "facebook": {
-            "status": "pendente"
-          }
+            "status": "publicado",
+            "tentativas": 1,
+            "video_id": "28983196894674017",
+            "finish_tentativas": 1,
+            "finish_iniciado_em": "2026-11-03T14:47:26-03:00",
+            "post_id_candidato": "2549901135437796",
+            "finish_em": "2026-11-03T14:47:34-03:00",
+            "url": "https://facebook.com/stories/122104678257454572/UzpfSVNDOjI1NDk5MDExMzg3NzExMjk=/?view_single=1",
+            "id_tipo": "post_id",
+            "id": "2549901135437796",
+            "publicado_em": "2026-11-03T14:48:12-03:00"
+          },
+          "concluido_em": "2026-11-03T14:48:12-03:00"
         }
-      ]
+      ],
+      "concluido_em": "2026-11-03T14:48:12-03:00"
     },
     {
       "id": "story-20261103-4ddfc6f810",
