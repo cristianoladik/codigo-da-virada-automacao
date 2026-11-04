@@ -7349,11 +7349,17 @@
       },
       "instagram": {
         "legenda": "Siga @codigodavirada_br",
-        "status": "pendente"
+        "status": "erro",
+        "erro": "Meta HTTP 400: {\"error\":{\"message\":\"The token has expired on Wednesday, 04-Nov-26 09:22:53 PST. The current time is Wednesday, 04-Nov-26 09:51:03 PST.\",\"type\":\"OAuthException\",\"code\":190,\"fbtrace_id\":\"AEDVEaSmqBc59QwR4FLx9LV\"}}",
+        "ultima_tentativa_em": "2026-11-04T14:51:03.441681-03:00",
+        "tentativas": 1
       },
       "facebook": {
         "legenda": "Siga @codigodavirada_br",
-        "status": "pendente"
+        "status": "erro",
+        "erro": "Meta HTTP 400: {\"error\":{\"message\":\"The token has expired on Wednesday, 04-Nov-26 09:22:53 PST. The current time is Wednesday, 04-Nov-26 09:51:03 PST.\",\"type\":\"OAuthException\",\"code\":190,\"fbtrace_id\":\"A8any1Zs1RqJvD41jNQY2b6\"}}",
+        "ultima_tentativa_em": "2026-11-04T14:51:03.507358-03:00",
+        "tentativas": 1
       }
     },
     {
@@ -7374,11 +7380,17 @@
       },
       "instagram": {
         "legenda": "Siga @codigodavirada_br",
-        "status": "pendente"
+        "status": "erro",
+        "erro": "Meta HTTP 400: {\"error\":{\"message\":\"The token has expired on Wednesday, 04-Nov-26 09:22:53 PST. The current time is Wednesday, 04-Nov-26 09:51:03 PST.\",\"type\":\"OAuthException\",\"code\":190,\"fbtrace_id\":\"AXaWz61acW_z-j4vRwZS88Y\"}}",
+        "ultima_tentativa_em": "2026-11-04T14:51:03.600916-03:00",
+        "tentativas": 1
       },
       "facebook": {
         "legenda": "Siga @codigodavirada_br",
-        "status": "pendente"
+        "status": "erro",
+        "erro": "Meta HTTP 400: {\"error\":{\"message\":\"The token has expired on Wednesday, 04-Nov-26 09:22:53 PST. The current time is Wednesday, 04-Nov-26 09:51:03 PST.\",\"type\":\"OAuthException\",\"code\":190,\"fbtrace_id\":\"AXKGceM_dSNyf5V7eYN179x\"}}",
+        "ultima_tentativa_em": "2026-11-04T14:51:03.665057-03:00",
+        "tentativas": 1
       }
     },
     {
