@@ -7910,11 +7910,17 @@
       },
       "instagram": {
         "legenda": "Siga @codigodavirada_br",
-        "status": "pendente"
+        "status": "erro",
+        "erro": "Meta HTTP 400: {\"error\":{\"message\":\"The token has expired on Wednesday, 04-Nov-26 09:22:53 PST. The current time is Saturday, 07-Nov-26 13:44:02 PST.\",\"type\":\"OAuthException\",\"code\":190,\"fbtrace_id\":\"ADdAm2tzU0DmtigJwHRZKp6\"}}",
+        "ultima_tentativa_em": "2026-11-07T18:44:02.494630-03:00",
+        "tentativas": 1
       },
       "facebook": {
         "legenda": "Siga @codigodavirada_br",
-        "status": "pendente"
+        "status": "erro",
+        "erro": "Meta HTTP 400: {\"error\":{\"message\":\"The token has expired on Wednesday, 04-Nov-26 09:22:53 PST. The current time is Saturday, 07-Nov-26 13:44:02 PST.\",\"type\":\"OAuthException\",\"code\":190,\"fbtrace_id\":\"AXvjsr5xDHzKujREeco35k3\"}}",
+        "ultima_tentativa_em": "2026-11-07T18:44:02.532744-03:00",
+        "tentativas": 1
       }
     },
     {
