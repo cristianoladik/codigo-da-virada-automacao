@@ -8028,7 +8028,7 @@
       "id": "reel-20261108-1300-534a92e8be",
       "data": "2026-11-08",
       "horario": "13:00",
-      "status": "pendente",
+      "status": "com_defeito",
       "origem": {
         "arquivo": "007 - O seu projeto de vida não é isso [o1BgycAvuyI].mp4",
         "sha256": "534a92e8be329b8023ad33e10ac44049bf893bd4db7ac21e851c0cd3a9e16d74",
@@ -8043,17 +8043,19 @@
       "instagram": {
         "legenda": "Siga @codigodavirada_br",
         "status": "erro",
-        "erro": "Meta HTTP 400: {\"error\":{\"message\":\"The token has expired on Wednesday, 04-Nov-26 09:22:53 PST. The current time is Sunday, 08-Nov-26 09:53:21 PST.\",\"type\":\"OAuthException\",\"code\":190,\"fbtrace_id\":\"AnlA5mw_1uIBoYp8zcgR_W4\"}}",
-        "ultima_tentativa_em": "2026-11-08T14:53:21.707506-03:00",
-        "tentativas": 2
+        "erro": "Meta HTTP 400: {\"error\":{\"message\":\"The token has expired on Wednesday, 04-Nov-26 09:22:53 PST. The current time is Sunday, 08-Nov-26 10:53:14 PST.\",\"type\":\"OAuthException\",\"code\":190,\"fbtrace_id\":\"AMJuBufd32Rs6PlNdoa6Kj3\"}}",
+        "ultima_tentativa_em": "2026-11-08T15:53:14.497218-03:00",
+        "tentativas": 3
       },
       "facebook": {
         "legenda": "Siga @codigodavirada_br",
         "status": "erro",
-        "erro": "Meta HTTP 400: {\"error\":{\"message\":\"The token has expired on Wednesday, 04-Nov-26 09:22:53 PST. The current time is Sunday, 08-Nov-26 09:53:21 PST.\",\"type\":\"OAuthException\",\"code\":190,\"fbtrace_id\":\"ADN9X17dY7ZqX0ZmjaVQmfN\"}}",
-        "ultima_tentativa_em": "2026-11-08T14:53:21.760822-03:00",
-        "tentativas": 2
-      }
+        "erro": "Meta HTTP 400: {\"error\":{\"message\":\"The token has expired on Wednesday, 04-Nov-26 09:22:53 PST. The current time is Sunday, 08-Nov-26 10:53:14 PST.\",\"type\":\"OAuthException\",\"code\":190,\"fbtrace_id\":\"An0zMrfsiF-GLfKnJGsYJfe\"}}",
+        "ultima_tentativa_em": "2026-11-08T15:53:14.572996-03:00",
+        "tentativas": 3
+      },
+      "motivo_defeito": "instagram: falhou 3 vezes seguidas",
+      "posto_de_lado_em": "2026-11-08T15:53:14.587528-03:00"
     },
     {
       "id": "reel-20261108-1700-a600f9e6be",
