@@ -7929,7 +7929,7 @@
       "id": "reel-20261107-2100-d86e1d1e00",
       "data": "2026-11-07",
       "horario": "21:00",
-      "status": "pendente",
+      "status": "com_defeito",
       "origem": {
         "arquivo": "007 - KKRCBA7n-s4.mp4",
         "sha256": "d86e1d1e00103c330ed8e1e70561eb7569ff2d0648bad99ccab8e4bc73ee2d31",
@@ -7944,17 +7944,19 @@
       "instagram": {
         "legenda": "Siga @codigodavirada_br",
         "status": "erro",
-        "erro": "Meta HTTP 400: {\"error\":{\"message\":\"The token has expired on Wednesday, 04-Nov-26 09:22:53 PST. The current time is Saturday, 07-Nov-26 23:03:03 PST.\",\"type\":\"OAuthException\",\"code\":190,\"fbtrace_id\":\"AKTC-ES8lY2QrCMpTa1B8j9\"}}",
-        "ultima_tentativa_em": "2026-11-08T04:03:03.707797-03:00",
-        "tentativas": 2
+        "erro": "Meta HTTP 400: {\"error\":{\"message\":\"The token has expired on Wednesday, 04-Nov-26 09:22:53 PST. The current time is Sunday, 08-Nov-26 05:13:10 PST.\",\"type\":\"OAuthException\",\"code\":190,\"fbtrace_id\":\"AUgB6aJczNyrgX_ObIy-fHg\"}}",
+        "ultima_tentativa_em": "2026-11-08T10:13:10.889341-03:00",
+        "tentativas": 3
       },
       "facebook": {
         "legenda": "Siga @codigodavirada_br",
         "status": "erro",
-        "erro": "Meta HTTP 400: {\"error\":{\"message\":\"The token has expired on Wednesday, 04-Nov-26 09:22:53 PST. The current time is Saturday, 07-Nov-26 23:03:03 PST.\",\"type\":\"OAuthException\",\"code\":190,\"fbtrace_id\":\"AuGbCDvaaoSk-Xh90lZCTBq\"}}",
-        "ultima_tentativa_em": "2026-11-08T04:03:03.771340-03:00",
-        "tentativas": 2
-      }
+        "erro": "Meta HTTP 400: {\"error\":{\"message\":\"The token has expired on Wednesday, 04-Nov-26 09:22:53 PST. The current time is Sunday, 08-Nov-26 05:13:10 PST.\",\"type\":\"OAuthException\",\"code\":190,\"fbtrace_id\":\"AgpDuJYS7K2vj_mJ8rtnwSi\"}}",
+        "ultima_tentativa_em": "2026-11-08T10:13:10.973155-03:00",
+        "tentativas": 3
+      },
+      "motivo_defeito": "instagram: falhou 3 vezes seguidas",
+      "posto_de_lado_em": "2026-11-08T10:13:10.984038-03:00"
     },
     {
       "id": "reel-20261108-0500-1961799a5f",
@@ -7974,11 +7976,17 @@
       },
       "instagram": {
         "legenda": "Siga @codigodavirada_br",
-        "status": "pendente"
+        "status": "erro",
+        "erro": "Meta HTTP 400: {\"error\":{\"message\":\"The token has expired on Wednesday, 04-Nov-26 09:22:53 PST. The current time is Sunday, 08-Nov-26 05:13:11 PST.\",\"type\":\"OAuthException\",\"code\":190,\"fbtrace_id\":\"ArHesl8SvPzF3ByqQKag_Rv\"}}",
+        "ultima_tentativa_em": "2026-11-08T10:13:11.060763-03:00",
+        "tentativas": 1
       },
       "facebook": {
         "legenda": "Siga @codigodavirada_br",
-        "status": "pendente"
+        "status": "erro",
+        "erro": "Meta HTTP 400: {\"error\":{\"message\":\"The token has expired on Wednesday, 04-Nov-26 09:22:53 PST. The current time is Sunday, 08-Nov-26 05:13:11 PST.\",\"type\":\"OAuthException\",\"code\":190,\"fbtrace_id\":\"AK3YncFXyFMFU70gO6O6xUv\"}}",
+        "ultima_tentativa_em": "2026-11-08T10:13:11.141070-03:00",
+        "tentativas": 1
       }
     },
     {
@@ -7999,11 +8007,17 @@
       },
       "instagram": {
         "legenda": "Siga @codigodavirada_br",
-        "status": "pendente"
+        "status": "erro",
+        "erro": "Meta HTTP 400: {\"error\":{\"message\":\"The token has expired on Wednesday, 04-Nov-26 09:22:53 PST. The current time is Sunday, 08-Nov-26 05:13:11 PST.\",\"type\":\"OAuthException\",\"code\":190,\"fbtrace_id\":\"Ag0YoVb5MHV-4dIW0rcucJt\"}}",
+        "ultima_tentativa_em": "2026-11-08T10:13:11.226222-03:00",
+        "tentativas": 1
       },
       "facebook": {
         "legenda": "Siga @codigodavirada_br",
-        "status": "pendente"
+        "status": "erro",
+        "erro": "Meta HTTP 400: {\"error\":{\"message\":\"The token has expired on Wednesday, 04-Nov-26 09:22:53 PST. The current time is Sunday, 08-Nov-26 05:13:11 PST.\",\"type\":\"OAuthException\",\"code\":190,\"fbtrace_id\":\"AuBfb77FaPE038h8YWMKjTk\"}}",
+        "ultima_tentativa_em": "2026-11-08T10:13:11.295485-03:00",
+        "tentativas": 1
       }
     },
     {
