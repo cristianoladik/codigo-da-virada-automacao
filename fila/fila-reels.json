@@ -8358,7 +8358,7 @@
       "id": "reel-20261110-1300-d4627e0e5e",
       "data": "2026-11-10",
       "horario": "13:00",
-      "status": "pendente",
+      "status": "com_defeito",
       "origem": {
         "arquivo": "009 - zRK4sJ5E2jc.mp4",
         "sha256": "d4627e0e5edf257b568d13b88ff29d0c4e6086aba5a23cdbe64ad2dedad0298d",
@@ -8373,17 +8373,19 @@
       "instagram": {
         "legenda": "Siga @codigodavirada_br",
         "status": "erro",
-        "erro": "Meta HTTP 400: {\"error\":{\"message\":\"The token has expired on Wednesday, 04-Nov-26 09:22:53 PST. The current time is Tuesday, 10-Nov-26 11:19:50 PST.\",\"code\":190,\"type\":\"OAuthException\",\"fbtrace_id\":\"A1aPFHcQFoDi37LqX6KNvzb\"}}",
-        "ultima_tentativa_em": "2026-11-10T16:19:50.130327-03:00",
-        "tentativas": 2
+        "erro": "Meta HTTP 400: {\"error\":{\"message\":\"The token has expired on Wednesday, 04-Nov-26 09:22:53 PST. The current time is Tuesday, 10-Nov-26 11:38:35 PST.\",\"code\":190,\"type\":\"OAuthException\",\"fbtrace_id\":\"AGwvHkw0UhlvBe9YtHJm_hW\"}}",
+        "ultima_tentativa_em": "2026-11-10T16:38:35.100413-03:00",
+        "tentativas": 3
       },
       "facebook": {
         "legenda": "Siga @codigodavirada_br",
         "status": "erro",
-        "erro": "Meta HTTP 400: {\"error\":{\"message\":\"The token has expired on Wednesday, 04-Nov-26 09:22:53 PST. The current time is Tuesday, 10-Nov-26 11:19:50 PST.\",\"type\":\"OAuthException\",\"code\":190,\"fbtrace_id\":\"AlTZCJk_bjfgbPaivfkEzs_\"}}",
-        "ultima_tentativa_em": "2026-11-10T16:19:50.225367-03:00",
-        "tentativas": 2
-      }
+        "erro": "Meta HTTP 400: {\"error\":{\"message\":\"The token has expired on Wednesday, 04-Nov-26 09:22:53 PST. The current time is Tuesday, 10-Nov-26 11:38:35 PST.\",\"type\":\"OAuthException\",\"code\":190,\"fbtrace_id\":\"AUtejUlgFzl_Esem3aw19gz\"}}",
+        "ultima_tentativa_em": "2026-11-10T16:38:35.167740-03:00",
+        "tentativas": 3
+      },
+      "motivo_defeito": "instagram: falhou 3 vezes seguidas",
+      "posto_de_lado_em": "2026-11-10T16:38:35.182105-03:00"
     },
     {
       "id": "reel-20261110-1700-3742482ccb",
