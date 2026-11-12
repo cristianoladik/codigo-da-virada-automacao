@@ -8637,16 +8637,16 @@
       "instagram": {
         "legenda": "Siga @codigodavirada_br",
         "status": "erro",
-        "erro": "Meta HTTP 400: {\"error\":{\"message\":\"The token has expired on Wednesday, 04-Nov-26 09:22:53 PST. The current time is Thursday, 12-Nov-26 07:01:46 PST.\",\"code\":190,\"type\":\"OAuthException\",\"fbtrace_id\":\"AMFi_37GDWoBbSChgyhDtyX\"}}",
-        "ultima_tentativa_em": "2026-11-12T12:01:46.637811-03:00",
-        "tentativas": 1
+        "erro": "Meta HTTP 400: {\"error\":{\"message\":\"The token has expired on Wednesday, 04-Nov-26 09:22:53 PST. The current time is Thursday, 12-Nov-26 08:39:32 PST.\",\"code\":190,\"type\":\"OAuthException\",\"fbtrace_id\":\"Al6vVSmHCfj39X32r5Z4aiD\"}}",
+        "ultima_tentativa_em": "2026-11-12T13:39:32.417517-03:00",
+        "tentativas": 2
       },
       "facebook": {
         "legenda": "Siga @codigodavirada_br",
         "status": "erro",
-        "erro": "Meta HTTP 400: {\"error\":{\"message\":\"The token has expired on Wednesday, 04-Nov-26 09:22:53 PST. The current time is Thursday, 12-Nov-26 07:01:46 PST.\",\"type\":\"OAuthException\",\"code\":190,\"fbtrace_id\":\"A5IynDVxMu_vdcFkC3HDMGG\"}}",
-        "ultima_tentativa_em": "2026-11-12T12:01:46.687184-03:00",
-        "tentativas": 1
+        "erro": "Meta HTTP 400: {\"error\":{\"message\":\"The token has expired on Wednesday, 04-Nov-26 09:22:53 PST. The current time is Thursday, 12-Nov-26 08:39:32 PST.\",\"type\":\"OAuthException\",\"code\":190,\"fbtrace_id\":\"A8MOUpSmMCKKgTOoXw6aQ8A\"}}",
+        "ultima_tentativa_em": "2026-11-12T13:39:32.619646-03:00",
+        "tentativas": 2
       }
     },
     {
@@ -8668,16 +8668,16 @@
       "instagram": {
         "legenda": "Siga @codigodavirada_br",
         "status": "erro",
-        "erro": "Meta HTTP 400: {\"error\":{\"message\":\"The token has expired on Wednesday, 04-Nov-26 09:22:53 PST. The current time is Thursday, 12-Nov-26 07:01:46 PST.\",\"code\":190,\"type\":\"OAuthException\",\"fbtrace_id\":\"AC5o7qO8phgxtf_uD4Rs5Xy\"}}",
-        "ultima_tentativa_em": "2026-11-12T12:01:46.747977-03:00",
-        "tentativas": 1
+        "erro": "Meta HTTP 400: {\"error\":{\"message\":\"The token has expired on Wednesday, 04-Nov-26 09:22:53 PST. The current time is Thursday, 12-Nov-26 08:39:32 PST.\",\"code\":190,\"type\":\"OAuthException\",\"fbtrace_id\":\"ARmqu6XTylYq0k1rjfxCooS\"}}",
+        "ultima_tentativa_em": "2026-11-12T13:39:32.842106-03:00",
+        "tentativas": 2
       },
       "facebook": {
         "legenda": "Siga @codigodavirada_br",
         "status": "erro",
-        "erro": "Meta HTTP 400: {\"error\":{\"message\":\"The token has expired on Wednesday, 04-Nov-26 09:22:53 PST. The current time is Thursday, 12-Nov-26 07:01:46 PST.\",\"type\":\"OAuthException\",\"code\":190,\"fbtrace_id\":\"A13xK6AnWfBT_VMuOarB4Z3\"}}",
-        "ultima_tentativa_em": "2026-11-12T12:01:46.794441-03:00",
-        "tentativas": 1
+        "erro": "Meta HTTP 400: {\"error\":{\"message\":\"The token has expired on Wednesday, 04-Nov-26 09:22:53 PST. The current time is Thursday, 12-Nov-26 08:39:33 PST.\",\"type\":\"OAuthException\",\"code\":190,\"fbtrace_id\":\"AKR_VGxa0sL8QFNeaJJDtiR\"}}",
+        "ultima_tentativa_em": "2026-11-12T13:39:33.045786-03:00",
+        "tentativas": 2
       }
     },
     {
@@ -8698,11 +8698,17 @@
       },
       "instagram": {
         "legenda": "Siga @codigodavirada_br",
-        "status": "pendente"
+        "status": "erro",
+        "erro": "Meta HTTP 400: {\"error\":{\"message\":\"The token has expired on Wednesday, 04-Nov-26 09:22:53 PST. The current time is Thursday, 12-Nov-26 08:39:33 PST.\",\"code\":190,\"type\":\"OAuthException\",\"fbtrace_id\":\"AaS5tESdWq_eeHxafMBfg79\"}}",
+        "ultima_tentativa_em": "2026-11-12T13:39:33.268683-03:00",
+        "tentativas": 1
       },
       "facebook": {
         "legenda": "Siga @codigodavirada_br",
-        "status": "pendente"
+        "status": "erro",
+        "erro": "Meta HTTP 400: {\"error\":{\"message\":\"The token has expired on Wednesday, 04-Nov-26 09:22:53 PST. The current time is Thursday, 12-Nov-26 08:39:33 PST.\",\"type\":\"OAuthException\",\"code\":190,\"fbtrace_id\":\"A3mwkpU-ZSP8OjiesoMzolE\"}}",
+        "ultima_tentativa_em": "2026-11-12T13:39:33.470317-03:00",
+        "tentativas": 1
       }
     },
     {
