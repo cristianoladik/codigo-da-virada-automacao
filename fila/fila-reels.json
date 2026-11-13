@@ -8736,16 +8736,16 @@
       "instagram": {
         "legenda": "Siga @codigodavirada_br",
         "status": "erro",
-        "erro": "Meta HTTP 400: {\"error\":{\"message\":\"The token has expired on Wednesday, 04-Nov-26 09:22:53 PST. The current time is Thursday, 12-Nov-26 14:27:29 PST.\",\"code\":190,\"type\":\"OAuthException\",\"fbtrace_id\":\"AlbUwYb1AaZPPKxQo8lQ6tN\"}}",
-        "ultima_tentativa_em": "2026-11-12T19:27:29.593163-03:00",
-        "tentativas": 1
+        "erro": "Meta HTTP 400: {\"error\":{\"message\":\"The token has expired on Wednesday, 04-Nov-26 09:22:53 PST. The current time is Thursday, 12-Nov-26 18:52:42 PST.\",\"code\":190,\"type\":\"OAuthException\",\"fbtrace_id\":\"AP9_3O5LYDJebmovuWkJg-p\"}}",
+        "ultima_tentativa_em": "2026-11-12T23:52:42.252303-03:00",
+        "tentativas": 2
       },
       "facebook": {
         "legenda": "Siga @codigodavirada_br",
         "status": "erro",
-        "erro": "Meta HTTP 400: {\"error\":{\"message\":\"The token has expired on Wednesday, 04-Nov-26 09:22:53 PST. The current time is Thursday, 12-Nov-26 14:27:29 PST.\",\"type\":\"OAuthException\",\"code\":190,\"fbtrace_id\":\"AtlWMd620j3odAaB-i3kC3S\"}}",
-        "ultima_tentativa_em": "2026-11-12T19:27:29.792145-03:00",
-        "tentativas": 1
+        "erro": "Meta HTTP 400: {\"error\":{\"message\":\"The token has expired on Wednesday, 04-Nov-26 09:22:53 PST. The current time is Thursday, 12-Nov-26 18:52:42 PST.\",\"type\":\"OAuthException\",\"code\":190,\"fbtrace_id\":\"ANL2Q53mo6O94I4NLAgV8pg\"}}",
+        "ultima_tentativa_em": "2026-11-12T23:52:42.337123-03:00",
+        "tentativas": 2
       }
     },
     {
@@ -8766,11 +8766,17 @@
       },
       "instagram": {
         "legenda": "Siga @codigodavirada_br",
-        "status": "pendente"
+        "status": "erro",
+        "erro": "Meta HTTP 400: {\"error\":{\"message\":\"The token has expired on Wednesday, 04-Nov-26 09:22:53 PST. The current time is Thursday, 12-Nov-26 18:52:42 PST.\",\"code\":190,\"type\":\"OAuthException\",\"fbtrace_id\":\"AH8qQcXiz3hFHUB19R0PWOJ\"}}",
+        "ultima_tentativa_em": "2026-11-12T23:52:42.447147-03:00",
+        "tentativas": 1
       },
       "facebook": {
         "legenda": "Siga @codigodavirada_br",
-        "status": "pendente"
+        "status": "erro",
+        "erro": "Meta HTTP 400: {\"error\":{\"message\":\"The token has expired on Wednesday, 04-Nov-26 09:22:53 PST. The current time is Thursday, 12-Nov-26 18:52:42 PST.\",\"type\":\"OAuthException\",\"code\":190,\"fbtrace_id\":\"ASQziHvCO3i_vuuLJqFpFdh\"}}",
+        "ultima_tentativa_em": "2026-11-12T23:52:42.566284-03:00",
+        "tentativas": 1
       }
     },
     {
