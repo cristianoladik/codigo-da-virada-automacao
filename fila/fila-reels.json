@@ -9013,7 +9013,7 @@
       "id": "reel-20261114-1300-c4f57d1aab",
       "data": "2026-11-14",
       "horario": "13:00",
-      "status": "pendente",
+      "status": "com_defeito",
       "origem": {
         "arquivo": "0002.mp4",
         "sha256": "c4f57d1aab8ef888b8ea80d590b902be129e8b17965c4e45cf3b2ff885bb130b"
@@ -9027,17 +9027,19 @@
       "instagram": {
         "legenda": "Siga @codigodavirada_br",
         "status": "erro",
-        "erro": "Meta HTTP 400: {\"error\":{\"message\":\"The token has expired on Wednesday, 04-Nov-26 09:22:53 PST. The current time is Saturday, 14-Nov-26 09:40:16 PST.\",\"code\":190,\"type\":\"OAuthException\",\"fbtrace_id\":\"AQcj9W7bd-NE0MzTLQTTK5m\"}}",
-        "ultima_tentativa_em": "2026-11-14T14:40:16.529916-03:00",
-        "tentativas": 2
+        "erro": "Meta HTTP 400: {\"error\":{\"message\":\"The token has expired on Wednesday, 04-Nov-26 09:22:53 PST. The current time is Saturday, 14-Nov-26 09:55:59 PST.\",\"code\":190,\"type\":\"OAuthException\",\"fbtrace_id\":\"AQBPX4wYC54xr0LqGrux-VO\"}}",
+        "ultima_tentativa_em": "2026-11-14T14:55:59.500429-03:00",
+        "tentativas": 3
       },
       "facebook": {
         "legenda": "Siga @codigodavirada_br",
         "status": "erro",
-        "erro": "Meta HTTP 400: {\"error\":{\"message\":\"The token has expired on Wednesday, 04-Nov-26 09:22:53 PST. The current time is Saturday, 14-Nov-26 09:40:16 PST.\",\"type\":\"OAuthException\",\"code\":190,\"fbtrace_id\":\"AWEd1IYbishQBQM8yTKGbbe\"}}",
-        "ultima_tentativa_em": "2026-11-14T14:40:16.626916-03:00",
-        "tentativas": 2
-      }
+        "erro": "Meta HTTP 400: {\"error\":{\"message\":\"The token has expired on Wednesday, 04-Nov-26 09:22:53 PST. The current time is Saturday, 14-Nov-26 09:55:59 PST.\",\"type\":\"OAuthException\",\"code\":190,\"fbtrace_id\":\"AwO9Eo4F_0mCFr3uc3lqgHG\"}}",
+        "ultima_tentativa_em": "2026-11-14T14:55:59.557250-03:00",
+        "tentativas": 3
+      },
+      "motivo_defeito": "instagram: falhou 3 vezes seguidas",
+      "posto_de_lado_em": "2026-11-14T14:55:59.574723-03:00"
     },
     {
       "id": "reel-20261114-1700-7b684a401e",
